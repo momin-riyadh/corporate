@@ -44,7 +44,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
+    height: 100px;
   }
 
   .main-navigation {

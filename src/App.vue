@@ -1,38 +1,36 @@
 <template>
   <div id="app">
     <Navigation></Navigation>
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-      |
-      <router-link to="/about">About</router-link>
-    </div>
+    <CommonBanner></CommonBanner>
+    <CommonParagraph></CommonParagraph>
+    <Footer></Footer>
+    <Copyright></Copyright>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
 
+  /*#app {*/
+  /*  font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
+  /*  -webkit-font-smoothing: antialiased;*/
+  /*  -moz-osx-font-smoothing: grayscale;*/
+  /*  text-align: center;*/
+  /*  color: #2c3e50;*/
+  /*}*/
 
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-  }
+  /*#nav {*/
+  /*  padding: 30px;*/
 
-  #nav {
-    padding: 30px;
+  /*  a {*/
+  /*    font-weight: bold;*/
+  /*    color: #2c3e50;*/
 
-    a {
-      font-weight: bold;
-      color: #2c3e50;
-
-      &.router-link-exact-active {
-        color: #42b983;
-      }
-    }
-  }
+  /*    &.router-link-exact-active {*/
+  /*      color: #42b983;*/
+  /*    }*/
+  /*  }*/
+  /*}*/
 
 
   /*Importing Google Fonts*/
@@ -42,12 +40,16 @@
   @import "./assets/css/style";
 </style>
 <script lang="ts">
-    import {Component, Vue} from "vue-property-decorator";
-    import Navigation from "@/components/Navigation.vue";
+    import {Component, Vue} from 'vue-property-decorator';
+    import Navigation from '@/components/Navigation.vue';
+    import Footer from '@/components/Footer.vue';
+    import Copyright from '@/components/Copyright.vue';
+    import CommonBanner from '@/components/CommonBanner.vue';
+    import CommonParagraph from '@/components/CommonParagraph.vue';
 
     @Component({
         name: 'app',
-        components: {Navigation}
+        components: {CommonParagraph, CommonBanner, Copyright, Footer, Navigation},
     })
     export default class App extends Vue {
     }
