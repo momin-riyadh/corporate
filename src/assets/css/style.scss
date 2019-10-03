@@ -1,0 +1,31 @@
+/* ==================================
+       Default Browser Stylesheet
+   ================================== */
+
+::selection {
+  background: #44b913;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+
+::-moz-selection {
+  background: #44b913;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+//End Default Browser Stylesheet
+
+//GLOBAL VARIABLE FOR SQUARE
+
+$font-roboto: 'Roboto', sans-serif;
+$nav-color: #292929;
+$header-color: #292929;
+$paragraph-color: #696969;
+$brand-color:#42A646;
+$copyright-bg:#191919;
+$footer-bg:#2F2F2F;
+$white-color:#ffffff;
+
+//End Common Global Style For the Square
