@@ -33,5 +33,6 @@ $brand-color:#42A646;
 $copyright-bg:#191919;
 $footer-bg:#2F2F2F;
 $white-color:#ffffff;
+$paragraph-size: calc(16px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
 
 //End Common Global Style For the Square

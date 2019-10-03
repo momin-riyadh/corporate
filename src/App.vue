@@ -3,6 +3,7 @@
     <Navigation></Navigation>
     <CommonBanner></CommonBanner>
     <CommonParagraph></CommonParagraph>
+    <BottomBanner></BottomBanner>
     <Footer></Footer>
     <Copyright></Copyright>
     <router-view/>
@@ -46,10 +47,11 @@
     import Copyright from '@/components/Copyright.vue';
     import CommonBanner from '@/components/CommonBanner.vue';
     import CommonParagraph from '@/components/CommonParagraph.vue';
+    import BottomBanner from '@/components/BottomBanner.vue';
 
     @Component({
         name: 'app',
-        components: {CommonParagraph, CommonBanner, Copyright, Footer, Navigation},
+        components: {BottomBanner, CommonParagraph, CommonBanner, Copyright, Footer, Navigation},
     })
     export default class App extends Vue {
     }
