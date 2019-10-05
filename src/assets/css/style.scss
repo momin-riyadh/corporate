@@ -3,6 +3,23 @@
   padding: 0 3%;
 }
 
+//Importing Font Family
+@font-face {
+  font-family: 'Helvetica';
+  src: url('~@/assets/fonts/Helvetica.eot?#iefix') format('embedded-opentype'), url('~@/assets//fonts/Helvetica.otf') format('opentype'),
+  url('~@/assets/fonts/Helvetica.woff') format('woff'), url('~@/assets/fonts/Helvetica.ttf') format('truetype'), url('~@/assets/fonts/Helvetica.svg#Helvetica') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Helvetica-Bold';
+  src: url('~@/assets/fonts/Helvetica-Bold.eot?#iefix') format('embedded-opentype'), url('~@/assets/fonts/Helvetica-Bold.otf') format('opentype'),
+  url('~@/assets/fonts/Helvetica-Bold.woff') format('woff'), url('~@/assets/fonts/Helvetica-Bold.ttf') format('truetype'), url('~@/assets/fonts/Helvetica-Bold.svg#Helvetica-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* ==================================
        Default Browser Stylesheet
@@ -26,6 +43,8 @@
 //GLOBAL VARIABLE FOR SQUARE
 
 $font-roboto: 'Roboto', sans-serif;
+$font-helvetica: 'Helvetica', sans-serif;
+$font-helvetica-bold: 'Helvetica-Bold', sans-serif;
 $nav-color: #292929;
 $header-color: #292929;
 $paragraph-color: #696969;

@@ -2,7 +2,7 @@
   <section class="my-5 py-5">
     <div class="container-fluid px-5-percent">
       <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-1 pt-4 pt-lg-0">
+        <div class="col-12 col-lg-6 offset-lg-1 pt-4 pt-lg-0 float-left">
 
           <div class="article-header mb-5">
             <h1 class="common-title"><span>Looking beyond the horizon</span></h1>
@@ -67,7 +67,7 @@
   .common-title {
     line-height: 1;
     color:$brand-color;
-    font-family: $font-roboto;
+    font-family: $font-helvetica;
     font-weight: bold;
     font-size: calc(24px + (42 - 24) * ((100vw - 300px) / (1600 - 300)));
   }
