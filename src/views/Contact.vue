@@ -14,15 +14,15 @@
                     <input class="form-control" type="text" name="" placeholder="First Name">
                   </div>
                   <div class="col-md-6 pl-sm-3 mb-2">
-                    <input type="text" name="" class="form-control" placeholder="Last Name">
+                    <input type="text" name="" class="form-control" placeholder="Last Name *">
                   </div>
                 </div>
                 <div class="form-row my-4">
                   <div class="col-md-6 pr-sm-3 mb-2">
-                    <input class="form-control" type="Email" name="" placeholder="Email">
+                    <input class="form-control" type="Email" name="" placeholder="Email *">
                   </div>
                   <div class="col-md-6 pl-sm-3 mb-2">
-                    <input type="text" name="" class="form-control" placeholder="Phone Number">
+                    <input type="text" name="" class="form-control" placeholder="Phone Number *">
                   </div>
                 </div>
                 <div class="form-group">
@@ -98,14 +98,15 @@
     color: $white-color;
   }
 
-  .sq-address-title{
+  .sq-address-title {
     min-height: 80px;
     background: darken($brand-color, 5%);
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    h3{
+
+    h3 {
       margin: 0;
       padding: 0;
       line-height: 1;
@@ -113,15 +114,13 @@
     }
   }
 
-  .sq-address{
-    address{
+  .sq-address {
+    address {
       display: flex;
       justify-content: center;
       align-items: flex-start;
     }
   }
-
-
 
 
   .sq-contact-form-area {
@@ -142,6 +141,39 @@
         &:hover, &:focus {
           outline: none;
         }
+
+        /*Placeholder Color*/
+
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: #6D6D6D;
+          position: relative;
+
+          &:after {
+            content: " *";
+            color: #ff3f00;
+          }
+        }
+
+        [required]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          &:after {
+            content: " *";
+            color: #ff3f00;
+          }
+        }
+
+        &::-moz-placeholder { /* Firefox 19+ */
+          color: #6D6D6D;
+        }
+
+        &:-ms-input-placeholder { /* IE 10+ */
+          color: #6D6D6D;
+        }
+
+        &:-moz-placeholder { /* Firefox 18- */
+          color: #6D6D6D;
+        }
+
+
       }
 
       textarea {
@@ -157,16 +189,14 @@
   }
 
   /*Contact form button style*/
-  .sq-contact-btn{
+  .sq-contact-btn {
     background: #4D4D4D;
-    padding:1.3rem 0;
-    color:$white-color;
+    padding: 1.3rem 0;
+    color: $white-color;
     font-family: $font-roboto;
     text-transform: uppercase;
     font-size: 1.5rem;
   }
-
-
 
 
   .contact-form-bt {

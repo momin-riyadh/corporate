@@ -10,7 +10,7 @@
 
           <p>Its range of products and services towards the highway of global market. It pioneered exports of medicines
             from Bangladesh in 1987.</p>
-          <div class="sq-footer-social mt-4">
+          <div class="sq-footer-social mt-5">
             <a href="">
               <i class="fab fa-facebook-f"></i>
             </a>
@@ -107,13 +107,13 @@
     display: flex;
 
     a {
+      transition:all 0.3s ease-in-out;
       display: inline-block;
       color:$white-color;
       line-height: 1;
       font-size: 1.2em;
       &:not(:last-child) {
        border-right: 1px solid #707070;
-
       }
 
       &:not(:last-child) {
@@ -123,6 +123,10 @@
       &:not(:first-child) {
         padding-left: 2rem;
 
+      }
+
+      &:hover{
+        color: $brand-color;
       }
     }
   }
