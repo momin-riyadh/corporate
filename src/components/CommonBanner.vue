@@ -2,13 +2,12 @@
   <div class="common-banner-area">
     <div class="container-fluid px-5-percent">
       <div class="common-banner">
-        <img class="img-fluid" src="../assets/images/wwr@2x.jpg" alt="square">
+        <img class="img-fluid" src="../assets/images/contact@2x.jpg" alt="square">
 
 
         <div class="banner-content">
-          <h1>Who We are</h1>
-          <p>SQUARE today symbolizes a name – a state of mind. But its journey to the
-            growth and prosperity has been no bed of roses.
+          <h1>Contact Us</h1>
+          <p>Employee welfare entails everything from services, facilities and benefits that are provided or done by an employer for the advantage or comfort of an employee. It is undertaken in order to
           </p>
         </div>
 
@@ -61,13 +60,14 @@
       height: 50vh;
       object-fit: cover;
       -o-object-fit: cover;
+      object-position: center;
     }
   }
 
   .banner-content {
     color: $white-color;
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     position: absolute;
     z-index: 2;
     left: 50%;
@@ -81,10 +81,12 @@
     h1 {
       font-size: calc(20px + (70 - 20) * ((100vw - 300px) / (1600 - 300)));
       text-transform: capitalize;
+      font-family: $font-helvetica-bold;
     }
 
     p {
-      font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+      font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+      font-family: $font-roboto;
     }
   }
 </style>

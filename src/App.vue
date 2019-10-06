@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <Navigation></Navigation>
-    <CommonBanner></CommonBanner>
-    <CommonParagraph></CommonParagraph>
-    <BottomBanner></BottomBanner>
-    <Footer></Footer>
-    <Copyright></Copyright>
+<!--    <Navigation></Navigation>-->
+<!--    <CommonBanner></CommonBanner>-->
+<!--    <CommonParagraph></CommonParagraph>-->
+<!--    <BottomBanner></BottomBanner>-->
+<!--    <Footer></Footer>-->
+<!--    <Copyright></Copyright>-->
     <router-view/>
   </div>
 </template>
