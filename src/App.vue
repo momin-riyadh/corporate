@@ -39,6 +39,7 @@
   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css');
   @import "../node_modules/bootstrap/scss/bootstrap";
   @import "./assets/css/style";
+  @import "./assets/css/element.css";
 </style>
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
