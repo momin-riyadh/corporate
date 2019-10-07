@@ -2,12 +2,11 @@
   <div class="common-banner-area">
     <div class="container-fluid px-5-percent">
       <div class="common-banner">
-        <img class="img-fluid" src="../assets/images/contact@2x.jpg" alt="square">
-
+        <img class="img-fluid" :src="ImageUrl" alt="square">
 
         <div class="banner-content">
-          <h1>Contact Us</h1>
-          <p>Employee welfare entails everything from services, facilities and benefits that are provided or done by an employer for the advantage or comfort of an employee. It is undertaken in order to
+          <h1>{{BannerTitle}}</h1>
+          <p>{{BannerSubtitle}}
           </p>
         </div>
 
@@ -25,7 +24,9 @@
         components: {},
     })
     export default class CommonBanner extends Vue {
-
+            @Prop() public BannerTitle!: string;
+            @Prop() public BannerSubtitle!: string;
+            @Prop() public ImageUrl!: string;
     }
 </script>
 
