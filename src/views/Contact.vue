@@ -1,7 +1,8 @@
 <template>
   <div class="sq-contact">
     <Navigation/>
-    <CommonBanner/>
+    <CommonBanner v-bind:ImageUrl="require('../assets/images/contact@2x.jpg')" BannerTitle="contact us" BannerSubtitle="Employee welfare entails everything from services, facilities and benefits that are provided or done by an employer
+ for the advantage or comfort of an employee. It is undertaken in order to"/>
 
     <div class="container-fluid px-5-percent mb-5">
       <div class="sq-contact-form-area">
@@ -63,12 +64,6 @@
                 </address>
               </div>
             </div>
-<!--        A common Generated button For whole Project-->
-<!--            <el-button-group>-->
-<!--              <el-button type="primary">Learn More</el-button>-->
-<!--              <el-button type="primary"><i class="el-icon-plus"></i></el-button>-->
-<!--            </el-button-group>-->
-
 
           </div>
         </div>
