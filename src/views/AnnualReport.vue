@@ -100,11 +100,11 @@
     align-self: flex-start;
     @media (min-width: 767px) {
       width: calc(50% - 30px);
-      margin: 0 8px 30px;
+      margin: 0 15px 30px;
     }
     @media (min-width: 991px) {
       width: calc(25% - 30px);
-      margin: 0 8px 30px;
+      margin: 0 15px 30px;
     }
     @media (min-width: 1440px) {
       width: calc(20% - 30px);
