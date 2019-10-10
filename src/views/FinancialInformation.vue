@@ -1,21 +1,17 @@
 <template>
-  <div class="annual-report-area">
+  <div class="financial-information-area">
     <Navigation/>
-    <CommonBanner v-bind:image-url="require('../assets/images/annual-report@2x.jpg')"
-                  banner-title="annual report"
-                  banner-subtitle="Employee welfare entails everything from services, facilities and benefits that are provided or done by an employer
- for the advantage or comfort of an employee. It is undertaken in order to"
-
-    />
+    <CommonBanner v-bind:image-url="require('../assets/images/financial-information@2x.jpg')"
+                  banner-title="Financial Information" banner-subtitle="Employee welfare entails everything from services, facilities and benefits that are provided or done by an employer
+ for the advantage or comfort of an employee. It is undertaken in order to"/>
 
 
-    <!--      Annual Report Section/Column Start-->
+    <!--    Financial Information Report Section Start-->
     <div class="container-fluid px-5-percent">
-      <div class="annual-report">
-
+      <div class="financial-report">
         <!--    Annual Report Year-->
         <div class="text-center text-sm-left">
-          <div class="annual-report-year">
+          <div class="financial-report-year">
             <a href="">2019</a>
             <a href="">2018</a>
             <a href="">2017</a>
@@ -23,55 +19,55 @@
         </div>
         <!--        End Annual Report Year-->
 
-        <!--        Annual Report Column-->
+        <!--        Financial Report Column-->
+
         <div class="row">
-          <div class="custom-areas align-items-center">
-            <div class="s-a-report" v-for="v in 10">
-              <img class="img-fluid" src="../assets/images/report/ar-cover@2x.jpg" alt="square">
-              <div class="s-a-report-caption text-center mt-3">
-                <h4> Annual Report 2018</h4>
+          <div class="financial-areas align-items-center">
+
+            <div class="sq-financial-report" v-for="v in 10">
+              <img class="img-fluid" src="../assets/images/financial-report@2x.jpg" alt="square">
+
+              <div class="sq-f-report-caption text-center mt-3">
+                <h4> Financial Report 2018</h4>
               </div>
             </div>
 
           </div>
         </div>
 
-        <!--        End Annual Report Column-->
+
+        <!--        End Financial Report Column-->
 
 
       </div>
     </div>
-    <!--      End-->
+
+    <!--    End Financial Information Report Section-->
+
+
     <Footer/>
     <Copyright/>
   </div>
 </template>
 
 <script lang="ts">
-    import {Component, Vue, Prop} from 'vue-property-decorator';
-    import Navigation from '../components/Navigation.vue';
-    import CommonBanner from '../components/CommonBanner.vue';
+    import {Component, Vue} from 'vue-property-decorator';
+    import Navigation from '@/components/Navigation.vue';
+    import CommonBanner from '@/components/CommonBanner.vue';
     import Footer from '@/components/Footer.vue';
     import Copyright from '@/components/Copyright.vue';
 
     @Component({
-        name: 'AnnualReport',
-        components: {
-            Copyright,
-            Footer,
-            CommonBanner,
-            Navigation,
-
-        },
+        name: 'FinancialInformation',
+        components: {Copyright, Footer, CommonBanner, Navigation},
     })
-
-    export default class AnnualReport extends Vue {
+    export default class FinancialInformation extends Vue {
 
     }
 </script>
 
 <style scoped lang="scss">
-  .annual-report-year {
+  .financial-report-year {
     background: #EFEFEF;
     display: inline-block;
     margin: 50px 0 30px 0;
@@ -94,26 +90,26 @@
   }
 
 
-  .custom-areas {
+  .financial-areas{
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
   }
 
-  .s-a-report {
+  .sq-financial-report {
     img {
       border: 1rem solid #EFEFEF;
     }
   }
 
-  .s-a-report-caption {
+  .sq-f-report-caption {
     h4 {
       font-family: $font-roboto;
       font-weight: bold;
     }
   }
 
-  .s-a-report {
+  .sq-financial-report {
     width: calc(100% - 30px);
     margin: 0 15px 30px 15px;
     flex-shrink: 0;

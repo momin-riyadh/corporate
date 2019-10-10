@@ -34,6 +34,11 @@ export default new Router({
             component: () => import(/* webpackChunkName: "about" */ './views/AnnualReport.vue'),
         },
         {
+            path: '/financial-information',
+            name: 'financial-information',
+            component: () => import(/* webpackChunkName: "about" */ './views/FinancialInformation.vue'),
+        },
+        {
             path: '/about',
             name: 'about',
             // route level code-splitting
