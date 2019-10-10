@@ -28,7 +28,11 @@
           <div class="custom-areas align-items-center">
             <div class="s-a-report" v-for="v in 10">
               <img class="img-fluid" src="../assets/images/report/ar-cover@2x.jpg" alt="square">
+              <div class="s-a-report-caption text-center mt-3">
+                <h4> Annual Report 2018</h4>
+              </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -92,8 +96,20 @@
     margin: 0 auto;
   }
 
+  .s-a-report{
+    img{
+      border: 1rem solid #EFEFEF;
+    }
+  }
+
+  .s-a-report-caption{
+    h4{
+      font-family: $font-roboto;
+      font-weight: bold;
+    }
+  }
+
   .s-a-report {
-    border: 1rem solid #EFEFEF;
     width: calc(100% - 30px);
     margin: 0 15px 30px 15px;
     flex-shrink: 0;
