@@ -40,6 +40,34 @@
 
 
       </div>
+
+
+      <!--      Square Group Milestones-->
+
+      <div class="sq-milestones-area my-5">
+        <div class="sq-milestones">
+          <div class="sq-milestone-list">
+            <ul>
+              <li><a href="">1998 – Production and process engineering, Diesel Systems, Germany/Italy</a></li>
+              <li><a href="">2001 – Manager for production engineering for Common Rail, Czech Republic, Diesel
+                Systems</a></li>
+              <li><a href="">2003 – Head of department for production of Common Rail Pumps, Czech Republic</a></li>
+              <li><a href="">2006 – Vice President Quality, Germany, Chassis Systems Control and Gasoline Systems</a>
+              </li>
+              <li><a href="">2010 – Vice President Manufacturing for ABS/ESP, Germany, Chassis Systems Control</a></li>
+              <li><a href="">2013 – Senior Vice President, Product area Large Engines, Austria, Diesel Systems</a></li>
+              <li><a href="">2017 – CTO & Director, Bosch Limited</a></li>
+            </ul>
+          </div>
+          <div class="sq-milestone-image">
+            <img class="img-fluid" src="../assets/images/milestone@2x.jpg" alt="square">
+          </div>
+        </div>
+      </div>
+
+      <!--      End Square Group Milestones-->
+
+
     </div>
 
     <!--    End Financial Information Report Section-->
@@ -90,7 +118,7 @@
   }
 
 
-  .financial-areas{
+  .financial-areas {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -127,4 +155,57 @@
       margin: 0 15px 30px;
     }
   }
+
+
+
+  /*Milestones Area*/
+
+  .sq-milestones-area{
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .sq-milestones{min-height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .sq-milestone-list{
+    background: #F4F4F4;
+    flex-grow: 1;
+    padding:7rem;
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li{
+        list-style: disc;
+        font-family: $font-roboto;
+        font-size: 20px;
+        &:not(:last-child){
+          margin-bottom: 2rem;
+        }
+        a{
+          text-decoration: none;
+          color: #5F5F5F;
+          font-family: inherit;
+          font-weight: 500;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .sq-milestone-image{
+    flex-shrink: 0;
+    max-width: 800px;
+  }
+
+
+
+
 </style>
