@@ -88,6 +88,7 @@
 
   .footer-about-us {
     flex-basis: 30%;
+    max-width: 450px;
 
     h3 {
       color: $white-color;
@@ -100,6 +101,7 @@
       font-family: $font-roboto;
       font-size: .9rem;
       font-weight: lighter;
+      text-align: justify;
     }
   }
 

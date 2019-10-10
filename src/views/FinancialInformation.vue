@@ -177,6 +177,7 @@
     background: #F4F4F4;
     flex-grow: 1;
     padding:7rem;
+
     ul{
       margin: 0;
       padding: 0;
