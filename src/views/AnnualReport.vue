@@ -95,10 +95,10 @@
   .s-a-report {
     border: 1rem solid #EFEFEF;
     width: calc(100% - 30px);
-    margin: 0 0 30px 0;
+    margin: 0 15px 30px 15px;
     flex-shrink: 0;
     align-self: flex-start;
-    @media (min-width: 767px) {
+    @media (min-width: 575px) {
       width: calc(50% - 30px);
       margin: 0 15px 30px;
     }
