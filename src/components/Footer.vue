@@ -84,11 +84,17 @@
   .footer-area {
     display: flex;
     justify-content: space-between;
+    @media(max-width: 991px){
+      flex-direction: column;
+    }
   }
 
   .footer-about-us {
     flex-basis: 30%;
     max-width: 450px;
+    @media(max-width: 991px){
+      flex-basis: 100%;
+    }
 
     h3 {
       color: $white-color;
@@ -135,6 +141,9 @@
 
   .footer-useful-links {
     flex-basis: 40%;
+    @media(max-width: 991px){
+      flex-basis: 100%;
+    }
 
     h3 {
       color: $white-color;
@@ -172,6 +181,9 @@
   .footer-contact {
     flex-basis: auto;
     color: #c7c7c7;
+    @media(max-width: 991px){
+      flex-basis: 100%;
+    }
 
     h3 {
       color: $white-color;
