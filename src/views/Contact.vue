@@ -4,6 +4,10 @@
     <CommonBanner v-bind:ImageUrl="require('../assets/images/contact@2x.jpg')" BannerTitle="contact us" BannerSubtitle="Employee welfare entails everything from services, facilities and benefits that are provided or done by an employer
  for the advantage or comfort of an employee. It is undertaken in order to"/>
 
+    <!--    Custom Google Maps Api Integrations-->
+
+    <!--    End Custom Google Maps Api Integrations-->
+
     <div class="container-fluid px-5-percent mb-5">
       <div class="sq-contact-form-area">
         <div class="row">
@@ -113,6 +117,7 @@
       padding: 0;
       line-height: 1;
       font-family: $font-helvetica-bold;
+      font-size: calc(22px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
     }
   }
 

@@ -36,7 +36,7 @@
     width: 100%;
     display: block;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 5rem;
   }
 
   .common-banner {
