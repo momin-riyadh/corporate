@@ -13,10 +13,10 @@
             <p>{{ParagraphContent}}</p>
 
             <!--        A common Generated button For whole Project-->
-                        <el-button-group>
-                          <el-button type="primary">Learn More</el-button>
-                          <el-button type="primary"><i class="el-icon-plus"></i></el-button>
-                        </el-button-group>
+            <el-button-group>
+              <el-button type="primary">Learn More</el-button>
+              <el-button type="primary"><i class="el-icon-plus"></i></el-button>
+            </el-button-group>
           </div>
 
         </div>
@@ -36,25 +36,26 @@
         components: {},
     })
     export default class CommonParagraph extends Vue {
-              @Prop() public ParagraphTitle!: string;
-              @Prop() public ParagraphSubTitle!: string;
-              @Prop() public ParagraphContent!: string;
-              @Prop() public ParagraphImage!: string;
+        @Prop() public ParagraphTitle!: string;
+        @Prop() public ParagraphSubTitle!: string;
+        @Prop() public ParagraphContent!: string;
+        @Prop() public ParagraphImage!: string;
     }
 </script>
 
 <style scoped lang="scss">
 
 
-  .common-sub-title{
+  .common-sub-title {
     font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
-    color:#292929;
+    color: #292929;
     font-weight: bold;
     font-family: $font-roboto;
   }
+
   .common-title {
     line-height: 1;
-    color:$brand-color;
+    color: $brand-color;
     font-family: $font-helvetica;
     font-weight: bold;
     font-size: calc(24px + (42 - 24) * ((100vw - 300px) / (1600 - 300)));
@@ -64,8 +65,8 @@
     display: inline-block;
     position: relative;
   }
-  .common-title span:before
-  {
+
+  .common-title span:before {
     content: "";
     position: absolute;
     height: 5px;
@@ -73,14 +74,16 @@
     top: 50%;
     width: 80px;
   }
+
   .common-title span:before {
     right: 100%;
     margin-right: 15px;
   }
-  .article-content{
-    p{
+
+  .article-content {
+    p {
       font-family: $font-roboto;
-      color:#656565;
+      color: #656565;
       font-size: 18px;
     }
   }
