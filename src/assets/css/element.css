@@ -1208,8 +1208,8 @@
     display: inline-block;
     font-size: 13px;
     min-width: 35.5px;
-    height: 28px;
-    line-height: 28px;
+    height: 36px;
+    line-height: 36px;
     vertical-align: top;
     -webkit-box-sizing: border-box;
     box-sizing: border-box
@@ -1364,7 +1364,7 @@
 }
 
 .el-pagination__editor.el-input .el-input__inner {
-    height: 28px
+    height: 36px
 }
 
 .el-pagination__editor .el-input__inner::-webkit-inner-spin-button, .el-pagination__editor .el-input__inner::-webkit-outer-spin-button {
@@ -1376,7 +1376,7 @@
     margin: 0 5px;
     background-color: #f4f4f5;
     color: #696969;
-    min-width: 30px;
+    min-width: 36px;
     border-radius: 2px
 }
 
@@ -1424,15 +1424,15 @@
 }
 
 .el-pager .more::before {
-    line-height: 30px
+    line-height: 36px
 }
 
 .el-pager li {
     padding: 0 4px;
     font-size: 13px;
     min-width: 35.5px;
-    height: 28px;
-    line-height: 28px;
+    height: 36px;
+    line-height: 36px;
     box-sizing: border-box;
     text-align: center
 }
@@ -1442,7 +1442,7 @@
 }
 
 .el-pager li.btn-quicknext, .el-pager li.btn-quickprev {
-    line-height: 28px;
+    line-height: 36px;
     color: #292929
 }
 
