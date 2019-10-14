@@ -39,6 +39,16 @@ export default new Router({
             component: () => import(/* webpackChunkName: "about" */ './views/FinancialInformation.vue'),
         },
         {
+            path: '/news',
+            name: 'newsmedia',
+            component: () => import(/* webpackChunkName: "about" */ './views/NewsMedia.vue'),
+        },
+        {
+            path: '/post',
+            name: 'blogpost',
+            component: () => import(/* webpackChunkName: "about" */ './views/BlogPost.vue'),
+        },
+        {
             path: '/about',
             name: 'about',
             // route level code-splitting
