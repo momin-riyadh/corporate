@@ -13,12 +13,12 @@
       <div class="main-navigation">
         <ul>
           <li><a href="">about</a></li>
-          <li><a href="">business</a></li>
+          <li><router-link to="/business">business</router-link></li>
           <li><a href="">responsibility</a></li>
           <li><a href="">investors</a></li>
-          <li><a href="">careers</a></li>
-          <li><a href="">news & media</a></li>
-          <li><a href="">contact</a></li>
+          <li><router-link to="/career">careers</router-link></li>
+          <li><router-link to="/news">news & media</router-link></li>
+          <li><router-link to="/contact">contact</router-link></li>
         </ul>
       </div>
 
@@ -52,7 +52,6 @@
       margin: 0;
       padding: 0;
       display: block;
-
     }
 
     li {
@@ -65,7 +64,7 @@
       }
 
       a {
-        transition: all 0.6s ease-in-out;
+        transition: all 0.3s ease-in-out;
         color: #292929;
         font-family: $font-roboto;
         display: inline-block;
