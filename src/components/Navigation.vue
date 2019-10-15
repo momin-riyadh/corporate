@@ -68,8 +68,8 @@
         color: #292929;
         font-family: $font-roboto;
         display: inline-block;
-        font-size: 16px;
-        font-weight: bold;
+        font-size: 14px;
+        font-weight: 500;
         text-decoration: none;
 
         &.router-link-exact-active {
