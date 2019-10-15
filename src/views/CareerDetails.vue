@@ -15,7 +15,7 @@
       </div>
 
       <!--      Job Category Breadcrumb-->
-      <div class="job-category-breadcrumb mb-4">
+      <div class="job-category-breadcrumb mb-4 text-center text-sm-left">
         <a href="">Accounting / Finance</a>
       </div>
 
@@ -27,7 +27,7 @@
           <div class="job-title-area mb-5">
 
             <!--          job title-->
-            <div class="job-title">
+            <div class="job-title text-center text-sm-left">
               <h3>Customer Relationship Officer </h3>
               <p>Square Pharmaceuticals Ltd </p>
             </div>
@@ -162,6 +162,9 @@
     justify-content: flex-start;
     align-items: center;
     min-height: 7rem;
+    @media(max-width: 575px){
+    justify-content: center;
+    }
 
     a {
       font-size: calc(24px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
@@ -176,17 +179,28 @@
   .job-description-area {
     background: #f4f4f4;
     padding: 3rem;
+    @media(max-width: 575px){
+      padding: 1rem;
+    }
   }
 
   .job-description-main {
     background: $white-color;
     padding: 3rem;
+    @media(max-width: 575px){
+      padding: 1rem;
+    }
   }
 
   .job-title-area {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    @media (max-width: 575px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
   }
 
@@ -194,6 +208,7 @@
     h3 {
       font-family: $font-helvetica-bold;
       color: #414541;
+      font-size: calc(24px + (24 - 18) * ((100vw - 300px) / (1600 - 300)));
     }
 
     p {
@@ -215,6 +230,7 @@
 
   .job-context {
     h3 {
+      font-size: calc(20px + (20 - 17) * ((100vw - 300px) / (1600 - 300)));
       font-family: $font-roboto;
       font-weight: 500;
       color: #222222;
@@ -232,6 +248,7 @@
 
   .job-responsibility, .edu-requirement, .employment-status, .job-salary, .job-compensation {
     h3 {
+      font-size: calc(20px + (20 - 17) * ((100vw - 300px) / (1600 - 300)));
       font-family: $font-roboto;
       font-weight: 500;
       color: #222222;
@@ -268,15 +285,15 @@
     }
   }
 
-  .job-apply{
-    p{
+  .job-apply {
+    p {
       font-family: $font-roboto;
       color: #6D6D6D;
       font-weight: 500;
       font-size: 18px;
     }
 
-    a{
+    a {
       background: $brand-color;
       text-decoration: none;
       font-family: $font-roboto;
@@ -286,8 +303,6 @@
       display: inline-block;
     }
   }
-
-
 
 
 </style>
