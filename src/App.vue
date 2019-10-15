@@ -35,7 +35,7 @@
 
 
   /*Importing Google Fonts*/
-  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css');
   @import "../node_modules/bootstrap/scss/bootstrap";
   @import "./assets/css/style";
