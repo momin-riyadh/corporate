@@ -1,7 +1,7 @@
 <template>
   <div class="sq-career-details-area">
     <Navigation/>
-    <CommonBanner v-bind:image-url="require('../assets/images/career@2x.jpg')"
+    <CommonBanner v-bind:image-url="require('../assets/images/career-ref.jpg')"
                   banner-title="Find the right job" banner-subtitle="Employee welfare entails everything from services, facilities and benefits that are provided or done by an employer
  for the advantage or comfort of an employee. It is undertaken in order to"/>
 
