@@ -52,7 +52,6 @@
           </div>
 
 
-
           <!--            job responsibility-->
           <div class="job-responsibility mb-5">
             <h3 class="mb-3">Job Responsibilities</h3>
@@ -64,11 +63,9 @@
               <li>Need to have good Customer Service skill</li>
               <li>Should have basic computer knowledge including Microsoft Office and email</li>
               <li>Ability to work with the team</li>
-              <li> Any other responsibility assigned by management</li>
+              <li>Any other responsibility assigned by management</li>
             </ul>
           </div>
-
-
 
 
           <!--           job/employment status-->
@@ -183,21 +180,6 @@
   .job-description-main {
     background: $white-color;
     padding: 30px;
-
-    h3 {
-      font-family: $font-roboto;
-      font-weight: 500;
-      color: #222222;
-      text-transform: capitalize;
-    }
-
-    p {
-      font-family: $font-roboto;
-      color: #6D6D6D;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 1.8em;
-    }
   }
 
   .job-title-area {
@@ -229,6 +211,63 @@
       font-size: 1.2rem;
     }
   }
+
+  .job-context {
+    h3 {
+      font-family: $font-roboto;
+      font-weight: 500;
+      color: #222222;
+      text-transform: capitalize;
+    }
+
+    p {
+      font-family: $font-roboto;
+      color: #6D6D6D;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.8em;
+    }
+  }
+
+  .job-responsibility, .edu-requirement, .employment-status, .job-salary, .job-compensation {
+    h3 {
+      font-family: $font-roboto;
+      font-weight: 500;
+      color: #222222;
+      text-transform: capitalize;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        position: relative;
+        padding-left: 1em;
+        text-indent: -0.7em;
+        display: block;
+        font-family: $font-roboto;
+        color: #6D6D6D;
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 1.2rem;
+
+        &::before {
+          vertical-align: middle;
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: $brand-color;
+          content: "";
+          margin-right: 1rem;
+          margin-top: -3px;
+        }
+      }
+    }
+  }
+
+
 
 
 
