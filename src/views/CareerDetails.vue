@@ -115,7 +115,7 @@
 
       <!--      Apply Button Area-->
 
-      <div class="job-apply text-center my-5">
+      <div class="job-apply text-center my-5 py-5">
         <p>Please do not apply without any work experience related to the customers.</p>
 
         <a href="">apply now</a>
@@ -161,25 +161,26 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    min-height: 80px;
+    min-height: 7rem;
 
     a {
       font-size: calc(24px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
       font-family: $font-helvetica-bold;
       color: $brand-color;
-      padding: 0 30px;
+      padding: 0 3rem;
       line-height: 1;
+      text-decoration: none;
     }
   }
 
   .job-description-area {
     background: #f4f4f4;
-    padding: 30px;
+    padding: 3rem;
   }
 
   .job-description-main {
     background: $white-color;
-    padding: 30px;
+    padding: 3rem;
   }
 
   .job-title-area {
@@ -245,7 +246,7 @@
       li {
         position: relative;
         padding-left: 1em;
-        text-indent: -0.7em;
+        text-indent: -0.8em;
         display: block;
         font-family: $font-roboto;
         color: #6D6D6D;
@@ -267,6 +268,24 @@
     }
   }
 
+  .job-apply{
+    p{
+      font-family: $font-roboto;
+      color: #6D6D6D;
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    a{
+      background: $brand-color;
+      text-decoration: none;
+      font-family: $font-roboto;
+      padding: 1rem 3rem;
+      text-transform: uppercase;
+      color: $white-color;
+      display: inline-block;
+    }
+  }
 
 
 
