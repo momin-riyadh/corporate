@@ -34,6 +34,11 @@ export default new Router({
             component: () => import(/* webpackChunkName: "about" */ './views/CareerDetails.vue'),
         },
         {
+            path: '/apply',
+            name: 'apply',
+            component: () => import(/* webpackChunkName: "about" */ './views/ApplyForm.vue'),
+        },
+        {
             path: '/business-details',
             name: 'business-details',
             component: () => import(/* webpackChunkName: "about" */ './views/BusinessDetails.vue'),
