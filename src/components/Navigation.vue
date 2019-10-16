@@ -13,12 +13,20 @@
       <div class="main-navigation">
         <ul>
           <li><a href="">about</a></li>
-          <li><router-link to="/business">business</router-link></li>
+          <li>
+            <router-link to="/business">business</router-link>
+          </li>
           <li><a href="">responsibility</a></li>
           <li><a href="">investors</a></li>
-          <li><router-link to="/career">careers</router-link></li>
-          <li><router-link to="/news">news & media</router-link></li>
-          <li><router-link to="/contact">contact</router-link></li>
+          <li>
+            <router-link to="/career">careers</router-link>
+          </li>
+          <li>
+            <router-link to="/news">news & media</router-link>
+          </li>
+          <li>
+            <router-link to="/contact">contact</router-link>
+          </li>
         </ul>
       </div>
 
@@ -82,18 +90,21 @@
       }
     }
 
+    @media(max-width: 991px) {
+      display: none;
+    }
+
   }
 
   /*Logo */
-  .sq-logo{
-    a{
-      img{
+  .sq-logo {
+    a {
+      img {
         width: auto;
         height: 60px;
       }
     }
   }
-
 
 
 </style>

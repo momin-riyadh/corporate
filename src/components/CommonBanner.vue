@@ -24,9 +24,9 @@
         components: {},
     })
     export default class CommonBanner extends Vue {
-            @Prop() public BannerTitle!: string;
-            @Prop() public BannerSubtitle!: string;
-            @Prop() public ImageUrl!: string;
+        @Prop() public BannerTitle!: string;
+        @Prop() public BannerSubtitle!: string;
+        @Prop() public ImageUrl!: string;
     }
 </script>
 
@@ -68,7 +68,8 @@
   .banner-content {
     color: $white-color;
     text-align: center;
-    max-width: 90%;
+    width: 100%;
+    padding: 0 1rem;
     position: absolute;
     z-index: 2;
     left: 50%;
@@ -88,6 +89,9 @@
     p {
       font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
       font-family: $font-roboto;
+    }
+    @media (min-width: 992px) {
+      max-width: 1024px;
     }
   }
 </style>
