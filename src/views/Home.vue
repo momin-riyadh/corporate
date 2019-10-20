@@ -37,14 +37,14 @@
         <div class="row">
           <div class="col text-center">
             <div class="row text-left pt-4">
-              <div class="col-12 col-md-6 mb-4">
+              <div class="col-12 col-md-6 mb-4 sq-mission-text pr-0 pr-md-5">
                 <h3>Our Mission</h3>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
                   the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
                   language ocean. A small river named Duden
                   flows by their place far far away.</p>
               </div>
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-md-6 sq-mission-text pl-0 pl-md-5">
                 <h3>Our Vision</h3>
                 <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, far far away, behind the
                   word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated
@@ -111,7 +111,7 @@
     line-height: 1.2;
     font-family: $font-helvetica-bold;
     font-weight: bold;
-    font-size: calc(24px + (55 - 24) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(24px + (45 - 24) * ((100vw - 300px) / (1600 - 300)));
     margin-left: 95px;
 
     span {
@@ -154,6 +154,42 @@
 
   .sq-mission-title {
     h1 {
+      line-height: 1;
+      font-family: $font-helvetica-bold;
+      font-weight: bold;
+      font-size: calc(24px + (45 - 24) * ((100vw - 300px) / (1600 - 300)));
+      display: inline-block;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 5px;
+        border-bottom: 4px solid $brand-color;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80px;
+        right: 100%;
+        margin-right: 15px;
+      }
+    }
+
+    p {
+      font-family: $font-helvetica-bold;
+      font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
+      color: #777777;
+    }
+  }
+
+  .sq-mission-text{
+    h3{
+      font-family: $font-roboto;
+      font-weight: bold;
+      color: $header-color;
+    }
+    p{
+      font-family: $font-roboto;
+      color:$paragraph-color;
 
     }
   }
