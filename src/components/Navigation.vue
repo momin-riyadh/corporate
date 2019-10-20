@@ -4,9 +4,9 @@
 
       <!--    Square logo-->
       <div class="sq-logo">
-        <a href="">
+        <router-link to="/" href="">
           <img src="../assets/images/logo.svg" alt="">
-        </a>
+        </router-link>
       </div>
 
       <!--    Right Navigation-->
