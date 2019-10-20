@@ -53,7 +53,7 @@
               </div>
             </div>
             <div class="sq-mission-img col-12 p-0">
-              <img src="../assets/images/mission@2x.jpg" alt="" class="img-fluid">
+              <img src="../assets/images/mission-ref.jpg" alt="" class="img-fluid">
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@
 
     <div class="container-fluid px-5-percent">
       <div class="sq-home-compliance-area">
-        <img src="../assets/images/complience@2x.jpg" alt="" class="img-fluid">
+        <img src="../assets/images/compliance.jpg" alt="" class="img-fluid">
         <div class="compliance-text">
           <h1 class="mb-3">Compliance</h1>
           <h4 class="mb-5">It's a team work.</h4>
