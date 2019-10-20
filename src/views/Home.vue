@@ -63,6 +63,21 @@
     </div>
 
 
+    <div class="container-fluid px-5-percent">
+      <div class="sq-home-compliance-area">
+        <img src="../assets/images/complience@2x.jpg" alt="" class="img-fluid">
+        <div class="compliance-text">
+          <h1 class="mb-3">Compliance</h1>
+          <h4 class="mb-5">It's a team work.</h4>
+          <p>
+            Gaining an understanding of local markets is as important as monitoring the greater economy. We retain our
+            core belief that residential property is more than just aestment, so we learn about the impact on local
+            areas before investing.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <Footer/>
     <Copyright/>
   </div>
@@ -183,15 +198,16 @@
     }
   }
 
-  .sq-mission-text{
-    h3{
+  .sq-mission-text {
+    h3 {
       font-family: $font-roboto;
       font-weight: bold;
       color: $header-color;
     }
-    p{
+
+    p {
       font-family: $font-roboto;
-      color:$paragraph-color;
+      color: $paragraph-color;
       line-height: 1.8;
 
     }
@@ -205,6 +221,66 @@
       -o-object-fit: cover;
       object-position: center;
       -o-object-position: center;
+    }
+  }
+
+
+  .sq-home-compliance-area {
+    height: 70vh;
+    position: relative;
+    margin-bottom: calc(3% + 5vh);
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+      -o-object-position: top;
+    }
+  }
+
+  .compliance-text {
+    background: #F9F8F8;
+    padding:5rem;
+    left: 95px;
+    bottom: -80px;
+    width: 500px;
+    position: absolute;
+    z-index: 2;
+
+    h1 {
+      line-height: 1;
+      font-family: $font-helvetica-bold;
+      font-weight: bold;
+      font-size: calc(24px + (45 - 24) * ((100vw - 300px) / (1600 - 300)));
+      display: inline-block;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 5px;
+        border-bottom: 4px solid $brand-color;
+        top: 55%;
+        transform: translateY(-55%);
+        width: 45px;
+        right: 100%;
+        margin-right: 5px;
+      }
+    }
+    h4{
+      line-height: 1;
+      font-family: $font-helvetica-bold;
+      font-weight: bold;
+      font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+      display: inline-block;
+      position: relative;
+    }
+
+    p{
+      font-family: $font-roboto;
+      color:$paragraph-color;
+      font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
     }
   }
 </style>
