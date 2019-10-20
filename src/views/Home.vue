@@ -3,7 +3,7 @@
     <Navigation/>
     <CommonBanner/>
 
-    <div class="container-fluid px-5-percent my-5">
+    <div class="container-fluid px-5-percent">
       <div class="sq-h-content-area">
         <div class="row align-items-center">
           <div class="col-md-6">
@@ -93,6 +93,7 @@
     position: relative;
     height: 50vh;
     overflow: hidden;
+    margin: calc(3% + 5vh) 0;
   }
 
   .sq-h-content {
@@ -150,6 +151,7 @@
   .sq-mission-area {
     background: #F4F4F4;
     padding: 95px;
+    margin-bottom: calc(3% + 5vh);
   }
 
   .sq-mission-title {
@@ -190,6 +192,7 @@
     p{
       font-family: $font-roboto;
       color:$paragraph-color;
+      line-height: 1.8;
 
     }
   }
