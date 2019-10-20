@@ -27,6 +27,42 @@
     </div>
 
 
+    <div class="container-fluid px-5-percent my-5">
+      <div class="sq-mission-area">
+        <div class="sq-mission-title">
+          <h1>Started its journey</h1>
+          <p>in 1988 and in 1994</p>
+        </div>
+
+        <div class="row">
+          <div class="col text-center">
+            <div class="row text-left pt-4">
+              <div class="col-12 col-md-6 mb-4">
+                <h3>Our Mission</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                  the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                  language ocean. A small river named Duden
+                  flows by their place far far away.</p>
+              </div>
+              <div class="col-12 col-md-6">
+                <h3>Our Vision</h3>
+                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, far far away, behind the
+                  word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated
+                  they live in Bookmarksgrove right at
+                  the coast.</p>
+              </div>
+            </div>
+            <div class="sq-mission-img col-12 p-0">
+              <img src="../assets/images/mission@2x.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
     <Footer/>
     <Copyright/>
   </div>
@@ -67,7 +103,7 @@
       max-width: 600px;
       line-height: 2em;
       position: relative;
-      top:80px
+      top: 80px
     }
   }
 
@@ -103,9 +139,33 @@
     z-index: -1;
     bottom: 120px;
     position: relative;
+
     img {
       width: 400px;
       height: 400px;
+    }
+  }
+
+
+  .sq-mission-area {
+    background: #F4F4F4;
+    padding: 95px;
+  }
+
+  .sq-mission-title {
+    h1 {
+
+    }
+  }
+
+  .sq-mission-img {
+    img {
+      height: 55vh;
+      width: 100%;
+      object-fit: cover;
+      -o-object-fit: cover;
+      object-position: center;
+      -o-object-position: center;
     }
   }
 </style>

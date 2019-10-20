@@ -2,7 +2,8 @@
   <div class="sq-business-area">
     <!--    Importing Components-->
     <Navigation/>
-    <CommonBanner v-bind:ImageUrl="require('../assets/images/business@2x.jpg')" BannerTitle="Our Business" BannerSubtitle="We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence and honesty. Maybe it's our family orientation"/>
+    <CommonBanner v-bind:ImageUrl="require('../assets/images/business@2x.jpg')" BannerTitle="Our Business"
+                  BannerSubtitle="We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence and honesty. Maybe it's our family orientation"/>
     <!--  End  Importing Components-->
 
     <div class="container-fluid px-5-percent my-5">
