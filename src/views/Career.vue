@@ -180,7 +180,7 @@
 
         public featureds: any = [
             {
-                title: 'Square Pharmaceuticals Ltd ',
+                title: 'Square Fashions Ltd ',
                 imageurl: require('../assets/images/square-fashions.svg'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
@@ -195,18 +195,28 @@
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
-                title: 'Square Pharmaceuticals Ltd ',
+                title: 'Square Foods Ltd ',
                 imageurl: require('../assets/images/sq-food.svg'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
-                title: 'Square Pharmaceuticals Ltd ',
+                title: 'Square Hospitals Ltd ',
                 imageurl: require('../assets/images/sq-hospital.svg'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
                 title: 'Square Pharmaceuticals Ltd ',
                 imageurl: require('../assets/images/sq-kingfisher.svg'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
+                title: 'Square Pharmaceuticals Ltd ',
+                imageurl: require('../assets/images/splogo.svg'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
+                title: 'Square Pharmaceuticals Ltd ',
+                imageurl: require('../assets/images/splogo.svg'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
         ];
