@@ -44,9 +44,7 @@
                 <div class="s-featured-job-brief">
                   <h5>{{ featured.title }} </h5>
                   <ul>
-                    <li v-for="sublist in featured.sublists" v-bind:sublist="sublist"><a href=""><i
-                            class="fas fa-caret-right"></i> {{ sublist.text }}</a></li>
-
+                    <li v-for="sublist in featured.sublists" v-bind:sublist="sublist"> {{ sublist.text }}</li>
                   </ul>
                 </div>
               </div>
@@ -340,14 +338,29 @@
       list-style: none;
 
       li {
-
-        i {
-          color: $brand-color;
+        position: relative;
+        color: #939393;
+        padding-left: 1rem;
+        display: block;
+        &::before{
+          display: inline-block;
+          position: absolute;
+          content:'';
+          width: 0;
+          height: 0;
+          top:50%;
+          left: 0;
+          transform:translateY(-50%);
+          border-top: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+          border-left: 8px solid $brand-color;
+          margin-bottom: 0.7rem;
+          line-height: 1;
+          margin-right: auto;
         }
 
         a {
           text-decoration: none;
-          color: #939393;
           font-family: $font-roboto;
         }
       }
