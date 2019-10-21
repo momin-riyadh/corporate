@@ -16,7 +16,12 @@
 
         <div class="job-category mb-5">
           <ul>
-            <li v-for="{title, vacancy, index} in category"><a href="">{{ title}} <span> ({{vacancy}})</span></a></li>
+            <li v-for="{title, vacancy, index} in category">
+              <a href="">
+                {{ title}}
+                <span> ({{vacancy}})</span>
+              </a>
+            </li>
           </ul>
         </div>
 
