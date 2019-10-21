@@ -304,7 +304,7 @@
         -webkit-column-break-inside: avoid;
         page-break-inside: avoid;
         break-inside: avoid;
-        margin-bottom: 4rem;
+        margin-bottom: 4.5rem;
       }
     }
 
@@ -342,19 +342,17 @@
         color: #939393;
         padding-left: 1rem;
         display: block;
+        margin-bottom: 0.4rem;
         &::before{
           display: inline-block;
           position: absolute;
           content:'';
-          width: 0;
-          height: 0;
           top:50%;
           left: 0;
           transform:translateY(-50%);
           border-top: 8px solid transparent;
           border-bottom: 8px solid transparent;
           border-left: 8px solid $brand-color;
-          margin-bottom: 0.7rem;
           line-height: 1;
           margin-right: auto;
         }
