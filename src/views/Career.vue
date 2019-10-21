@@ -17,10 +17,10 @@
         <div class="job-category mb-5">
           <ul>
             <li v-for="{title, vacancy, index} in category">
-              <a href="">
+              <router-link to="/career-details">
                 {{ title}}
                 <span> ({{vacancy}})</span>
-              </a>
+              </router-link>
             </li>
           </ul>
         </div>
@@ -37,17 +37,24 @@
         <div class="featured-job">
           <ul>
             <li v-for="featured  in featureds">
+
               <div class="s-featured-job">
+
                 <div class="s-f-job-img">
                   <img :src="featured.imageurl" alt="">
                 </div>
+
                 <div class="s-featured-job-brief">
                   <h5>{{ featured.title }} </h5>
                   <ul>
-                    <li v-for="sublist in featured.sublists" v-bind:sublist="sublist"> {{ sublist.text }}</li>
+                    <router-link tag="li" to="/career-details" v-for="sublist in featured.sublists"
+                                 v-bind:sublist="sublist"> {{ sublist.text }}
+                    </router-link>
                   </ul>
                 </div>
+
               </div>
+
             </li>
           </ul>
         </div>
@@ -344,13 +351,15 @@
         padding-left: 1rem;
         display: block;
         margin-bottom: 0.4rem;
-        &::before{
+        cursor: pointer;
+
+        &::before {
           display: inline-block;
           position: absolute;
-          content:'';
-          top:50%;
+          content: '';
+          top: 50%;
           left: 0;
-          transform:translateY(-50%);
+          transform: translateY(-50%);
           border-top: 8px solid transparent;
           border-bottom: 8px solid transparent;
           border-left: 8px solid $brand-color;
