@@ -122,10 +122,12 @@
             {
                 title: 'Garments/Textile',
                 vacancy: '34',
-            }, {
+            },
+            {
                 title: 'Software/Telecommunication',
                 vacancy: '05',
-            }, {
+            },
+            {
                 title: 'Accounting/Finance',
                 vacancy: '22',
             },
@@ -156,9 +158,18 @@
             {
                 title: 'Garments/Textile',
                 vacancy: '34',
-            }, {
+            },
+            {
                 title: 'Software/Telecommunication',
                 vacancy: '05',
+            },
+            {
+                title: 'Education/Training',
+                vacancy: '200',
+            },
+            {
+                title: 'Garments/Textile',
+                vacancy: '34',
             },
         ];
     }
@@ -225,7 +236,7 @@
           text-decoration: none;
           font-family: $font-roboto;
           color: #222222;
-          font-size: 22px;
+          font-size: calc(18px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
         }
       }
     }
