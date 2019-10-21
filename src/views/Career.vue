@@ -36,17 +36,17 @@
 
         <div class="featured-job">
           <ul>
-            <li v-for="v in 12">
+            <li v-for="featured  in featureds">
               <div class="s-featured-job">
                 <div class="s-f-job-img">
-                  <img src="../assets/images/splogo.svg" alt="">
+                  <img :src="featured.imageurl" alt="">
                 </div>
                 <div class="s-featured-job-brief">
-                  <h5>Square Pharmaceuticals Ltd </h5>
+                  <h5>{{ featured.title }} </h5>
                   <ul>
-                    <li><a href=""><i class="fas fa-caret-right"></i> Development Executive</a></li>
-                    <li><a href=""><i class="fas fa-caret-right"></i> Front Desk Executive</a></li>
-                    <li><a href=""><i class="fas fa-caret-right"></i> Accounts Officer</a></li>
+                    <li v-for="sublist in featured.sublists" v-bind:sublist="sublist"><a href=""><i
+                            class="fas fa-caret-right"></i> {{ sublist.text }}</a></li>
+
                   </ul>
                 </div>
               </div>
@@ -101,7 +101,7 @@
                 vacancy: '22',
             },
             {
-                title: 'Medical/Pharma',
+                title: 'Medical/Pharmacy',
                 vacancy: '102',
             },
             {
@@ -175,6 +175,39 @@
             {
                 title: 'Garments/Textile',
                 vacancy: '34',
+            },
+        ];
+
+        public featureds: any = [
+            {
+                title: 'Square Pharmaceuticals Ltd ',
+                imageurl: require('../assets/images/square-fashions.svg'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
+                title: 'Square Pharmaceuticals Ltd ',
+                imageurl: require('../assets/images/splogo.svg'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
+                title: 'Square Pharmaceuticals Ltd ',
+                imageurl: require('../assets/images/splogo.svg'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
+                title: 'Square Pharmaceuticals Ltd ',
+                imageurl: require('../assets/images/sq-food.svg'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
+                title: 'Square Pharmaceuticals Ltd ',
+                imageurl: require('../assets/images/sq-hospital.svg'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
+                title: 'Square Pharmaceuticals Ltd ',
+                imageurl: require('../assets/images/sq-kingfisher.svg'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
         ];
     }
