@@ -29,7 +29,7 @@
 
 
       <div class="featured-job-area">
-        <div class="job-category-title mb-5">
+        <div class="job-category-title">
           <h1 class="common-title"><span>Featured Job</span></h1>
           <p class="common-sub-title">Far far away, behind the word mountains,</p>
         </div>
@@ -204,7 +204,7 @@
             },
             {
                 title: 'Square Pharmaceuticals Ltd ',
-                imageurl: require('../assets/images/sq-kingfisher.svg'),
+                imageurl: require('../assets/images/square-fashions.svg'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
@@ -225,6 +225,7 @@
 <style scoped lang="scss">
   .job-category-title {
     margin-left: 95px;
+    margin-bottom: 5.5rem;
   }
 
   .common-sub-title {
