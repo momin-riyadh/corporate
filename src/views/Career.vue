@@ -16,7 +16,7 @@
 
         <div class="job-category mb-5">
           <ul>
-            <li v-for="v in 32"><a href="">Accounting/Finance <span> (24)</span></a></li>
+            <li v-for="{title, vacancy, index} in category"><a href="">{{ title}} <span> ({{vacancy}})</span></a></li>
           </ul>
         </div>
 
@@ -90,7 +90,79 @@
 
     export default class Career extends Vue {
 
+        public category: any = [
+            {
+                title: 'Accounting/Finance',
+                vacancy: '22',
+            },
+            {
+                title: 'Medical/Pharma',
+                vacancy: '102',
+            },
+            {
+                title: 'Law/Legal',
+                vacancy: '12',
+            },
+            {
+                title: 'Marketing/Sales',
+                vacancy: '24',
+            },
+            {
+                title: 'Research/Consultancy',
+                vacancy: '78',
+            },
+            {
+                title: 'Driving/Motor Technician',
+                vacancy: '09',
+            },
+            {
+                title: 'Education/Training',
+                vacancy: '200',
+            },
+            {
+                title: 'Garments/Textile',
+                vacancy: '34',
+            }, {
+                title: 'Software/Telecommunication',
+                vacancy: '05',
+            }, {
+                title: 'Accounting/Finance',
+                vacancy: '22',
+            },
+            {
+                title: 'Medical/Pharmacy',
+                vacancy: '102',
+            },
+            {
+                title: 'Law/Legal',
+                vacancy: '12',
+            },
+            {
+                title: 'Marketing/Sales',
+                vacancy: '24',
+            },
+            {
+                title: 'Research/Consultancy',
+                vacancy: '78',
+            },
+            {
+                title: 'Driving/Motor Technician',
+                vacancy: '09',
+            },
+            {
+                title: 'Education/Training',
+                vacancy: '200',
+            },
+            {
+                title: 'Garments/Textile',
+                vacancy: '34',
+            }, {
+                title: 'Software/Telecommunication',
+                vacancy: '05',
+            },
+        ];
     }
+
 </script>
 
 <style scoped lang="scss">
@@ -154,8 +226,6 @@
           font-family: $font-roboto;
           color: #222222;
           font-size: 22px;
-          font-weight: 300;
-
         }
       }
     }
@@ -226,35 +296,38 @@
   }
 
 
-  .bottom-image-grid{
+  .bottom-image-grid {
 
-    .first-row{
+    .first-row {
       display: flex;
       height: 40vh;
       width: 100%;
 
-      img:first-child{
+      img:first-child {
         flex-grow: 1;
         object-fit: cover;
         width: 70%;
       }
-      img:last-child{
+
+      img:last-child {
         width: 30%;
         flex-shrink: 0;
         object-fit: cover;
       }
     }
-    .second-row{
+
+    .second-row {
       display: flex;
       height: 40vh;
       width: 100%;
 
-      img:first-child{
+      img:first-child {
         width: 30%;
         flex-shrink: 0;
         object-fit: cover;
       }
-      img:last-child{
+
+      img:last-child {
         flex-grow: 1;
         object-fit: cover;
         width: 70%;
