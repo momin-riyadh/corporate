@@ -124,7 +124,8 @@ growth and prosperity has been no bed of roses."/>
       width: calc(100% / 2);
       padding-bottom: calc(100% / 2);
     }
-    @media(min-width: 1024px) {
+
+    @media(min-width:1200px) {
       width: calc(100% / 4);
       float: left;
       position: relative;
