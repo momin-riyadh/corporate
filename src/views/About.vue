@@ -103,9 +103,10 @@ growth and prosperity has been no bed of roses."/>
 
 </script>
 <style scoped lang="scss">
-  .sq-about-main{
+  .sq-about-main {
     margin-bottom: 80px;
   }
+
   .s-about-col-areas {
     display: block;
     margin: 0 auto;
@@ -119,10 +120,21 @@ growth and prosperity has been no bed of roses."/>
   }
 
   .s-about-col {
-    width: calc(100% / 4);
+    @media(min-width: 768px) {
+      width: calc(100% / 2);
+      padding-bottom: calc(100% / 2);
+    }
+    @media(min-width: 1024px) {
+      width: calc(100% / 4);
+      float: left;
+      position: relative;
+      padding-bottom: calc(100% / 4);
+    }
+
+    width: calc(100%);
     float: left;
     position: relative;
-    padding-bottom: calc(100% / 4);
+    padding-bottom: calc(100%);
 
     .s-about-col-content {
       width: calc(100%);
