@@ -12,7 +12,9 @@
       <!--    Right Navigation-->
       <div class="main-navigation">
         <ul>
-          <li><a href="">about</a></li>
+          <li>
+            <router-link to="/about">about</router-link>
+          </li>
           <li>
             <router-link to="/business">business</router-link>
           </li>

@@ -9,7 +9,7 @@
     <div class="container-fluid px-5-percent">
       <!--        back to page-->
       <div class="back-to-page text-center text-md-left">
-        <a href=""><i class="el-icon-arrow-left mb-5"></i> Back</a>
+        <router-link to="/career-details" href=""><i class="el-icon-arrow-left mb-5"></i> Back</router-link>
       </div>
 
       <!--      Apply Form-->

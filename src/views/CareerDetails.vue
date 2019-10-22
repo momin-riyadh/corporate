@@ -11,7 +11,7 @@
 
       <!--        back to page-->
       <div class="back-to-page text-center text-md-left">
-        <a href=""><i class="el-icon-arrow-left mb-5"></i> Back to job page</a>
+        <router-link to="/career"><i class="el-icon-arrow-left mb-5"></i> Back to job page</router-link>
       </div>
 
       <!--      Job Category Breadcrumb-->
@@ -118,7 +118,7 @@
       <div class="job-apply text-center my-5 py-5">
         <p>Please do not apply without any work experience related to the customers.</p>
 
-        <a href="">apply now</a>
+        <router-link to="/apply">apply now</router-link>
       </div>
 
     </div>
@@ -162,8 +162,8 @@
     justify-content: flex-start;
     align-items: center;
     min-height: 7rem;
-    @media(max-width: 575px){
-    justify-content: center;
+    @media(max-width: 575px) {
+      justify-content: center;
     }
 
     a {
@@ -179,7 +179,7 @@
   .job-description-area {
     background: #f4f4f4;
     padding: 3rem;
-    @media(max-width: 575px){
+    @media(max-width: 575px) {
       padding: 1rem;
     }
   }
@@ -187,7 +187,7 @@
   .job-description-main {
     background: $white-color;
     padding: 3rem;
-    @media(max-width: 575px){
+    @media(max-width: 575px) {
       padding: 1rem;
     }
   }
