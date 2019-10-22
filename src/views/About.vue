@@ -56,7 +56,7 @@ growth and prosperity has been no bed of roses."/>
           </div>
           <div class="s-about-col image-col">
             <div class="s-about-col-content">
-              <img class="" src="../assets/images/swwr@2x.jpg" alt="">
+              <img class="" src="../assets/images/philosopy@2x.jpg" alt="">
             </div>
           </div>
           <div class="s-about-col text-col">
@@ -70,7 +70,7 @@ growth and prosperity has been no bed of roses."/>
           </div>
           <div class="s-about-col image-col">
             <div class="s-about-col-content">
-              <img class="m-0" src="../assets/images/mv@2x.jpg" alt="">
+              <img class="m-0" src="../assets/images/achivements@2x.jpg" alt="">
 
             </div>
           </div>
