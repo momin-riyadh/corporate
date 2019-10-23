@@ -42,14 +42,16 @@
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
                   the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
                   language ocean. A small river named Duden
-                  flows by their place far far away.</p>
+                  flows by their place far far away.
+                </p>
               </div>
               <div class="col-12 col-md-6 sq-mission-text pl-0 pl-md-5">
                 <h3>Our Vision</h3>
                 <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, far far away, behind the
                   word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated
                   they live in Bookmarksgrove right at
-                  the coast.</p>
+                  the coast.
+                </p>
               </div>
             </div>
             <div class="sq-mission-img col-12 p-0">
@@ -106,7 +108,7 @@
 <style lang="scss">
   .sq-h-content-area {
     position: relative;
-    height: 50vh;
+    height: 550px;
     overflow: hidden;
     margin: calc(3% + 5vh) 0;
   }
@@ -241,7 +243,7 @@
 
   .compliance-text {
     background: #F9F8F8;
-    padding:5rem;
+    padding: 5rem;
     left: 95px;
     bottom: -80px;
     width: 500px;
@@ -268,7 +270,8 @@
         margin-right: 5px;
       }
     }
-    h4{
+
+    h4 {
       line-height: 1;
       font-family: $font-helvetica-bold;
       font-weight: bold;
@@ -277,9 +280,9 @@
       position: relative;
     }
 
-    p{
+    p {
       font-family: $font-roboto;
-      color:$paragraph-color;
+      color: $paragraph-color;
       font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
     }
   }
