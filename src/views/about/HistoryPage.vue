@@ -9,7 +9,8 @@
             get to work with so many wonderful people. We’re proud that we’re a 100% women-owned business certified by
             the Women’s Business Development Center (WBDC). We’re also proud that we put people first, with monthly
             reward programs and team-building ctivitiesroughout the year. We strive to go above and beyond for our
-            clients, fostering.</p>
+            clients, fostering</p>
+
         </div>
       </div>
       <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
