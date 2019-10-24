@@ -71,12 +71,14 @@ export default new Router({
             // which is lazy-loaded when the route is visited.
             component: () => import(/* webpackChunkName: "about" */ './views/about/About.vue'),
         },
+
         {
             path: '/about-details',
             component: () => import('./views/about/AboutLayout.vue'),
             children: [
                 {path: '/', component: () => import('./views/about/HistoryPage.vue')},
                 {path: '/philosophy', component: () => import('./views/about/PhilosophyPage.vue')},
+                {path: '/management', component: () => import('./views/about/ManagementPage.vue')},
             ],
         },
     ],
