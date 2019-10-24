@@ -1,7 +1,7 @@
 <template>
   <div class="sq-about-area">
     <Navigation/>
-    <CommonBanner v-bind:image-url="require('../assets/images/about.jpg')"
+    <CommonBanner v-bind:image-url="require('../../assets/images/about.jpg')"
                   banner-title="Who we are" banner-subtitle="SQUARE today symbolizes a name – a state of mind. But its journey to the
 growth and prosperity has been no bed of roses."/>
 
@@ -13,7 +13,7 @@ growth and prosperity has been no bed of roses."/>
         <div class="s-about-col-areas">
           <div class="s-about-col image-col">
             <div class="s-about-col-content">
-              <img src="../assets/images/swwr@2x.jpg" alt="">
+              <img src="../../assets/images/swwr@2x.jpg" alt="">
             </div>
           </div>
           <div class="s-about-col text-col">
@@ -22,13 +22,13 @@ growth and prosperity has been no bed of roses."/>
               <p>We strive to go above and beyond for our clients, fostering a relationship built on trust,
                 confidence</p>
 
-              <i class="el-icon-plus"></i>
+              <router-link to="/about-details" tag="i" class="el-icon-plus"></router-link>
 
             </div>
           </div>
           <div class="s-about-col image-col">
             <div class="s-about-col-content">
-              <img src="../assets/images/mv@2x.jpg" alt="">
+              <img src="../../assets/images/mv@2x.jpg" alt="">
 
             </div>
           </div>
@@ -50,13 +50,13 @@ growth and prosperity has been no bed of roses."/>
               <h2>Philosophy</h2>
               <p>We strive to go above and beyond for our clients, fostering a relationship built on trust,
                 confidence</p>
-              <i class="el-icon-plus"></i>
+              <router-link to="/philosophy" tag="i" class="el-icon-plus"></router-link>
 
             </div>
           </div>
           <div class="s-about-col image-col">
             <div class="s-about-col-content">
-              <img class="" src="../assets/images/philosopy@2x.jpg" alt="">
+              <img class="" src="../../assets/images/philosopy@2x.jpg" alt="">
             </div>
           </div>
           <div class="s-about-col text-col">
@@ -70,7 +70,7 @@ growth and prosperity has been no bed of roses."/>
           </div>
           <div class="s-about-col image-col">
             <div class="s-about-col-content">
-              <img class="m-0" src="../assets/images/achivements@2x.jpg" alt="">
+              <img class="m-0" src="../../assets/images/achivements@2x.jpg" alt="">
 
             </div>
           </div>
@@ -120,12 +120,12 @@ growth and prosperity has been no bed of roses."/>
   }
 
   .s-about-col {
-    @media(min-width: 768px) {
+    @media(min-width: 961px) {
       width: calc(100% / 2);
       padding-bottom: calc(100% / 2);
     }
 
-    @media(min-width:1200px) {
+    @media(min-width:1905px) {
       width: calc(100% / 4);
       float: left;
       position: relative;
