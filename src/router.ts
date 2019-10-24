@@ -76,6 +76,7 @@ export default new Router({
             component: () => import('./views/about/AboutLayout.vue'),
             children: [
                 {path: '/', component: () => import('./views/about/HistoryPage.vue')},
+                {path: '/philosophy', component: () => import('./views/about/PhilosophyPage.vue')},
             ],
         },
     ],

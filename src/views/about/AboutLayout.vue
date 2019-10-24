@@ -9,8 +9,12 @@ growth and prosperity has been no bed of roses."/>
       <div class="sq-about-content-area">
         <div class="sq-a-left-sidebar">
           <ul>
-            <li><a href="">Who We are</a></li>
-            <li><a href="">Our Philosophy</a></li>
+            <li>
+              <router-link to="/about-details">Who We are</router-link>
+            </li>
+            <li>
+              <router-link to="/philosophy">Our Philosophy</router-link>
+            </li>
             <li><a href="">Achievements</a></li>
             <li><a href="">Management</a></li>
           </ul>
@@ -84,7 +88,13 @@ growth and prosperity has been no bed of roses."/>
           display: block;
           padding: 1.5rem 1rem;
           border-left: 4px solid transparent;
+
           &:hover {
+            background: #F0F0F0;
+            border-left: 4px solid $brand-color;
+          }
+
+          &.router-link-exact-active {
             background: #F0F0F0;
             border-left: 4px solid $brand-color;
           }

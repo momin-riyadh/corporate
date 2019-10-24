@@ -22,7 +22,7 @@ growth and prosperity has been no bed of roses."/>
               <p>We strive to go above and beyond for our clients, fostering a relationship built on trust,
                 confidence</p>
 
-              <i class="el-icon-plus"></i>
+              <router-link to="/about-details" tag="i" class="el-icon-plus"></router-link>
 
             </div>
           </div>
@@ -50,7 +50,7 @@ growth and prosperity has been no bed of roses."/>
               <h2>Philosophy</h2>
               <p>We strive to go above and beyond for our clients, fostering a relationship built on trust,
                 confidence</p>
-              <i class="el-icon-plus"></i>
+              <router-link to="/philosophy" tag="i" class="el-icon-plus"></router-link>
 
             </div>
           </div>

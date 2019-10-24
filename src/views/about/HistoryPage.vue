@@ -1,5 +1,5 @@
 <template>
-  <div class="history-content-area">
+  <div class="history-content-area ml-0 ml-md-5">
     <div class="row">
       <div class="col-12 col-md-12 col-lg-6 col-xl-5">
         <div class="history-content">
@@ -39,10 +39,24 @@
     overflow: hidden;
   }
   .history-content{
+    width: 100%;
     h1{
       font-family: $font-roboto;
-      font-size: 3.5rem;
+      font-size: 2rem;
       color: $brand-color;
+      margin-bottom: 1.5rem;
+      line-height: 1;
+      @media all and (min-width:1264px) {
+        font-size: 3.5rem;
+      }
+    }
+    p{
+      color: #656565;
+      font-size: 1.1rem;
+      line-height: 1.8rem;
+      text-align: justify;
+      font-family: $font-roboto;
+
     }
   }
 
