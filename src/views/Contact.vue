@@ -5,15 +5,15 @@
  for the advantage or comfort of an employee. It is undertaken in order to"/>
 
     <!--    Custom Google Maps Api Integrations-->
-    <div>
-      <div class="google-map" ref="googleMap"></div>
-      <template v-if="Boolean(this.google) && Boolean(this.map)">
-        <slot
-                :google="google"
-                :map="map"
-        />
-      </template>
-    </div>
+<!--    <div>-->
+<!--      <div class="google-map" ref="googleMap"></div>-->
+<!--      <template v-if="Boolean(this.google) && Boolean(this.map)">-->
+<!--        <slot-->
+<!--                :google="google"-->
+<!--                :map="map"-->
+<!--        />-->
+<!--      </template>-->
+<!--    </div>-->
     <!--    End Custom Google Maps Api Integrations-->
 
     <div class="container-fluid px-5-percent mb-5">
