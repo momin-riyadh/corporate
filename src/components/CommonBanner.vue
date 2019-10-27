@@ -81,7 +81,7 @@
     transform: translate(-50%, -50%);
 
     h1 {
-      font-size: calc(20px + (55 - 20) * ((100vw - 300px) / (1600 - 300)));
+      font-size: calc(24px + (45 - 24) * ((100vw - 300px) / (1600 - 300)));
       text-transform: capitalize;
       font-family: $font-helvetica-bold;
     }

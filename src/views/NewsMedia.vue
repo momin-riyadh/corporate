@@ -15,7 +15,7 @@
             <div class="news-media-caption my-4">
               <h5>{{article.title}}</h5>
               <p>{{article.text}}</p>
-              <a href="">read more</a>
+              <router-link to="/post">read more</router-link>
             </div>
           </div>
         </div>

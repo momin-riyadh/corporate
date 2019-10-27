@@ -71,6 +71,14 @@ export default new Router({
             // which is lazy-loaded when the route is visited.
             component: () => import(/* webpackChunkName: "about" */ './views/about/About.vue'),
         },
+        {
+            path: '/corporate-governance',
+            name: 'corporate-governance',
+            // route level code-splitting
+            // this generates a separate chunk (about.[hash].js) for this route
+            // which is lazy-loaded when the route is visited.
+            component: () => import(/* webpackChunkName: "about" */ './views/CorporateGovernances.vue'),
+        },
 
         {
             path: '/about-details',
@@ -80,6 +88,18 @@ export default new Router({
                 {path: '/philosophy', component: () => import('./views/about/PhilosophyPage.vue')},
                 {path: '/management', component: () => import('./views/about/ManagementPage.vue')},
             ],
+        },
+
+        {
+            path: '/stock-information',
+            name: 'stock-information',
+            component: () => import('./views/investors/StockInformation.vue'),
+        },
+
+        {
+            path: '/corporate-responsibility',
+            name: 'corporate-responsibility',
+            component: () => import('./views/responsibility/CorporatesResponsibility.vue'),
         },
     ],
 });

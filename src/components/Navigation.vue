@@ -18,8 +18,12 @@
           <li>
             <router-link to="/business">business</router-link>
           </li>
-          <li><a href="">responsibility</a></li>
-          <li><a href="">investors</a></li>
+          <li>
+            <router-link to="/corporate-responsibility">responsibility</router-link>
+          </li>
+          <li>
+            <router-link to="/stock-information">investors</router-link>
+          </li>
           <li>
             <router-link to="/career">careers</router-link>
           </li>

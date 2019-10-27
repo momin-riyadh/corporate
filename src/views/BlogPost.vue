@@ -7,6 +7,7 @@
 
     <div class="container-fluid px-15-percent">
       <div class="single-post">
+
         <div class="single-post-header col-md-8 col-sm-12 mx-auto mb-5 text-center">
           <h1>Enhance society and the environment instead of
             contributing negatively to them.</h1>
@@ -15,6 +16,7 @@
             <a class="ml-2" href=""><i class="far fa-calendar-alt"></i> July 1, 2019</a>
           </div>
         </div>
+
 
         <div class="single-post-text">
           <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
@@ -112,6 +114,7 @@
 
   .single-post-text {
     overflow: hidden;
+    margin-bottom: 5rem;
 
     p {
       font-family: $font-roboto;
