@@ -147,6 +147,8 @@
   }
 
   .sq-financial-report {
+    flex-grow: 1;
+    max-width: 400px;
     img {
     }
   }
@@ -155,6 +157,7 @@
     h4 {
       font-family: $font-roboto;
       font-weight: bold;
+      text-transform: capitalize;
     }
   }
 
