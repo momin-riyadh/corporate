@@ -166,15 +166,19 @@
     margin: 0 15px 30px 15px;
     flex-shrink: 0;
     align-self: flex-start;
-    @media (min-width: 575px) {
+    @media (min-width: 600px) {
       width: calc(50% - 30px);
       margin: 0 15px 30px;
     }
-    @media (min-width: 991px) {
+    @media (min-width: 960px) {
+      width: calc(33.3333% - 30px);
+      margin: 0 15px 30px;
+    }
+    @media (min-width: 1265px) {
       width: calc(25% - 30px);
       margin: 0 15px 30px;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1905px) {
       width: calc(20% - 30px);
       margin: 0 15px 30px;
     }

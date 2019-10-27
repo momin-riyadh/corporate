@@ -26,10 +26,10 @@
         <!--        Annual Report Column-->
         <div class="row">
           <div class="custom-areas align-items-center">
-            <div class="s-a-report" v-for="v in 10">
-              <img class="img-fluid" src="../assets/images/report/ar-cover@2x.jpg" alt="square">
+            <div class="s-a-report" v-for="file in files">
+              <img class="img-fluid" :src="file.imageurl" alt="square">
               <div class="s-a-report-caption text-center mt-3">
-                <h4> Annual Report 2018</h4>
+                <h4> {{file.title}}</h4>
               </div>
             </div>
 
@@ -66,7 +66,48 @@
     })
 
     export default class AnnualReport extends Vue {
-
+        public files: any = [
+            {
+                title: 'Interim Results 2018',
+                imageurl: require('../assets/images/ar-one@2x.jpg'),
+            },
+            {
+                title: 'Interim Results 2018',
+                imageurl: require('../assets/images/ar-two@2x.jpg'),
+            },
+            {
+                title: 'Interim Results 2018',
+                imageurl: require('../assets/images/ar-three@2x.jpg'),
+            },
+            {
+                title: 'Interim Results 2018',
+                imageurl: require('../assets/images/ar-four@2x.jpg'),
+            },
+            {
+                title: 'Interim Results 2018',
+                imageurl: require('../assets/images/ar-five@2x.jpg'),
+            },
+            {
+                title: 'Interim Results 2018',
+                imageurl: require('../assets/images/ar-six@2x.jpg'),
+            },
+            {
+                title: 'Interim Results 2018',
+                imageurl: require('../assets/images/ar-one@2x.jpg'),
+            },
+            {
+                title: 'Interim Results 2018',
+                imageurl: require('../assets/images/ar-two@2x.jpg'),
+            },
+            {
+                title: 'Interim Results 2018',
+                imageurl: require('../assets/images/ar-six@2x.jpg'),
+            },
+            {
+                title: 'Interim Results 2018',
+                imageurl: require('../assets/images/ar-one@2x.jpg'),
+            },
+        ];
     }
 </script>
 
@@ -101,6 +142,9 @@
   }
 
   .s-a-report {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 400px;
     img {
       border: 1rem solid #EFEFEF;
     }
@@ -118,15 +162,20 @@
     margin: 0 15px 30px 15px;
     flex-shrink: 0;
     align-self: flex-start;
-    @media (min-width: 575px) {
+    @media (min-width: 600px) {
       width: calc(50% - 30px);
       margin: 0 15px 30px;
     }
-    @media (min-width: 991px) {
+
+    @media (min-width: 960px) {
+      width: calc(33.3333% - 30px);
+      margin: 0 15px 30px;
+    }
+    @media (min-width: 1265px) {
       width: calc(25% - 30px);
       margin: 0 15px 30px;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1905px) {
       width: calc(20% - 30px);
       margin: 0 15px 30px;
     }
