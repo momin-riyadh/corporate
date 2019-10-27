@@ -41,7 +41,7 @@
               <div class="s-featured-job">
 
                 <div class="s-f-job-img">
-                  <img :src="featured.imageurl" alt="">
+                  <img :src="featured.imageurl" alt="square group">
                 </div>
 
                 <div class="s-featured-job-brief">

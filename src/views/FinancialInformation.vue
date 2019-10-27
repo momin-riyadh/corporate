@@ -24,11 +24,11 @@
         <div class="row">
           <div class="financial-areas align-items-center">
 
-            <div class="sq-financial-report" v-for="v in 10">
-              <img class="img-fluid" src="../assets/images/financial-report@2x.jpg" alt="square">
+            <div class="sq-financial-report" v-for="report in reports">
+              <img class="img-fluid" :src="report.imageurl" alt="square group">
 
               <div class="sq-f-report-caption text-center mt-3">
-                <h4> Financial Report 2018</h4>
+                <h4> {{report.title}}</h4>
               </div>
             </div>
 
@@ -90,7 +90,29 @@
         components: {Copyright, Footer, CommonBanner, Navigation},
     })
     export default class FinancialInformation extends Vue {
+        public reports: any = [
+            {
+                title: 'Earning Presentations',
+                imageurl: require('../assets/images/ep@2x.jpg'),
+            },
+            {
+                title: 'Analyst presentation',
+                imageurl: require('../assets/images/ap@2x.jpg'),
+            },
+            {
+                title: 'Slavery Act statement',
+                imageurl: require('../assets/images/sa@2x.jpg'),
+            },
+            {
+                title: 'Slavery Act statement',
+                imageurl: require('../assets/images/sas@2x.jpg'),
+            },
+            {
+                title: 'Slavery Act statement',
+                imageurl: require('../assets/images/sa@2x.jpg'),
+            },
 
+        ];
     }
 </script>
 
@@ -126,7 +148,6 @@
 
   .sq-financial-report {
     img {
-      border: 1rem solid #EFEFEF;
     }
   }
 
@@ -157,15 +178,15 @@
   }
 
 
-
   /*Milestones Area*/
 
-  .sq-milestones-area{
+  .sq-milestones-area {
     width: 100%;
     overflow: hidden;
   }
 
-  .sq-milestones{min-height: 60vh;
+  .sq-milestones {
+    min-height: 60vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -173,24 +194,26 @@
     flex-wrap: wrap;
   }
 
-  .sq-milestone-list{
+  .sq-milestone-list {
     background: #F4F4F4;
     flex-grow: 1;
-    padding:7rem;
+    padding: 7rem;
 
-    ul{
+    ul {
       margin: 0;
       padding: 0;
       list-style: none;
 
-      li{
+      li {
         list-style: disc;
         font-family: $font-roboto;
         font-size: 20px;
-        &:not(:last-child){
+
+        &:not(:last-child) {
           margin-bottom: 2rem;
         }
-        a{
+
+        a {
           text-decoration: none;
           color: #5F5F5F;
           font-family: inherit;
@@ -201,12 +224,10 @@
     }
   }
 
-  .sq-milestone-image{
+  .sq-milestone-image {
     flex-shrink: 0;
     max-width: 800px;
   }
-
-
 
 
 </style>
