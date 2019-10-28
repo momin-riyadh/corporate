@@ -62,6 +62,7 @@
 
   .common-title {
     line-height: 1;
+    margin-bottom: 1.2rem;
     color: $brand-color;
     font-family: $font-helvetica;
     font-weight: bold;
@@ -93,6 +94,7 @@
       color: #656565;
       font-size: 18px;
       text-transform: capitalize;
+      line-height:2em;
     }
   }
 

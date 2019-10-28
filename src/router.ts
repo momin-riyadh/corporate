@@ -101,5 +101,11 @@ export default new Router({
             name: 'corporate-responsibility',
             component: () => import('./views/responsibility/CorporatesResponsibility.vue'),
         },
+
+        {
+            path: '/environment-responsibility',
+            name: 'environment-responsibility',
+            component: () => import('./views/responsibility/EnvironmentalResponsibility.vue'),
+        },
     ],
 });
