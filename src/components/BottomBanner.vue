@@ -2,10 +2,10 @@
   <div class="bottom-banner-area">
     <div class="container-fluid px-5-percent">
       <div class="bottom-banner">
-        <img class="img-fluid" src="../assets/images/csr-bottom@2x.jpg" alt="">
+        <img class="img-fluid" :src="BottomImage" alt="">
         <div class="bottom-banner-text text-center">
-          <h1>Enhance society and the
-            environment of contributing
+          <h1>
+            {{BottomTitle}}
           </h1>
         </div>
 
@@ -13,15 +13,7 @@
         <div class="row justify-content-center">
           <div class="col-xl-10">
             <div class="bottom-paragraph-text text-center">
-              <p>SQUARE’s activity goes well beyond the sphere of business. As socially conscious and responsible
-                corporate
-                body SQUARE is committed to the
-                improvement of the society as a whole. Meril-Prothom Alo festival sponsored by SQUARE, has become a
-                national
-                calendar event. SQUARE helps many
-                NGO’s in their effort to make available healthcare to the disadvantage population of the country. It
-                sponsors programs to build awareness on
-                the healthcare need. SQUARE is also a major sponsor of sporting events in the country.</p>
+              <p>{{BottomText}}</p>
             </div>
           </div>
         </div>
@@ -43,19 +35,23 @@
     })
 
     export default class BottomBanner extends Vue {
-
+        @Prop() public BottomTitle!: string;
+        @Prop() public BottomText!: string;
+        @Prop() public BottomImage!: string;
     }
 </script>
 
 <style scoped lang="scss">
-  .bottom-banner-area{
+  .bottom-banner-area {
     margin-bottom: 200px;
   }
+
   .bottom-banner {
     position: relative;
     height: 50vh;
     display: block;
-    img{
+
+    img {
       height: 100%;
       width: 100%;
       object-fit: cover;

@@ -118,7 +118,7 @@
       width: calc(50% - 30px);
       margin: 0 15px 30px;
     }
-    @media (min-width: 960px) {
+    @media (min-width: 961px) {
       width: calc(33.3333% - 30px);
       margin: 0 15px 30px;
     }

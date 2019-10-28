@@ -90,6 +90,7 @@
       font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
       font-family: $font-roboto;
     }
+
     @media (min-width: 992px) {
       max-width: 1024px;
     }
