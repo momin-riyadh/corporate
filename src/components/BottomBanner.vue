@@ -50,6 +50,18 @@
     position: relative;
     height: 50vh;
     display: block;
+    &::before{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(0, 0, 0, 0.3)), color-stop(0%, rgba(0, 0, 0, 0.3)));
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3) 0%);
+    }
 
     img {
       height: 100%;
@@ -82,5 +94,9 @@
     padding: 4rem;
     color: $paragraph-color;
     font-size: $paragraph-size;
+    p{
+      font-family: $font-roboto;
+      line-height: 2em;
+    }
   }
 </style>
