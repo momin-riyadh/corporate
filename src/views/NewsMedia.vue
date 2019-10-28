@@ -154,7 +154,7 @@
       border-radius: 2px;
       display: inline-block;
       font-family: $font-roboto;
-      font-weight: bold;
+      font-weight: 500;
     }
   }
 </style>
