@@ -1,8 +1,8 @@
 <template>
   <div class="environmental-r-area">
     <Navigation/>
-    <CommonBanner v-bind:image-url="require('../../assets/images/cssr@2x.jpg')"
-                  banner-title="Corporate Social Responsibility" banner-subtitle="Employee welfare entails everything from services, facilities and benefits that are provided or done by an employer
+    <CommonBanner v-bind:image-url="require('../../assets/images/err@2x.jpg')"
+                  banner-title="Environmental responsibility" banner-subtitle="Employee welfare entails everything from services, facilities and benefits that are provided or done by an employer
  for the advantage or comfort of an employee. It is undertaken in order to"/>
 
 

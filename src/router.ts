@@ -106,6 +106,10 @@ export default new Router({
             path: '/environment-responsibility',
             name: 'environment-responsibility',
             component: () => import('./views/responsibility/EnvironmentalResponsibility.vue'),
+        },  {
+            path: '/welfare',
+            name: 'welfare',
+            component: () => import('./views/responsibility/EmployeesWelfare.vue'),
         },
     ],
 });
