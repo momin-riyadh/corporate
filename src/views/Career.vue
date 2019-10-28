@@ -272,11 +272,20 @@
   .job-category {
     ul {
       list-style: none;
-      column-count: 4;
+      column-count: 1;
       column-gap: 6rem;
       margin: 0;
       padding: 0;
       display: block;
+      @media(min-width: 961px){
+        column-count: 2;
+      }
+      @media(min-width: 1265px){
+        column-count: 3;
+      }
+      @media(min-width: 1905px){
+        column-count: 4;
+      }
 
       li {
         margin: 0;
@@ -307,6 +316,18 @@
       list-style: none;
       column-count: 4;
       column-gap: 5rem;
+      @media(min-width: 961px){
+        column-count: 2;
+      }
+
+      @media(min-width: 1265px){
+        column-count: 3;
+        column-gap: 3rem;
+      }
+      @media(min-width: 1905px){
+        column-count: 4;
+        column-gap: 5rem;
+      }
 
       > li {
         -webkit-column-break-inside: avoid;
