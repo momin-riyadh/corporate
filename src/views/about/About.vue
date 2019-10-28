@@ -74,7 +74,7 @@ growth and prosperity has been no bed of roses."/>
                     </div>
                     <div class="s-about-col image-col">
                         <div class="s-about-col-content">
-                            <img class="m-0" src="../../assets/images/achivements@2x.jpg" alt="">
+                            <img class="m-0" src="../../assets/images/achivements@2x.jpg" alt="square">
 
                         </div>
                     </div>
@@ -181,18 +181,24 @@ growth and prosperity has been no bed of roses."/>
         .text-col-content {
             padding: 30% 45px 45px 45px;
             height: 100%;
-
             text-align: left;
             vertical-align: middle;
 
             h2 {
                 font-family: $font-helvetica-bold;
+                font-size: 22px;
+                @media(min-width: 1905px){
+                   font-size: 26px;
+                }
             }
 
             p {
                 font-family: $font-roboto;
-                font-size: 20px;
+                font-size: 14px;
                 color: #656565;
+                @media(min-width: 1905px){
+                    font-size: 20px;
+                }
             }
         }
 
