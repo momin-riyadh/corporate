@@ -71,15 +71,16 @@
     <div class="container-fluid px-5-percent">
       <div class="bottom-image-grid my-5">
         <div class="first-row">
-          <img src="../assets/images/grid-one@2x.jpg" alt="square" class="img-fluid">
-          <img src="../assets/images/grid-two@2x.jpg" alt="square" class="img-fluid">
+          <img src="../assets/images/grid-one@2x.jpg" alt="square-group" class="img-fluid">
+          <img src="../assets/images/grid-two@2x.jpg" alt="square-group" class="img-fluid">
         </div>
         <div class="second-row">
-          <img src="../assets/images/grid-three@2x.jpg" alt="square" class="img-fluid">
-          <img src="../assets/images/grid-four@2x.jpg" alt="square" class="img-fluid">
+          <img src="../assets/images/grid-three@2x.jpg" alt="square-group" class="img-fluid">
+          <img src="../assets/images/grid-four@2x.jpg" alt="square-group" class="img-fluid">
         </div>
       </div>
     </div>
+
 
     <Footer/>
     <Copyright/>
@@ -314,7 +315,7 @@
       margin: 0;
       padding: 0;
       list-style: none;
-      column-count: 4;
+      column-count: 1;
       column-gap: 5rem;
       @media(min-width: 961px) {
         column-count: 2;
