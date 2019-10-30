@@ -5,15 +5,9 @@
  for the advantage or comfort of an employee. It is undertaken in order to"/>
 
     <!--    Custom Google Maps Api Integrations-->
-<!--    <div>-->
-<!--      <div class="google-map" ref="googleMap"></div>-->
-<!--      <template v-if="Boolean(this.google) && Boolean(this.map)">-->
-<!--        <slot-->
-<!--                :google="google"-->
-<!--                :map="map"-->
-<!--        />-->
-<!--      </template>-->
-<!--    </div>-->
+    <div>
+      <div id="sq-map" class="google-map" ref="googleMap"></div>
+    </div>
     <!--    End Custom Google Maps Api Integrations-->
 
     <div class="container-fluid px-5-percent mb-5">
@@ -94,13 +88,22 @@
     import Footer from '@/components/Footer.vue';
     import Copyright from '@/components/Copyright.vue';
     import CommonBanner from '@/components/CommonBanner.vue';
+    import GoogleMapsLoader from 'google-maps';
 
     @Component({
         name: 'Contact',
         components: {CommonBanner, Copyright, Footer, Navigation},
     })
     export default class Contact extends Vue {
+        public mounted() {
+            GoogleMapsLoader.load(function (google: any) {
+                const map = new google.maps.Map(document.getElementById('sq-map'), {
+                    zoom: 15,
+                    center: new google.maps.LatLng(21.139808079490507, 79.07690763473511),
+                });
+            });
 
+        }
     }
 </script>
 
@@ -297,4 +300,9 @@
     transform-origin: bottom left;
   }
 
+  #sq-map {
+    height: 500px;
+    width: 100%;
+    display: block;
+  }
 </style>
