@@ -5,7 +5,7 @@
                   banner-title="Corporate Social Responsibility" banner-subtitle="Employee welfare entails everything from services, facilities and benefits that are provided or done by an employer
  for the advantage or comfort of an employee. It is undertaken in order to"/>
 
-    <CommonParagraph v-bind:ParagraphImage="require('../../assets/images/csr@2x.jpg')"
+    <CommonParagraph v-bind:ParagraphImage="require('../../assets/images/school.jpg')"
       ParagraphTitle="Looking beyond the horizon"
                      ParagraphSubtitle="Leading pharmaceutical industry of Bangladesh"
 
