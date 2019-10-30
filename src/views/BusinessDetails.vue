@@ -8,14 +8,13 @@ and honesty. Maybe it’s our family orientation, but we think the most satisfyi
 
 
     <CommonParagraph
-            paragraph-title="Looking beyond the horizon"
-            paragraph-sub-title="Leading pharmaceutical industry of Bangladesh"
-            paragraph-content=" SQUARE today symbolizes a name – a state of mind. But its journey to the growth and prosperity has been no bed of roses. From the inception in 1958, it has today burgeoned into one of the top line conglomerates in Bangladesh. Square Pharmaceuticals Ltd., the flagship company, is holding the strong leadership position in the pharmaceutical industry of Bangladesh since 1985 and is now on its way to becoming a high performance global player.
-
-
-SQUARE Pharmaceuticals Limited is the largest pharmaceutical company in Bangladesh and it has been continuously in the 1st position among all national and multinational companies since 1985. It was established in 1958, converted into a public limited company in 1991 and listed with stock exchanges in 1995. The turnover of Square Pharma was Taka 45.88 Billion (US$ 540 million) with about 16.95% market share having a growth rate of about 8.52% (July 2017– June 2018). "
+            v-bind:ParagraphImage="require('../assets/images/pharma.jpg')"
+            ParagraphTitle="Looking beyond the horizon"
+            ParagraphSubtitle="Leading pharmaceutical industry of Bangladesh"
+            v-bind:paragraph-contents="['In a world in which environmental and social responsibility have become serious concerns, all manufacturers need to understand the environmental impact of  heir products. Life cycle assessments (LCAs), which evaluate the environmental impact of the product from the production of raw materials through to final  disposal, have been performed for all categories of absorbent hygiene products. Across all categories, product improvements in recent decades did not only lead ',
+                     'To better performance and improved skin health, but also have resulted in reduced weight of both products and packaging, resulting in substantially reduced environmental impact compared to typical disposable products of the 1980s (EDANA sustainability report, 2007).',
+                     'Respect the environment, making rational use of natural resources and taking steps to prevent pollution from the different processes involved in our industrial operations. Promote the sustainable use of raw materials and natural resources. Introduce guide lines for continuously improving our environmental performance. Introduce ']"
     />
-
 
     <Footer/>
     <Copyright/>
@@ -30,10 +29,11 @@ SQUARE Pharmaceuticals Limited is the largest pharmaceutical company in Banglade
     import Footer from '@/components/Footer.vue';
     import Copyright from '@/components/Copyright.vue';
     import CommonParagraph from '@/components/CommonParagraph.vue';
+    import BottomBanner from '@/components/BottomBanner.vue';
 
     @Component({
         name: 'BusinessDetails',
-        components: {CommonParagraph, Copyright, Footer, CommonBanner, Navigation},
+        components: {CommonParagraph, Copyright, Footer, CommonBanner, Navigation, BottomBanner},
     })
 
     export default class BusinessDetails extends Vue {
