@@ -8,7 +8,7 @@
     <div class="container-fluid px-5-percent ">
       <div class="sq-map-area">
         <div id="sq-map" class="google-map" ref="googleMap"></div>
-        <div class="sq-map-form col-md-3">
+        <div class="sq-map-form">
           <h1>Get In Touch</h1>
           <div class="d-block map-radio">
             <el-radio v-model="radio1" label="1">Are you looking for an industry specific solutions ?</el-radio>
@@ -19,7 +19,7 @@
           <div class="d-block map-radio">
             <el-radio v-model="radio1" label="3">Any others solutions ?</el-radio>
           </div>
-          <h3>Select industry <i> (Optional) </i></h3>
+          <h3>Select Industry <i> (Optional) </i></h3>
           <div>
 
           </div>
@@ -126,9 +126,146 @@
         public mounted() {
             GoogleMapsLoader.load(function (google: any) {
                 const map = new google.maps.Map(document.getElementById('sq-map'), {
-                    zoom: 15,
-                    center: new google.maps.LatLng(21.139808079490507, 79.07690763473511),
-                });
+                        zoom: 15,
+                        center: new google.maps.LatLng(21.139808079490507, 79.07690763473511),
+                    },
+
+                    {
+                        featureType: "administrative",
+                        elementType: "all",
+                        stylers: [
+                            {
+                                visibility: "on"
+                            }
+                        ]
+                    },
+                    {
+                        featureType: "administrative.country",
+                        elementType: "geometry",
+                        stylers: [
+                            {
+                                visibility: "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape.man_made",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape.natural.terrain",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "saturation": "7"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.attraction",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.business",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.government",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.medical",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.place_of_worship",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "saturation": "10"
+                            }
+                        ]
+                    }
+                );
             });
         }
     }
@@ -327,24 +464,30 @@
     transform-origin: bottom left;
   }
 
-  #sq-map {
+  .sq-map-area {
     position: relative;
+    z-index: 2;
+  }
+
+  #sq-map {
     height: 500px;
     max-width: 100%;
     display: block;
     background: #EFEFEF;
-    padding: 2rem !important;
+    padding: 1rem !important;
     margin-bottom: 3rem;
   }
 
   .sq-map-form {
-    height: 470px;
+    min-width: 500px;
+    height: 420px;
     margin: 1.5rem 0 1.5rem 1.5rem;
     background: #2C2C2C;
     padding: 1.8rem;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 1rem;
+    bottom: 1rem;
+    top: 1rem;
 
     h1 {
       color: $white-color;
