@@ -5,8 +5,26 @@
  for the advantage or comfort of an employee. It is undertaken in order to"/>
 
     <!--    Custom Google Maps Api Integrations-->
-    <div>
+    <div class="container-fluid px-5-percent ">
       <div id="sq-map" class="google-map" ref="googleMap"></div>
+
+      <div class="sq-map-form col-md-3">
+        <h1>Get In Touch</h1>
+        <div class="d-block map-radio">
+          <el-radio v-model="radio1" label="1">Are you looking for an industry specific solutions ?</el-radio>
+        </div>
+        <div class="d-block map-radio my-3">
+          <el-radio v-model="radio1" label="2">Are you looking for a specific product ?</el-radio>
+        </div>
+        <div class="d-block map-radio">
+          <el-radio v-model="radio1" label="3">Any others solutions ?</el-radio>
+        </div>
+        <h3>Select industry <i>(Optional)</i></h3>
+        <div>
+
+        </div>
+      </div>
+
     </div>
     <!--    End Custom Google Maps Api Integrations-->
 
@@ -95,6 +113,14 @@
         components: {CommonBanner, Copyright, Footer, Navigation},
     })
     export default class Contact extends Vue {
+        public data() {
+            return {
+                radio1: '1',
+                radio2: '1',
+                radio3: '1',
+            };
+        }
+
         public mounted() {
             GoogleMapsLoader.load(function (google: any) {
                 const map = new google.maps.Map(document.getElementById('sq-map'), {
@@ -102,7 +128,6 @@
                     center: new google.maps.LatLng(21.139808079490507, 79.07690763473511),
                 });
             });
-
         }
     }
 </script>
@@ -301,8 +326,39 @@
   }
 
   #sq-map {
+    position: relative;
     height: 500px;
-    width: 100%;
+    max-width: 100%;
     display: block;
+    background: #EFEFEF;
+    padding: 2rem !important;
+    margin-bottom: 3rem;
+  }
+
+  .sq-map-form {
+    height: 470px;
+    margin: 1.5rem 0 1.5rem 1.5rem;
+    background: #2C2C2C;
+    padding: 1.8rem;
+
+    h1 {
+      color: $white-color;
+      font-family: $font-helvetica-bold;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      color: $white-color;
+      font-family: $font-helvetica-bold;
+      margin: 1rem 0;
+      i{
+        font-size: small;
+      }
+    }
+  }
+
+  .map-radio {
+    background: #222222;
+    padding: 1rem .7rem;
   }
 </style>
