@@ -6,24 +6,26 @@
 
     <!--    Custom Google Maps Api Integrations-->
     <div class="container-fluid px-5-percent ">
-      <div id="sq-map" class="google-map" ref="googleMap"></div>
+      <div class="sq-map-area">
+        <div id="sq-map" class="google-map" ref="googleMap"></div>
+        <div class="sq-map-form col-md-3">
+          <h1>Get In Touch</h1>
+          <div class="d-block map-radio">
+            <el-radio v-model="radio1" label="1">Are you looking for an industry specific solutions ?</el-radio>
+          </div>
+          <div class="d-block map-radio my-3">
+            <el-radio v-model="radio1" label="2">Are you looking for a specific product ?</el-radio>
+          </div>
+          <div class="d-block map-radio">
+            <el-radio v-model="radio1" label="3">Any others solutions ?</el-radio>
+          </div>
+          <h3>Select industry <i> (Optional) </i></h3>
+          <div>
 
-      <div class="sq-map-form col-md-3">
-        <h1>Get In Touch</h1>
-        <div class="d-block map-radio">
-          <el-radio v-model="radio1" label="1">Are you looking for an industry specific solutions ?</el-radio>
-        </div>
-        <div class="d-block map-radio my-3">
-          <el-radio v-model="radio1" label="2">Are you looking for a specific product ?</el-radio>
-        </div>
-        <div class="d-block map-radio">
-          <el-radio v-model="radio1" label="3">Any others solutions ?</el-radio>
-        </div>
-        <h3>Select industry <i> (Optional) </i> </h3>
-        <div>
-
+          </div>
         </div>
       </div>
+
 
     </div>
     <!--    End Custom Google Maps Api Integrations-->
@@ -340,6 +342,9 @@
     margin: 1.5rem 0 1.5rem 1.5rem;
     background: #2C2C2C;
     padding: 1.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 
     h1 {
       color: $white-color;
@@ -351,7 +356,8 @@
       color: $white-color;
       font-family: $font-helvetica-bold;
       margin: 1rem 0;
-      i{
+
+      i {
         font-size: medium;
         font-weight: normal;
         font-family: $font-roboto;
