@@ -19,7 +19,7 @@
         <div class="d-block map-radio">
           <el-radio v-model="radio1" label="3">Any others solutions ?</el-radio>
         </div>
-        <h3>Select industry <i>(Optional)</i></h3>
+        <h3>Select industry <i> (Optional) </i> </h3>
         <div>
 
         </div>
@@ -352,7 +352,9 @@
       font-family: $font-helvetica-bold;
       margin: 1rem 0;
       i{
-        font-size: small;
+        font-size: medium;
+        font-weight: normal;
+        font-family: $font-roboto;
       }
     }
   }
