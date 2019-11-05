@@ -182,7 +182,7 @@
                     slidesPerView: 1,
                     spaceBetween: 20,
                 },
-                // when window width is >= 480px
+
                 960: {
                     slidesPerView: 2,
                     spaceBetween: 30,
@@ -195,6 +195,10 @@
 
                 1904: {
                     slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                2400: {
+                    slidesPerView: 5,
                     spaceBetween: 40,
                 },
             },
