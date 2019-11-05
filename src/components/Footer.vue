@@ -157,7 +157,6 @@
       margin: 0;
       padding: 0;
       margin-top: -15px;
-
     }
 
     li {

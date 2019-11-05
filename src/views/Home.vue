@@ -80,6 +80,39 @@
       </div>
     </div>
 
+
+    <!--Square home page bottom slider component for latest news views-->
+    <div class="container-fluid px-5-percent">
+      <div class="row">
+        <div class="col-md-5 mx-auto">
+          <div class="sq-h-news-header text-center">
+            <h1>
+              Latest News and Events
+            </h1>
+            <p>We strive to go above and beyond for our clients, fostering a relationship built on trust,  confidence
+              and honesty. Maybe it’s our family orientation, but we think the most satisfying</p>
+          </div>
+        </div>
+      </div>
+
+      <swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback">
+        <!-- slides -->
+        <swiper-slide>I'm Slide 1</swiper-slide>
+        <swiper-slide>I'm Slide 2</swiper-slide>
+        <swiper-slide>I'm Slide 3</swiper-slide>
+        <swiper-slide>I'm Slide 4</swiper-slide>
+        <swiper-slide>I'm Slide 5</swiper-slide>
+        <swiper-slide>I'm Slide 6</swiper-slide>
+        <swiper-slide>I'm Slide 7</swiper-slide>
+        <!-- Optional controls -->
+        <div class="swiper-pagination" slot="pagination"></div>
+        <div class="swiper-button-prev" slot="button-prev"></div>
+        <div class="swiper-button-next" slot="button-next"></div>
+<!--        <div class="swiper-scrollbar" slot="scrollbar"></div>-->
+      </swiper>
+    </div>
+    <!--    End-->
+
     <Footer/>
     <Copyright/>
   </div>
@@ -91,6 +124,8 @@
     import Footer from '@/components/Footer.vue';
     import Copyright from '@/components/Copyright.vue';
     import CommonBanner from '@/components/CommonBanner.vue';
+    import 'swiper/dist/css/swiper.css';
+    import {swiper, swiperSlide} from 'vue-awesome-swiper';
 
     @Component({
         name: 'Home',
@@ -99,9 +134,20 @@
             Copyright,
             Footer,
             Navigation,
+            swiper,
+            swiperSlide
         },
     })
     export default class Home extends Vue {
+        swiperOption: object = {
+            slidesPerView: 3,
+            slidesPerColumn: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        };
     }
 </script>
 
@@ -284,6 +330,31 @@
       font-family: $font-roboto;
       color: $paragraph-color;
       font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+    }
+  }
+
+  .sq-h-news-header{
+    max-width: 400px;
+    display: inline;
+    h1{
+      font-family: $font-helvetica-bold;
+      position: relative;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      &::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom:0;
+        width: 80px;
+        height: 5px;
+        background: $brand-color;
+      }
+    }
+    p{
+      font-family: $font-roboto;
+      color: #6D6D6D;
     }
   }
 </style>
