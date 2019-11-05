@@ -82,7 +82,7 @@
 
 
     <!--Square home page bottom slider component for latest news views-->
-    <div class="container-fluid px-5-percent">
+    <div class="container-fluid px-5-percent ">
       <div class="row">
         <div class="col-md-5 mx-auto">
           <div class="sq-h-news-header text-center">
@@ -95,39 +95,42 @@
         </div>
       </div>
 
-      <swiper :options="swiperOption" ref="swiper" @someSwiperEvent="callback">
-        <!-- slides -->
-        <swiper-slide>
-          <img src="../assets/images/sl-one.jpg" alt="square">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="../assets/images/sl-two.jpg" alt="square">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="../assets/images/sl-three.jpg" alt="square">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="../assets/images/sl-one.jpg" alt="square">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="../assets/images/sl-two.jpg" alt="square">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="../assets/images/sl-three.jpg" alt="square">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="../assets/images/sl-two.jpg" alt="square">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="../assets/images/sl-three.jpg" alt="square">
-        </swiper-slide>
+      <div class="sq-h-slider-area my-5">
 
-        <!-- Optional controls -->
-<!--        <div class="swiper-pagination" slot="pagination"></div>-->
-        <div class="swiper-button-prev" slot="button-prev"></div>
-        <div class="swiper-button-next" slot="button-next"></div>
-        <!--        <div class="swiper-scrollbar" slot="scrollbar"></div>-->
-      </swiper>
+        <swiper :options="swiperOption">
+          <!-- slides -->
+          <swiper-slide>
+            <img src="../assets/images/sl-one.jpg" alt="square">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="../assets/images/sl-two.jpg" alt="square">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="../assets/images/sl-three.jpg" alt="square">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="../assets/images/sl-one.jpg" alt="square">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="../assets/images/sl-two.jpg" alt="square">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="../assets/images/sl-three.jpg" alt="square">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="../assets/images/sl-two.jpg" alt="square">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="../assets/images/sl-three.jpg" alt="square">
+          </swiper-slide>
+
+          <!-- Optional controls -->
+          <!--        <div class="swiper-pagination" slot="pagination"></div>-->
+          <div class="swiper-button-prev" slot="button-prev"></div>
+          <div class="swiper-button-next" slot="button-next"></div>
+          <!--        <div class="swiper-scrollbar" slot="scrollbar"></div>-->
+        </swiper>
+      </div>
     </div>
     <!--    End-->
 
@@ -153,24 +156,28 @@
             Footer,
             Navigation,
             swiper,
-            swiperSlide
+            swiperSlide,
         },
     })
     export default class Home extends Vue {
-       public data() {
-            return {
-                swiperOption: {
-                    direction: 'horizontal',
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                    mousewheel: true,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true
-                    }
-                }
+
+        public swiperOption: any = {
+            slidesPerView: '3',
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            fadeEffect: {
+                crossFade: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
             }
-        }
+        };
+
     }
 </script>
 
