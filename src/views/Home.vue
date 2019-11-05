@@ -65,7 +65,7 @@
     </div>
 
 
-    <div class="container-fluid px-5-percent">
+    <div class="container-fluid px-5-percent overflow-hidden">
       <div class="sq-home-compliance-area">
         <img src="../assets/images/compliance.jpg" alt="" class="img-fluid">
         <div class="compliance-text">
@@ -82,7 +82,7 @@
 
 
     <!--Square home page bottom slider component for latest news views-->
-    <div class="container-fluid px-5-percent overflow-hidden">
+    <div class="container-fluid px-5-percent sq-h-news-area">
       <div class="row">
         <div class="col-md-5 mx-auto">
           <div class="sq-h-news-header text-center">
@@ -95,7 +95,7 @@
         </div>
       </div>
 
-      <div class="sq-h-slider-area my-5 overflow-hidden">
+      <div class="sq-h-slider-area mt-5 overflow-hidden">
 
         <swiper :options="swiperOption">
           <!-- slides -->
@@ -416,4 +416,14 @@
     }
   }
 
+  .sq-h-news-area {
+    margin: 60px 0;
+    @media(min-width:1905px) {
+      margin: 120px 0;
+    }
+  }
+
+  .swiper-slide{
+    overflow: hidden;
+  }
 </style>
