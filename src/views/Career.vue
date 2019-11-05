@@ -18,7 +18,7 @@
           <ul>
             <li v-for="{title, vacancy, index} in category">
               <router-link to="/career-details">
-                {{ title}}
+                {{ title }}
                 <span> ({{vacancy}})</span>
               </router-link>
             </li>

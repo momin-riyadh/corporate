@@ -1,7 +1,7 @@
 <template>
   <div class="sq-home-area">
     <Navigation/>
-    <CommonBanner/>
+    <FullpageAnimation/>
 
     <div class="container-fluid px-5-percent">
       <div class="sq-h-content-area">
@@ -100,10 +100,19 @@
         <swiper :options="swiperOption">
           <!-- slides -->
           <swiper-slide>
-            <img src="../assets/images/sl-one.jpg" alt="square">
+            <div class="news-thumb-area">
+              <img src="../assets/images/sl-one.jpg" alt="square">
+              <div class="news-thumb-caption">
+                <small class="news-thumb-date"> July 19, 2018 </small>
+                <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
+              </div>
+            </div>
+
           </swiper-slide>
           <swiper-slide>
-            <img src="../assets/images/sl-two.jpg" alt="square">
+            <div class="news-thumb-area">
+              <img src="../assets/images/sl-two.jpg" alt="square">
+            </div>
           </swiper-slide>
           <swiper-slide>
             <img src="../assets/images/sl-three.jpg" alt="square">
@@ -147,10 +156,12 @@
     import CommonBanner from '@/components/CommonBanner.vue';
     import 'swiper/dist/css/swiper.css';
     import {swiper, swiperSlide} from 'vue-awesome-swiper';
+    import FullpageAnimation from "@/components/FullpageAnimation.vue";
 
     @Component({
         name: 'Home',
         components: {
+            FullpageAnimation,
             CommonBanner,
             Copyright,
             Footer,
@@ -418,12 +429,20 @@
 
   .sq-h-news-area {
     margin: 60px 0;
-    @media(min-width:1905px) {
+    @media(min-width: 1905px) {
       margin: 120px 0;
     }
   }
 
-  .swiper-slide{
+
+  .news-thumb-area {
     overflow: hidden;
+    img {
+
+    }
+  }
+
+  .news-thumb-caption {
+
   }
 </style>
