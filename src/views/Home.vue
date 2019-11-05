@@ -89,26 +89,44 @@
             <h1>
               Latest News and Events
             </h1>
-            <p>We strive to go above and beyond for our clients, fostering a relationship built on trust,  confidence
+            <p>We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence
               and honesty. Maybe it’s our family orientation, but we think the most satisfying</p>
           </div>
         </div>
       </div>
 
-      <swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback">
+      <swiper :options="swiperOption" ref="swiper" @someSwiperEvent="callback">
         <!-- slides -->
-        <swiper-slide>I'm Slide 1</swiper-slide>
-        <swiper-slide>I'm Slide 2</swiper-slide>
-        <swiper-slide>I'm Slide 3</swiper-slide>
-        <swiper-slide>I'm Slide 4</swiper-slide>
-        <swiper-slide>I'm Slide 5</swiper-slide>
-        <swiper-slide>I'm Slide 6</swiper-slide>
-        <swiper-slide>I'm Slide 7</swiper-slide>
+        <swiper-slide>
+          <img src="../assets/images/sl-one.jpg" alt="square">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../assets/images/sl-two.jpg" alt="square">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../assets/images/sl-three.jpg" alt="square">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../assets/images/sl-one.jpg" alt="square">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../assets/images/sl-two.jpg" alt="square">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../assets/images/sl-three.jpg" alt="square">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../assets/images/sl-two.jpg" alt="square">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../assets/images/sl-three.jpg" alt="square">
+        </swiper-slide>
+
         <!-- Optional controls -->
-        <div class="swiper-pagination" slot="pagination"></div>
+<!--        <div class="swiper-pagination" slot="pagination"></div>-->
         <div class="swiper-button-prev" slot="button-prev"></div>
         <div class="swiper-button-next" slot="button-next"></div>
-<!--        <div class="swiper-scrollbar" slot="scrollbar"></div>-->
+        <!--        <div class="swiper-scrollbar" slot="scrollbar"></div>-->
       </swiper>
     </div>
     <!--    End-->
@@ -139,15 +157,20 @@
         },
     })
     export default class Home extends Vue {
-        swiperOption: object = {
-            slidesPerView: 3,
-            slidesPerColumn: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
+       public data() {
+            return {
+                swiperOption: {
+                    direction: 'horizontal',
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    mousewheel: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true
+                    }
+                }
             }
-        };
+        }
     }
 </script>
 
@@ -333,27 +356,32 @@
     }
   }
 
-  .sq-h-news-header{
+  .sq-h-news-header {
     max-width: 400px;
     display: inline;
-    h1{
+
+    h1 {
       font-family: $font-helvetica-bold;
       position: relative;
+      font-size: calc(24px + (40 - 24) * ((100vw - 300px) / (1600 - 300)));
       margin-bottom: 20px;
       padding-bottom: 20px;
-      &::after{
+
+      &::after {
         content: "";
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom:0;
+        bottom: 0;
         width: 80px;
         height: 5px;
         background: $brand-color;
       }
     }
-    p{
+
+    p {
       font-family: $font-roboto;
+      font-size: calc(15px + (15 - 13) * ((100vw - 300px) / (1600 - 300)));
       color: #6D6D6D;
     }
   }
