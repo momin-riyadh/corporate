@@ -40,7 +40,7 @@
           <div class="b-of-d-list align-items-center">
             <div class="member-of-board" v-for="v in 10">
               <img class="img-fluid" src="../../assets/images/dir_one@2x.jpg" alt="">
-              <div class="b-of-d-caption mt-3">
+              <div class="b-of-d-caption">
                 <div class="b-of-d-title">
                   <h3>Amith Richard</h3>
                   <p>Executive Chairman</p>
