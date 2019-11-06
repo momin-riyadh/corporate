@@ -79,6 +79,8 @@
   .footer {
     background: $footer-bg;
     padding: 4rem 0;
+    margin-top: 50px;
+    overflow: hidden;
   }
 
   .footer-area {

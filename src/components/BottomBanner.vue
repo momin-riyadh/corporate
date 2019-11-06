@@ -3,7 +3,7 @@
     <div class="container-fluid px-5-percent">
       <div class="bottom-banner">
         <img class="img-fluid" :src="BottomImage" alt="">
-        <div class="bottom-banner-text text-center">
+        <div class="col-md-6 mx-auto bottom-banner-text text-center">
           <h1>
             {{BottomTitle}}
           </h1>
@@ -43,13 +43,14 @@
 
 <style scoped lang="scss">
   .bottom-banner-area {
-    margin-bottom: 200px;
+
   }
 
   .bottom-banner {
     position: relative;
     height: 50vh;
     display: block;
+    margin-bottom:250px;
     &::before{
       width: 100%;
       height: 100%;
@@ -71,7 +72,6 @@
   }
 
   .bottom-banner-text {
-    max-width: 1024px;
     position: absolute;
     left: 50%;
     top: 40%;

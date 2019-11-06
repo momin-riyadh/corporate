@@ -66,7 +66,6 @@
     flex-grow: 1;
     width: 100%;
     max-width: 400px;
-    min-width: 350px;
   }
   .sq-business-logo-area{
     width: calc(100% - 30px);
