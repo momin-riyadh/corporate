@@ -3,33 +3,24 @@
     <div class="management-content-area ml-0 ml-md-5">
 
       <div class="management-content-header">
-        <div class="row align-items-center">
-          <div class="col-12 col-lg-6 col-xl-7">
-            <div class="sq-management-people-content">
+        <div class="sq-management-people-content">
 
-              <h1>Samson H Chowdhury</h1>
-              <h5>Founder Chairman</h5>
+          <h1>Samson H Chowdhury</h1>
+          <h5>Founder Chairman</h5>
 
-              <blockquote class="sq-blockquote">
-                Samson H Chowdhury was born on 25 September, 1925. After completing education in
-                India he returned to the then East Pakistan and settled at Ataikula village in Pabna district
-                where his father was working as a Medical Officer in an outdoor dispensary.
-              </blockquote>
+          <blockquote class="sq-blockquote">
+            Samson H Chowdhury was born on 25 September, 1925. After completing education in
+            India he returned to the then East Pakistan and settled at Ataikula village in Pabna district
+            where his father was working as a Medical Officer in an outdoor dispensary.
+          </blockquote>
 
-              <el-button-group>
-                <el-button type="primary">Learn More</el-button>
-                <el-button type="primary"><i class="el-icon-plus"></i></el-button>
-              </el-button-group>
-            </div>
-
-          </div>
-
-          <div class="col-12 col-md-8 col-lg-4 col-xl-5 m-auto mr-lg-0 ml-lg-auto pt-5 pt-lg-0">
-            <div class="sq-management-people float-right">
-              <img alt="image" class="img-fluid" src="../../assets/images/chairman@2x.jpg">
-            </div>
-          </div>
-
+          <el-button-group>
+            <el-button type="primary">Learn More</el-button>
+            <el-button type="primary"><i class="el-icon-plus"></i></el-button>
+          </el-button-group>
+        </div>
+        <div class="sq-management-people float-right">
+          <img alt="image" class="img-fluid" src="../../assets/images/chairman@2x.jpg">
         </div>
       </div>
 
@@ -96,7 +87,7 @@
                 name: 'Mahamud Abbas',
                 designation: 'Executive',
                 imageurl: require('../../assets/images/dir_one@2x.jpg'),
-            },      {
+            }, {
                 name: 'Mahamud Abbas',
                 designation: 'Executive',
                 imageurl: require('../../assets/images/dir_one@2x.jpg'),
@@ -131,17 +122,18 @@
   }
 
   .management-content-header {
-    height: 400px;
+    min-height: 400px;
     background: #222222;
+    display: flex;
   }
 
   .sq-management-people-content {
     padding: 4rem;
+    flex-grow: 1;
 
     h1 {
       color: $white-color;
       font-family: $font-roboto;
-
     }
 
     h5 {
@@ -163,6 +155,10 @@
   }
 
   .sq-management-people {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
       width: auto;
       height: 400px;
