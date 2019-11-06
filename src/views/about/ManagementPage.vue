@@ -38,12 +38,12 @@
         <div class="b-of-d-area">
 
           <div class="b-of-d-list align-items-center">
-            <div class="member-of-board" v-for="v in 10">
-              <img class="img-fluid" src="../../assets/images/dir_one@2x.jpg" alt="">
+            <div class="member-of-board" v-for="management in managements">
+              <img class="img-fluid" :src="management.imageurl" alt="">
               <div class="b-of-d-caption">
                 <div class="b-of-d-title">
-                  <h3>Amith Richard</h3>
-                  <p>Executive Chairman</p>
+                  <h3>{{management.name}}</h3>
+                  <p>{{management.designation}}</p>
                 </div>
                 <div class="b-of-d-link">
                   <i class="el-icon-plus"></i>
@@ -71,7 +71,33 @@
 
     })
     export default class ManagementPage extends Vue {
-
+        public managements: any = [
+            {
+                name: 'Mahamud Abbas',
+                designation: 'Executive',
+                imageurl: require('../../assets/images/dir_one@2x.jpg'),
+            }, {
+                name: 'Mahamud Abbas',
+                designation: 'Executive',
+                imageurl: require('../../assets/images/dir_one@2x.jpg'),
+            }, {
+                name: 'Mahamud Abbas',
+                designation: 'Executive',
+                imageurl: require('../../assets/images/dir_one@2x.jpg'),
+            }, {
+                name: 'Mahamud Abbas',
+                designation: 'Executive',
+                imageurl: require('../../assets/images/dir_one@2x.jpg'),
+            }, {
+                name: 'Mahamud Abbas',
+                designation: 'Executive',
+                imageurl: require('../../assets/images/dir_one@2x.jpg'),
+            }, {
+                name: 'Mahamud Abbas',
+                designation: 'Executive',
+                imageurl: require('../../assets/images/dir_one@2x.jpg'),
+            },
+        ];
     }
 </script>
 
@@ -150,21 +176,33 @@
     }
   }
 
-  .b-of-d-caption{
+  .b-of-d-caption {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:#EBEBEB;
-    .b-of-d-link{
+    background: #EBEBEB;
+
+    .b-of-d-link {
       background: $brand-color;
-      i{
+
+      i {
         font-size: 20px;
         color: $white-color;
         padding: 1.7em;
       }
     }
-    .b-of-d-title{
-      padding: .8rem .5rem 0;
+
+    .b-of-d-title {
+      padding: .8rem;
+
+      h3 {
+        margin-bottom: 5px;
+        line-height: 1;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
     }
   }
 
