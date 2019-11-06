@@ -145,6 +145,7 @@
     flex-grow: 1;
     width: 100%;
     max-width: 400px;
+
     img {
       border: 1rem solid #EFEFEF;
     }
