@@ -175,7 +175,7 @@
         public swiperOption: any = {
             slidesPerView: '3',
             spaceBetween: 30,
-            mousewheel: true,
+            mousewheel: false,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
