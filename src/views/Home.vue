@@ -45,7 +45,7 @@
                   flows by their place far far away.
                 </p>
               </div>
-              <div class="col-12 col-md-6 sq-mission-text pl-0 pl-md-5">
+              <div class="col-12 col-md-6 sq-mission-text pl-3 pl-md-5">
                 <h3>Our Vision</h3>
                 <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, far far away, behind the
                   word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated
@@ -156,7 +156,7 @@
     import CommonBanner from '@/components/CommonBanner.vue';
     import 'swiper/dist/css/swiper.css';
     import {swiper, swiperSlide} from 'vue-awesome-swiper';
-    import FullpageAnimation from "@/components/FullpageAnimation.vue";
+    import FullpageAnimation from '@/components/FullpageAnimation.vue';
 
     @Component({
         name: 'Home',
@@ -277,8 +277,11 @@
 
   .sq-mission-area {
     background: #F4F4F4;
-    padding: 95px;
+    padding: 30px;
     margin-bottom: calc(3% + 5vh);
+    @media(min-width: 600px) {
+      padding: 95px;
+    }
   }
 
   .sq-mission-title {
@@ -293,13 +296,17 @@
       &::before {
         content: "";
         position: absolute;
-        height: 5px;
+        height: 0;
         border-bottom: 4px solid $brand-color;
         top: 50%;
         transform: translateY(-50%);
-        width: 80px;
+        width: 0;
         right: 100%;
         margin-right: 15px;
+        @media(min-width: 600px) {
+          width: 80px;
+          height: 5px;
+        }
       }
     }
 
@@ -437,6 +444,7 @@
 
   .news-thumb-area {
     overflow: hidden;
+
     img {
 
     }
