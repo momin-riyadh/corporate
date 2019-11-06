@@ -214,7 +214,6 @@
 
     .b-of-d-title {
       padding:0 0.8rem;
-
       h3 {
         margin-bottom: 5px;
         line-height: 1;
