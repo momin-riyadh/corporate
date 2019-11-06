@@ -77,21 +77,45 @@
                 designation: 'Executive',
                 imageurl: require('../../assets/images/dir_one@2x.jpg'),
             }, {
-                name: 'Mahamud Abbas',
+                name: 'Julkar Nayem',
+                designation: 'Head of Idea',
+                imageurl: require('../../assets/images/dir_two@2x.jpg'),
+            }, {
+                name: 'Alex Cross',
+                designation: 'Field Engineer',
+                imageurl: require('../../assets/images/dir_three@2x.jpg'),
+            }, {
+                name: 'Kashaf Martuza',
+                designation: 'Serverside Engineer',
+                imageurl: require('../../assets/images/dir_four@2x.jpg'),
+            }, {
+                name: 'Redowan Rabbi',
                 designation: 'Executive',
-                imageurl: require('../../assets/images/dir_one@2x.jpg'),
+                imageurl: require('../../assets/images/dir_five@2x.jpg'),
             }, {
                 name: 'Mahamud Abbas',
                 designation: 'Executive',
                 imageurl: require('../../assets/images/dir_one@2x.jpg'),
-            }, {
+            },      {
                 name: 'Mahamud Abbas',
                 designation: 'Executive',
                 imageurl: require('../../assets/images/dir_one@2x.jpg'),
             }, {
-                name: 'Mahamud Abbas',
+                name: 'Julkar Nayem',
+                designation: 'Head of Idea',
+                imageurl: require('../../assets/images/dir_two@2x.jpg'),
+            }, {
+                name: 'Alex Cross',
+                designation: 'Field Engineer',
+                imageurl: require('../../assets/images/dir_three@2x.jpg'),
+            }, {
+                name: 'Kashaf Martuza',
+                designation: 'Serverside Engineer',
+                imageurl: require('../../assets/images/dir_four@2x.jpg'),
+            }, {
+                name: 'Redowan Rabbi',
                 designation: 'Executive',
-                imageurl: require('../../assets/images/dir_one@2x.jpg'),
+                imageurl: require('../../assets/images/dir_five@2x.jpg'),
             }, {
                 name: 'Mahamud Abbas',
                 designation: 'Executive',
