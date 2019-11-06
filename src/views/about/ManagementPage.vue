@@ -213,7 +213,7 @@
     }
 
     .b-of-d-title {
-      padding: .8rem;
+      padding:0 0.8rem;
 
       h3 {
         margin-bottom: 5px;
