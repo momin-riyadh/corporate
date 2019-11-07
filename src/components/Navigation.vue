@@ -1,41 +1,43 @@
 <template>
-  <div class="container-fluid px-5-percent">
-    <div class="navigation-area">
+  <div class="navigation-area">
+    <div class="container-fluid px-5-percent">
+      <div class="navigation-main">
 
-      <!--    Square logo-->
-      <div class="sq-logo">
-        <router-link to="/" href="">
-          <img src="../assets/images/logo.svg" alt="">
-        </router-link>
+        <!--    Square logo-->
+        <div class="sq-logo">
+          <router-link to="/" href="">
+            <img src="../assets/images/logo.svg" alt="">
+          </router-link>
+        </div>
+
+        <!--    Right Navigation-->
+        <div class="main-navigation">
+          <ul>
+            <li>
+              <router-link to="/about">about</router-link>
+            </li>
+            <li>
+              <router-link to="/business">business</router-link>
+            </li>
+            <li>
+              <router-link to="/corporate-responsibility">responsibility</router-link>
+            </li>
+            <li>
+              <router-link to="/stock-information">investors</router-link>
+            </li>
+            <li>
+              <router-link to="/career">careers</router-link>
+            </li>
+            <li>
+              <router-link to="/news">news & media</router-link>
+            </li>
+            <li>
+              <router-link to="/contact">contact</router-link>
+            </li>
+          </ul>
+        </div>
+
       </div>
-
-      <!--    Right Navigation-->
-      <div class="main-navigation">
-        <ul>
-          <li>
-            <router-link to="/about">about</router-link>
-          </li>
-          <li>
-            <router-link to="/business">business</router-link>
-          </li>
-          <li>
-            <router-link to="/corporate-responsibility">responsibility</router-link>
-          </li>
-          <li>
-            <router-link to="/stock-information">investors</router-link>
-          </li>
-          <li>
-            <router-link to="/career">careers</router-link>
-          </li>
-          <li>
-            <router-link to="/news">news & media</router-link>
-          </li>
-          <li>
-            <router-link to="/contact">contact</router-link>
-          </li>
-        </ul>
-      </div>
-
     </div>
   </div>
 </template>
@@ -53,8 +55,11 @@
 </script>
 
 <style scoped lang="scss">
+  .navigation-area{
 
-  .navigation-area {
+  }
+
+  .navigation-main {
     display: flex;
     justify-content: space-between;
     align-items: center;

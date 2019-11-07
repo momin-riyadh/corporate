@@ -1,7 +1,7 @@
 <template>
   <div class="home-page-animation-area">
     <div class="home-page-animation">
-      <img src="../assets/images/h-banner.jpg" alt="">
+      <img src="../assets/images/h-banner-two.jpg" alt="">
       <div class="home-page-animation-caption">
         <h1>Square Pharmaceuticals LTD</h1>
         <p>Largest pharmaceutical company in Bangladesh</p>
