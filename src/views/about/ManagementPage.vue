@@ -128,8 +128,10 @@
   }
 
   .sq-management-people-content {
-    padding: 4rem;
+    padding: 3rem;
     flex-grow: 1;
+    align-self: center;
+    justify-self: flex-start;
 
     h1 {
       color: $white-color;
