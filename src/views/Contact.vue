@@ -6,7 +6,7 @@
 
     <!--    Custom Google Maps Api Integrations-->
     <div class="container-fluid px-5-percent ">
-      <div class="sq-map-area">
+      <div class="sq-map-area overflow-hidden">
         <div id="sq-map" class="google-map" ref="googleMap"></div>
         <div class="sq-map-form">
           <h1>Get In Touch</h1>

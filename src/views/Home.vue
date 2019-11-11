@@ -273,21 +273,20 @@
             breakpoints: {
                 1905: {
                     slidesPerView: 4,
-                    spaceBetween: 40
+                    spaceBetween: 40,
                 },
-
                 1265: {
                     slidesPerView: 3,
-                    spaceBetween: 40
+                    spaceBetween: 40,
                 },
                 601: {
                     slidesPerView: 2,
-                    spaceBetween: 20
+                    spaceBetween: 20,
                 },
                 320: {
                     slidesPerView: 1,
-                    spaceBetween: 10
-                }
+                    spaceBetween: 10,
+                },
 
             },
         };
