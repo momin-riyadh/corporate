@@ -94,7 +94,7 @@
           </div>
         </div>
 
-        <div class="col-1 position-absolute news-nav">
+        <div class="col-1 position-absolute news-slider-nav">
           <div id="swiper-button-prev" class="swiper-button-prev" slot="button-prev"></div>
           <div id="swiper-button-next" class="swiper-button-next" slot="button-next"></div>
         </div>
@@ -219,15 +219,9 @@
 
 <style lang="scss">
 
-  .news-nav{
+  .news-slider-nav{
     right:0;
     bottom:22px;
-  }
-
-  #swiper-button-next .swiper-button-next{
-    width: 48px;
-    height:48px;
-    color:#fff;
   }
 
   .sq-h-content-area {
