@@ -83,7 +83,7 @@
 
     <!--Square home page bottom slider component for latest news views-->
     <div class="container-fluid px-5-percent sq-h-news-area">
-      <div class="row">
+      <div class="row position-relative">
         <div class="col-md-5 mx-auto">
           <div class="sq-h-news-header text-center">
             <h1>
@@ -92,6 +92,11 @@
             <p>We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence
               and honesty. Maybe it’s our family orientation, but we think the most satisfying</p>
           </div>
+        </div>
+
+        <div class="col-1 position-absolute news-nav">
+          <div id="swiper-button-prev" class="swiper-button-prev" slot="button-prev"></div>
+          <div id="swiper-button-next" class="swiper-button-next" slot="button-next"></div>
         </div>
       </div>
 
@@ -135,8 +140,6 @@
 
           <!-- Optional controls -->
           <!--        <div class="swiper-pagination" slot="pagination"></div>-->
-          <div id="swiper-button-prev" class="swiper-button-prev" slot="button-prev"></div>
-          <div id="swiper-button-next" class="swiper-button-next" slot="button-next"></div>
           <!--        <div class="swiper-scrollbar" slot="scrollbar"></div>-->
         </swiper>
       </div>
@@ -154,7 +157,6 @@
     import Footer from '@/components/Footer.vue';
     import Copyright from '@/components/Copyright.vue';
     import CommonBanner from '@/components/CommonBanner.vue';
-    import 'swiper/dist/css/swiper.css';
     import {swiper, swiperSlide} from 'vue-awesome-swiper';
     import FullpageAnimation from '@/components/FullpageAnimation.vue';
 
@@ -216,6 +218,18 @@
 </script>
 
 <style lang="scss">
+
+  .news-nav{
+    right:0;
+    bottom:32px;
+  }
+
+  #swiper-button-next .swiper-button-next{
+    width: 48px;
+    height:48px;
+    color:#fff;
+  }
+
   .sq-h-content-area {
     position: relative;
     height: 550px;

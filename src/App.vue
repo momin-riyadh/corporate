@@ -34,6 +34,7 @@
   @import "../node_modules/bootstrap/scss/bootstrap";
   @import "./assets/css/style";
   @import "./assets/css/element.css";
+  @import "./assets/css/swiper.css";
 </style>
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
