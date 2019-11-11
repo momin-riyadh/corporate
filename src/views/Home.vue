@@ -215,12 +215,6 @@
 </script>
 
 <style lang="scss">
-
-  .news-slider-nav {
-    right: 0;
-    bottom: 22px;
-  }
-
   .sq-h-content-area {
     position: relative;
     height: 550px;
@@ -449,6 +443,15 @@
 
 
   /*Swiper*/
+  .news-slider-nav {
+    right: 5%;
+    bottom: 2.5rem;
+  }
+
+  .sq-h-slider-area{
+    overflow: hidden;
+    margin-left: 5%;
+  }
 
   .swiper-slide {
     overflow: hidden;
