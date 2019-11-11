@@ -106,7 +106,12 @@
           <!-- slides -->
           <swiper-slide>
             <div class="news-thumb-area">
-              <img src="../assets/images/sl-one.jpg" alt="square">
+              <div class="news-thumb-image">
+                <img src="../assets/images/sl-one.jpg" alt="square">
+                <a href="" class="sq-h-news-link">
+                  <i class="el-icon-plus"></i>
+                </a>
+              </div>
               <div class="news-thumb-caption">
                 <small class="news-thumb-date"> July 19, 2018 </small>
                 <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
@@ -116,27 +121,96 @@
           </swiper-slide>
           <swiper-slide>
             <div class="news-thumb-area">
-              <img src="../assets/images/sl-two.jpg" alt="square">
+              <div class="news-thumb-image">
+                <img src="../assets/images/sl-two.jpg" alt="square">
+                <a href="" class="sq-h-news-link">
+                  <i class="el-icon-plus"></i>
+                </a>
+              </div>
+              <div class="news-thumb-caption">
+                <small class="news-thumb-date"> July 19, 2018 </small>
+                <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
+              </div>
             </div>
           </swiper-slide>
           <swiper-slide>
-            <img src="../assets/images/sl-three.jpg" alt="square">
+            <div class="news-thumb-image">
+              <img src="../assets/images/sl-three.jpg" alt="square">
+              <a href="" class="sq-h-news-link">
+                <i class="el-icon-plus"></i>
+              </a>
+            </div>
+            <div class="news-thumb-caption">
+              <small class="news-thumb-date"> July 19, 2018 </small>
+              <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
+            </div>
           </swiper-slide>
           <swiper-slide>
-            <img src="../assets/images/sl-one.jpg" alt="square">
+            <div class="news-thumb-image">
+              <img src="../assets/images/sl-one.jpg" alt="square">
+              <a href="" class="sq-h-news-link">
+                <i class="el-icon-plus"></i>
+              </a>
+            </div>
+            <div class="news-thumb-caption">
+              <small class="news-thumb-date"> July 19, 2018 </small>
+              <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
+            </div>
           </swiper-slide>
           <swiper-slide>
-            <img src="../assets/images/sl-two.jpg" alt="square">
+            <div class="news-thumb-area">
+              <div class="news-thumb-image">
+                <img src="../assets/images/sl-one.jpg" alt="square">
+                <a href="" class="sq-h-news-link">
+                  <i class="el-icon-plus"></i>
+                </a>
+              </div>
+              <div class="news-thumb-caption">
+                <small class="news-thumb-date"> July 19, 2018 </small>
+                <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
+              </div>
+            </div>
+
           </swiper-slide>
           <swiper-slide>
-            <img src="../assets/images/sl-three.jpg" alt="square">
+            <div class="news-thumb-area">
+              <div class="news-thumb-image">
+                <img src="../assets/images/sl-two.jpg" alt="square">
+                <a href="" class="sq-h-news-link">
+                  <i class="el-icon-plus"></i>
+                </a>
+              </div>
+              <div class="news-thumb-caption">
+                <small class="news-thumb-date"> July 19, 2018 </small>
+                <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
+              </div>
+            </div>
           </swiper-slide>
           <swiper-slide>
-            <img src="../assets/images/sl-two.jpg" alt="square">
+            <div class="news-thumb-image">
+              <img src="../assets/images/sl-three.jpg" alt="square">
+              <a href="" class="sq-h-news-link">
+                <i class="el-icon-plus"></i>
+              </a>
+            </div>
+            <div class="news-thumb-caption">
+              <small class="news-thumb-date"> July 19, 2018 </small>
+              <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
+            </div>
           </swiper-slide>
           <swiper-slide>
-            <img src="../assets/images/sl-three.jpg" alt="square">
+            <div class="news-thumb-image">
+              <img src="../assets/images/sl-one.jpg" alt="square">
+              <a href="" class="sq-h-news-link">
+                <i class="el-icon-plus"></i>
+              </a>
+            </div>
+            <div class="news-thumb-caption">
+              <small class="news-thumb-date"> July 19, 2018 </small>
+              <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
+            </div>
           </swiper-slide>
+
 
           <!-- Optional controls -->
           <!--        <div class="swiper-pagination" slot="pagination"></div>-->
@@ -448,7 +522,7 @@
     bottom: 2.5rem;
   }
 
-  .sq-h-slider-area{
+  .sq-h-slider-area {
     overflow: hidden;
     margin-left: 5%;
   }
@@ -459,12 +533,39 @@
 
   .news-thumb-area {
     overflow: hidden;
-    img {
+    background: #F9F8F8;
+  }
 
+  .news-thumb-image {
+    position: relative;
+  }
+
+  .sq-h-news-link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    i {
+      background: $brand-color;
+      padding: 1.2rem;
+      color: #fff;
+      font-size: 1.4rem;
     }
   }
 
   .news-thumb-caption {
     padding: 1rem;
+
+    h4 {
+      font-family: $font-helvetica-bold;
+      color: #292929;
+      font-size: 22px;
+    }
+
+    small {
+      font-family: $font-roboto;
+      font-size: .9rem;
+      color: #696969;
+    }
   }
 </style>
