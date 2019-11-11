@@ -82,7 +82,7 @@
 
 
     <!--Square home page bottom slider component for latest news views-->
-    <div class="container-fluid px-5-percent sq-h-news-area">
+    <div class="sq-h-news-area">
       <div class="row position-relative">
         <div class="col-md-5 mx-auto">
           <div class="sq-h-news-header text-center">
@@ -175,7 +175,7 @@
     export default class Home extends Vue {
 
         public swiperOption: any = {
-            slidesPerView: '3',
+            slidesPerView: '4',
             spaceBetween: 30,
             mousewheel: false,
             pagination: {
@@ -190,26 +190,23 @@
                 prevEl: '#swiper-button-prev',
             },
             breakpoints: {
-                // when window width is >= 320px
+                1905: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                },
+
+                1265: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                601: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
                 320: {
                     slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-
-                600: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                // when window width is >= 640px
-                1264: {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
-
-                1904: {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
+                    spaceBetween: 10
+                }
 
             },
         };
@@ -219,9 +216,9 @@
 
 <style lang="scss">
 
-  .news-slider-nav{
-    right:0;
-    bottom:22px;
+  .news-slider-nav {
+    right: 0;
+    bottom: 22px;
   }
 
   .sq-h-content-area {
@@ -443,6 +440,7 @@
   }
 
   .sq-h-news-area {
+    overflow: hidden;
     margin: 60px 0;
     @media(min-width: 1905px) {
       margin: 120px 0;
@@ -450,15 +448,20 @@
   }
 
 
+  /*Swiper*/
+
+  .swiper-slide {
+    overflow: hidden;
+  }
+
   .news-thumb-area {
     overflow: hidden;
-
     img {
 
     }
   }
 
   .news-thumb-caption {
-
+    padding: 1rem;
   }
 </style>
