@@ -4,7 +4,6 @@ import router from './router';
 import store from './store';
 import Element from 'element-ui';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
-import 'swiper/dist/css/swiper.css'
 
 
 Vue.use(Element);

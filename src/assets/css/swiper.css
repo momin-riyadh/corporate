@@ -160,15 +160,17 @@
 .swiper-button-next {
     position: absolute;
     top: 50%;
-    width: 27px;
+    width: 44px;
     height: 44px;
     margin-top: -22px;
     z-index: 10;
     cursor: pointer;
-    background-size: 27px 44px;
+    background-size: 20px 24px;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #6D6D6D;
+    background-color: #F5F5F5;
+    padding: 10px;
+    outline: 0;
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
@@ -179,8 +181,8 @@
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
-    left: 10px;
-    right: auto;
+    left: auto;
+    right: 60px;
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {

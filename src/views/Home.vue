@@ -102,7 +102,7 @@
 
       <div class="sq-h-slider-area mt-5 overflow-hidden">
 
-        <swiper :options="swiperOption">
+        <swiper :options="swiperOption" :loadtheme="false">
           <!-- slides -->
           <swiper-slide>
             <div class="news-thumb-area">
@@ -221,7 +221,7 @@
 
   .news-nav{
     right:0;
-    bottom:32px;
+    bottom:22px;
   }
 
   #swiper-button-next .swiper-button-next{
