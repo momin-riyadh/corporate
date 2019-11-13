@@ -32,67 +32,60 @@
 
     <div class="container-fluid px-5-percent mb-5">
       <div class="sq-contact-form-area">
-        <div class="row">
-          <div class="col-lg-9 col-sm-6">
-            <div class="sq-contact-form">
-              <form action="">
-                <div class="form-row ">
-                  <div class="col-md-6 pr-sm-3 mb-2">
-                    <input class="form-control" type="text" name="" placeholder="First Name">
-                  </div>
-                  <div class="col-md-6 pl-sm-3 mb-2">
-                    <input type="text" name="" class="form-control" placeholder="Last Name *">
-                  </div>
-                </div>
-                <div class="form-row my-4">
-                  <div class="col-md-6 pr-sm-3 mb-2">
-                    <input class="form-control" type="Email" name="" placeholder="Email *">
-                  </div>
-                  <div class="col-md-6 pl-sm-3 mb-2">
-                    <input type="text" name="" class="form-control" placeholder="Phone Number *">
-                  </div>
-                </div>
-                <div class="form-group">
+
+        <div class="sq-contact-form">
+          <form action="">
+            <div class="form-row ">
+              <div class="col-md-6 pr-sm-3 mb-2">
+                <input class="form-control" type="text" name="" placeholder="First Name">
+              </div>
+              <div class="col-md-6 pl-sm-3 mb-2">
+                <input type="text" name="" class="form-control" placeholder="Last Name *">
+              </div>
+            </div>
+            <div class="form-row my-4">
+              <div class="col-md-6 pr-sm-3 mb-2">
+                <input class="form-control" type="Email" name="" placeholder="Email *">
+              </div>
+              <div class="col-md-6 pl-sm-3 mb-2">
+                <input type="text" name="" class="form-control" placeholder="Phone Number *">
+              </div>
+            </div>
+            <div class="form-group">
                   <textarea class="form-control" name="" id="" cols="30" rows="15"
                             placeholder="Type your message"></textarea>
-                </div>
-
-                <div class="form-group mb-0">
-                  <button class="btn btn-block sq-contact-btn" type="submit">
-                    SEND
-                  </button>
-                </div>
-
-              </form>
             </div>
+
+            <div class="form-group mb-0">
+              <button class="btn btn-block sq-contact-btn" type="submit">
+                SEND
+              </button>
+            </div>
+
+          </form>
+        </div>
+        <div class="sq-address-area text-center">
+
+          <div class="sq-address-title">
+            <h3>Contact information</h3>
           </div>
 
+          <div class="sq-address text-left p-3">
 
-          <div class="col-lg-3 col-sm-6">
-            <div class="sq-address-area text-center">
-
-              <div class="sq-address-title">
-                <h3>Contact information</h3>
+            <address>
+              <div>
+                <h4>Head Office</h4>
+                Sonartari Tower (11th Floor) <br/>
+                12, Sonargaon Road <br/>
+                Dhaka-1000 <br/>
+                Phone: 8802-9632730-1 <br/>
+                Fax: 8802-9632733, 8623053
               </div>
 
-              <div class="sq-address text-left p-3">
-
-                <address>
-                  <div>
-                    <h4>Head Office</h4>
-                    Sonartari Tower (11th Floor) <br/>
-                    12, Sonargaon Road <br/>
-                    Dhaka-1000 <br/>
-                    Phone: 8802-9632730-1 <br/>
-                    Fax: 8802-9632733, 8623053
-                  </div>
-
-                </address>
-              </div>
-            </div>
-
+            </address>
           </div>
         </div>
+
       </div>
     </div>
 
