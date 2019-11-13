@@ -177,7 +177,7 @@
 
   .sq-contact-form {
     background: #EFEFEF;
-    padding: 1rem;
+    padding: 2rem;
     flex-grow: 1;
     margin-right: 0;
     margin-bottom: 30px;
