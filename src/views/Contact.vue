@@ -381,15 +381,16 @@
   }
 
   .sq-map-form {
-    min-width: 500px;
+    max-width: 500px;
     height: 420px;
-    margin: 1.5rem 0 1.5rem 1.5rem;
+    margin: 1.5rem;
     background: #2C2C2C;
     padding: 1.8rem;
     position: absolute;
     left: 1rem;
     bottom: 1rem;
     top: 1rem;
+    right: auto;
 
     h1 {
       color: $white-color;
