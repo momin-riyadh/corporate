@@ -36,18 +36,18 @@
         <div class="sq-contact-form">
           <form action="">
             <div class="form-row">
-              <div class="col-6">
-                <input class="form-control" type="text" name="" placeholder="First Name">
+              <div class="input-fname">
+                <input class="form-control" type="text" name="" placeholder="First Name *">
               </div>
-              <div class="col-6">
+              <div class="input-lname">
                 <input type="text" name="" class="form-control" placeholder="Last Name *">
               </div>
             </div>
-            <div class="form-row my-4">
-              <div class="col-md-6">
+            <div class="form-row">
+              <div class="input-email">
                 <input class="form-control" type="Email" name="" placeholder="Email *">
               </div>
-              <div class="col-md-6">
+              <div class="input-phone">
                 <input type="text" name="" class="form-control" placeholder="Phone Number *">
               </div>
             </div>
@@ -245,6 +245,27 @@
 
   }
 
+
+  /*Contact Form Mobile Fast Code*/
+  .sq-contact-form {
+    form {
+      .input-fname, .input-lname, .input-email, .input-phone {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        @media(min-width: 1265px) {
+          width: 50%;
+        }
+      }
+
+      .input-fname, .input-email{
+        padding-right: 30px;
+        @media(max-width: 1264px){
+          padding-right: 0;
+        }
+      }
+    }
+  }
 
   /*Contact form button style*/
   .sq-contact-btn {
