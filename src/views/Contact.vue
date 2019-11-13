@@ -132,10 +132,15 @@
 
   /*Right Address Area*/
   .sq-address-area {
-    background: $brand-color;
     color: $white-color;
     flex-shrink: 0;
     width: 100%;
+    background-image: url("../assets/images/sq-logobg.svg");
+    background-position: right bottom;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-color: $brand-color;
+    background-blend-mode:multiply;
     @media all and (min-width: 961px) {
       width: 400px;
     }
