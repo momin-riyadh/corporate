@@ -134,11 +134,16 @@
   .sq-address-area {
     background: $brand-color;
     color: $white-color;
+    flex-shrink: 0;
+    width: 100%;
+    @media all and (min-width: 961px) {
+      width: 400px;
+    }
   }
 
   .sq-address-title {
     min-height: 80px;
-    background: darken($brand-color, 5%);
+    background: darken($brand-color, 10%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,12 +168,24 @@
 
 
   .sq-contact-form-area {
-
+    flex-direction: column;
+    @media(min-width: 961px) {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   .sq-contact-form {
     background: #EFEFEF;
-    padding: 4rem;
+    padding: 1rem;
+    flex-grow: 1;
+    margin-right: 0;
+    margin-bottom: 30px;
+    @media(min-width: 961px) {
+      padding: 4rem;
+      margin-right: 5rem;
+      margin-bottom: 0;
+    }
 
     form {
       input {
@@ -222,10 +239,6 @@
 
   }
 
-  .sq-contact {
-
-
-  }
 
   /*Contact form button style*/
   .sq-contact-btn {
