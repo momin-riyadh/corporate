@@ -258,9 +258,9 @@
         }
       }
 
-      .input-fname, .input-email{
+      .input-fname, .input-email {
         padding-right: 30px;
-        @media(max-width: 1264px){
+        @media(max-width: 1264px) {
           padding-right: 0;
         }
       }
