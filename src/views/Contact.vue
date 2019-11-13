@@ -181,7 +181,13 @@
     flex-grow: 1;
     margin-right: 0;
     margin-bottom: 30px;
-    @media(min-width: 961px) {
+    @media(min-width: 961px) and (max-width: 1264px) {
+      padding: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 0;
+    }
+
+    @media(min-width: 1265px) {
       padding: 4rem;
       margin-right: 5rem;
       margin-bottom: 0;
