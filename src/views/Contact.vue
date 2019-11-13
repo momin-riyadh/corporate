@@ -35,19 +35,19 @@
 
         <div class="sq-contact-form">
           <form action="">
-            <div class="form-row ">
-              <div class="col-md-6 pr-sm-3 mb-2">
+            <div class="form-row">
+              <div class="col-6">
                 <input class="form-control" type="text" name="" placeholder="First Name">
               </div>
-              <div class="col-md-6 pl-sm-3 mb-2">
+              <div class="col-6">
                 <input type="text" name="" class="form-control" placeholder="Last Name *">
               </div>
             </div>
             <div class="form-row my-4">
-              <div class="col-md-6 pr-sm-3 mb-2">
+              <div class="col-md-6">
                 <input class="form-control" type="Email" name="" placeholder="Email *">
               </div>
-              <div class="col-md-6 pl-sm-3 mb-2">
+              <div class="col-md-6">
                 <input type="text" name="" class="form-control" placeholder="Phone Number *">
               </div>
             </div>
