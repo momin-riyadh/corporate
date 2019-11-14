@@ -126,6 +126,7 @@
 
   .single-job-details-link {
     a {
+      transition: all 0.3s ease-in-out;
       background: #F4F4F4;
       font-size: 1.2rem;
       font-family: $font-roboto;
@@ -133,6 +134,10 @@
       color: #222222;
       padding: .5rem 2rem;
       border-radius: 2px;
+      &:hover{
+        background: $brand-color;
+        color: $white-color;
+      }
     }
   }
 </style>

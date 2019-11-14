@@ -1,9 +1,13 @@
 
-.px-5-percent{
+.px-5-percent {
   padding: 0 5%;
 }
-.px-15-percent{
-  padding: 0 15%;
+
+.px-15-percent {
+  padding: 0 5%;
+  @media (min-width: 601px) {
+    padding: 0 15%;
+  }
 }
 
 //Importing Font Family
@@ -51,10 +55,10 @@ $font-helvetica-bold: 'Helvetica-Bold', sans-serif;
 $nav-color: #292929;
 $header-color: #292929;
 $paragraph-color: #696969;
-$brand-color:#42A646;
-$copyright-bg:#191919;
-$footer-bg:#2F2F2F;
-$white-color:#ffffff;
+$brand-color: #42A646;
+$copyright-bg: #191919;
+$footer-bg: #2F2F2F;
+$white-color: #ffffff;
 $paragraph-size: calc(16px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
 
 //End Common Global Style For the Square
