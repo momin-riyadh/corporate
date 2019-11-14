@@ -103,7 +103,7 @@
     text-align: center;
     margin-bottom: 30px;
     min-height: 210px;
-    @media all and (min-width: 601px) {
+    @media all and (min-width: 800px) {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;

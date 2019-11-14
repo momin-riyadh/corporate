@@ -9,9 +9,9 @@
     <div class="container-fluid px-5-percent">
       <div class="job-category-area">
 
-        <div class="job-category-title mb-5">
+        <div class="job-category-title mb-5 text-center">
           <h1 class="common-title"><span>Browse Category</span></h1>
-          <p class="common-sub-title">We strive to go beyond for our clients</p>
+          <p class="common-sub-title">We strive to go beyond for our clients a relationship built on trust, confidence and honesty.</p>
         </div>
 
         <div class="job-category mb-5">
@@ -29,9 +29,9 @@
 
 
       <div class="featured-job-area">
-        <div class="job-category-title">
+        <div class="job-category-title text-center">
           <h1 class="common-title"><span>Featured Job</span></h1>
-          <p class="common-sub-title">Far far away, behind the word mountains,</p>
+          <p class="common-sub-title">We strive to go beyond for our clients a relationship built on trust, confidence and honesty.</p>
         </div>
 
         <div class="featured-job">
@@ -237,10 +237,10 @@
   }
 
   .common-sub-title {
-    font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
-    color: #292929;
-    font-weight: bold;
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: #939393;
     font-family: $font-roboto;
+    padding-top: 10px;
   }
 
   .common-title {
@@ -248,26 +248,27 @@
     color: $brand-color;
     font-family: $font-roboto;
     font-weight: bold;
-    font-size: calc(24px + (42 - 24) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1600 - 300)));
   }
 
   .common-title span {
     display: inline-block;
     position: relative;
+    padding-bottom: 25px;
   }
 
   .common-title span:before {
     content: "";
     position: absolute;
-    height: 5px;
+    height: .5rem;
     border-bottom: 4px solid $brand-color;
-    top: 50%;
+    bottom:0;
     width: 80px;
   }
 
   .common-title span:before {
-    right: 100%;
-    margin-right: 15px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .job-category {
