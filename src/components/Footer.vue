@@ -158,23 +158,42 @@
       column-gap: 4rem;
       margin: 0;
       padding: 0;
-      margin-top: -15px;
+      margin-top: -20px;
     }
 
     li {
       list-style: none;
       display: block;
       margin: 0;
-      padding: 15px 0;
+      padding: 10px 0;
 
       a {
+        z-index: 1;
+        position: relative;
         display: block;
-        padding-bottom: 15px;
+        padding: 10px 5px;
         border-bottom: 1px solid #5A5555;
         color: #c7c7c7;
         text-transform: capitalize;
         font-size: .9rem;
         text-decoration: none;
+        &::before{
+          content: '';
+          z-index: -1;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: #5A5555;
+          transform-origin: center top;
+          transform: scaleY(0);
+          transition: transform 0.3s ease-in-out;
+        }
+        &:hover::before{
+          transform-origin: center bottom;
+          transform: scaleY(1);
+        }
       }
     }
   }
