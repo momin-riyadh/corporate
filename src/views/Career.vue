@@ -9,7 +9,7 @@
     <div class="container-fluid px-5-percent">
       <div class="job-category-area">
 
-        <div class="job-category-title mb-5 text-center">
+        <div class="job-category-title text-center">
           <h1 class="common-title"><span>Browse Category</span></h1>
           <p class="common-sub-title">We strive to go beyond for our clients a relationship built on trust, confidence and honesty.</p>
         </div>
@@ -232,8 +232,7 @@
 
 <style scoped lang="scss">
   .job-category-title {
-    margin-left: 95px;
-    margin-bottom: 5.5rem;
+    margin-bottom: 7rem;
   }
 
   .common-sub-title {
