@@ -17,7 +17,7 @@
         <div class="job-category mb-5">
           <ul>
             <li v-for="{title, vacancy, index} in category">
-              <router-link to="/career-details">
+              <router-link to="/career-list">
                 {{ title }}
                 <span> ({{vacancy}})</span>
               </router-link>
