@@ -95,17 +95,21 @@
 
   .sq-single-job-thumbnail {
     background-color: $white-color;
-    padding: 30px;
+    padding:30px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     margin-bottom: 30px;
+    min-height: 210px;
     @media all and (min-width: 601px) {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      min-height: auto;
+      text-align: left;
+      padding: 30px;
     }
   }
 
