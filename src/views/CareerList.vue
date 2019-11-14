@@ -97,9 +97,16 @@
     background-color: $white-color;
     padding: 30px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
     margin-bottom: 30px;
+    @media all and (min-width: 601px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   .single-job-post-title {
