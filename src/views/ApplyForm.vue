@@ -27,8 +27,8 @@
           </div>
           <div class="form-row">
             <div class="col-md-6 mb-4 pr-1 pr-md-4">
-              <label for="age">Age</label>
-              <input type="text" id="age">
+              <label for="email">Email</label>
+              <input type="email" id="email">
             </div>
             <div class="col-md-6 mb-4 pl-1 pl-md-4">
               <label for="social-profile">Linkedin / Glassdoor</label>

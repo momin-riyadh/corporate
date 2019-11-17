@@ -49,7 +49,7 @@ growth and prosperity has been no bed of roses."/>
 
                     <div class="s-about-col text-col">
                         <div class="s-about-col-content text-col-content r-arrow">
-                            <h2>Philosophy</h2>
+                            <h2>Achievements</h2>
                             <p>We strive to go above and beyond for our clients, fostering a relationship built on
                                 trust,
                                 confidence</p>
@@ -64,7 +64,7 @@ growth and prosperity has been no bed of roses."/>
                     </div>
                     <div class="s-about-col text-col">
                         <div class="s-about-col-content text-col-content r-arrow">
-                            <h2>Achievements</h2>
+                            <h2>Management</h2>
                             <p>We strive to go above and beyond for our clients, fostering a relationship built on
                                 trust,
                                 confidence</p>
