@@ -290,7 +290,6 @@
 
       li {
         margin: 0;
-        border-bottom: 1px solid #D8D8D8;
         -webkit-column-break-inside: avoid;
         page-break-inside: avoid;
         break-inside: avoid;
@@ -298,13 +297,14 @@
         a {
           display: block;
           width: 100%;
-          padding: 1em 0;
+          padding: 1.5em 0;
           text-decoration: none;
           font-family: $font-roboto;
           color: #222222;
           font-size: calc(17px + (17 - 15) * ((100vw - 300px) / (1600 - 300)));
           z-index: 1;
           position: relative;
+          border-bottom: 1px solid #D8D8D8;
           &::before{
             content: '';
             z-index: -1;
@@ -313,6 +313,7 @@
             bottom: 0;
             left: 0;
             right: 0;
+            border: 0;
             background-color: #efefef;
             transform-origin: center top;
             transform: scaleY(0);
@@ -321,6 +322,7 @@
           &:hover::before{
             transform-origin: center bottom;
             transform: scaleY(1);
+            border:0;
           }
         }
       }
