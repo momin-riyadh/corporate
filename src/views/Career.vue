@@ -397,7 +397,6 @@
 
   .s-f-job-img {
     padding-right: 1rem;
-
     img {
       transition: all 0.3s ease-in-out;
       filter: grayscale(1);
