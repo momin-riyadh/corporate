@@ -297,6 +297,7 @@
         break-inside: avoid;
 
         a {
+          transition: all 0.3s ease-in-out;
           display: block;
           width: 100%;
           padding: 1.5em 0;
@@ -397,6 +398,7 @@
 
   .s-f-job-img {
     padding-right: 1rem;
+
     img {
       transition: all 0.3s ease-in-out;
       filter: grayscale(1);
