@@ -11,7 +11,8 @@
 
         <div class="job-category-title text-center">
           <h1 class="common-title"><span>Browse Category</span></h1>
-          <p class="common-sub-title">We strive to go beyond for our clients a relationship built on trust, confidence and honesty.</p>
+          <p class="common-sub-title">We strive to go beyond for our clients a relationship built on trust, confidence
+            and honesty.</p>
         </div>
 
         <div class="job-category mb-5">
@@ -31,7 +32,8 @@
       <div class="featured-job-area">
         <div class="job-category-title text-center">
           <h1 class="common-title"><span>Featured Job</span></h1>
-          <p class="common-sub-title">We strive to go beyond for our clients a relationship built on trust, confidence and honesty.</p>
+          <p class="common-sub-title">We strive to go beyond for our clients a relationship built on trust, confidence
+            and honesty.</p>
         </div>
 
         <div class="featured-job">
@@ -261,7 +263,7 @@
     position: absolute;
     height: .5rem;
     border-bottom: 4px solid $brand-color;
-    bottom:0;
+    bottom: 0;
     width: 80px;
   }
 
@@ -305,7 +307,8 @@
           z-index: 1;
           position: relative;
           border-bottom: 1px solid #D8D8D8;
-          &::before{
+
+          &::before {
             content: '';
             z-index: -1;
             position: absolute;
@@ -319,10 +322,10 @@
             transform: scaleY(0);
             transition: transform 0.25s ease-in-out;
           }
-          &:hover::before{
+
+          &:hover::before {
             transform-origin: center bottom;
             transform: scaleY(1);
-            border:0;
           }
         }
       }
@@ -366,12 +369,40 @@
   .s-featured-job {
     display: flex;
     align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      > .s-f-job-img {
+        padding-right: 1rem;
+
+        img {
+          filter: grayscale(0);
+          opacity: 1;
+        }
+      }
+
+      > .s-featured-job-brief {
+        ul {
+          li {
+            &::before {
+              border-left: 8px solid $brand-color;
+            }
+          }
+        }
+      }
+    }
   }
 
 
   .s-f-job-img {
     padding-right: 1rem;
 
+    img {
+      transition: all 0.3s ease-in-out;
+      filter: grayscale(1);
+      opacity: 0.5;
+    }
   }
 
   .s-featured-job-brief {
@@ -398,6 +429,7 @@
         cursor: pointer;
 
         &::before {
+          transition: all 0.3s ease-in-out;
           display: inline-block;
           position: absolute;
           content: '';
@@ -406,7 +438,7 @@
           transform: translateY(-50%);
           border-top: 8px solid transparent;
           border-bottom: 8px solid transparent;
-          border-left: 8px solid $brand-color;
+          border-left: 8px solid gray;
           line-height: 1;
           margin-right: auto;
         }
