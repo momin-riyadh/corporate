@@ -90,7 +90,7 @@
 
   .sq-career-list-area {
     background: #f4f4f4;
-    padding: 30px;
+    padding: 30px 30px 15px 30px;
   }
 
   .sq-single-job-thumbnail {
