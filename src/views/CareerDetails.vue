@@ -11,7 +11,7 @@
 
       <!--        back to page-->
       <div class="back-to-page text-center text-md-left">
-        <router-link to="/career"><i class="el-icon-arrow-left mb-5"></i> Back to job page</router-link>
+        <router-link to="/career-list"><i class="el-icon-arrow-left mb-5"></i> Back to job page</router-link>
       </div>
 
       <!--      Job Category Breadcrumb-->

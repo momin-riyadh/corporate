@@ -27,7 +27,7 @@
             <small>Dhaka</small>
           </div>
           <div class="single-job-details-link">
-            <a href="">Job Details</a>
+            <router-link to="/career-details">Job Details</router-link>
           </div>
         </div>
       </div>
