@@ -2,7 +2,7 @@
   <section class="common-paragraph-area">
     <div class="container-fluid px-5-percent">
       <div class="row">
-        <div class="col-xl-6 offset-xl-1 pt-4 pt-lg-0 float-left">
+        <div class="col-xl-6 offset-xl-1 py-4 pt-lg-0 float-left">
 
           <div class="article-header mb-5">
             <h1 class="common-title"><span>{{ParagraphTitle}}</span></h1>
@@ -48,7 +48,7 @@
 <style scoped lang="scss">
 
   .common-paragraph-area{
-    height: 600px;
+    min-height: 600px;
     overflow: hidden;
     margin: 8rem 0;
   }
@@ -75,12 +75,15 @@
   }
 
   .common-title span:before {
-    content: "";
-    position: absolute;
-    height: 5px;
-    border-bottom: 4px solid $brand-color;
-    top: 50%;
-    width: 80px;
+    @media(min-width: 1265px){
+      content: "";
+      position: absolute;
+      height: 5px;
+      border-bottom: 4px solid $brand-color;
+      top: 50%;
+      width: 80px;
+    }
+    border:0;
   }
 
   .common-title span:before {
@@ -95,12 +98,18 @@
       font-size: 18px;
       text-transform: capitalize;
       line-height:2em;
+      max-height: 400px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 5; /* number of lines to show */
+      -webkit-box-orient: vertical;
     }
   }
 
   .csr-r-image{
     img{
-      height: 600px;
+      min-height: 600px;
       width: auto;
       object-fit: cover;
       object-position: center;
