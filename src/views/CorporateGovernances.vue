@@ -12,6 +12,15 @@
           <div>Consistent with real life: in line with the process and logic of real life, and comply with languages and
             habits that the users are used to;
           </div>
+          <div>Consistent with real life: in line with the process and logic of real life, and comply with languages and
+            habits that the users are used to;
+          </div>
+          <div>Consistent with real life: in line with the process and logic of real life, and comply with languages and
+            habits that the users are used to;
+          </div>
+          <div>Consistent with real life: in line with the process and logic of real life, and comply with languages and
+            habits that the users are used to;
+          </div>
 
         </el-collapse-item>
         <el-collapse-item title="Corporate Governance Documents" name="2">

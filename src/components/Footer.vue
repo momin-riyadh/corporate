@@ -4,13 +4,13 @@
       <div class="footer-area">
 
         <div class="footer-about-us">
-          <h3 class="mb-5">About Us</h3>
+          <h3 class="mb-4 mb-md-5">About Us</h3>
           <p>SQUARE Pharmaceuticals Limited is the largest pharmaceutical company in Bangladesh and it has been
             continuously in the 1st position among all national and multinational companies since 1985.</p>
 
           <p>Its range of products and services towards the highway of global market. It pioneered exports of medicines
             from Bangladesh in 1987.</p>
-          <div class="sq-footer-social mt-5">
+          <div class="sq-footer-social mt-4 mt-md-5">
             <a href="">
               <i class="fab fa-facebook-f"></i>
             </a>
@@ -28,7 +28,7 @@
         </div>
 
         <div class="footer-useful-links">
-          <h3 class="mb-5">useful links</h3>
+          <h3 class="mb-4 mb-md-5">useful links</h3>
           <ul>
             <li><a href="">latest news</a></li>
             <li><a href="">legal notice</a></li>
@@ -42,7 +42,7 @@
         </div>
 
         <div class="footer-contact">
-          <h3 class="mb-5">contact</h3>
+          <h3 class="mb-4 mb-md-5">contact</h3>
 
           <div class="sq-address mb-4">
             SQUARE Centre 48, <br/>

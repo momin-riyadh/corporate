@@ -297,7 +297,7 @@
 <style lang="scss">
   .sq-h-content-area {
     position: relative;
-    height: 550px;
+    min-height: 550px;
     overflow: hidden;
     margin: calc(3% + 5vh) 0;
   }

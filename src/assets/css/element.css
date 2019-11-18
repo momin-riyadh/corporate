@@ -11094,7 +11094,7 @@
     color: #292929;
     cursor: pointer;
     border-bottom: 1px solid #EBEEF5;
-    font-size: 13px;
+    font-size: 22px;
     font-weight: 500;
     -webkit-transition: border-bottom-color .3s;
     transition: border-bottom-color .3s;
@@ -11137,7 +11137,7 @@
 
 .el-collapse-item__content {
     padding-bottom: 25px;
-    font-size: 13px;
+    font-size: 15px;
     color: #292929;
     line-height: 1.769230769230769
 }
