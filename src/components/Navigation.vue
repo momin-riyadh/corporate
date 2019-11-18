@@ -20,7 +20,29 @@
               <router-link to="/business">business</router-link>
             </li>
             <li>
-              <router-link to="/corporate-responsibility">responsibility</router-link>
+              <el-dropdown>
+                <span>
+                   <router-link to="/corporate-responsibility">responsibility</router-link>
+                </span>
+                <el-dropdown-menu slot="dropdown">
+                  <el-dropdown-item>
+                    <router-link to="/corporate-responsibility" tag="span">
+                      Corporate Responsibility
+                    </router-link>
+                  </el-dropdown-item>
+                  <el-dropdown-item>
+                    <router-link to="/environment-responsibility" tag="span">
+                      Environment Responsibility
+                    </router-link>
+                  </el-dropdown-item>
+                  <el-dropdown-item>
+                    <router-link to="/welfare" tag="span">Welfare</router-link>
+                  </el-dropdown-item>
+                  <el-dropdown-item>
+                    <router-link to="/compliance" tag="span">Compliance</router-link>
+                  </el-dropdown-item>
+                </el-dropdown-menu>
+              </el-dropdown>
             </li>
             <li>
               <router-link to="/stock-information">investors</router-link>
@@ -55,7 +77,7 @@
 </script>
 
 <style scoped lang="scss">
-  .navigation-area{
+  .navigation-area {
 
   }
 
@@ -117,5 +139,9 @@
     }
   }
 
-
+.el-dropdown-menu__item span{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
 </style>

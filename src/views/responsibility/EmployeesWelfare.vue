@@ -2,7 +2,7 @@
   <div class="employees-welfare-area">
     <Navigation/>
     <CommonBanner v-bind:image-url="require('../../assets/images/ew@2x.jpg')"
-                  banner-title="Environmental responsibility" banner-subtitle="Employee welfare entails everything from services, facilities and benefits that are provided or done by an employer
+                  banner-title="Employees Welfare" banner-subtitle="Employee welfare entails everything from services, facilities and benefits that are provided or done by an employer
  for the advantage or comfort of an employee. It is undertaken in order to"/>
 
 
