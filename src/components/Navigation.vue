@@ -45,7 +45,29 @@
               </el-dropdown>
             </li>
             <li>
-              <router-link to="/stock-information">investors</router-link>
+              <el-dropdown>
+                <span>
+                   <router-link to="/stock-information">investor</router-link>
+                </span>
+                <el-dropdown-menu slot="dropdown">
+                  <el-dropdown-item>
+                    <router-link to="/stock-information" tag="span">
+                      Stock Information
+                    </router-link>
+                  </el-dropdown-item>
+                  <el-dropdown-item>
+                    <router-link to="/financial-information" tag="span">
+                      Financial Information
+                    </router-link>
+                  </el-dropdown-item>
+                  <el-dropdown-item>
+                    <router-link to="/annual-report" tag="span">Annual Report</router-link>
+                  </el-dropdown-item>
+                  <el-dropdown-item>
+                    <router-link to="/corporate-governance" tag="span">Corporate Governance</router-link>
+                  </el-dropdown-item>
+                </el-dropdown-menu>
+              </el-dropdown>
             </li>
             <li>
               <router-link to="/career">careers</router-link>
@@ -139,9 +161,9 @@
     }
   }
 
-.el-dropdown-menu__item span{
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-}
+  .el-dropdown-menu__item span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
 </style>
