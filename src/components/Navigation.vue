@@ -165,5 +165,8 @@
     display: inline-block;
     width: 100%;
     height: 100%;
+    text-transform: Capitalize;
+    font-family: $font-roboto;
+    color: inherit;
   }
 </style>
