@@ -96,6 +96,7 @@
     max-width: 450px;
     @media(max-width: 991px){
       flex-basis: 100%;
+      margin-bottom: 50px;
     }
 
     h3 {
@@ -145,6 +146,7 @@
     flex-basis: 40%;
     @media(max-width: 991px){
       flex-basis: 100%;
+      margin-bottom: 50px;
     }
 
     h3 {
