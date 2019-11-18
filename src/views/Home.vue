@@ -69,8 +69,8 @@
       <div class="sq-home-compliance-area">
         <img src="../assets/images/compliance.jpg" alt="" class="img-fluid">
         <div class="compliance-text">
-          <h1 class="mb-3">Compliance</h1>
-          <h4 class="mb-5">It's a team work.</h4>
+          <h1 class="mb-2 mb-md-3">Compliance</h1>
+          <h4 class="mb-3 mb-md-4">It's a team work.</h4>
           <p>
             Gaining an understanding of local markets is as important as monitoring the greater economy. We retain our
             core belief that residential property is more than just aestment, so we learn about the impact on local
@@ -439,12 +439,18 @@
 
   .compliance-text {
     background: #F9F8F8;
-    padding: 5rem;
-    left: 95px;
+    padding: 2rem;
+    left: 2.5%;
+    right: 2.5%;
     bottom: -80px;
-    width: 500px;
+    width: 95%;
     position: absolute;
     z-index: 2;
+    @media(min-width: 800px) {
+      left: 95px;
+      max-width: 500px;
+      padding: 5rem;
+    }
 
     h1 {
       line-height: 1;
@@ -458,12 +464,15 @@
         content: "";
         position: absolute;
         height: 5px;
-        border-bottom: 4px solid $brand-color;
+        border: 0;
         top: 55%;
         transform: translateY(-55%);
         width: 45px;
         right: 100%;
         margin-right: 5px;
+        @media(min-width: 800px) {
+          border-bottom: 4px solid $brand-color;
+        }
       }
     }
 
