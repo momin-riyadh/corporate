@@ -47,7 +47,7 @@
       color: $brand-color;
       margin-bottom: 1.5rem;
       line-height: 1;
-      @media all and (min-width:1264px) {
+      @media all and (min-width:1905px) {
         font-size: 3.5rem;
       }
     }

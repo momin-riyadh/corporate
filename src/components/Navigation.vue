@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation-area">
+  <div class="navigation-area" v-bind:style="type">
     <div class="container-fluid px-5-percent">
       <div class="navigation-main">
 
@@ -87,14 +87,14 @@
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from 'vue-property-decorator';
+    import {Component, Vue, Prop} from 'vue-property-decorator';
 
     @Component({
         name: 'Navigation',
         components: {},
     })
     export default class Navigation extends Vue {
-
+        @Prop() public type!: any;
     }
 </script>
 
@@ -168,5 +168,12 @@
     text-transform: Capitalize;
     font-family: $font-roboto;
     color: inherit;
+  }
+
+  .customstyle{
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    right: 0;
   }
 </style>

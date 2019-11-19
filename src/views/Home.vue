@@ -1,6 +1,6 @@
 <template>
   <div class="sq-home-area">
-    <Navigation/>
+    <Navigation type="customstyle"/>
     <FullpageAnimation/>
 
     <div class="container-fluid px-5-percent">

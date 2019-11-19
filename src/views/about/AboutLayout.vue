@@ -84,12 +84,16 @@ growth and prosperity has been no bed of roses."/>
           font-family: $font-helvetica-bold;
           color: #333333;
           text-decoration: none;
-          font-size: 1.3rem;
-          line-height: 1.3rem;
+          font-size: .9rem;
+          line-height: .9rem;
           width: 100%;
           display: block;
           padding: 1.5rem 1rem;
           border-left: 4px solid transparent;
+          @media all and (min-width:1905px) {
+            font-size: 1.3rem;
+            line-height: 1.3rem;
+          }
 
           &:hover {
             background: #F0F0F0;
