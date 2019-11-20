@@ -3,7 +3,7 @@
     <div class="container-fluid px-5-percent">
       <div class="navigation-main">
 
-        <!--    Square logo-->
+        <!--    Square Logo-->
         <div class="sq-logo">
           <router-link to="/" href="">
             <img src="../assets/images/logo.svg" alt="">
@@ -170,7 +170,7 @@
     color: inherit;
   }
 
-  .customstyle{
+  .customstyle {
     background-color: transparent;
     position: fixed;
     left: 0;

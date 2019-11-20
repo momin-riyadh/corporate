@@ -112,19 +112,21 @@
 
 <style scoped lang="scss">
 
-  .sq-business-industries{
+  .sq-business-industries {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
   }
 
-  .sq-business-logo-area{
+  .sq-business-logo-area {
     flex-grow: 1;
-
     width: 100%;
     max-width: 400px;
+    position: relative;
+    cursor: pointer;
   }
-  .sq-business-logo-area{
+
+  .sq-business-logo-area {
     width: calc(100% - 30px);
     margin: 0 15px 30px 15px;
     flex-shrink: 0;
@@ -149,14 +151,31 @@
   }
 
   .sq-business-caption {
-    background: #343434;
-    height: 80px;
-    color: $white-color;
-    font-family: $font-roboto;
-    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    background: #efefef;
+    height: 65px;
+    color: #3c3c3c;
+    font-family: $font-helvetica-bold;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .sq-business-logo-area {
+    &:hover {
+      > .sq-business-caption {
+        background: rgba(0, 0, 0, 0.8);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        color: $white-color;
+      }
+    }
   }
 
   .sq-business-logo {

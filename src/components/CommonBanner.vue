@@ -6,10 +6,8 @@
 
         <div class="banner-content">
           <h1>{{BannerTitle}}</h1>
-          <p>{{BannerSubtitle}}
-          </p>
+          <p>{{BannerSubtitle}}</p>
         </div>
-
 
       </div>
     </div>
