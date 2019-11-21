@@ -1,5 +1,5 @@
 <template>
-  <div class="home-page-animation-area">
+  <div class="home-page-animation-area overflow-hidden">
     <div class="home-page-animation">
       <header class="v-header containers">
         <div class="fullscreen-video-wrap">
