@@ -95,14 +95,36 @@
     })
     export default class Navigation extends Vue {
         @Prop() public type!: any;
+        public handleScroll() {
+            let scrollpos;
+            let d: any = document;
+            const nav = d.querySelector('.navigation-area');
+            window.addEventListener('scroll', function () {
+                scrollpos = window.scrollY;
+                if (scrollpos > 5) {
+                    nav.classList.add('customstyle');
+                } else {
+                    nav.classList.remove('customstyle');
+                }
+            });
+        }
+        created() {
+            window.addEventListener('scroll', this.handleScroll);
+            // this.mbmenu();
+        }
+        destroyed() {
+            window.removeEventListener('scroll', this.handleScroll);
+            // setTimeout(() => {
+            //     this.mbmenu();
+            // }, 600)
+        }
     }
 </script>
 
 <style scoped lang="scss">
   .navigation-area {
-
+    background: transparent;
   }
-
   .navigation-main {
     display: flex;
     justify-content: space-between;
@@ -182,4 +204,5 @@
       }
     }
   }
+
 </style>

@@ -5,7 +5,7 @@
         <div class="fullscreen-video-wrap">
           <!--  https://www.videvo.net/video/typing-on-computer-white-bg/4475/ -->
           <!-- DO NOT USE THIS VIDEO, I JUST NEEDED A HOSTED VIDEO FOR THIS CODEPEN USE THE ONE ABOVE -->
-          <video src="../assets/images/video/videobg.mp4" autoplay loop="true">
+          <video src="../assets/images/video/sqbg.mp4" autoplay loop="true">
           </video>
         </div>
         <div class="header-overlay"></div>
