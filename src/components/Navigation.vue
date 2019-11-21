@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation-area" v-bind:style="type">
+  <div class="navigation-area" v-bind:class="type">
     <div class="container-fluid px-5-percent">
       <div class="navigation-main">
 
@@ -175,5 +175,11 @@
     position: fixed;
     left: 0;
     right: 0;
+    z-index:2000;
+    .main-navigation{
+      a{
+        color: #ffffff;
+      }
+    }
   }
 </style>
