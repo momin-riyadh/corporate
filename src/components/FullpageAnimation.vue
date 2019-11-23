@@ -14,7 +14,7 @@
                         bed of roses. From the inception in 1958, it has today burgeoned into one of the top line
                         conglomerates in
                         Bangladesh.</p>
-                    <a class="video-btn">Find Out More</a>
+                    <router-link to="/about" class="video-btn">Find Out More</router-link>
                 </div>
             </header>
             <!--      <img src="../assets/images/h-banner-two.jpg" alt="">-->
@@ -156,14 +156,20 @@
     }
 
     .video-btn {
-        background: $brand-color;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid $brand-color;
         color: #fff;
         font-family: $font-roboto;
+        font-weight: lighter;
         border-radius: 2px;
         font-size: 1.2rem;
-        padding: 1rem 2rem;
+        padding: .6rem 1rem;
         text-decoration: none;
         cursor: pointer;
+
+        &:hover {
+            background: $brand-color;
+        }
     }
 
     .section {
