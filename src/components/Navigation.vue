@@ -175,6 +175,7 @@
 
   /*Logo */
   .sq-logo {
+    cursor: pointer;
     a {
       img {
         width: auto;
