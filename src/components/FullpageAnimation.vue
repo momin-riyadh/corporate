@@ -136,16 +136,23 @@
     }
 
     .header-content h1 {
-        font-size: 50px;
+        font-size: 36px;
         margin-bottom: 0;
         font-family: $font-helvetica-bold;
+        @media(min-width: 1905px) {
+            font-size: 50px;
+        }
     }
 
     .header-content p {
-        font-size: 1.1rem;
+        font-size: .9rem;
         display: block;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
         font-family: $font-roboto;
+        @media(min-width: 1905px) {
+            font-size: 1.1rem;
+            padding-bottom: 2rem;
+        }
     }
 
     .video-btn {
