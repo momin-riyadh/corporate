@@ -240,7 +240,7 @@
     p {
       font-family: $font-roboto;
       color: #6D6D6D;
-      font-weight: 500;
+      font-weight: normal;
       font-size: 18px;
       line-height: 1.8em;
     }
@@ -267,7 +267,7 @@
         display: block;
         font-family: $font-roboto;
         color: #6D6D6D;
-        font-weight: 500;
+        font-weight: normal;
         font-size: 18px;
         margin-bottom: 1.2rem;
 
