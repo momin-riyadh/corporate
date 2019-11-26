@@ -114,13 +114,11 @@
   .sq-business-industries {
     display: flex;
     flex-wrap: wrap;
+    flex:1;
     margin: 0 auto;
   }
 
   .sq-business-logo-area {
-    flex-grow: 1;
-    width: 100%;
-    max-width: 400px;
     position: relative;
     cursor: pointer;
   }
