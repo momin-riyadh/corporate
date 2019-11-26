@@ -138,14 +138,11 @@
   .custom-areas {
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
     margin: 0 auto;
   }
 
   .s-a-report {
-    flex-grow: 1;
-    width: 100%;
-    max-width: 400px;
-
     img {
       border: 1rem solid #EFEFEF;
     }
