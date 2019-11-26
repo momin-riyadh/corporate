@@ -38,17 +38,17 @@
           <div class="form-row">
             <div class="col-md-6 mb-4 pr-1 pr-md-4">
               <label for="major-education">Major Education</label>
-              <textarea name="" id="major-education" cols="30" rows="5"></textarea>
+              <textarea name="" id="major-education" cols="30" rows="5"/>
             </div>
             <div class="col-md-6 mb-4 pl-1 pl-md-4">
               <label for="core-experience">Core Experience</label>
-              <textarea name="" id="core-experience" cols="30" rows="5"></textarea>
+              <textarea name="" id="core-experience" cols="30" rows="5"/>
             </div>
           </div>
 
           <!--          Attach Upload BTN-->
           <div class="text-center mt-4 mb-3">
-            <label for="files"><i class="fas fa-paperclip"></i> Attach CV </label>
+            <label for="files"><i class="fas fa-paperclip"/> Attach CV </label>
             <input type="file" id="files"/>
           </div>
           <button class="apply-btn" type="submit">SEND</button>
