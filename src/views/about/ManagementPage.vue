@@ -210,7 +210,7 @@
       i {
         font-size: 20px;
         color: $white-color;
-        padding: 1.7em;
+        padding: 1.4em;
       }
     }
 
