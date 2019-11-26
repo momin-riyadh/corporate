@@ -174,7 +174,7 @@
   .b-of-d-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    flex:1;
   }
 
   .member-of-board {
