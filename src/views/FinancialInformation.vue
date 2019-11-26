@@ -143,12 +143,11 @@
   .financial-areas {
     display: flex;
     flex-wrap: wrap;
+    flex:1;
     margin: 0 auto;
   }
 
   .sq-financial-report {
-    flex-grow: 1;
-    max-width: 400px;
     img {
     }
   }
