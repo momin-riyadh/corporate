@@ -2,7 +2,7 @@
   <section class="common-paragraph-area">
     <div class="container-fluid px-5-percent">
       <div class="row">
-        <div class="col-xl-6 offset-xl-1 py-4 pt-lg-0 float-left">
+        <div class="col-xl-6 py-4 pt-lg-0 float-left c-pl">
 
           <div class="article-header mb-5">
             <h1 class="common-title"><span>{{ParagraphTitle}}</span></h1>
@@ -17,12 +17,12 @@
             <!--        A common Generated button For whole Project-->
             <el-button-group>
               <el-button type="primary">Learn More</el-button>
-              <el-button type="primary"><i class="el-icon-plus"></i></el-button>
+              <el-button type="primary"><i class="el-icon-plus"/></el-button>
             </el-button-group>
           </div>
 
         </div>
-        <div class="col-10 col-sm-6 m-auto m-lg-0 col-lg-5 col-xl-5 csr-r-image float-right">
+        <div class="col-12 m-auto m-lg-0 col-xl-6 csr-r-image float-right">
           <img alt="image" class="img-fluid" :src="ParagraphImage">
         </div>
       </div>
@@ -47,7 +47,7 @@
 
 <style scoped lang="scss">
 
-  .common-paragraph-area{
+  .common-paragraph-area {
     min-height: 600px;
     overflow: hidden;
     margin: 8rem 0;
@@ -75,7 +75,7 @@
   }
 
   .common-title span:before {
-    @media(min-width: 1265px){
+    @media(min-width: 1265px) {
       content: "";
       position: absolute;
       height: 5px;
@@ -83,7 +83,7 @@
       top: 50%;
       width: 80px;
     }
-    border:0;
+    border: 0;
   }
 
   .common-title span:before {
@@ -97,7 +97,7 @@
       color: #656565;
       font-size: 18px;
       text-transform: capitalize;
-      line-height:2em;
+      line-height: 2em;
       max-height: 400px;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -107,12 +107,19 @@
     }
   }
 
-  .csr-r-image{
-    img{
+  .csr-r-image {
+    img {
       min-height: 600px;
       width: auto;
       object-fit: cover;
       object-position: center;
+    }
+  }
+
+  .c-pl {
+    padding-left:3%;
+    @media(min-width: 1265px) {
+      padding-left: 115px;
     }
   }
 </style>

@@ -6,13 +6,13 @@
  for the advantage or comfort of an employee. It is undertaken in order to"/>
 
 
-    <CommonParagraph v-bind:ParagraphImage="require('../../assets/images/erm@2x.jpg')"
+    <CommonParagraph v-bind:ParagraphImage="require('../../assets/images/err.jpg')"
                      ParagraphTitle="Looking beyond the horizon"
                      ParagraphSubtitle="Leading pharmaceutical industry of Bangladesh"
 
-                     v-bind:paragraph-contents="['In a world in which environmental and social responsibility have become serious concerns, all manufacturers need to understand the environmental impact of  heir products. Life cycle assessments (LCAs), which evaluate the environmental impact of the product from the production of raw materials through to final  disposal, have been performed for all categories of absorbent hygiene products. Across all categories, productimprovements in recent decades did not only lead ',
+                     v-bind:paragraph-contents="['In a world in which environmental and social responsibility have become serious concerns, all manufacturers need to understand the environmental impact of  heir products. Life cycle assessments (LCAs), which evaluate the environmental impact of the product from the production of raw materials through to final  disposal, have been performed for all categories of absorbent hygiene products. Across all categories, product improvements in recent decades did not only lead ',
                      'To better performance and improved skin health, but also have resulted in reduced weight of both products and packaging, resulting in substantially reduced environmental impact compared to typical disposable products of the 1980s (EDANA sustainability report, 2007).',
-                     'Respect the environment, making rational use of natural resources and taking steps to prevent pollution from the different processes involved in our industrial operations. Promote the sustainable use of raw materials and natural resources. Introduce guid elines for continuously improving our environmental performance. Introduce ']"/>
+                     'Respect the environment, making rational use of natural resources and taking steps to prevent pollution from the different processes involved in our industrial operations. Promote the sustainable use of raw materials and natural resources. Introduce guide lines for continuously improving our environmental performance. Introduce ']"/>
 
 
     <BottomBanner v-bind:BottomImage="require('../../assets/images/er@2x.jpg')" BottomTitle="Enhance society and the
