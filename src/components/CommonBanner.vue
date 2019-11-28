@@ -5,7 +5,7 @@
         <img class="img-fluid" :src="ImageUrl" alt="square">
 
         <div class="banner-content">
-          <h1>{{BannerTitle}}</h1>
+          <h1 ref="js-title" class="js-title">{{BannerTitle}}</h1>
           <p>{{BannerSubtitle}}</p>
         </div>
 
@@ -16,6 +16,7 @@
 
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
+    import {gsap} from 'gsap';
 
     @Component({
         name: 'CommonBanner',
