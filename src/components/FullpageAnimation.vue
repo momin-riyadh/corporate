@@ -3,8 +3,8 @@
         <div class="home-page-animation">
             <header class="v-header containers">
                 <div class="fullscreen-video-wrap">
-<!--                    <video src="../assets/images/video/sqbg.mp4" autoplay="autoplay" loop="loop" muted>-->
-<!--                    </video>-->
+                    <video src="../assets/images/video/sqbg.mp4" autoplay="autoplay" loop="loop" muted>
+                    </video>
                 </div>
                 <div class="header-overlay"></div>
                 <div class="header-content text-md-center">
