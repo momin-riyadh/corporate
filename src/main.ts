@@ -8,7 +8,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper';
 
 Vue.use(Element);
 Vue.config.productionTip = false;
-Vue.use(VueAwesomeSwiper, /* { default global options } */);
+Vue.use(VueAwesomeSwiper /* { default global options } */);
 
 new Vue({
   router,

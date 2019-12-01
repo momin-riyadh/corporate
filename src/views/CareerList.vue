@@ -82,9 +82,12 @@
       font-size: calc(24px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
       font-family: $font-helvetica-bold;
       color: $brand-color;
-      padding: 0 3rem;
+      padding: 0 1rem;
       line-height: 1;
       text-decoration: none;
+      @media(min-width: 601px){
+        padding: 0 2rem;
+      }
     }
   }
 
@@ -102,7 +105,7 @@
     align-items: center;
     text-align: center;
     margin-bottom: 30px;
-    min-height: 210px;
+    min-height: 250px;
     @media all and (min-width: 800px) {
       flex-direction: row;
       align-items: center;
@@ -137,17 +140,23 @@
 
   .single-job-details-link {
     a {
-      transition: all 0.3s ease-in-out;
+      transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
       background: #F4F4F4;
       font-size: 1.2rem;
       font-family: $font-roboto;
+      font-weight: normal;
       text-decoration: none;
       color: #222222;
-      padding: .5rem 2rem;
-      border-radius: 2px;
-      &:hover{
-        background: $brand-color;
-        color: $white-color;
+      padding: .5rem 2.5rem;
+      border-radius: 0.3rem;
+      border: 2px solid $brand-color;
+      &:hover,
+      &:focus {
+        color: #fff;
+        outline: 0;
+      }
+      &:hover {
+        box-shadow: 0 0 40px 40px $brand-color inset;
       }
     }
   }

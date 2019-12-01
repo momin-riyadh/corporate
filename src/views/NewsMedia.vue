@@ -145,16 +145,24 @@
     }
 
     a {
-      transition: all 0.3s ease-in-out;
-      padding: .8rem 2rem;
-      background: $brand-color;
+      transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+      padding: .8rem 2.5rem;
       text-decoration: none;
-      color: $white-color;
       text-transform: capitalize;
-      border-radius: 2px;
+      border-radius: .3rem;
       display: inline-block;
       font-family: $font-roboto;
-      font-weight: 500;
+      font-weight: normal;
+      border: 2px solid $brand-color;
+      color: #222222;
+      &:hover,
+      &:focus {
+        color: #fff;
+        outline: 0;
+      }
+      &:hover {
+        box-shadow: 0 0 40px 40px $brand-color inset;
+      }
     }
   }
 </style>
