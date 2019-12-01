@@ -100,7 +100,7 @@
             let d: any = document;
             const nav = d.querySelector('.navigation-area');
             window.addEventListener('scroll', function () {
-                scrollpos = window.scrollY;
+                scrollpos = window.scrollY || window.pageYOffset;
                 if (scrollpos > 5) {
                     nav.classList.add('customstyle');
                 } else {
@@ -123,7 +123,12 @@
 
 <style scoped lang="scss">
   .navigation-area {
-    background: transparent;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index:2000;
   }
   .navigation-main {
     display: flex;
@@ -150,7 +155,7 @@
 
       a {
         transition: all 0.3s ease-in-out;
-        color: #292929;
+        color: #ffffff;
         font-family: $font-roboto;
         display: inline-block;
         font-size: 14px;

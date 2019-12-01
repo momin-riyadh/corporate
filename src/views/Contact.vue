@@ -1,6 +1,6 @@
 <template>
   <div class="sq-contact">
-    <Navigation/>
+    <Navigation type="op-nav"/>
     <CommonBanner v-bind:ImageUrl="require('../assets/images/contact@2x.jpg')" BannerTitle="contact us" BannerSubtitle="Employee welfare entails everything from services, facilities and benefits that are provided or done by an employer
  for the advantage or comfort of an employee. It is undertaken in order to"/>
 
