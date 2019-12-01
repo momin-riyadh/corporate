@@ -1,7 +1,7 @@
 <template>
   <div class="common-banner-area">
     <div class="container-fluid px-5-percent">
-      <div class="common-banner">
+      <div ref="jsbannerimage" class="common-banner">
         <img class="img-fluid" :src="ImageUrl" alt="square">
 
         <div class="banner-content">
@@ -30,6 +30,17 @@
         public mounted() {
             const {jstitle} = this.$refs;
             const {jssubtitle} = this.$refs;
+            const {jsbannerimage} = this.$refs;
+            const imagetimeline = new TimelineLite();
+            imagetimeline.to(jsbannerimage, 0, {
+                opacity: 0,
+                ease: Back.easeInOut, // Specify an ease
+            });
+            imagetimeline.to(jsbannerimage, 2, {
+                    opacity: 1
+                },
+                '+=0.5' // Run the animation 0.5s early
+            );
             const timeline = new TimelineLite();
 
             timeline.to(jstitle, 0, {
@@ -39,7 +50,7 @@
             timeline.to(jstitle, 2, {
                     opacity: 1
                 },
-                '+=0.5' // Run the animation 0.5s early
+                '+=1' // Run the animation 0.5s early
             );
 
             const subtimeline = new TimelineLite();
@@ -50,7 +61,7 @@
             subtimeline.to(jssubtitle, 2, {
                     opacity: 1
                 },
-                '+=1' // Run the animation 0.5s early
+                '+=1.5' // Run the animation 0.5s early
             );
 
 

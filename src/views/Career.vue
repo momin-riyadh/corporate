@@ -95,7 +95,7 @@
     import CommonBanner from '@/components/CommonBanner.vue';
     import Footer from '@/components/Footer.vue';
     import Copyright from '@/components/Copyright.vue';
-    import { gsap } from 'gsap';
+    // import { gsap } from 'gsap';
 
     @Component({
         name: 'Career',
@@ -103,10 +103,10 @@
     })
 
     export default class Career extends Vue {
-        public mounted() {
-            const {jsjobarea} = this.$refs;
-            gsap.to(jsjobarea, {duration: 2, scrollTo: {y: 400}, ease:"power2"});
-        }
+        // public mounted() {
+        //     const {jsjobarea} = this.$refs;
+        //     gsap.to(jsjobarea, {duration: 2, scrollTo: {y: 400}, ease:"power2"});
+        // }
 
         public category: any = [
             {
