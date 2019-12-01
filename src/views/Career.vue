@@ -7,7 +7,7 @@
 
 
     <div class="container-fluid px-5-percent">
-      <div class="job-category-area">
+      <div ref="jsjobarea" class="job-category-area overflow-auto">
 
         <div class="job-category-title text-center">
           <h1 class="common-title"><span>Browse Category</span></h1>
@@ -95,6 +95,7 @@
     import CommonBanner from '@/components/CommonBanner.vue';
     import Footer from '@/components/Footer.vue';
     import Copyright from '@/components/Copyright.vue';
+    import { gsap } from 'gsap';
 
     @Component({
         name: 'Career',
@@ -102,6 +103,10 @@
     })
 
     export default class Career extends Vue {
+        public mounted() {
+            const {jsjobarea} = this.$refs;
+            gsap.to(jsjobarea, {duration: 2, scrollTo: {y: 400}, ease:"power2"});
+        }
 
         public category: any = [
             {
@@ -463,13 +468,19 @@
       img:first-child {
         flex-grow: 1;
         object-fit: cover;
-        width: 70%;
+        width: 50%;
+        @media(min-width: 961px) {
+          width: 70%;
+        }
       }
 
       img:last-child {
-        width: 30%;
         flex-shrink: 0;
         object-fit: cover;
+        width: 50%;
+        @media(min-width: 961px) {
+          width: 30%;
+        }
       }
     }
 
@@ -479,15 +490,21 @@
       width: 100%;
 
       img:first-child {
-        width: 30%;
         flex-shrink: 0;
         object-fit: cover;
+        width: 50%;
+        @media(min-width: 961px) {
+          width: 30%;
+        }
       }
 
       img:last-child {
         flex-grow: 1;
         object-fit: cover;
-        width: 70%;
+        width: 50%;
+        @media(min-width: 961px) {
+          width: 70%;
+        }
       }
     }
   }
