@@ -146,10 +146,10 @@
 
     a {
       transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-      padding: .6rem 2.5rem;
+      padding: .8rem 2.5rem;
       text-decoration: none;
       text-transform: capitalize;
-      border-radius: .5rem;
+      border-radius: .3rem;
       display: inline-block;
       font-family: $font-roboto;
       font-weight: normal;
