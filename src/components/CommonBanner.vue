@@ -17,7 +17,6 @@
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
     import {TimelineLite, Back} from 'gsap/all';
-    const anim = [TimelineLite, Back];
 
     @Component({
         name: 'CommonBanner',

@@ -108,6 +108,10 @@
                 }
             });
         }
+
+        public mounted(){
+            window.addEventListener('scroll',this.handleScroll);
+        }
         created() {
             window.addEventListener('scroll', this.handleScroll);
             // this.mbmenu();
