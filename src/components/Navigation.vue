@@ -125,10 +125,6 @@
   .navigation-area {
     transition: all 0.3s ease-in-out;
     background-color: transparent;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index:2000;
   }
   .navigation-main {
     display: flex;
@@ -155,7 +151,7 @@
 
       a {
         transition: all 0.3s ease-in-out;
-        color: #ffffff;
+        color: #292929;
         font-family: $font-roboto;
         display: inline-block;
         font-size: 14px;
