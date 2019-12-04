@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="management-content-area ml-0 ml-md-5">
+    <div class="management-content-area">
 
       <div class="management-content-header">
         <div class="sq-management-people-content">
@@ -16,7 +16,7 @@
 
           <el-button-group>
             <el-button type="primary">Learn More</el-button>
-            <el-button type="primary"><i class="el-icon-plus"></i></el-button>
+            <el-button type="primary"><i class="el-icon-plus"/></el-button>
           </el-button-group>
         </div>
         <div class="sq-management-people float-right">
@@ -59,7 +59,6 @@
     @Component({
         name: 'ManagementPage',
         components: {},
-
     })
     export default class ManagementPage extends Vue {
         public managements: any = [
@@ -119,6 +118,10 @@
 <style scoped lang="scss">
   .management-content-area {
     overflow: hidden;
+    margin-left: 0;
+    @media(min-width: 965px){
+      margin-left: 50px;
+    }
   }
 
   .management-content-header {

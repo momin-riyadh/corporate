@@ -22,12 +22,9 @@ growth and prosperity has been no bed of roses."/>
           </ul>
         </div>
 
-
         <div class="sq-a-page-content">
-          <router-view></router-view>
+          <router-view/>
         </div>
-
-
       </div>
     </div>
 
@@ -62,22 +59,41 @@ growth and prosperity has been no bed of roses."/>
 <style scoped lang="scss">
   .sq-about-content-area {
     display: flex;
+    flex-direction: column;
+    @media(min-width: 965px) {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   .sq-a-left-sidebar {
-    width: 15vw;
-    max-width: 450px;
-    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    @media(min-width: 965px) {
+      width: 15vw;
+      max-width: 450px;
+      flex-shrink: 0;
+    }
 
     ul {
-      margin: 0;
-      padding: 0;
-      display: block;
       list-style: none;
+      text-align: center;
+      @media(min-width: 965px) {
+        margin: 0;
+        padding: 0;
+        display: block;
+        list-style: none;
+      }
 
       li {
-        width: 100%;
-        margin-bottom: 1.2rem;
+        width: auto;
+        float: left;
+        @media(min-width: 965px) {
+          margin-bottom: 1.2rem;
+          width: 100%;
+        }
 
         a {
           transition: all 0.3s ease-in-out;
@@ -90,19 +106,25 @@ growth and prosperity has been no bed of roses."/>
           display: block;
           padding: 1.5rem 1rem;
           border-left: 4px solid transparent;
-          @media all and (min-width:1905px) {
+          @media all and (min-width: 1905px) {
             font-size: 1.3rem;
             line-height: 1.3rem;
           }
 
           &:hover {
             background: #F0F0F0;
-            border-left: 4px solid $brand-color;
+            border-bottom: 4px solid $brand-color;
+            @media (min-width: 965px) {
+              border-left: 4px solid $brand-color;
+            }
           }
 
           &.router-link-exact-active {
             background: #F0F0F0;
-            border-left: 4px solid $brand-color;
+            border-bottom: 4px solid $brand-color;
+            @media (min-width: 965px) {
+              border-left: 4px solid $brand-color;
+            }
           }
         }
       }
