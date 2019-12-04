@@ -79,7 +79,6 @@ growth and prosperity has been no bed of roses."/>
 
     ul {
       list-style: none;
-      text-align: center;
       @media(min-width: 965px) {
         margin: 0;
         padding: 0;
@@ -116,6 +115,7 @@ growth and prosperity has been no bed of roses."/>
             border-bottom: 4px solid $brand-color;
             @media (min-width: 965px) {
               border-left: 4px solid $brand-color;
+              border-bottom: 0;
             }
           }
 
@@ -124,6 +124,7 @@ growth and prosperity has been no bed of roses."/>
             border-bottom: 4px solid $brand-color;
             @media (min-width: 965px) {
               border-left: 4px solid $brand-color;
+              border-bottom: 0;
             }
           }
         }
