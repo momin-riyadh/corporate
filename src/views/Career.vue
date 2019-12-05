@@ -202,6 +202,16 @@
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
+                title: 'Square Pharmaceuticals Limited (Agrovet Division)',
+                imageurl: require('../assets/images/brands/sq-pharma-ag.png'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
+                title: 'Square Pharmaceuticals Limited (Crop Care Division)',
+                imageurl: require('../assets/images/brands/sq-pharma-cc.png'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
                 title: 'Square Textiles Limited ',
                 imageurl: require('../assets/images/brands/sq-textile.png'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
@@ -232,18 +242,38 @@
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
-                title: 'Square Herbal & Nutraceuticals limited',
+                title: 'Square Herbal & Nutraceuticals Limited',
                 imageurl: require('../assets/images/brands/sq-herval.png'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
-                title: 'Square knit Fabrics limited',
+                title: 'Square knit Fabrics Limited',
                 imageurl: require('../assets/images/brands/sq-knit.png'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
-                title: 'Square knit Fabrics limited',
-                imageurl: require('../assets/images/brands/sq-knit.png'),
+                title: 'Square Texcom Limited',
+                imageurl: require('../assets/images/brands/sq-texcom.png'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
+                title: 'Square Yarns Limited',
+                imageurl: require('../assets/images/brands/sq-yarn.png'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
+                title: 'Square Toiletries Limited',
+                imageurl: require('../assets/images/brands/sq-toiletries.png'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
+                title: 'Square Informatix Limited',
+                imageurl: require('../assets/images/brands/sq-informatix.png'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
+                title: 'Square Informatix Limited',
+                imageurl: require('../assets/images/brands/sq-informatix.png'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
         ];
