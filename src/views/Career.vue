@@ -417,19 +417,28 @@
   }
 
   .s-featured-job {
+    transition: all 0.3s ease-in-out;
     display: flex;
     align-items: center;
     position: relative;
     cursor: pointer;
-    .s-f-job-img{
-      img{
+    padding: 1rem;
+
+    .s-f-job-img {
+      img {
         width: 220px;
         height: auto;
         object-fit: cover;
         -o-object-fit: cover;
       }
     }
+
     &:hover {
+      background: #fcfcfc;
+      padding: 1rem;
+      border-radius: 4px;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+
       > .s-f-job-img {
         padding-right: 1rem;
 
