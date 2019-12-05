@@ -421,7 +421,14 @@
     align-items: center;
     position: relative;
     cursor: pointer;
-
+    .s-f-job-img{
+      img{
+        width: 220px;
+        height: auto;
+        object-fit: cover;
+        -o-object-fit: cover;
+      }
+    }
     &:hover {
       > .s-f-job-img {
         padding-right: 1rem;
@@ -460,6 +467,7 @@
       color: #222222;
       font-family: $font-roboto;
       font-weight: 500;
+      font-size: 18px;
     }
 
     border-left: 1px solid #dddddd;
@@ -477,6 +485,7 @@
         display: block;
         margin-bottom: 0.4rem;
         cursor: pointer;
+        font-size: 15px;
 
         &::before {
           transition: all 0.3s ease-in-out;
