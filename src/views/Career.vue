@@ -36,8 +36,9 @@
             and honesty.</p>
         </div>
 
+
         <div class="featured-job">
-          <ul>
+          <ul class="align-items-center">
             <li v-for="featured  in featureds">
 
               <div class="s-featured-job">
@@ -60,6 +61,7 @@
             </li>
           </ul>
         </div>
+
 
 
       </div>
@@ -379,29 +381,35 @@
 
   .featured-job-area {
     margin-top: 8rem;
+    overflow: hidden;
   }
 
   .featured-job {
     > ul {
-      margin: 0;
-      padding: 0;
       list-style: none;
-      column-count: 1;
-      column-gap: 5rem;
-      @media(min-width: 961px) {
-        column-count: 2;
-        column-gap: 2rem;
-      }
-      @media(min-width: 1905px) {
-        column-count: 4;
-        column-gap: 2rem;
-      }
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex: 1;
 
       > li {
-        -webkit-column-break-inside: avoid;
-        page-break-inside: avoid;
-        break-inside: avoid;
-        margin-bottom: 4.5rem;
+        width: calc(100% - 30px);
+        margin: 0 15px 30px 15px;
+        flex-shrink: 0;
+        align-self: flex-start;
+        @media (min-width: 800px) {
+          width: calc(50% - 30px);
+          margin: 0 15px 30px;
+        }
+        @media (min-width: 1600px) {
+          width: calc(33.3333% - 30px);
+          margin: 0 15px 30px;
+        }
+        @media (min-width: 2400px) {
+          width: calc(20% - 30px);
+          margin: 0 15px 30px;
+        }
+
       }
     }
 
@@ -418,10 +426,16 @@
 
     .s-f-job-img {
       img {
-        width: 220px;
+        width: 150px;
         height: auto;
         object-fit: cover;
         -o-object-fit: cover;
+        @media all and (min-width:600px) {
+          width: 220px;
+          height: auto;
+          object-fit: cover;
+          -o-object-fit: cover;
+        }
       }
     }
 
