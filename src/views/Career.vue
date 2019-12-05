@@ -271,11 +271,6 @@
                 imageurl: require('../assets/images/brands/sq-informatix.png'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
-            {
-                title: 'Square Informatix Limited',
-                imageurl: require('../assets/images/brands/sq-informatix.png'),
-                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
-            },
         ];
     }
 
@@ -395,10 +390,7 @@
       column-gap: 5rem;
       @media(min-width: 961px) {
         column-count: 2;
-      }
-      @media(min-width: 1265px) {
-        column-count: 3;
-        column-gap: 3rem;
+        column-gap: 2rem;
       }
       @media(min-width: 1905px) {
         column-count: 4;
