@@ -193,42 +193,57 @@
         public featureds: any = [
             {
                 title: 'Square Fashions Ltd ',
-                imageurl: require('../assets/images/square-fashions.svg'),
+                imageurl: require('../assets/images/brands/sq-fashion.png'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
                 title: 'Square Pharmaceuticals Ltd ',
-                imageurl: require('../assets/images/splogo.svg'),
+                imageurl: require('../assets/images/brands/sq-pharma.png'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
-                title: 'Square Pharmaceuticals Ltd ',
-                imageurl: require('../assets/images/splogo.svg'),
+                title: 'Square Textiles Limited ',
+                imageurl: require('../assets/images/brands/sq-textile.png'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
-                title: 'Square Foods Ltd ',
-                imageurl: require('../assets/images/sq-food.svg'),
+                title: 'Square Foods & Beverage Ltd ',
+                imageurl: require('../assets/images/brands/sq-food.png'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
                 title: 'Square Hospitals Ltd ',
-                imageurl: require('../assets/images/sq-hospital.svg'),
+                imageurl: require('../assets/images/brands/sq-hospital.png'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
-                title: 'Square Pharmaceuticals Ltd ',
-                imageurl: require('../assets/images/square-fashions.svg'),
+                title: 'Square Kindergarten',
+                imageurl: require('../assets/images/brands/sq-kindergarden.png'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
-                title: 'Square Pharmaceuticals Ltd ',
-                imageurl: require('../assets/images/splogo.svg'),
+                title: 'Square Mediacom Limited',
+                imageurl: require('../assets/images/brands/sq-mediacom.png'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
-                title: 'Square Pharmaceuticals Ltd ',
-                imageurl: require('../assets/images/splogo.svg'),
+                title: 'Maasranga Communications Limited',
+                imageurl: require('../assets/images/brands/sq-maasranga.png'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
+                title: 'Square Herbal & Nutraceuticals limited',
+                imageurl: require('../assets/images/brands/sq-herval.png'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
+                title: 'Square knit Fabrics limited',
+                imageurl: require('../assets/images/brands/sq-knit.png'),
+                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
+            },
+            {
+                title: 'Square knit Fabrics limited',
+                imageurl: require('../assets/images/brands/sq-knit.png'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
         ];
@@ -357,7 +372,7 @@
       }
       @media(min-width: 1905px) {
         column-count: 4;
-        column-gap: 5rem;
+        column-gap: 2rem;
       }
 
       > li {
