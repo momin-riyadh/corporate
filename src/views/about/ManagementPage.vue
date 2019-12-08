@@ -49,6 +49,11 @@
             </div>
           </div>
         </div>
+
+        <div class="offset-square-logo">
+          <img src="../../assets/images/sq-logobg.svg" alt="">
+        </div>
+
       </div>
 
     </div>
@@ -324,6 +329,16 @@
         margin-bottom: 0;
         font-size: 1rem;
       }
+    }
+  }
+
+  .offset-square-logo{
+    position: absolute;
+    left: 0;
+    top:15%;
+    img{
+      width: 100px;
+      height: auto;
     }
   }
 
