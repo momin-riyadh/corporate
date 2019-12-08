@@ -171,7 +171,7 @@
     align-items: center;
     img {
       width: auto;
-      height: 400px;
+      height: 450px;
       object-fit: cover;
       -o-object-fit: cover;
     }
@@ -208,7 +208,6 @@
   }
 
   .member-of-board{
-    cursor: pointer;
     position: relative;
     &::before{
       opacity: 0;
@@ -218,7 +217,7 @@
       width: 100%;
       height: 100%;
       content: '';
-      background: rgba(59, 29, 130, 0.5);
+      background: rgba(68, 185, 19, 0.5);
       -o-transition: all 0.4s ease;
       transition: all 0.4s ease;
       -webkit-transition: all 0.4s ease;
