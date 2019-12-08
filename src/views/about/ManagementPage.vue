@@ -37,7 +37,7 @@
                   <p>{{management.designation}}</p>
                 </div>
                 <div class="b-of-d-link">
-                  <i class="el-icon-plus"></i>
+                  <i class="el-icon-plus"/>
                 </div>
 
               </div>

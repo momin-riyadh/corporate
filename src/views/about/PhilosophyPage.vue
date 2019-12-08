@@ -7,7 +7,7 @@
           <p>Our Business Motivation is Being Good by Doing Well and to conduct transparent business operations based on market  mechanism within the legal, ethical & social framework with aims to attain the mission reflected by our vision. We scale-up CSR activities to consider the interests of our external & internal stakeholders like customers, employees, vendors, shareholders, society, government etc. and ecological & ethical considerations in all aspects of operations. SQUARE is one of the pioneer signatories of United Nations Global Compact (UNGC) in Bangladesh. UNGC principles are aligned.</p>
         </div>
       </div>
-      <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
+      <div class="col-12 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
         <div class="philosophy-image">
           <img alt="image" class="img-fluid" src="../../assets/images/philosophy@2x.jpg">
         </div>
@@ -31,7 +31,7 @@
 
 <style scoped lang="scss">
   .philosophy-content-area {
-    max-height: 500px;
+    min-height: 500px;
     overflow: hidden;
   }
 
