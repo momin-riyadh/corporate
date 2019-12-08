@@ -5,7 +5,7 @@
                   BannerSubtitle="SQUARE today symbolizes a name – a state of mind. But its journey to the
 growth and prosperity has been no bed of roses."/>
 
-    <div class="container-fluid px-5-percent mb-5">
+    <div class="management-bg container-fluid px-5-percent mb-5">
       <div class="sq-about-content-area">
         <div class="sq-a-left-sidebar">
           <ul>
@@ -57,6 +57,11 @@ growth and prosperity has been no bed of roses."/>
 </script>
 
 <style scoped lang="scss">
+  .management-bg{
+    padding-top: 5rem;
+    margin-top: -5rem;
+    background: url("../../assets/images/management_bg.png") repeat scroll 0 0;
+  }
   .sq-about-content-area {
     display: flex;
     flex-direction: column;
