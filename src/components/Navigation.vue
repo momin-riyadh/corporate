@@ -101,10 +101,12 @@
             const nav = d.querySelector('.navigation-area');
             window.addEventListener('scroll', function () {
                 scrollpos = window.scrollY || window.pageYOffset;
-                if (scrollpos > 5) {
-                    nav.classList.add('customstyle');
+                if (scrollpos > 300) {
+                    nav.classList.add('navbar-fixed');
+                    nav.style.backgroundColor="#ffffff";
                 } else {
-                    nav.classList.remove('customstyle');
+                    nav.classList.remove('navbar-fixed');
+                    nav.style.backgroundColor="transparent";
                 }
             });
         }
@@ -127,8 +129,7 @@
 
 <style scoped lang="scss">
   .navigation-area {
-    transition: all 0.3s ease-in-out;
-    background-color: transparent;
+    background-color: #ffffff;
   }
   .navigation-main {
     display: flex;
