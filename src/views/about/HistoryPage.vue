@@ -13,7 +13,7 @@
 
         </div>
       </div>
-      <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
+      <div class="col-12  m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
         <div class="history-image">
           <img alt="image" class="img-fluid" src="../../assets/images/history@2x.jpg">
         </div>
@@ -36,7 +36,7 @@
 
 <style scoped lang="scss">
   .history-content-area {
-    max-height: 500px;
+    min-height: 500px;
     overflow: hidden;
   }
   .history-content{
@@ -63,8 +63,9 @@
   .history-image{
     img{
       width: 100%;
-      height: auto;
+      height: 500px;
       object-fit: cover;
+      object-position: center;
       -o-object-fit: cover;
     }
   }

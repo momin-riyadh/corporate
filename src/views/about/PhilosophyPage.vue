@@ -62,8 +62,9 @@
   .philosophy-image {
     img {
       width: 100%;
-      height: auto;
+      height: 500px;
       object-fit: cover;
+      object-position: center;
       -o-object-fit: cover;
     }
   }
