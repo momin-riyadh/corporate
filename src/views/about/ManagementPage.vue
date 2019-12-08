@@ -31,14 +31,19 @@
           <div class="b-of-d-list align-items-center">
             <div class="member-of-board" v-for="management in managements">
               <img class="img-fluid" :src="management.imageurl" alt="">
+
+              <a href="" class="view-management">
+                <i class="el-icon-link"/>
+              </a>
+
               <div class="b-of-d-caption">
                 <div class="b-of-d-title">
                   <h3>{{management.name}}</h3>
                   <p>{{management.designation}}</p>
                 </div>
-                <div class="b-of-d-link">
-                  <i class="el-icon-plus"/>
-                </div>
+<!--                <div class="b-of-d-link">-->
+<!--                  <i class="el-icon-plus"/>-->
+<!--                </div>-->
 
               </div>
             </div>
@@ -181,6 +186,7 @@
   }
 
   .member-of-board {
+    position: relative;
     width: calc(100% - 30px);
     margin: 0 15px 30px 15px;
     @media (min-width: 575px) {
@@ -201,7 +207,78 @@
     }
   }
 
+  .member-of-board{
+    cursor: pointer;
+    position: relative;
+    &::before{
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: rgba(59, 29, 130, 0.5);
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+    }
+    &:hover::before{
+      opacity: 1;
+    }
+
+    &:hover{
+      > .view-management{
+        top:50%;
+        opacity: 1;
+      }
+    }
+
+
+    .view-management{
+      position: absolute;
+      left: 0;
+      top: 70%;
+      right: 0;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      color: #fff;
+      font-size: 22px;
+      width: 50px;
+      height: 50px;
+      margin: auto;
+      border: 2px solid #ddd;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -ms-border-radius: 50%;
+      padding: .5rem .6rem;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      opacity: 0;
+      z-index: 2;
+    }
+
+    &:hover{
+      > .b-of-d-caption .b-of-d-title h3{
+        color: $brand-color;
+      }
+    }
+
+
+  }
+
   .b-of-d-caption {
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -217,9 +294,28 @@
       }
     }
 
+
+
     .b-of-d-title {
-      padding:0 0.8rem;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      padding:10px 6px;
+      position: absolute;
+      bottom: 0;
+      right:0;
+      z-index: 1;
+      width: 90%;
+      background: #ffffff;
+      text-align: center;
       h3 {
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
         margin-bottom: 5px;
         line-height: 1;
       }
