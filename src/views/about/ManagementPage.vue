@@ -24,7 +24,7 @@
         </div>
       </div>
 
-      <h1 class="my-5 text-capitalize">board of directories</h1>
+      <h1 class="mt-5 mb-4 text-capitalize">board of directories</h1>
       <div class="row">
         <div class="b-of-d-area">
 
@@ -318,10 +318,12 @@
         -ms-transition: all 0.4s ease;
         margin-bottom: 5px;
         line-height: 1;
+        font-size: 1.6rem;
       }
 
       p {
         margin-bottom: 0;
+        font-size: 1rem;
       }
     }
   }
