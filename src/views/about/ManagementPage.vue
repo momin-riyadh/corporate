@@ -50,9 +50,9 @@
           </div>
         </div>
 
-        <div class="offset-square-logo">
-          <img src="../../assets/images/sq-logobg.svg" alt="">
-        </div>
+<!--        <div class="offset-square-logo">-->
+<!--          <img src="../../assets/images/sq-logobg.svg" alt="">-->
+<!--        </div>-->
 
       </div>
 
@@ -258,7 +258,7 @@
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -ms-border-radius: 50%;
-      padding: .5rem .6rem;
+      padding: .6rem .7rem;
       -o-transition: all 0.4s ease;
       transition: all 0.4s ease;
       -webkit-transition: all 0.4s ease;
