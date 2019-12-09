@@ -95,6 +95,7 @@
     })
     export default class Navigation extends Vue {
         @Prop() public type!: any;
+
         public handleScroll() {
             let scrollpos;
             let d: any = document;
@@ -106,18 +107,20 @@
                     nav.style.backgroundColor="#ffffff";
                 } else {
                     nav.classList.remove('navbar-fixed');
-                    nav.style.backgroundColor="transparent";
+                    nav.style.backgroundColor = "transparent";
                 }
             });
         }
 
-        public mounted(){
-            window.addEventListener('scroll',this.handleScroll);
+        public mounted() {
+            window.addEventListener('scroll', this.handleScroll);
         }
+
         created() {
             window.addEventListener('scroll', this.handleScroll);
             // this.mbmenu();
         }
+
         destroyed() {
             window.removeEventListener('scroll', this.handleScroll);
             // setTimeout(() => {
@@ -131,6 +134,7 @@
   .navigation-area {
     background-color: #ffffff;
   }
+
   .navigation-main {
     display: flex;
     justify-content: space-between;
@@ -182,6 +186,7 @@
   /*Logo */
   .sq-logo {
     cursor: pointer;
+
     a {
       img {
         width: auto;
@@ -204,9 +209,10 @@
     position: fixed;
     left: 0;
     right: 0;
-    z-index:2000;
-    .main-navigation{
-      a{
+    z-index: 2000;
+
+    .main-navigation {
+      a {
         color: #ffffff;
       }
     }
