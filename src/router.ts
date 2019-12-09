@@ -92,6 +92,7 @@ export default new Router({
                 {path: '/', component: () => import('./views/about/HistoryPage.vue')},
                 {path: '/philosophy', component: () => import('./views/about/PhilosophyPage.vue')},
                 {path: '/management', component: () => import('./views/about/ManagementPage.vue')},
+                {path: '/management-profile', component: () => import('./views/about/ManagementProfile.vue')},
             ],
         },
 
