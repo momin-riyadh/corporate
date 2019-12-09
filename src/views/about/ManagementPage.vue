@@ -14,10 +14,12 @@
             where his father was working as a Medical Officer in an outdoor dispensary.
           </blockquote>
 
-          <el-button-group>
-            <el-button type="primary">Learn More</el-button>
-            <el-button type="primary"><i class="el-icon-plus"/></el-button>
-          </el-button-group>
+          <router-link to="/management-profile">
+            <el-button-group>
+              <el-button type="primary">Learn More</el-button>
+              <el-button type="primary"><i class="el-icon-plus"/></el-button>
+            </el-button-group>
+          </router-link>
         </div>
         <div class="sq-management-people float-right">
           <img alt="image" class="img-fluid" src="../../assets/images/chairman@2x.jpg">
@@ -32,9 +34,9 @@
             <div class="member-of-board" v-for="management in managements">
               <img class="img-fluid" :src="management.imageurl" alt="">
 
-              <a href="" class="view-management">
+              <router-link to="/management-profile" class="view-management">
                 <i class="el-icon-link"/>
-              </a>
+              </router-link>
 
               <div class="b-of-d-caption">
                 <div class="b-of-d-title">

@@ -1,7 +1,7 @@
 <template>
   <div class="mp-content-area ml-0 ml-md-5">
     <div class="row">
-      <div class="col-12 col-md-12 col-lg-6 col-xl-7">
+      <div class="col-12 col-md-6 col-lg-6 col-xl-7">
         <div class="mp-content">
           <h1>Samson H Chowdhury</h1>
           <p>Samson H Chowdhury was born on 25 September, 1925. After completing education in India he returned to the then East Pakistan and settled at Ataikula village in Pabna district where his father was working as a Medical Officer in an outdoor dispensary. In 1952, he started a small pharmacy in Ataikula village which is about 160 km off capital Dhaka in the north-west part of Bangladesh. Mr. Samson H Chowdhury then ventured into a partnership pharmaceutical company with three of his friends in 1958. When asked why the name SQUARE was chosen he remembers - “We named it SQUARE because it was started by four friends and also because it signifies accuracy and perfection meaning quality” as they committed in manufacturing quality products.</p>
