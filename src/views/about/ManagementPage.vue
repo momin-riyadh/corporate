@@ -258,7 +258,7 @@
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -ms-border-radius: 50%;
-      padding: .6rem .7rem;
+      padding: .5rem .7rem;
       -o-transition: all 0.4s ease;
       transition: all 0.4s ease;
       -webkit-transition: all 0.4s ease;
