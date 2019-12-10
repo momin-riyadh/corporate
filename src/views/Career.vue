@@ -391,6 +391,8 @@
       flex-wrap: wrap;
       align-items: center;
       flex: 1;
+      margin: 0;
+      padding: 0;
 
       > li {
         width: calc(100% - 30px);
