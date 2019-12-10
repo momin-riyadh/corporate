@@ -14,7 +14,7 @@
         <div class="main-navigation">
           <ul>
             <li>
-              <router-link to="/about">about</router-link>
+              <router-link class="a-link" to="/about">about</router-link>
             </li>
             <li>
               <router-link to="/business">business</router-link>
