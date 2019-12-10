@@ -53,7 +53,7 @@
             </div>
             <div class="form-group">
                   <textarea class="form-control" name="" id="" cols="30" rows="15"
-                            placeholder="Type your message"></textarea>
+                            placeholder="Type your message"/>
             </div>
 
             <div class="form-group mb-0">
@@ -90,8 +90,8 @@
     </div>
 
 
-    <Footer></Footer>
-    <Copyright></Copyright>
+    <Footer/>
+    <Copyright/>
   </div>
 </template>
 
@@ -381,16 +381,23 @@
   }
 
   .sq-map-form {
-    max-width: 500px;
+    width: 100%;
     height: 420px;
-    margin: 1.5rem;
+    margin: 2rem 0;
+    padding: 1rem;
     background: #2C2C2C;
-    padding: 1.8rem;
-    position: absolute;
-    left: 1rem;
-    bottom: 1rem;
-    top: 1rem;
-    right: auto;
+    position: static;
+    border-radius: 4px;
+    @media(min-width: 601px){
+      position: absolute;
+      max-width: 500px;
+      left: 1rem;
+      bottom: 1rem;
+      top: 1rem;
+      right: auto;
+      margin: 1.5rem;
+      padding: 1.8rem;
+    }
 
     h1 {
       color: $white-color;
