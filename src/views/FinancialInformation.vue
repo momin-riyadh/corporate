@@ -155,7 +155,6 @@
   .sq-f-report-caption {
     h4 {
       font-family: $font-roboto;
-      font-weight: bold;
       text-transform: capitalize;
     }
   }
