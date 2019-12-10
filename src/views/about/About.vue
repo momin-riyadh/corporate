@@ -44,8 +44,8 @@ growth and prosperity has been no bed of roses."/>
             </div>
           </div>
         </div>
-        <div class="s-about-col-areas">
 
+        <div class="s-about-col-areas">
           <div class="s-about-col text-col">
             <div class="s-about-col-content text-col-content r-arrow">
               <h2>Achievements</h2>
@@ -78,9 +78,9 @@ growth and prosperity has been no bed of roses."/>
             </div>
           </div>
         </div>
+
+
       </div>
-
-
     </div>
 
 

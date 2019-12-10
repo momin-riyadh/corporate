@@ -12,67 +12,86 @@
           <div class="sq-business-industries">
             <div class="sq-business-logo-area">
               <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/sqh.jpg" alt="square">
+                <img class="img-fluid" src="../assets/images/business/sq-pharma.png" alt="square">
               </div>
-              <div class="sq-business-caption text-center">
-                Square Pharmaceuticals Limited
+
+            </div>
+            <div class="sq-business-logo-area">
+              <div class="sq-business-logo">
+                <img class="img-fluid" src="../assets/images/business/sq-pharma-ad.png" alt="square">
+              </div>
+
+            </div>
+            <div class="sq-business-logo-area">
+              <div class="sq-business-logo">
+                <img class="img-fluid" src="../assets/images/business/sq-pharma-cd.png" alt="square">
+              </div>
+
+            </div>
+            <div class="sq-business-logo-area">
+              <div class="sq-business-logo">
+                <img class="img-fluid" src="../assets/images/business/sq-hospital.png" alt="square">
+              </div>
+
+            </div>
+            <div class="sq-business-logo-area">
+              <div class="sq-business-logo">
+                <img class="img-fluid" src="../assets/images/business/sq-hn.png" alt="square">
               </div>
             </div>
             <div class="sq-business-logo-area">
               <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/sqf.jpg" alt="square">
+                <img class="img-fluid" src="../assets/images/business/sq-kinder.png" alt="square">
               </div>
-              <div class="sq-business-caption text-center">
-                Square Pharmaceuticals Limited
-              </div>
+
             </div>
             <div class="sq-business-logo-area">
               <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/sqff.jpg" alt="square">
+                <img class="img-fluid" src="../assets/images/business/sq-textile.png" alt="square">
               </div>
-              <div class="sq-business-caption text-center">
-                Square Pharmaceuticals Limited
-              </div>
+
             </div>
             <div class="sq-business-logo-area">
               <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/sqp.jpg" alt="square">
+                <img class="img-fluid" src="../assets/images/business/sq-knit.png" alt="square">
               </div>
-              <div class="sq-business-caption text-center">
-                Square Pharmaceuticals Limited
-              </div>
+
             </div>
             <div class="sq-business-logo-area">
               <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/sqh.jpg" alt="square">
+                <img class="img-fluid" src="../assets/images/business/sq-knit.png" alt="square">
               </div>
-              <div class="sq-business-caption text-center">
-                Square Pharmaceuticals Limited
-              </div>
+
             </div>
             <div class="sq-business-logo-area">
               <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/sqf.jpg" alt="square">
+                <img class="img-fluid" src="../assets/images/business/sq-knit.png" alt="square">
               </div>
-              <div class="sq-business-caption text-center">
-                Square Pharmaceuticals Limited
-              </div>
+
             </div>
             <div class="sq-business-logo-area">
               <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/sqff.jpg" alt="square">
+                <img class="img-fluid" src="../assets/images/business/sq-knit.png" alt="square">
               </div>
-              <div class="sq-business-caption text-center">
-                Square Pharmaceuticals Limited
-              </div>
+
             </div>
             <div class="sq-business-logo-area">
               <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/sqp.jpg" alt="square">
+                <img class="img-fluid" src="../assets/images/business/sq-knit.png" alt="square">
               </div>
-              <div class="sq-business-caption text-center">
-                Square Pharmaceuticals Limited
+
+            </div>
+            <div class="sq-business-logo-area">
+              <div class="sq-business-logo">
+                <img class="img-fluid" src="../assets/images/business/sq-knit.png" alt="square">
               </div>
+
+            </div>
+            <div class="sq-business-logo-area">
+              <div class="sq-business-logo">
+                <img class="img-fluid" src="../assets/images/business/sq-knit.png" alt="square">
+              </div>
+
             </div>
           </div>
         </div>
@@ -114,13 +133,24 @@
   .sq-business-industries {
     display: flex;
     flex-wrap: wrap;
-    flex:1;
+    flex: 1;
     margin: 0 auto;
   }
 
   .sq-business-logo-area {
     position: relative;
     cursor: pointer;
+    height: auto;
+    width: 100%;
+
+    .sq-business-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+    }
   }
 
   .sq-business-logo-area {
@@ -178,13 +208,14 @@
   .sq-business-logo {
     /*width: auto;*/
     /*height: 340px;*/
-    background: #FAFAFA;
+    background: #f7f7f7;
     text-align: center;
     line-height: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    border-radius: 2px;
   }
 
   .sq-business-logo img {
