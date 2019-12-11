@@ -1,6 +1,6 @@
 <template>
   <div class="common-banner-area">
-    <div class="container-fluid px-5-percent">
+    <div class="container-fluid p-0">
       <div ref="jsbannerimage" class="common-banner">
         <img class="img-fluid" :src="ImageUrl" alt="square">
 
