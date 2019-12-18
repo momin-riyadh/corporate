@@ -13,6 +13,8 @@
             <div class="sq-business-logo-area">
               <div class="sq-business-logo">
                 <img class="img-fluid" src="../assets/images/business/sq-pharma.png" alt="square">
+
+
               </div>
 
             </div>
