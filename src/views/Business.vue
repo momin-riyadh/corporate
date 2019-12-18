@@ -14,7 +14,12 @@
               <div class="sq-business-logo">
                 <img class="img-fluid" src="../assets/images/business/sq-pharma.png" alt="square">
 
+                <div class="sq-business-caption">
 
+                  <h2>Square Pharmaceuticals Ltd</h2>
+                  <p>So you can imagine your fears with less distraction.</p>
+
+                </div>
               </div>
 
             </div>
@@ -100,7 +105,8 @@
                 <img class="img-fluid" src="../assets/images/business/sq-informatix.png" alt="square">
               </div>
 
-            </div><div class="sq-business-logo-area">
+            </div>
+            <div class="sq-business-logo-area">
               <div class="sq-business-logo">
                 <img class="img-fluid" src="../assets/images/business/sq-maasranga.png" alt="square">
               </div>
@@ -151,18 +157,18 @@
   }
 
   .sq-business-logo-area {
-    position: relative;
-    cursor: pointer;
-    height: auto;
-    width: 100%;
-
     .sq-business-logo {
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
       height: 100%;
       padding: 30px;
+      text-align: left;
+      overflow: hidden;
+      cursor: pointer;
+      background: #f7f7f7;
     }
   }
 
@@ -191,45 +197,117 @@
   }
 
   .sq-business-caption {
-    transition: all 0.3s ease-in-out;
-    background: #efefef;
-    height: 65px;
-    color: #3c3c3c;
-    font-family: $font-helvetica-bold;
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 3em;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      bottom: 30px;
+      left: 100%;
+      border-left: 4px solid rgba(255, 255, 255, 0.8);
+      content: '';
+      opacity: 0;
+      background-color: rgba(255, 255, 255, 0.5);
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      -webkit-transition-delay: 0.6s;
+      transition-delay: 0.6s;
+    }
   }
 
-  .sq-business-logo-area {
-    &:hover {
-      > .sq-business-caption {
-        background: rgba(0, 0, 0, 0.8);
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        color: $white-color;
-      }
+  .sq-business-caption {
+    h2, p {
+      margin: 0 0 5px;
+      opacity: 0;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, -webkit-transform 0.35s, -moz-transform 0.35s, -o-transform 0.35s, transform 0.35s;
+    }
+
+    h2 {
+      word-spacing: -0.15em;
+      font-weight: 500;
+      text-transform: uppercase;
+      -webkit-transform: translate3d(30%, 0%, 0);
+      transform: translate3d(30%, 0%, 0);
+      -webkit-transition-delay: 0.3s;
+      transition-delay: 0.3s;
+      font-size:2rem;
+    }
+
+    p {
+      font-weight: 200;
+      -webkit-transform: translate3d(0%, 30%, 0);
+      transform: translate3d(0%, 30%, 0);
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
     }
   }
 
   .sq-business-logo {
-    /*width: auto;*/
-    /*height: 340px;*/
-    background: #f7f7f7;
-    text-align: center;
-    line-height: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 2px;
+    &:hover {
+      img {
+        opacity: 0.3;
+      }
+    }
+
+    &:hover {
+      .sq-business-caption h2 {
+        opacity: 1;
+        -webkit-transform: translate3d(0%, 0%, 0);
+        transform: translate3d(0%, 0%, 0);
+        -webkit-transition-delay: 0.4s;
+        transition-delay: 0.4s;
+      }
+
+      .sq-business-caption p {
+        opacity: 0.9;
+        -webkit-transform: translate3d(0%, 0%, 0);
+        transform: translate3d(0%, 0%, 0);
+        -webkit-transition-delay: 0.6s;
+        transition-delay: 0.6s;
+      }
+    }
+
+    &:hover {
+      .sq-business-caption {
+        &::before {
+          background: rgba(255, 255, 255, 0);
+          left: 30px;
+          opacity: 2;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+        }
+      }
+    }
+
+    img {
+      max-width: 100%;
+      opacity: 1;
+      width: 100%;
+      -webkit-transition: opacity 0.35s;
+      transition: opacity 0.35s;
+    }
   }
+
+  /*.sq-business-logo {*/
+  /*  !*width: auto;*!*/
+  /*  !*height: 340px;*!*/
+  /*  */
+  /*  text-align: center;*/
+  /*  line-height: 1;*/
+  /*  display: flex;*/
+  /*  justify-content: center;*/
+  /*  align-items: center;*/
+  /*  flex-shrink: 0;*/
+  /*  border-radius: 2px;*/
+  /*  position: relative;*/
+  /*}*/
 
   .sq-business-logo img {
     /*width: 300px;*/
