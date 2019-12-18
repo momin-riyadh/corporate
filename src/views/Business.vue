@@ -21,23 +21,42 @@
 
                 </div>
               </div>
-
             </div>
+
             <div class="sq-business-logo-area">
               <div class="sq-business-logo">
                 <img class="img-fluid" src="../assets/images/business/sq-pharma-ad.png" alt="square">
+                <div class="sq-business-caption">
+
+                  <h2>Square Pharmaceuticals Ltd (Agrovet Division)</h2>
+                  <p>So you can imagine your fears with less distraction.</p>
+
+                </div>
               </div>
 
             </div>
+
             <div class="sq-business-logo-area">
               <div class="sq-business-logo">
                 <img class="img-fluid" src="../assets/images/business/sq-pharma-cd.png" alt="square">
+                <div class="sq-business-caption">
+
+                  <h2>Square Pharmaceuticals Ltd (Crop Division)</h2>
+                  <p>So you can imagine your fears with less distraction.</p>
+
+                </div>
               </div>
 
             </div>
             <div class="sq-business-logo-area">
               <div class="sq-business-logo">
                 <img class="img-fluid" src="../assets/images/business/sq-hospital.png" alt="square">
+                <div class="sq-business-caption">
+
+                  <h2>Square Hospitals Ltd (Crop Division)</h2>
+                  <p>So you can imagine your fears with less distraction.</p>
+
+                </div>
               </div>
 
             </div>
@@ -198,11 +217,19 @@
 
   .sq-business-caption {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     bottom: 0;
     left: 0;
     padding: 15px 3em;
     width: 100%;
     height: 100%;
+    transition: background-color 0.5s ease;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
 
     &::before {
       position: absolute;
@@ -227,9 +254,11 @@
       opacity: 0;
       -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
       transition: opacity 0.35s, -webkit-transform 0.35s, -moz-transform 0.35s, -o-transform 0.35s, transform 0.35s;
+      color: #fff;
     }
 
     h2 {
+      font-family: $font-helvetica;
       word-spacing: -0.15em;
       font-weight: 500;
       text-transform: uppercase;
@@ -237,10 +266,11 @@
       transform: translate3d(30%, 0%, 0);
       -webkit-transition-delay: 0.3s;
       transition-delay: 0.3s;
-      font-size:2rem;
+      font-size: 1.4rem;
     }
 
     p {
+      font-family: $font-roboto;
       font-weight: 200;
       -webkit-transform: translate3d(0%, 30%, 0);
       transform: translate3d(0%, 30%, 0);
