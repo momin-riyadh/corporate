@@ -143,7 +143,7 @@
   .financial-areas {
     display: flex;
     flex-wrap: wrap;
-    flex:1;
+    flex: 1;
     margin: 0 auto;
   }
 
@@ -191,18 +191,33 @@
   }
 
   .sq-milestones {
-    min-height: 60vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    min-height: 60vh;
+    @media(min-width: 1265px) {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      min-height: 60vh;
+    }
   }
 
   .sq-milestone-list {
     background: #F4F4F4;
+    padding: 3rem;
+    width: 100%;
     flex-grow: 1;
-    padding: 7rem;
+    @media(min-width: 1265px) {
+      flex-grow: 1;
+      padding: 7rem;
+    }
 
     ul {
       margin: 0;
@@ -231,7 +246,10 @@
 
   .sq-milestone-image {
     flex-shrink: 0;
-    max-width: 800px;
+    width: 100%;
+    @media(min-width: 1265px) {
+      width: 800px;
+    }
   }
 
 

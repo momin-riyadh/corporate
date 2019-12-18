@@ -259,7 +259,6 @@
 
     h2 {
       font-family: $font-helvetica;
-      word-spacing: -0.15em;
       font-weight: 500;
       text-transform: uppercase;
       -webkit-transform: translate3d(30%, 0%, 0);
