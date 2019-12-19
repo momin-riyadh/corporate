@@ -98,7 +98,6 @@
             };
         }
 
-
         public handleClick(tab: any, event: any) {
             console.log(tab, event)
         }
