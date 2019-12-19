@@ -12,32 +12,33 @@
         <!--    Annual Report Year-->
         <div class="text-center text-sm-left">
           <div class="financial-report-year">
-            <a href="">2019</a>
-            <a href="">2018</a>
-            <a href="">2017</a>
+            <el-tabs @tab-click="handleClick">
+              <el-tab-pane label="2019">
+                <div class="row">
+                  <div class="financial-areas align-items-center">
+
+                    <div class="sq-financial-report" v-for="report in reports">
+                      <img class="img-fluid" :src="report.imageurl" alt="square group">
+
+                      <div class="sq-f-report-caption text-center mt-3">
+                        <h4> {{report.title}}</h4>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </el-tab-pane>
+
+              <el-tab-pane label="2018">
+
+              </el-tab-pane>
+
+              <el-tab-pane label="2017">
+
+              </el-tab-pane>
+            </el-tabs>
           </div>
         </div>
-        <!--        End Annual Report Year-->
-
-        <!--        Financial Report Column-->
-
-        <div class="row">
-          <div class="financial-areas align-items-center">
-
-            <div class="sq-financial-report" v-for="report in reports">
-              <img class="img-fluid" :src="report.imageurl" alt="square group">
-
-              <div class="sq-f-report-caption text-center mt-3">
-                <h4> {{report.title}}</h4>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-        <!--        End Financial Report Column-->
-
 
       </div>
 
@@ -90,6 +91,20 @@
         components: {Copyright, Footer, CommonBanner, Navigation},
     })
     export default class FinancialInformation extends Vue {
+
+        public data() {
+            return {
+                activeName: 'first'
+            };
+        }
+
+
+             public handleClick(tab: any, event: any)
+            {
+                console.log(tab, event)
+            }
+
+
         public reports: any = [
             {
                 title: 'Earning Presentations',
@@ -118,9 +133,8 @@
 
 <style scoped lang="scss">
   .financial-report-year {
-    background: #EFEFEF;
     display: inline-block;
-    margin: 50px 0 30px 0;
+    margin: 0 0 50px 0;
 
     a {
       transition: all 0.3s ease-in-out;
