@@ -99,10 +99,9 @@
         }
 
 
-             public handleClick(tab: any, event: any)
-            {
-                console.log(tab, event)
-            }
+        public handleClick(tab: any, event: any) {
+            console.log(tab, event)
+        }
 
 
         public reports: any = [
