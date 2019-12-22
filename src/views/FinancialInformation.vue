@@ -19,7 +19,6 @@
 
                     <div class="sq-financial-report" v-for="report in reports">
                       <img class="img-fluid" :src="report.imageurl" alt="square group">
-
                       <div class="sq-f-report-caption text-center mt-3">
                         <h4> {{report.title}}</h4>
                       </div>
@@ -30,6 +29,17 @@
               </el-tab-pane>
 
               <el-tab-pane label="2018">
+
+                <div class="row">
+                  <div class="financial-areas align-items-center">
+
+                    <div class="sq-financial-report">
+                      <img class="img-fluid" src="../assets/images/nopreview.jpg" alt="square group">
+
+                    </div>
+
+                  </div>
+                </div>
 
               </el-tab-pane>
 
