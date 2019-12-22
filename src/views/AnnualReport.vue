@@ -16,27 +16,65 @@
         <!--    Annual Report Year-->
         <div class="text-center text-sm-left">
           <div class="annual-report-year">
-            <a href="">2019</a>
-            <a href="">2018</a>
-            <a href="">2017</a>
+
+            <el-tabs @tab-click="handleClick">
+              <el-tab-pane label="2019">
+
+                <!--        Annual Report Column-->
+                <div class="row">
+                  <div class="custom-areas align-items-center">
+                    <div class="s-a-report" v-for="file in files">
+                      <img class="img-fluid" :src="file.imageurl" alt="square">
+                      <div class="s-a-report-caption text-center mt-3">
+                        <h4> {{file.title}}</h4>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!--        End Annual Report Column-->
+
+
+              </el-tab-pane>
+              <el-tab-pane label="2018">
+
+                <!--        Annual Report Column-->
+                <div class="row">
+                  <div class="custom-areas align-items-center">
+                    <div class="s-a-report" v-for="v in 2">
+                      <img class="img-fluid" src="../assets/images/nopreview.jpg" alt="square group">
+                    </div>
+
+                  </div>
+                </div>
+
+                <!--        End Annual Report Column-->
+
+
+              </el-tab-pane>
+              <el-tab-pane label="2017">
+
+                <!--        Annual Report Column-->
+                <div class="row">
+                  <div class="custom-areas align-items-center">
+                    <div class="s-a-report" v-for="v in 2">
+
+                        <img class="img-fluid" src="../assets/images/nopreview.jpg" alt="square group">
+
+                    </div>
+
+                  </div>
+                </div>
+
+                <!--        End Annual Report Column-->
+
+
+              </el-tab-pane>
+            </el-tabs>
           </div>
         </div>
         <!--        End Annual Report Year-->
-
-        <!--        Annual Report Column-->
-        <div class="row">
-          <div class="custom-areas align-items-center">
-            <div class="s-a-report" v-for="file in files">
-              <img class="img-fluid" :src="file.imageurl" alt="square">
-              <div class="s-a-report-caption text-center mt-3">
-                <h4> {{file.title}}</h4>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!--        End Annual Report Column-->
 
 
       </div>
@@ -66,6 +104,17 @@
     })
 
     export default class AnnualReport extends Vue {
+
+        public data() {
+            return {
+                activeName: 'first'
+            };
+        }
+
+        public handleClick(tab: any, event: any) {
+            console.log(tab, event)
+        }
+
         public files: any = [
             {
                 title: 'Interim Results 2018',
@@ -113,7 +162,6 @@
 
 <style scoped lang="scss">
   .annual-report-year {
-    background: #EFEFEF;
     display: inline-block;
     margin: 50px 0 30px 0;
 
@@ -151,7 +199,6 @@
   .s-a-report-caption {
     h4 {
       font-family: $font-roboto;
-      font-weight: bold;
     }
   }
 
