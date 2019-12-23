@@ -34,7 +34,8 @@
                   <div class="financial-areas align-items-center">
 
                     <div class="sq-financial-report">
-                      <img class="img-fluid" src="../assets/images/nopreview.jpg" alt="square group">
+<!--                      <img class="img-fluid" src="../assets/images/nopreview.jpg" alt="square group">-->
+                      <h1 class="display-2">No preview available!</h1>
 
                     </div>
 
@@ -44,7 +45,7 @@
               </el-tab-pane>
 
               <el-tab-pane label="2017">
-
+                <h1 class="display-2">No preview available!</h1>
               </el-tab-pane>
             </el-tabs>
           </div>
@@ -170,6 +171,7 @@
   }
 
   .sq-financial-report {
+    flex:1 1 auto;
     img {
     }
   }

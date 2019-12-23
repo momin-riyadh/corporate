@@ -4959,7 +4959,7 @@
     transition: transform .3s, -webkit-transform .3s;
     float: left;
     z-index: 2;
-    padding: 0 10px;
+    margin: 0 10px;
 }
 
 .el-tabs__nav.is-stretch {
