@@ -9,16 +9,6 @@
       <div class="sq-map-area overflow-hidden">
         <div id="sq-map" class="google-map" ref="googleMap"></div>
         <div class="sq-map-form">
-          <h1>Get In Touch</h1>
-          <div class="d-block map-radio">
-            <el-radio v-model="radio1" label="1">Are you looking for an industry specific solutions ?</el-radio>
-          </div>
-          <div class="d-block map-radio my-3">
-            <el-radio v-model="radio1" label="2">Are you looking for a specific product ?</el-radio>
-          </div>
-          <div class="d-block map-radio">
-            <el-radio v-model="radio1" label="3">Any others solutions ?</el-radio>
-          </div>
           <h3>Select Industry <i> (Optional) </i></h3>
           <div>
 
@@ -108,13 +98,6 @@
         components: {CommonBanner, Copyright, Footer, Navigation},
     })
     export default class Contact extends Vue {
-        public data() {
-            return {
-                radio1: '1',
-                radio2: '1',
-                radio3: '1',
-            };
-        }
 
         public mounted() {
             GoogleMapsLoader.load(function (google: any) {
@@ -382,7 +365,6 @@
 
   .sq-map-form {
     width: 100%;
-    height: 420px;
     margin: 2rem 0;
     padding: 1rem;
     background: #2C2C2C;
@@ -392,7 +374,7 @@
       position: absolute;
       max-width: 500px;
       left: 1rem;
-      bottom: 1rem;
+      bottom: auto;
       top: 1rem;
       right: auto;
       margin: 1.5rem;
