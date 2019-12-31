@@ -9,8 +9,23 @@
       <div class="sq-map-area overflow-hidden">
         <div id="sq-map" class="google-map" ref="googleMap"></div>
         <div class="sq-map-form">
-          <h3>Select Industry <i> (Optional) </i></h3>
+          <h5>Select Industry <i> (Optional) </i></h5>
           <div>
+
+            <div>
+              <el-dropdown trigger="click" split-button>
+                Industry
+                <el-dropdown-menu slot="dropdown">
+                  <el-dropdown-item>Industry Name</el-dropdown-item>
+                  <el-dropdown-item>Industry Name</el-dropdown-item>
+                  <el-dropdown-item>Industry Name</el-dropdown-item>
+                  <el-dropdown-item>Industry Name</el-dropdown-item>
+                  <el-dropdown-item>Industry Name</el-dropdown-item>
+                  <el-dropdown-item>Industry Name</el-dropdown-item>
+                </el-dropdown-menu>
+              </el-dropdown>
+            </div>
+
 
           </div>
         </div>
@@ -99,6 +114,11 @@
     })
     export default class Contact extends Vue {
 
+        public handleClick() {
+
+        }
+
+
         public mounted() {
             GoogleMapsLoader.load(function (google: any) {
                 const map = new google.maps.Map(document.getElementById('sq-map'), {
@@ -112,6 +132,25 @@
 </script>
 
 <style scoped lang="scss">
+  /*Maps Dropdown*/
+  .el-button-group {
+    .el-button {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .el-dropdown {
+    vertical-align: top;
+  }
+
+  .el-dropdown + .el-dropdown {
+    margin-left: 15px;
+  }
+
+  .el-icon-arrow-down {
+    font-size: 14px;
+  }
 
   /*Right Address Area*/
   .sq-address-area {
@@ -123,7 +162,7 @@
     background-size: 200px 200px;
     background-repeat: no-repeat;
     background-color: $brand-color;
-    background-blend-mode:multiply;
+    background-blend-mode: multiply;
     @media all and (min-width: 961px) {
       width: 400px;
     }
@@ -352,15 +391,15 @@
   .sq-map-area {
     position: relative;
     z-index: 2;
+    padding: 30px;
+    background: #EFEFEF;
+    margin-bottom: 3.5rem;
   }
 
   #sq-map {
     height: 500px;
     max-width: 100%;
     display: block;
-    background: #EFEFEF;
-    padding: 1rem !important;
-    margin-bottom: 3rem;
   }
 
   .sq-map-form {
@@ -369,13 +408,13 @@
     padding: 1rem;
     background: #2C2C2C;
     position: static;
-    border-radius: 4px;
-    @media(min-width: 601px){
+    border-radius: 1px;
+    @media(min-width: 601px) {
       position: absolute;
       max-width: 500px;
-      left: 1rem;
+      left: 2rem;
       bottom: auto;
-      top: 1rem;
+      top: 2rem;
       right: auto;
       margin: 1.5rem;
       padding: 1.8rem;
@@ -387,11 +426,10 @@
       margin-bottom: 1rem;
     }
 
-    h3 {
+    h5 {
       color: $white-color;
       font-family: $font-helvetica-bold;
-      margin: 1rem 0;
-
+      margin-bottom: 1rem;
       i {
         font-size: medium;
         font-weight: normal;
