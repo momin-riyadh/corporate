@@ -42,10 +42,10 @@
           <form action="">
             <div class="form-row">
               <div class="input-fname">
-                <input class="form-control" type="text" name="" placeholder="First Name *">
+                <input class="form-control" type="text" name="" placeholder="Your Name *">
               </div>
               <div class="input-lname">
-                <input type="text" name="" class="form-control" placeholder="Last Name *">
+                <input type="text" name="" class="form-control" placeholder="Subject">
               </div>
             </div>
             <div class="form-row">
@@ -204,7 +204,6 @@
 
   .sq-contact-form {
     background: #EFEFEF;
-    padding: 2rem;
     flex-grow: 1;
     margin-right: 0;
     margin-bottom: 30px;
@@ -215,7 +214,7 @@
     }
 
     @media(min-width: 1265px) {
-      padding: 4rem;
+      padding: 3rem;
       margin-right: 5rem;
       margin-bottom: 0;
     }
@@ -391,7 +390,7 @@
   .sq-map-area {
     position: relative;
     z-index: 2;
-    padding: 30px;
+    padding: 3rem;
     background: #EFEFEF;
     margin-bottom: 3.5rem;
   }
@@ -412,9 +411,9 @@
     @media(min-width: 601px) {
       position: absolute;
       max-width: 500px;
-      left: 2rem;
+      left: 3rem;
       bottom: auto;
-      top: 2rem;
+      top: 3rem;
       right: auto;
       margin: 1.5rem;
       padding: 1.8rem;
