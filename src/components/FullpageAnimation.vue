@@ -3,7 +3,7 @@
         <div class="home-page-animation">
             <header class="v-header containers">
                 <div class="fullscreen-video-wrap">
-                    <video src="../assets/images/video/finalbg.mp4" autoplay="autoplay" loop="loop" muted>
+                    <video src="../assets/images/video/finalbg.mp4" autoplay="autoplay" loop="loop" muted playsinline>
                     </video>
                 </div>
                 <div class="header-overlay"></div>
