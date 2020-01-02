@@ -4,6 +4,7 @@ import Home from './views/Home.vue';
 
 Vue.use(Router);
 
+// @ts-ignore
 export default new Router({
     mode: 'history',
     base: process.env.BASE_URL,
@@ -93,6 +94,7 @@ export default new Router({
                 {path: '/philosophy', component: () => import('./views/about/PhilosophyPage.vue')},
                 {path: '/management', component: () => import('./views/about/ManagementPage.vue')},
                 {path: '/management-profile', component: () => import('./views/about/ManagementProfile.vue')},
+                {path: '/achievement', component: () => import('./views/about/AchievementsPage.vue')},
             ],
         },
 

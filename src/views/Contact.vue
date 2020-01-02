@@ -12,19 +12,19 @@
           <h5>Select Industry <i> (Optional) </i></h5>
           <div>
 
-            <div>
-              <el-dropdown trigger="click" split-button>
-                Industry
-                <el-dropdown-menu slot="dropdown">
-                  <el-dropdown-item>Industry Name</el-dropdown-item>
-                  <el-dropdown-item>Industry Name</el-dropdown-item>
-                  <el-dropdown-item>Industry Name</el-dropdown-item>
-                  <el-dropdown-item>Industry Name</el-dropdown-item>
-                  <el-dropdown-item>Industry Name</el-dropdown-item>
-                  <el-dropdown-item>Industry Name</el-dropdown-item>
-                </el-dropdown-menu>
-              </el-dropdown>
-            </div>
+<!--            <div>-->
+<!--              <el-dropdown trigger="click" split-button>-->
+<!--                Industry-->
+<!--                <el-dropdown-menu slot="dropdown">-->
+<!--                  <el-dropdown-item>Industry Name</el-dropdown-item>-->
+<!--                  <el-dropdown-item>Industry Name</el-dropdown-item>-->
+<!--                  <el-dropdown-item>Industry Name</el-dropdown-item>-->
+<!--                  <el-dropdown-item>Industry Name</el-dropdown-item>-->
+<!--                  <el-dropdown-item>Industry Name</el-dropdown-item>-->
+<!--                  <el-dropdown-item>Industry Name</el-dropdown-item>-->
+<!--                </el-dropdown-menu>-->
+<!--              </el-dropdown>-->
+<!--            </div>-->
 
 
           </div>
