@@ -132,6 +132,7 @@
 
 <style scoped lang="scss">
   .navigation-area {
+    transition: all 0.3s ease-in-out;
     background-color: #ffffff;
   }
 
@@ -217,5 +218,9 @@
       }
     }
   }
-
+.navbar-fixed{
+  .main-navigation ul li a{
+    color: #000;
+  }
+}
 </style>
