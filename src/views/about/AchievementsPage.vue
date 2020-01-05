@@ -36,7 +36,7 @@
             </div>
             <div class="col-xl-6 p-0">
               <div class="slider-image">
-                <img src="../../assets/images/about.jpg" alt="square"/>
+<!--                <img src="../../assets/" alt="square"/>-->
               </div>
             </div>
           </div>

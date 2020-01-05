@@ -6,7 +6,7 @@
     <div class="container-fluid px-5-percent">
       <div class="sq-h-content-area">
         <div class="row align-items-center">
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <div class="sq-h-content">
               <h1 class="sq-h-content-title mb-4"> <span>Identifying Opportunities <br/>
               Creating Values</span></h1>
@@ -19,7 +19,7 @@
               <img src="../assets/images/sq-logobg.svg" alt="square">
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <img src="../assets/images/h-top.jpg" alt="" class="img-fluid float-right">
           </div>
         </div>
@@ -320,21 +320,20 @@
     font-weight: bold;
     font-size: calc(24px + (45 - 24) * ((100vw - 300px) / (1600 - 300)));
     margin-left: 95px;
-
+    position:relative;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 5px;
+      border-bottom: 4px solid $brand-color;
+      top: 30%;
+      width: 80px;
+      right: 100%;
+      margin-right: 15px;
+    }
     span {
       display: inline-block;
       position: relative;
-
-      &::before {
-        content: "";
-        position: absolute;
-        height: 5px;
-        border-bottom: 4px solid $brand-color;
-        top: 30%;
-        width: 80px;
-        right: 100%;
-        margin-right: 15px;
-      }
     }
   }
 
