@@ -154,13 +154,6 @@
                 delay: 5000,
                 disableOnInteraction: false
             },
-            // paginationBulletRender(index: number, className: any) {
-            //     return '<span class="' + className + '">' + (index + 1) + '</span>';
-            // }
-            // navigation: {
-            //   nextEl: "#js-next1",
-            //   prevEl: "#js-prev1"
-            // }
         };
     }
 </script>
