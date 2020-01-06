@@ -66,9 +66,12 @@ $paragraph-size: calc(16px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
 
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+  transition: all 0.6s ease-in-out;
   bottom: 10px;
+  right: 10px;
   left: 50% !important;
   width: 30% !important;
+  overflow: hidden;
 }
 .swiper-pagination-bullet-active {
   opacity: 1 !important;
@@ -77,15 +80,20 @@ $paragraph-size: calc(16px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
   outline: none !important;
   position: relative !important;
   margin-right: 50px !important;
+  overflow: hidden;
+  color: green;
   &::before{
+    color:greenyellow;
     position: absolute;
-    width: 100px;
+    width: 50px;
+    margin: 0 10px;
     height: 2px;
     content: '';
     left: 0;
     top: 50%;
     background: #272727;
   }
+
 }
 .swiper-pagination-bullet {
   width: 100px !important;

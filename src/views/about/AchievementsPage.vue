@@ -5,9 +5,9 @@
 
         <swiper-slide class="swiper-slide">
           <div class="d-flex">
-            <div class="col-6">
-              <div class="text-wrap">
-                <div class="text-desc">
+            <div class="col-6 p-0">
+              <div class="sq-t-text-wrap">
+                <div class="sq-t-text-desc">
                   <p>We strive to go above and beyond for our clients, fostering relationship built on trust, confidence
                     and
                     honesty. Maybe it’s our family orientation, but we think the most satisfying part of what we do is
@@ -20,21 +20,21 @@
                     our
                     clients, fostering</p>
                 </div>
-                <div class="txtcolor-card">
+                <div class="sq-award-desc">
                   <h3>
-                    We strive to go above and beyond for our clients
+                    Awards Winning Brands
                   </h3>
                   <p>
                     programs and team-building ctivitiesroughout the year
                   </p>
-                  <span class="date">
-                    1212334
+                  <span class="sq-award-date">
+                    12 / 12 / 2003
                   </span>
                 </div>
 
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 p-0">
               <div class="slider-image">
                 <img src="../../assets/images/ach_one.jpg" alt="square_group"/>
               </div>
@@ -44,9 +44,9 @@
 
         <swiper-slide class="swiper-slide">
           <div class="d-flex">
-            <div class="col-6">
-              <div class="text-wrap">
-                <div class="text-desc">
+            <div class="col-6 p-0">
+              <div class="sq-t-text-wrap">
+                <div class="sq-t-text-desc">
                   <p>We striveWe’re proud that we’re a 100% women-owned business certified by
                     the Women’s Business Development Center (WBDC). We’re also proud that we put people first, with
                     monthly
@@ -54,21 +54,21 @@
                     our
                     clients, fostering</p>
                 </div>
-                <div class="txtcolor-card">
+                <div class="sq-award-desc">
                   <h3>
                     Wadasdasd o go above and beyond for our clients
                   </h3>
                   <p>
                     programs and team-building ctivitiesroughout the year
                   </p>
-                  <span class="date">
-                                        1212121
-                                    </span>
+                  <span class="sq-award-date">
+                    12 / 12 / 2019
+                  </span>
                 </div>
 
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 p-0">
               <div class="slider-image">
                 <img src="../../assets/images/ach_two.jpg" alt="square_group"/>
               </div>
@@ -78,9 +78,9 @@
 
         <swiper-slide class="swiper-slide">
           <div class="d-flex">
-            <div class="col-6">
-              <div class="text-wrap">
-                <div class="text-desc">
+            <div class="col-6 p-0">
+              <div class="sq-t-text-wrap">
+                <div class="sq-t-text-desc">
                   <p>We striveWe’re proud that we’re a 100% women-owned business certified by
                     the Women’s Business Development Center (WBDC). We’re also proud that we put people first, with
                     monthly
@@ -88,21 +88,21 @@
                     our
                     clients, fostering</p>
                 </div>
-                <div class="txtcolor-card">
+                <div class="sq-award-desc">
                   <h3>
-                    Wadasdasd o go above and beyond for our clients
+                    Bangladesh Brand Forum Awards
                   </h3>
                   <p>
                     programs and team-building ctivitiesroughout the year
                   </p>
-                  <span class="date">
-                                        1212121
+                  <span class="sq-award-date">
+                                        12 / 12 / 2018
                                     </span>
                 </div>
 
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 p-0">
               <div class="slider-image">
                 <img src="../../assets/images/ach_three.jpg" alt="square_group"/>
               </div>
@@ -120,7 +120,6 @@
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import "swiper/dist/css/swiper.css";
     import {swiper, swiperSlide} from 'vue-awesome-swiper';
 
     @Component({
@@ -170,16 +169,49 @@
   .achievements-content-area {
     overflow: hidden;
   }
-  .slider-cont{
-    max-height: 70vh;
-  }
-  .slider-image{
-    height:100%;
+
+  .slider-image {
+    height: 100%;
     width: auto;
-    img{
+
+    img {
       object-fit: cover;
       width: 100%;
-      height:auto;
+      height: auto;
+    }
+  }
+
+  .sq-t-text-desc {
+    height: 200px;
+  }
+
+  .sq-award-desc {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: $brand-color;
+    padding: 2rem;
+    color: #ffffff;
+
+    h3 {
+      color: #ffffff;
+      font-size: 36px;
+      font-weight: $font-helvetica-bold;
+    }
+
+    p {
+      font-family: $font-roboto;
+      font-size: 22px;
+      text-transform: capitalize;
+    }
+  }
+
+  .sq-t-text-desc {
+    p {
+      font-size: 18px;
+      line-height: 1.8em;
     }
   }
 
