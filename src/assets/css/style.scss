@@ -62,3 +62,37 @@ $white-color: #ffffff;
 $paragraph-size: calc(16px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
 
 //End Common Global Style For the Square
+
+
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 10px;
+  left: 50% !important;
+  width: 30% !important;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  background: none !important;
+  display: inline-block !important;
+  outline: none !important;
+  position: relative !important;
+  margin-right: 50px !important;
+  &::before{
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    content: '';
+    left: 0;
+    top: 50%;
+    background: #272727;
+  }
+}
+.swiper-pagination-bullet {
+  width: 100px !important;
+  height: auto !important;
+  display: unset !important;
+  border-radius: unset !important;
+  background: none !important;
+  opacity: 1 !important;
+  text-align: left !important;
+}

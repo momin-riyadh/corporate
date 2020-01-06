@@ -137,6 +137,8 @@ growth and prosperity has been no bed of roses."/>
       }
     }
   }
-
+.sq-a-page-content{
+  overflow: hidden;
+}
 
 </style>
