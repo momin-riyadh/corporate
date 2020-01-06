@@ -64,16 +64,17 @@ $paragraph-size: calc(16px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
 //End Common Global Style For the Square
 
 
-
+/*Swiper Slide Style for timeline*/
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
   transition: all 0.6s ease-in-out;
   bottom: 10px;
-  right: 10px;
-  left: 50% !important;
+  right: 0;
+  left: auto !important;
   width: 30% !important;
   overflow: hidden;
 }
 .swiper-pagination-bullet-active {
+  transition: all 0.3s ease;
   opacity: 1 !important;
   background: none !important;
   display: inline-block !important;
@@ -104,3 +105,4 @@ $paragraph-size: calc(16px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
   opacity: 1 !important;
   text-align: left !important;
 }
+

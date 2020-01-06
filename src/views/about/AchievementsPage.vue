@@ -34,7 +34,7 @@
 
               </div>
             </div>
-            <div class="col-6 p-0">
+            <div class="col-6 p-0 pb-5">
               <div class="slider-image">
                 <img src="../../assets/images/ach_one.jpg" alt="square_group"/>
               </div>
@@ -68,7 +68,7 @@
 
               </div>
             </div>
-            <div class="col-6 p-0">
+            <div class="col-6 p-0 pb-5">
               <div class="slider-image">
                 <img src="../../assets/images/ach_two.jpg" alt="square_group"/>
               </div>
@@ -102,7 +102,7 @@
 
               </div>
             </div>
-            <div class="col-6 p-0">
+            <div class="col-6 p-0 pb-5">
               <div class="slider-image">
                 <img src="../../assets/images/ach_three.jpg" alt="square_group"/>
               </div>
@@ -171,22 +171,20 @@
   }
 
   .slider-image {
-    height: 100%;
-    width: auto;
-
+    height: 70vh;
     img {
       object-fit: cover;
       width: 100%;
-      height: auto;
+      height: 100%;
     }
   }
 
   .sq-t-text-desc {
-    height: 200px;
+    height: 250px;
   }
 
   .sq-award-desc {
-    height: 700px;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,6 +192,7 @@
     background: $brand-color;
     padding: 2rem;
     color: #ffffff;
+    margin-bottom: -50px;
 
     h3 {
       color: #ffffff;
@@ -212,7 +211,12 @@
     p {
       font-size: 18px;
       line-height: 1.8em;
+      padding-right: 50px;
     }
   }
+
+
+
+
 
 </style>
