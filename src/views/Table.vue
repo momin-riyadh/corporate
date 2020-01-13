@@ -6,7 +6,7 @@
 
           <!--          Global Fairways Table-->
           <div class="gf-main-table table-responsive">
-            <table class="gf-table text-center" border="2" bordercolor="#001A57">
+            <table class="gf-table text-center" border="1" bordercolor="#001A57">
 
               <!--              Start Table Header-->
               <thead>
@@ -217,6 +217,10 @@
 </script>
 
 <style scoped lang="scss">
+
+  .gf-main-table{
+    border: 1px solid #001A57;
+  }
   .gf-table {
     background: #FEFEFC;
     color: #001A57;
@@ -226,7 +230,7 @@
     }
 
     thead > tr {
-      border: 2px solid #001A57;
+      border: 1px solid #001A57;
     }
 
     td {
