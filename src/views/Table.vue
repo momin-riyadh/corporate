@@ -173,7 +173,7 @@
               </tr>
 
               <tr>
-                <td></td>
+                <td>  </td>
                 <td colspan="11" class="gf-red">
                   Risk/Responsibility Transfers
                 </td>
