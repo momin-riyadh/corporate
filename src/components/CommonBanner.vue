@@ -16,7 +16,7 @@
 
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
-    import {TimelineLite, Back} from 'gsap/dist/gsap';
+    // import {TimelineLite, Back} from 'gsap/dist/gsap';
 
     @Component({
         name: 'CommonBanner',
@@ -27,45 +27,45 @@
         @Prop() public BannerSubtitle!: string;
         @Prop() public ImageUrl!: string;
 
-        public mounted() {
-            const {jstitle} = this.$refs;
-            const {jssubtitle} = this.$refs;
-            const {jsbannerimage} = this.$refs;
-            const imagetimeline = new TimelineLite();
-            imagetimeline.to(jsbannerimage, 0, {
-                opacity: 0,
-                ease: Back.easeInOut, // Specify an ease
-            });
-            imagetimeline.to(jsbannerimage, 2, {
-                    opacity: 1
-                },
-                '+=0.5' // Run the animation 0.5s early
-            );
-            const timeline = new TimelineLite();
-
-            timeline.to(jstitle, 0, {
-                opacity: 0,
-                ease: Back.easeInOut, // Specify an ease
-            });
-            timeline.to(jstitle, 2, {
-                    opacity: 1
-                },
-                '+=1' // Run the animation 0.5s early
-            );
-
-            const subtimeline = new TimelineLite();
-            subtimeline.to(jssubtitle, 0, {
-                opacity: 0,
-                ease: Back.easeInOut,
-            });
-            subtimeline.to(jssubtitle, 2, {
-                    opacity: 1
-                },
-                '+=1.5' // Run the animation 0.5s early
-            );
-
-
-        }
+        // public mounted() {
+        //     const {jstitle} = this.$refs;
+        //     const {jssubtitle} = this.$refs;
+        //     const {jsbannerimage} = this.$refs;
+        //     const imagetimeline = new TimelineLite();
+        //     imagetimeline.to(jsbannerimage, 0, {
+        //         opacity: 0,
+        //         ease: Back.easeInOut, // Specify an ease
+        //     });
+        //     imagetimeline.to(jsbannerimage, 2, {
+        //             opacity: 1
+        //         },
+        //         '+=0.5' // Run the animation 0.5s early
+        //     );
+        //     const timeline = new TimelineLite();
+        //
+        //     timeline.to(jstitle, 0, {
+        //         opacity: 0,
+        //         ease: Back.easeInOut, // Specify an ease
+        //     });
+        //     timeline.to(jstitle, 2, {
+        //             opacity: 1
+        //         },
+        //         '+=1' // Run the animation 0.5s early
+        //     );
+        //
+        //     const subtimeline = new TimelineLite();
+        //     subtimeline.to(jssubtitle, 0, {
+        //         opacity: 0,
+        //         ease: Back.easeInOut,
+        //     });
+        //     subtimeline.to(jssubtitle, 2, {
+        //             opacity: 1
+        //         },
+        //         '+=1.5' // Run the animation 0.5s early
+        //     );
+        //
+        //
+        // }
     }
 </script>
 

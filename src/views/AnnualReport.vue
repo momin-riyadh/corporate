@@ -19,7 +19,7 @@
               <el-tab-pane label="2019">
 
                 <!--        Annual Report Column-->
-                <div class="row">
+                <div class="row annual-scroll">
                   <div class="custom-areas align-items-center">
                     <div class="s-a-report" v-for="file in files">
                       <img class="img-fluid" :src="file.imageurl" alt="square">
@@ -85,6 +85,10 @@
 
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
+    import { TimelineMax} from 'gsap/all';
+    import ScrollMagic from 'scrollmagic';
+    import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+
     import Navigation from '../components/Navigation.vue';
     import CommonBanner from '../components/CommonBanner.vue';
     import Footer from '@/components/Footer.vue';
@@ -155,7 +159,36 @@
                 imageurl: require('../assets/images/ar-one@2x.jpg'),
             },
         ];
+
+        annualScroll(){
+            let timeline = new TimelineMax({});
+            timeline.staggerFromTo('.s-a-report', 1, {yPercent:100, opacity:0}, {yPercent:0, opacity:1}, '0.1');
+            var controller = new ScrollMagic.Controller();
+            var scene: any = new ScrollMagic.Scene({
+                triggerElement: '.annual-report-year',
+                reverse: false,
+                triggerHook: 'onCenter'
+            })
+                .setTween(timeline)
+                .addTo(controller);
+
+            // let controller = new ScrollMagic.Controller();
+            // let scene: any = new ScrollMagic.Scene({
+            //     triggerElement: '.annual-scroll',
+            //     reverse: true,
+            //     offset:'-1000',
+            //     triggerHook: 'onCenter'
+            // }).setTween(timeline)
+            //     .addTo(controller);
+        }
+
+
+        mounted(){
+            this.annualScroll()
+        }
     }
+
+
 </script>
 
 <style scoped lang="scss">
