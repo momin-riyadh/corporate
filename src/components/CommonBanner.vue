@@ -1,12 +1,12 @@
 <template>
   <div class="common-banner-area">
     <div class="container-fluid p-0">
-      <div ref="jsbannerimage" class="common-banner">
+      <div class="common-banner js-bannerimage">
         <img class="img-fluid" :src="ImageUrl" alt="square">
 
         <div class="banner-content">
-          <h1 ref="jstitle">{{BannerTitle}}</h1>
-          <p ref="jssubtitle">{{BannerSubtitle}}</p>
+          <h1 class="jstitle">{{BannerTitle}}</h1>
+          <p class="jssubtitle">{{BannerSubtitle}}</p>
         </div>
 
       </div>
@@ -16,7 +16,9 @@
 
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
-    // import {TimelineLite, Back} from 'gsap/dist/gsap';
+    import{TimelineMax} from 'gsap/all';
+    import ScrollMagic from 'scrollmagic';
+    import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 
     @Component({
         name: 'CommonBanner',
@@ -27,45 +29,24 @@
         @Prop() public BannerSubtitle!: string;
         @Prop() public ImageUrl!: string;
 
-        // public mounted() {
-        //     const {jstitle} = this.$refs;
-        //     const {jssubtitle} = this.$refs;
-        //     const {jsbannerimage} = this.$refs;
-        //     const imagetimeline = new TimelineLite();
-        //     imagetimeline.to(jsbannerimage, 0, {
-        //         opacity: 0,
-        //         ease: Back.easeInOut, // Specify an ease
-        //     });
-        //     imagetimeline.to(jsbannerimage, 2, {
-        //             opacity: 1
-        //         },
-        //         '+=0.5' // Run the animation 0.5s early
-        //     );
-        //     const timeline = new TimelineLite();
-        //
-        //     timeline.to(jstitle, 0, {
-        //         opacity: 0,
-        //         ease: Back.easeInOut, // Specify an ease
-        //     });
-        //     timeline.to(jstitle, 2, {
-        //             opacity: 1
-        //         },
-        //         '+=1' // Run the animation 0.5s early
-        //     );
-        //
-        //     const subtimeline = new TimelineLite();
-        //     subtimeline.to(jssubtitle, 0, {
-        //         opacity: 0,
-        //         ease: Back.easeInOut,
-        //     });
-        //     subtimeline.to(jssubtitle, 2, {
-        //             opacity: 1
-        //         },
-        //         '+=1.5' // Run the animation 0.5s early
-        //     );
-        //
-        //
-        // }
+        bannerScroll(){
+            let banneranim = new TimelineMax({});
+            banneranim.staggerFromTo('.common-banner', 1, { opacity:0},
+                {opacity:1}, '0.1');
+
+            let controller = new ScrollMagic.Controller();
+            var scene:any = new ScrollMagic.Scene({
+                triggerElement:'.common-banner-area',
+                reverse:false,
+                triggerHook:'onCenter'
+            })
+                .setTween(banneranim)
+                .addTo(controller);
+        }
+
+        mounted(){
+            this.bannerScroll();
+        }
     }
 </script>
 

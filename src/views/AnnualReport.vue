@@ -184,7 +184,7 @@
 
 
         mounted(){
-            this.annualScroll()
+            this.annualScroll();
         }
     }
 
