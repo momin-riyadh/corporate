@@ -34,7 +34,7 @@
                   <div class="financial-areas align-items-center">
 
                     <div class="sq-financial-report">
-<!--                      <img class="img-fluid" src="../assets/images/nopreview.jpg" alt="square group">-->
+                      <!--                      <img class="img-fluid" src="../assets/images/nopreview.jpg" alt="square group">-->
                       <h1 class="display-2">No preview available!</h1>
 
                     </div>
@@ -91,17 +91,53 @@
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from 'vue-property-decorator';
+    import {Component, Vue, Prop} from 'vue-property-decorator';
+    import {TimelineMax} from "gsap/all";
+    import ScrollMagic from 'scrollmagic';
+    import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
     import Navigation from '@/components/Navigation.vue';
     import CommonBanner from '@/components/CommonBanner.vue';
     import Footer from '@/components/Footer.vue';
     import Copyright from '@/components/Copyright.vue';
+
+
 
     @Component({
         name: 'FinancialInformation',
         components: {Copyright, Footer, CommonBanner, Navigation},
     })
     export default class FinancialInformation extends Vue {
+
+        financeScroll() {
+            let timelines = new TimelineMax({});
+            timelines.staggerFromTo('.sq-financial-report', 1, {yPercent: 100, opacity: 0}, {
+                yPercent: 0,
+                opacity: 1
+            }, '0.1');
+
+            timelines.staggerFromTo('.sq-milestone-list', 1, {xPercent: -100, opacity: 0}, {
+                xPercent: 0,
+                opacity: 1
+            }, '0.1');
+
+            timelines.staggerFromTo('.sq-milestone-image', 1, {xPercent: +100, opacity: 0}, {
+                xPercent: 0,
+                opacity: 1
+            }, '0.1');
+
+            var controller = new ScrollMagic.Controller();
+            var scene: any = new ScrollMagic.Scene({
+                triggerElement: '.financial-report-year',
+                reverse: false,
+                triggerHook: 'onCenter'
+            })
+                .setTween(timelines)
+                .addTo(controller);
+        }
+
+        mounted(){
+            this.financeScroll()
+        }
 
         public data() {
             return {
@@ -171,7 +207,8 @@
   }
 
   .sq-financial-report {
-    flex:1 1 auto;
+    flex: 1 1 auto;
+
     img {
     }
   }
