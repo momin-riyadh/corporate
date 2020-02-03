@@ -207,7 +207,7 @@
   }
 
   .sq-financial-report {
-    flex: 1 1 auto;
+    /*flex: 1 1 auto;*/
 
     img {
     }
