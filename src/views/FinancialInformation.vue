@@ -307,8 +307,10 @@
   .sq-milestone-image {
     flex-shrink: 0;
     width: 100%;
-    @media(min-width: 1265px) {
+    height:500px;
+    @media(min-width: 1441px) {
       width: 800px;
+      height: auto;
     }
   }
 
