@@ -10,21 +10,16 @@
         <div id="sq-map" class="google-map" ref="googleMap"></div>
         <div class="sq-map-form">
           <h5>Select Industry <i> (Optional) </i></h5>
-          <div>
+          <div class="sq-select-industry">
 
-<!--            <div>-->
-<!--              <el-dropdown trigger="click" split-button>-->
-<!--                Industry-->
-<!--                <el-dropdown-menu slot="dropdown">-->
-<!--                  <el-dropdown-item>Industry Name</el-dropdown-item>-->
-<!--                  <el-dropdown-item>Industry Name</el-dropdown-item>-->
-<!--                  <el-dropdown-item>Industry Name</el-dropdown-item>-->
-<!--                  <el-dropdown-item>Industry Name</el-dropdown-item>-->
-<!--                  <el-dropdown-item>Industry Name</el-dropdown-item>-->
-<!--                  <el-dropdown-item>Industry Name</el-dropdown-item>-->
-<!--                </el-dropdown-menu>-->
-<!--              </el-dropdown>-->
-<!--            </div>-->
+            <el-select v-model="value" placeholder="Select">
+              <el-option
+                      v-for="item in options"
+                      :key="item.value"
+                      :label="item.label"
+                      :value="item.value">
+              </el-option>
+            </el-select>
 
 
           </div>
@@ -115,9 +110,24 @@
     export default class Contact extends Vue {
 
         public handleClick() {
-
         }
 
+        data() {
+            return {
+                options: [{
+                    value: 'ind_one',
+                    label: 'Square Head Office '
+                }, {
+                    value: 'Ind_two',
+                    label: 'Square Pharmaceuticals'
+                }, {
+                    value: 'Ind_three',
+                    label: 'Square Veterinary'
+                }
+                ],
+                value: ''
+            }
+        }
 
         public mounted() {
             GoogleMapsLoader.load(function (google: any) {
@@ -441,4 +451,12 @@
     background: #222222;
     padding: 1rem .7rem;
   }
+
+  /*Contact Form Select Button Style*/
+  .sq-select-industry{
+    .el-select{
+      display: block;
+    }
+  }
+  /*Contact Form Select Button Style*/
 </style>
