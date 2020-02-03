@@ -258,8 +258,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 60vh;
-    @media(min-width: 1265px) {
+    @media(min-width: 1441px) {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -275,9 +274,9 @@
     padding: 3rem;
     width: 100%;
     flex-grow: 1;
-    @media(min-width: 1265px) {
+    @media(min-width: 1441px) {
       flex-grow: 1;
-      padding: 7rem;
+        padding: 7rem;
     }
 
     ul {
