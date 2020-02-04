@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xl-6 py-4 pt-lg-0 float-left c-pl">
 
-          <div class="article-header mb-5">
+          <div class="article-header mb-2 mb-md-5">
             <h1 class="common-title"><span>{{ParagraphTitle}}</span></h1>
             <p class="common-sub-title">{{ParagraphSubtitle}}</p>
           </div>
@@ -50,7 +50,10 @@
   .common-paragraph-area {
     min-height: 600px;
     overflow: hidden;
-    margin: 8rem 0;
+    margin: 3rem 0;
+    @media(min-width: 961px){
+      margin: 8rem 0;
+    }
   }
 
   .common-sub-title {

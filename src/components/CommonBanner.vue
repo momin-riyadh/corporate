@@ -56,7 +56,10 @@
     width: 100%;
     display: block;
     overflow: hidden;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
+    @media(min-width:961px) {
+      margin-bottom: 5rem;
+    }
   }
 
   .common-banner {
