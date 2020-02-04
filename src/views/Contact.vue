@@ -12,7 +12,7 @@
           <h5>Select Industry <i> (Optional) </i></h5>
           <div class="sq-select-industry">
 
-            <el-select v-model="value" placeholder="Select">
+            <el-select v-model="value" placeholder="Square Group">
               <el-option
                       v-for="item in options"
                       :key="item.value"

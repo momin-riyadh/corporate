@@ -95,6 +95,10 @@
   }
 
   .res-article-content {
+    /*text-overflow: ellipsis;*/
+    /*display: -webkit-box;*/
+    /*-webkit-line-clamp: 5; !* number of lines to show *!*/
+    /*-webkit-box-orient: vertical;*/
     p {
       font-family: $font-roboto;
       color: #656565;
@@ -103,10 +107,6 @@
       line-height: 2em;
       max-height: 400px;
       overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 5; /* number of lines to show */
-      -webkit-box-orient: vertical;
     }
   }
 
