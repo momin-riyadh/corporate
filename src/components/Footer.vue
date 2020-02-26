@@ -86,7 +86,7 @@
   .footer-area {
     display: flex;
     justify-content: space-between;
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
       flex-direction: column;
     }
   }
@@ -94,7 +94,7 @@
   .footer-about-us {
     flex-basis: 30%;
     max-width: 450px;
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
       flex-basis: 100%;
       margin-bottom: 50px;
     }
@@ -118,13 +118,14 @@
     display: flex;
 
     a {
-      transition:all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
       display: inline-block;
-      color:$white-color;
+      color: $white-color;
       line-height: 1;
       font-size: 1.2em;
+
       &:not(:last-child) {
-       border-right: 1px solid #707070;
+        border-right: 1px solid #707070;
       }
 
       &:not(:last-child) {
@@ -136,7 +137,7 @@
 
       }
 
-      &:hover{
+      &:hover {
         color: $brand-color;
       }
     }
@@ -144,7 +145,7 @@
 
   .footer-useful-links {
     flex-basis: 40%;
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
       flex-basis: 100%;
       margin-bottom: 50px;
     }
@@ -179,7 +180,8 @@
         text-transform: capitalize;
         font-size: .9rem;
         text-decoration: none;
-        &::before{
+
+        &::before {
           content: '';
           z-index: -1;
           position: absolute;
@@ -192,7 +194,8 @@
           transform: scaleY(0);
           transition: transform 0.3s ease-in-out;
         }
-        &:hover::before{
+
+        &:hover::before {
           transform-origin: center bottom;
           transform: scaleY(1);
         }
@@ -203,7 +206,7 @@
   .footer-contact {
     flex-basis: auto;
     color: #c7c7c7;
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
       flex-basis: 100%;
     }
 
