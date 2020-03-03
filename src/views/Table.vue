@@ -180,7 +180,7 @@
               </tr>
 
 
-              <tr>
+              <tr class="new-bg">
                 <td>
                   Risk Transfers
                 </td>
@@ -218,36 +218,64 @@
 
 <style scoped lang="scss">
 
-  .gf-main-table{
-    border: 1px solid #001A57;
+  .new-bg {
+    background-color: #1e4264;
+    color: #fff;
   }
   .gf-table {
-    background: #FEFEFC;
-    color: #001A57;
-
-    p {
-      margin-bottom: 0;
-    }
-
-    thead > tr {
-      border: 1px solid #001A57;
-    }
-
-    td {
-      padding: .4rem;
-    }
+    background-color: #fefefc;
+    color: #001a57;
   }
-
+  .gf-table p {
+    margin-bottom: 0;
+  }
+  .gf-table thead > tr {
+    border: 1px solid #001a57;
+    background-color: #1e4264;
+    color: #fff;
+  }
+  .gf-table td {
+    padding: 0.4rem;
+  }
+  .gf-table tbody > tr {
+    height: 60px;
+  }
+  .gf-table td {
+    width: 200px;
+  }
+  .gf-table td:first-child {
+    background-color: #1e4264;
+    color: #fff;
+  }
   .gf-red {
-    background: #B20820;
-    color: #ffffff;
+    background-color: #bd061b;
+    color: #fff;
   }
-
   .gf-seller {
-    background: #FEFEFC;
+    background-color: #d8d8d8;
+    color: #000;
+    text-transform: capitalize;
+  }
+  .gf-buyer {
+    background-color: #ffd190;
+    color: #000;
+    text-transform: capitalize;
+  }
+  .gf-table-area {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .table-md-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .gf-table-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
-  .gf-buyer {
-    background: #E3E8F6;
-  }
+
 </style>
