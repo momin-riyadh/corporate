@@ -85,7 +85,7 @@
       padding: 0 1rem;
       line-height: 1;
       text-decoration: none;
-      @media(min-width: 601px){
+      @media(min-width: 601px) {
         padding: 0 2rem;
       }
     }
@@ -93,12 +93,16 @@
 
   .sq-career-list-area {
     background: #f4f4f4;
-    padding: 30px 30px 15px 30px;
+    padding: 15px;
+    @media all and (min-width: 601px) {
+      background: #f4f4f4;
+      padding: 30px 30px 15px 30px;
+    }
   }
 
   .sq-single-job-thumbnail {
     background-color: $white-color;
-    padding:30px 15px;
+    padding: 30px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -150,11 +154,13 @@
       padding: .5rem 2.5rem;
       border-radius: 0.3rem;
       border: 2px solid $brand-color;
+
       &:hover,
       &:focus {
         color: #fff;
         outline: 0;
       }
+
       &:hover {
         box-shadow: 0 0 40px 40px $brand-color inset;
       }
