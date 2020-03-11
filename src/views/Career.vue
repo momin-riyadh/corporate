@@ -229,11 +229,6 @@
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
             },
             {
-                title: 'Square Kindergarten',
-                imageurl: require('../assets/images/brands/sq-kindergarden.png'),
-                sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
-            },
-            {
                 title: 'Square Mediacom Limited',
                 imageurl: require('../assets/images/brands/sq-mediacom.png'),
                 sublists: [{text: 'Development Executive'}, {text: 'Front Desk Executive'}, {text: 'Accounts Officer'}],
