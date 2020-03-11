@@ -118,7 +118,8 @@
       <div class="job-apply text-center my-5 py-5">
         <p>Please do not apply without any work experience related to the customers.</p>
 
-        <router-link to="/apply">apply now</router-link>
+        <router-link to="/apply" class="mr-2">apply now</router-link>
+        <router-link to="">apply with bd jobs</router-link>
       </div>
 
     </div>

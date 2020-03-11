@@ -14,11 +14,6 @@
               {{ paragraphcontent }}
             </p>
 
-            <!--        A common Generated button For whole Project-->
-            <el-button-group>
-              <el-button type="primary">Learn More</el-button>
-              <el-button type="primary"><i class="el-icon-plus"/></el-button>
-            </el-button-group>
           </div>
 
         </div>
