@@ -358,6 +358,7 @@
         width: 80px;
         right: 100%;
         margin-right: 15px;
+        display: block;
       }
     }
 

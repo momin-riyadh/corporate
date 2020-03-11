@@ -416,10 +416,20 @@
   .s-featured-job {
     transition: all 0.3s ease-in-out;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     position: relative;
     cursor: pointer;
-    padding: 1rem;
+    padding: .5rem;
+    @media (min-width: 601px){
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      padding: 1rem;
+    }
 
     .s-f-job-img {
       img {
@@ -427,7 +437,8 @@
         height: auto;
         object-fit: cover;
         -o-object-fit: cover;
-        @media all and (min-width:600px) {
+        margin-bottom: .8rem;
+        @media all and (min-width:601px) {
           width: 220px;
           height: auto;
           object-fit: cover;
@@ -465,7 +476,10 @@
 
 
   .s-f-job-img {
-    padding-right: 1rem;
+    padding-right: 0;
+    @media all and(min-width: 601px) {
+      padding-right: 1rem;
+    }
 
     img {
       transition: all 0.3s ease-in-out;
@@ -482,8 +496,12 @@
       font-size: 18px;
     }
 
-    border-left: 1px solid #dddddd;
-    padding-left: 1rem;
+    border-left: none;
+    padding-left: 0;
+    @media all and(min-width: 601px) {
+      border-left: 1px solid #dddddd;
+      padding-left: 1rem;
+    }
 
     ul {
       margin: 0;
