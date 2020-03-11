@@ -34,7 +34,7 @@ growth and prosperity has been no bed of roses."/>
           </div>
           <div class="s-about-col text-col">
             <div class="s-about-col-content text-col-content l-arrow">
-              <h2>Mission & Vision</h2>
+              <h2>Mission, Vision & Values</h2>
               <p>We strive to go above and beyond for our clients, fostering a relationship built on
                 trust,
                 confidence</p>
