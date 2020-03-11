@@ -13,7 +13,7 @@ growth and prosperity has been no bed of roses."/>
               <router-link to="/about-details">Who We are</router-link>
             </li>
             <li>
-              <router-link to="/philosophy">Our Philosophy</router-link>
+              <router-link to="/philosophy">Mission, Vision & Values</router-link>
             </li>
             <li>
               <router-link to="/achievement">Achievements</router-link>

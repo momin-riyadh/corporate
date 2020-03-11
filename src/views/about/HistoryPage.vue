@@ -43,12 +43,12 @@
     width: 100%;
     h1{
       font-family: $font-roboto;
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: $brand-color;
       margin-bottom: 1.5rem;
       line-height: 1;
       @media all and (min-width:1265px) {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
       }
     }
     p{
