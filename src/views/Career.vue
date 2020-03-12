@@ -15,7 +15,7 @@
             and honesty.</p>
         </div>
 
-        <div class="job-category mb-5">
+        <div class="job-category mb-3 mb-sm-4">
           <ul>
             <li v-for="{title, vacancy, index} in category">
               <router-link to="/career-list">
@@ -379,8 +379,12 @@
   }
 
   .featured-job-area {
-    margin-top: 8rem;
+    margin-top: 1rem;
     overflow: hidden;
+    @media(min-width: 601px){
+      margin-top: 8rem;
+      overflow: hidden;
+    }
   }
 
   .featured-job {
