@@ -66,6 +66,12 @@
       text-transform: capitalize;
       color: #000;
     }
+    @media (min-width: 601px) {
+      margin-top: 1.5rem;
+      margin-bottom: 0;
+      display: inline-block;
+      width: 100%;
+    }
   }
 
   .job-category-breadcrumb {
