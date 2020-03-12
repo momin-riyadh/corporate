@@ -400,9 +400,17 @@
   .sq-map-area {
     position: relative;
     z-index: 2;
-    padding: 3rem;
+    padding: 1rem;
     background: #EFEFEF;
     margin-bottom: 3.5rem;
+    @media(min-width: 601px){
+      position: relative;
+      z-index: 2;
+      padding: 3rem;
+      background: #EFEFEF;
+      margin-bottom: 3.5rem;
+    }
+
   }
 
   #sq-map {
