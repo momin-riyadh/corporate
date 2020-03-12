@@ -7,11 +7,9 @@
     <!--    Custom Google Maps Api Integrations-->
     <div class="container-fluid px-5-percent ">
       <div class="sq-map-area overflow-hidden">
-        <div id="sq-map" class="google-map" ref="googleMap"></div>
         <div class="sq-map-form">
           <h5>Select Industry <i> (Optional) </i></h5>
           <div class="sq-select-industry">
-
             <el-select v-model="value" placeholder="Square Group">
               <el-option
                       v-for="item in options"
@@ -20,10 +18,9 @@
                       :value="item.value">
               </el-option>
             </el-select>
-
-
           </div>
         </div>
+        <div id="sq-map" class="google-map" ref="googleMap"></div>
       </div>
 
 
@@ -421,7 +418,7 @@
 
   .sq-map-form {
     width: 100%;
-    margin: 2rem 0;
+    margin: 0 0 .5rem 0;
     padding: 1rem;
     background: #2C2C2C;
     position: static;
@@ -435,6 +432,7 @@
       right: auto;
       margin: 1.5rem;
       padding: 1.8rem;
+      z-index: 3;
     }
 
     h1 {
