@@ -37,7 +37,7 @@
         <div class="row">
           <div class="col text-center">
             <div class="row text-left pt-4">
-              <div class="col-12 col-md-6 mb-4 sq-mission-text pr-0 pr-md-5">
+              <div class="col-12 col-lg-4 mb-4 sq-mission-text pr-0 pr-md-5">
                 <h3>Our Mission</h3>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
                   the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
@@ -45,8 +45,17 @@
                   flows by their place far far away.
                 </p>
               </div>
-              <div class="col-12 col-md-6 sq-mission-text pl-3 pl-md-5">
+              <div class="col-12 col-lg-4 sq-mission-text pl-3 pl-lg-5">
                 <h3>Our Vision</h3>
+                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, far far away, behind the
+                  word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated
+                  they live in Bookmarksgrove right at
+                  the coast.
+                </p>
+              </div>
+
+              <div class="col-12 col-lg-4 sq-mission-text pl-3 pl-lg-5">
+                <h3>Our Values</h3>
                 <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, far far away, behind the
                   word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated
                   they live in Bookmarksgrove right at

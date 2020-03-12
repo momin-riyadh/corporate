@@ -154,6 +154,8 @@
       font-size: 1.2rem;
       text-transform: capitalize;
       color: #000;
+      margin-top: 1.5rem;
+      display: inline-block;
     }
   }
 
