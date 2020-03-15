@@ -141,7 +141,7 @@
             direction: "horizontal",
             navigation: false,
             pagination: {
-                el: ".swiper-pagination",
+                el: '.swiper-pagination',
                 clickable: true,
                 renderBullet(index: any, className: any) {
                     return '<span class="' + className + '">' + (index + 1) + '</span>';

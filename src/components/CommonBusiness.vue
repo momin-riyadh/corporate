@@ -3,25 +3,30 @@
     <div class="container-fluid px-5-percent">
       <div class="row">
         <div class="col-xl-6 py-4 pt-lg-0 float-left c-pl">
-            <div class="sq-bdp-header mb-2 mb-md-5">
-              <h1 class="sq-bdp-title">
-               <span>looking beyond horizon</span>
-              </h1>
-              <p class="sq-bdp-sub-title">
-                Leading pharmaceutical industry of Bangladesh
-              </p>
-            </div>
+          <div class="sq-bdp-header mb-2 mb-md-5">
+            <h1 class="sq-bdp-title">
+              <span>looking beyond horizon</span>
+            </h1>
+            <p class="sq-bdp-sub-title">
+              Leading pharmaceutical industry of Bangladesh
+            </p>
+          </div>
 
           <!--bdp = business development page-->
           <div class="sq-bdp-content">
             <p>
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at autem culpa delectus, dolores ducimus, facere, magnam natus neque nisi non perspiciatis repudiandae sapiente temporibus unde! Et ipsum laboriosam, optio perferendis quaerat quidem totam voluptatem. Corporis dolores eaque nam porro quod repellendus, sed soluta sunt.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at autem culpa delectus, dolores ducimus,
+              facere, magnam natus neque nisi non perspiciatis repudiandae sapiente temporibus unde! Et ipsum
+              laboriosam, optio perferendis quaerat quidem totam voluptatem. Corporis dolores eaque nam porro quod
+              repellendus, sed soluta sunt.
             </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aliquid cum dignissimos doloribus et iste perferendis quaerat? Accusamus aliquam animi cum eos expedita in natus nemo quam quasi sunt. Molestiae.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aliquid cum dignissimos doloribus et iste
+              perferendis quaerat? Accusamus aliquam animi cum eos expedita in natus nemo quam quasi sunt.
+              Molestiae.</p>
           </div>
         </div>
         <div class="col-12 m-auto m-lg-0 col-xl-6 bdp-r-image float-right">
-          <img alt="square" class="img-fluid" :src= "require('../assets/images/pharma.jpg')">
+          <img alt="square" class="img-fluid" :src="require('../assets/images/pharma.jpg')">
         </div>
 
       </div>
@@ -31,7 +36,7 @@
 
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
-    import CommonParagraph from "@/components/CommonParagraph.vue";
+    import CommonParagraph from '@/components/CommonParagraph.vue';
 
     @Component({
         name: 'CommonBusiness',
@@ -47,7 +52,7 @@
     min-height: 600px;
     overflow: hidden;
     margin: 3rem 0;
-    @media(min-width: 961px){
+    @media(min-width: 961px) {
       margin: 8rem 0;
     }
   }
@@ -107,7 +112,7 @@
   }
 
   .c-pl {
-    padding-left:3%;
+    padding-left: 3%;
     @media(min-width: 1265px) {
       padding-left: 115px;
     }

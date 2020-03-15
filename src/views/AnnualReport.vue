@@ -161,10 +161,10 @@
         ];
 
         annualScroll(){
-            let timeline = new TimelineMax({});
+            const timeline = new TimelineMax({});
             timeline.staggerFromTo('.s-a-report', 1, {yPercent:100, opacity:0}, {yPercent:0, opacity:1}, '0.1');
-            var controller = new ScrollMagic.Controller();
-            var scene: any = new ScrollMagic.Scene({
+            let controller = new ScrollMagic.Controller();
+            let scene: any = new ScrollMagic.Scene({
                 triggerElement: '.annual-report-year',
                 reverse: false,
                 triggerHook: 'onCenter'
