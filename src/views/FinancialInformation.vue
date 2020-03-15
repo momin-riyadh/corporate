@@ -101,7 +101,6 @@
     import Copyright from '@/components/Copyright.vue';
 
 
-
     @Component({
         name: 'FinancialInformation',
         components: {Copyright, Footer, CommonBanner, Navigation},
@@ -109,7 +108,7 @@
     export default class FinancialInformation extends Vue {
 
         financeScroll() {
-            let timelines = new TimelineMax({});
+            const timelines = new TimelineMax({});
             timelines.staggerFromTo('.sq-financial-report', 1, {yPercent: 100, opacity: 0}, {
                 yPercent: 0,
                 opacity: 1
@@ -125,8 +124,8 @@
                 opacity: 1
             }, '0.1');
 
-            var controller = new ScrollMagic.Controller();
-            var scene: any = new ScrollMagic.Scene({
+            let controller = new ScrollMagic.Controller();
+            let scene: any = new ScrollMagic.Scene({
                 triggerElement: '.financial-report-year',
                 reverse: false,
                 triggerHook: 'onCenter'
@@ -135,7 +134,7 @@
                 .addTo(controller);
         }
 
-        mounted(){
+        public mounted() {
             this.financeScroll()
         }
 
@@ -150,7 +149,7 @@
         }
 
 
-        public reports: any = [
+        reports: any = [
             {
                 title: 'Earning Presentations',
                 imageurl: require('../assets/images/ep@2x.jpg'),
@@ -276,7 +275,7 @@
     flex-grow: 1;
     @media(min-width: 1441px) {
       flex-grow: 1;
-        padding: 7rem;
+      padding: 7rem;
     }
 
     ul {
@@ -307,7 +306,7 @@
   .sq-milestone-image {
     flex-shrink: 0;
     width: 100%;
-    height:500px;
+    height: 500px;
     @media(min-width: 1441px) {
       width: 800px;
       height: auto;

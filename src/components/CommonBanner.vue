@@ -16,7 +16,7 @@
 
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
-    import{TimelineMax} from 'gsap/all';
+    import {TimelineMax} from 'gsap/all';
     import ScrollMagic from 'scrollmagic';
     import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 
@@ -29,22 +29,22 @@
         @Prop() public BannerSubtitle!: string;
         @Prop() public ImageUrl!: string;
 
-        bannerScroll(){
+        bannerScroll() {
             let banneranim = new TimelineMax({});
-            banneranim.staggerFromTo('.common-banner', 1, { opacity:0},
-                {opacity:1}, '0.1');
+            banneranim.staggerFromTo('.common-banner', 1, {opacity: 0},
+                {opacity: 1}, '0.1');
 
             let controller = new ScrollMagic.Controller();
-            var scene:any = new ScrollMagic.Scene({
-                triggerElement:'.common-banner-area',
-                reverse:false,
-                triggerHook:'onCenter'
+            var scene: any = new ScrollMagic.Scene({
+                triggerElement: '.common-banner-area',
+                reverse: false,
+                triggerHook: 'onCenter'
             })
                 .setTween(banneranim)
                 .addTo(controller);
         }
 
-        mounted(){
+        public mounted() {
             this.bannerScroll();
         }
     }
@@ -57,7 +57,7 @@
     display: block;
     overflow: hidden;
     margin-bottom: 1rem;
-    @media(min-width:961px) {
+    @media(min-width: 961px) {
       margin-bottom: 5rem;
     }
   }

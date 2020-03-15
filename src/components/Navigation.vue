@@ -116,12 +116,12 @@
             window.addEventListener('scroll', this.handleScroll);
         }
 
-        created() {
+        public created() {
             window.addEventListener('scroll', this.handleScroll);
             // this.mbmenu();
         }
 
-        destroyed() {
+        public destroyed() {
             window.removeEventListener('scroll', this.handleScroll);
             // setTimeout(() => {
             //     this.mbmenu();
