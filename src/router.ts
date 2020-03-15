@@ -20,11 +20,6 @@ export default new Router({
             component: () => import(/* webpackChunkName: "about" */ './views/Contact.vue'),
         },
         {
-            path: '/table',
-            name: 'table',
-            component: () => import(/* webpackChunkName: "about" */ './views/Table.vue'),
-        },
-        {
             path: '/business',
             name: 'business',
             component: () => import(/* webpackChunkName: "about" */ './views/Business.vue'),
