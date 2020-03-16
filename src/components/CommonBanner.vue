@@ -29,16 +29,16 @@
         @Prop() public BannerSubtitle!: string;
         @Prop() public ImageUrl!: string;
 
-        bannerScroll() {
-            let banneranim = new TimelineMax({});
+       public bannerScroll() {
+            const banneranim = new TimelineMax({});
             banneranim.staggerFromTo('.common-banner', 1, {opacity: 0},
                 {opacity: 1}, '0.1');
 
-            let controller = new ScrollMagic.Controller();
-            var scene: any = new ScrollMagic.Scene({
+            const controller = new ScrollMagic.Controller();
+            const scene: any = new ScrollMagic.Scene({
                 triggerElement: '.common-banner-area',
                 reverse: false,
-                triggerHook: 'onCenter'
+                triggerHook: 'onCenter',
             })
                 .setTween(banneranim)
                 .addTo(controller);

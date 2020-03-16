@@ -98,16 +98,16 @@
 
         public handleScroll() {
             let scrollpos;
-            let d: any = document;
+            const d: any = document;
             const nav = d.querySelector('.navigation-area');
             window.addEventListener('scroll', function () {
                 scrollpos = window.scrollY || window.pageYOffset;
                 if (scrollpos > 300) {
                     nav.classList.add('navbar-fixed');
-                    nav.style.backgroundColor="#ffffff";
+                    nav.style.backgroundColor='#ffffff';
                 } else {
                     nav.classList.remove('navbar-fixed');
-                    nav.style.backgroundColor = "transparent";
+                    nav.style.backgroundColor = 'transparent';
                 }
             });
         }

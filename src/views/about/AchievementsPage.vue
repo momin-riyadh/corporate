@@ -126,11 +126,11 @@
         name: 'AchievementPage',
         components: {
             swiper,
-            swiperSlide
+            swiperSlide,
         },
     })
     export default class AchievementPage extends Vue {
-        slideidx = ['1', '2', '3'];
+       public slideidx: any = ['1', '2', '3'];
         public swiperOption: any = {
             spaceBetween: 30,
             centeredSlides: false,
@@ -138,7 +138,7 @@
             effect: "fade",
             speed: 1100,
             loop: true,
-            direction: "horizontal",
+            direction: 'horizontal',
             navigation: false,
             pagination: {
                 el: '.swiper-pagination',
@@ -148,11 +148,11 @@
                 },
             },
             fadeEffect: {
-                crossFade: true
+                crossFade: true,
             },
             autoplay: {
                 delay: 5000,
-                disableOnInteraction: false
+                disableOnInteraction: false,
             },
         };
     }

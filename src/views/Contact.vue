@@ -109,7 +109,7 @@
         public handleClick() {
         }
 
-        data() {
+       public data() {
             return {
                 options: [{
                     value: 'ind_one',
@@ -227,14 +227,22 @@
     }
 
     form {
+      overflow: hidden;
+      padding: 1.1rem;
       input {
         background: $white-color;
         border: 0;
-        padding: 2.5rem .8rem;
+        padding: 1.8rem .5rem;
         font-family: $font-roboto;
+        @media(min-width: 601px){
+          background: $white-color;
+          border: 0;
+          padding: 2.5rem .8rem;
+          font-family: $font-roboto;
+        }
 
         &:hover, &:focus {
-          outline: none;
+          outline: 0 !important;
         }
 
         /*Placeholder Color*/

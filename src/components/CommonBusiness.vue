@@ -87,7 +87,7 @@
         components: {
             CommonParagraph,
             swiper,
-            swiperSlide
+            swiperSlide,
         },
     })
     export default class CommonBusiness extends Vue {
@@ -96,7 +96,7 @@
             slidesPerView: '1',
             spaceBetween: 30,
             mousewheel: false,
-            effect:'fade',
+            effect: 'fade',
             centeredSlides: true,
             autoplay: {
                 delay: 3000,
@@ -212,27 +212,29 @@
     left: 20px;
     right: auto;
   }
+
   .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
     right: 20px;
     left: auto;
   }
 
-   .swiper-button-prev, .swiper-button-next {
-     position: absolute;
-     top: 50%;
-     width: 44px;
-     height: 44px;
-     margin-top: -22px;
-     z-index: 10;
-     cursor: pointer;
-     background-size: 24px 24px;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-color: #F5F5F5;
-     border-radius: 50%;
-     padding: 10px;
-     outline: 0;
-   }
+  .swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    width: 44px;
+    height: 44px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 24px 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    padding: 10px;
+    outline: 0;
+  }
+
   /*End*/
 
 </style>

@@ -109,12 +109,12 @@
 
         public data() {
             return {
-                activeName: 'first'
+                activeName: 'first',
             };
         }
 
         public handleClick(tab: any, event: any) {
-            console.log(tab, event)
+            // console.log(tab, event)
         }
 
         public files: any = [
@@ -160,7 +160,7 @@
             },
         ];
 
-        annualScroll(){
+        public annualScroll(){
             const timeline = new TimelineMax({});
             timeline.staggerFromTo('.s-a-report', 1, {yPercent:100, opacity:0}, {yPercent:0, opacity:1}, '0.1');
             let controller = new ScrollMagic.Controller();
