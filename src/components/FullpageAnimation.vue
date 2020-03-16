@@ -31,7 +31,7 @@
 
     @Component({
         name: 'FullpageAnimation',
-        components: {}
+        components: {},
     })
     export default class FullpageAnimation extends Vue {
 
