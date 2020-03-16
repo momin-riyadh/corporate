@@ -26,7 +26,50 @@
           </div>
         </div>
         <div class="col-12 m-auto m-lg-0 col-xl-6 bdp-r-image float-right">
-          <img alt="square" class="img-fluid" :src="require('../assets/images/pharma.jpg')">
+          <!--          <img alt="square" class="img-fluid" :src="require('../assets/images/pharma.jpg')">-->
+
+          <div class="sq-ind-slider-area">
+            <swiper :options="swiperOption" loadtheme="false">
+              <swiper-slide>
+                <div class="sq-ind-thumb-area">
+                  <div class="sq-ind-thumb-image">
+                    <img src="../assets/images/ind-one.jpg" alt="square">
+                  </div>
+                </div>
+
+              </swiper-slide>
+              <swiper-slide>
+                <div class="sq-ind-thumb-area">
+                  <div class="sq-ind-thumb-image">
+                    <img src="../assets/images/ind-two.jpg" alt="square">
+                  </div>
+                </div>
+
+              </swiper-slide>
+              <swiper-slide>
+                <div class="sq-ind-thumb-area">
+                  <div class="sq-ind-thumb-image">
+                    <img src="../assets/images/ind-three.jpg" alt="square">
+                  </div>
+                </div>
+
+              </swiper-slide>
+              <swiper-slide>
+                <div class="sq-ind-thumb-area">
+                  <div class="sq-ind-thumb-image">
+                    <img src="../assets/images/ind-four.jpg" alt="square">
+                  </div>
+                </div>
+
+              </swiper-slide>
+
+            </swiper>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+
         </div>
 
       </div>
@@ -37,12 +80,53 @@
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
     import CommonParagraph from '@/components/CommonParagraph.vue';
+    import {swiper, swiperSlide} from 'vue-awesome-swiper';
 
     @Component({
         name: 'CommonBusiness',
-        components: {CommonParagraph}
+        components: {
+            CommonParagraph,
+            swiper,
+            swiperSlide
+        },
     })
     export default class CommonBusiness extends Vue {
+
+        public swiperOption: any = {
+            slidesPerView: '1',
+            spaceBetween: 30,
+            mousewheel: false,
+            pagination: {
+                el: '.swiper-paginations',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            fadeEffect: {
+                crossFade: true,
+            },
+            breakpoints: {
+                1905: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                1439: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                1265: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                601: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+
+            },
+        };
 
     }
 </script>
@@ -117,5 +201,33 @@
       padding-left: 115px;
     }
   }
+
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 20px;
+    right: auto;
+  }
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: 20px;
+    left: auto;
+  }
+
+   .swiper-button-prev, .swiper-button-next {
+     position: absolute;
+     top: 50%;
+     width: 44px;
+     height: 44px;
+     margin-top: -22px;
+     z-index: 10;
+     cursor: pointer;
+     background-size: 24px 24px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-color: #F5F5F5;
+     border-radius: 50%;
+     padding: 10px;
+     outline: 0;
+   }
+
+
 
 </style>
