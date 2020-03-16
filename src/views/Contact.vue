@@ -109,7 +109,7 @@
         public handleClick() {
         }
 
-       public data() {
+        public data() {
             return {
                 options: [{
                     value: 'ind_one',
@@ -229,12 +229,13 @@
     form {
       overflow: hidden;
       padding: 1.1rem;
+
       input {
         background: $white-color;
         border: 0;
         padding: 1.8rem .5rem;
         font-family: $font-roboto;
-        @media(min-width: 601px){
+        @media(min-width: 601px) {
           background: $white-color;
           border: 0;
           padding: 2.5rem .8rem;
@@ -408,7 +409,7 @@
     padding: 1rem;
     background: #EFEFEF;
     margin-bottom: 3.5rem;
-    @media(min-width: 601px){
+    @media(min-width: 601px) {
       position: relative;
       z-index: 2;
       padding: 3rem;
@@ -453,6 +454,7 @@
       color: $white-color;
       font-family: $font-helvetica-bold;
       margin-bottom: 1rem;
+
       i {
         font-size: medium;
         font-weight: normal;
@@ -467,10 +469,11 @@
   }
 
   /*Contact Form Select Button Style*/
-  .sq-select-industry{
-    .el-select{
+  .sq-select-industry {
+    .el-select {
       display: block;
     }
   }
+
   /*Contact Form Select Button Style*/
 </style>

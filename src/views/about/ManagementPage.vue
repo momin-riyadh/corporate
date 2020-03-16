@@ -132,7 +132,7 @@
     overflow: hidden;
     margin-left: 0;
     @media(min-width: 965px){
-      margin-left: 50px;
+      margin-left: 3rem;
     }
   }
 
@@ -140,6 +140,13 @@
     min-height: 400px;
     background: #222222;
     display: flex;
+    flex-direction: column-reverse;
+    @media(min-width: 961px){
+      min-height: 400px;
+      background: #222222;
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   .sq-management-people-content {
