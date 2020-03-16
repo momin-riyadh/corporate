@@ -136,11 +136,12 @@
 
 <style scoped lang="scss">
   .sq-c-b-area {
-    min-height: 600px;
+    height: auto;
     overflow: hidden;
-    margin: 3rem 0;
+    margin: 2rem 0;
     @media(min-width: 961px) {
       margin: 8rem 0;
+      min-height: 600px;
     }
   }
 
