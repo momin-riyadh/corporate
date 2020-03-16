@@ -96,6 +96,12 @@
             slidesPerView: '1',
             spaceBetween: 30,
             mousewheel: false,
+            effect:'fade',
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: '.swiper-paginations',
                 clickable: true,
@@ -103,9 +109,6 @@
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
-            },
-            fadeEffect: {
-                crossFade: true,
             },
             breakpoints: {
                 1905: {
