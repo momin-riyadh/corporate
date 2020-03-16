@@ -205,6 +205,8 @@
     }
   }
 
+
+  /*This style has been overwrite from swiper slider default style and kept here for business details page*/
   .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
     left: 20px;
     right: auto;
@@ -230,7 +232,6 @@
      padding: 10px;
      outline: 0;
    }
-
-
+  /*End*/
 
 </style>
