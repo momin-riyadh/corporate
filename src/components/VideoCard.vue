@@ -30,10 +30,10 @@
     import {Component, Vue} from 'vue-property-decorator';
 
     @Component({
-        name: 'FullpageAnimation',
+        name: 'VideoCard',
         components: {},
     })
-    export default class FullpageAnimation extends Vue {
+    export default class VideoCard extends Vue {
 
     }
 </script>
