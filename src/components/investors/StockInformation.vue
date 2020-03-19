@@ -13,10 +13,10 @@
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import Navigation from '../../components/Navigation.vue';
-    import CommonBanner from '../../components/CommonBanner.vue';
-    import Footer from '../../components/Footer.vue';
-    import Copyright from '../../components/Copyright.vue';
+    import Navigation from '../Navigation.vue';
+    import CommonBanner from '../CommonBanner.vue';
+    import Footer from '../Footer.vue';
+    import Copyright from '../Copyright.vue';
 
     @Component({
         name: 'StockInformation',

@@ -101,7 +101,7 @@ export default new Router({
         {
             path: '/stock-information',
             name: 'stock-information',
-            component: () => import('./views/investors/StockInformation.vue'),
+            component: () => import('./components/investors/StockInformation.vue'),
         },
 
         {
