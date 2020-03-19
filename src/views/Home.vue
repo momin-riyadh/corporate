@@ -1,7 +1,7 @@
 <template>
   <div class="sq-home-area">
     <Navigation type="customstyle"/>
-    <FullpageAnimation/>
+    <VideoCard/>
 
     <div class="container-fluid px-5-percent">
       <div class="sq-h-content-area">
@@ -247,12 +247,12 @@
     import Copyright from '@/components/Copyright.vue';
     import CommonBanner from '@/components/CommonBanner.vue';
     import {swiper, swiperSlide} from 'vue-awesome-swiper';
-    import FullpageAnimation from '@/components/FullpageAnimation.vue';
+    import VideoCard from '@/components/VideoCard.vue';
 
     @Component({
         name: 'Home',
         components: {
-            FullpageAnimation,
+            VideoCard,
             CommonBanner,
             Copyright,
             Footer,
