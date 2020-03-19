@@ -101,29 +101,29 @@ export default new Router({
         {
             path: '/stock-information',
             name: 'stock-information',
-            component: () => import('./views/investors/StockInformation.vue'),
+            component: () => import('./components/investors/StockInformation.vue'),
         },
 
         {
             path: '/corporate-responsibility',
             name: 'corporate-responsibility',
-            component: () => import('./views/responsibility/CorporatesResponsibility.vue'),
+            component: () => import('./components/responsibility/CorporatesResponsibility.vue'),
         },
 
         {
             path: '/environment-responsibility',
             name: 'environment-responsibility',
-            component: () => import('./views/responsibility/EnvironmentalResponsibility.vue'),
+            component: () => import('./components/responsibility/EnvironmentalResponsibility.vue'),
         },
         {
             path: '/welfare',
             name: 'welfare',
-            component: () => import('./views/responsibility/EmployeesWelfare.vue'),
+            component: () => import('./components/responsibility/EmployeesWelfare.vue'),
         },
         {
             path: '/compliance',
             name: 'compliance',
-            component: () => import('./views/responsibility/Compliance.vue'),
+            component: () => import('./components/responsibility/Compliance.vue'),
         },
     ],
 });
