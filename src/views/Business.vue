@@ -65,12 +65,7 @@
                 <img class="img-fluid" src="../assets/images/business/sq-hn.png" alt="square">
               </div>
             </div>
-<!--            <div class="sq-business-logo-area">-->
-<!--              <div class="sq-business-logo">-->
-<!--                <img class="img-fluid" src="../assets/images/business/sq-kinder.png" alt="square">-->
-<!--              </div>-->
 
-<!--            </div>-->
             <div class="sq-business-logo-area">
               <div class="sq-business-logo">
                 <img class="img-fluid" src="../assets/images/business/sq-textile.png" alt="square">
