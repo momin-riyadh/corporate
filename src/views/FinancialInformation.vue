@@ -76,15 +76,9 @@
           </div>
         </div>
       </div>
-
       <!--      End Square Group Milestones-->
-
-
     </div>
-
     <!--    End Financial Information Report Section-->
-
-
     <Footer/>
     <Copyright/>
   </div>
@@ -140,16 +134,16 @@
 
         public data() {
             return {
-                activeName: 'first'
+                activeName: 'first',
             };
         }
 
         public handleClick(tab: any, event: any) {
-            console.log(tab, event)
+            // console.log(tab, event);
         }
 
 
-        reports: any = [
+      public reports: any = [
             {
                 title: 'Earning Presentations',
                 imageurl: require('../assets/images/ep@2x.jpg'),

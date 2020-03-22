@@ -32,12 +32,12 @@ export default new Router({
         {
             path: '/career-details',
             name: 'career-details',
-            component: () => import(/* webpackChunkName: "about" */ './views/CareerDetails.vue'),
+            component: () => import(/* webpackChunkName: "about" */ './components/CareerDetails.vue'),
         },
         {
             path: '/career-list',
             name: 'career-list',
-            component: () => import(/* webpackChunkName: "about" */ './views/CareerList.vue'),
+            component: () => import(/* webpackChunkName: "about" */ './components/CareerList.vue'),
         },
         {
             path: '/apply',
