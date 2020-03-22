@@ -43,7 +43,7 @@
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import Navigation from '../components/Navigation.vue';
+    import Navigation from './Navigation.vue';
     import CommonBanner from '@/components/CommonBanner.vue';
     import Footer from '@/components/Footer.vue';
     import Copyright from '@/components/Copyright.vue';

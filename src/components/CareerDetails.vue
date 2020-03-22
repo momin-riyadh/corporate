@@ -33,7 +33,7 @@
             </div>
 
 
-            <!--            job vacancy-->
+            <!--job vacancy-->
             <div class="job-vacancy">
               <p>Vacancy <span>02</span></p>
             </div>
@@ -117,9 +117,10 @@
 
       <div class="job-apply text-center my-5 py-5">
         <p>Please do not apply without any work experience related to the customers.</p>
-
-        <router-link to="/apply" class="mr-2">apply now</router-link>
-        <router-link to="">apply with bd jobs</router-link>
+        <div class="sq-apply-btn-area">
+          <router-link to="/apply" class="mr-2">apply now</router-link>
+          <router-link to="">apply with bd jobs</router-link>
+        </div>
       </div>
 
     </div>
@@ -295,7 +296,9 @@
       font-weight: 500;
       font-size: 18px;
     }
+  }
 
+  .sq-apply-btn-area {
     a {
       background: $brand-color;
       text-decoration: none;
