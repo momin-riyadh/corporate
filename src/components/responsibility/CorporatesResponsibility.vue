@@ -29,10 +29,10 @@ NGO’s in their effort to make available healthcare to the disadvantage populat
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import Navigation from '@/components/Navigation.vue';
+    import Navigation from '@/components/NavigationCard.vue';
     import CommonBanner from '@/components/CommonBanner.vue';
-    import Copyright from '@/components/Copyright.vue';
-    import Footer from '@/components/Footer.vue';
+    import Copyright from '@/components/CopyrightCard.vue';
+    import Footer from '@/components/FooterCard.vue';
     import CommonParagraph from '@/components/CommonParagraph.vue';
     import BottomBanner from '@/components/BottomBanner.vue';
 

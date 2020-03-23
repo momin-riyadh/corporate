@@ -8,7 +8,7 @@
     import {Component, Vue} from 'vue-property-decorator';
 
     @Component({
-        name: 'Copyright',
+        name: 'CopyrightCard.vue',
         components: {},
     })
     export default class Copyright extends Vue {

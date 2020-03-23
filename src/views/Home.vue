@@ -157,9 +157,9 @@
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import Navigation from '@/components/Navigation.vue';
-    import Footer from '@/components/Footer.vue';
-    import Copyright from '@/components/Copyright.vue';
+    import Navigation from '@/components/NavigationCard.vue';
+    import Footer from '@/components/FooterCard.vue';
+    import Copyright from '@/components/CopyrightCard.vue';
     import CommonBanner from '@/components/CommonBanner.vue';
     import {swiper, swiperSlide} from 'vue-awesome-swiper';
     import VideoCard from '@/components/VideoCard.vue';
@@ -222,76 +222,6 @@
 </script>
 
 <style lang="scss">
-
-  .sq-home-compliance-area {
-    height: 70vh;
-    position: relative;
-    margin-bottom: calc(3% + 5vh);
-
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: top;
-      -o-object-position: top;
-    }
-  }
-
-  .compliance-text {
-    background: #F9F8F8;
-    padding: 2rem;
-    left: 2.5%;
-    right: 2.5%;
-    bottom: -80px;
-    width: 95%;
-    position: absolute;
-    z-index: 2;
-    @media(min-width: 800px) {
-      left: 95px;
-      max-width: 500px;
-      padding: 5rem;
-    }
-
-    h1 {
-      line-height: 1;
-      font-family: $font-helvetica-bold;
-      font-weight: bold;
-      font-size: calc(24px + (45 - 24) * ((100vw - 300px) / (1600 - 300)));
-      display: inline-block;
-      position: relative;
-
-      &::before {
-        content: "";
-        position: absolute;
-        height: 5px;
-        border: 0;
-        top: 55%;
-        transform: translateY(-55%);
-        width: 45px;
-        right: 100%;
-        margin-right: 5px;
-        @media(min-width: 800px) {
-          border-bottom: 4px solid $brand-color;
-        }
-      }
-    }
-
-    h4 {
-      line-height: 1;
-      font-family: $font-helvetica-bold;
-      font-weight: bold;
-      font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
-      display: inline-block;
-      position: relative;
-    }
-
-    p {
-      font-family: $font-roboto;
-      color: $paragraph-color;
-      font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
-    }
-  }
-
   .sq-h-news-header {
     max-width: 900px;
     padding: 0 5%;
