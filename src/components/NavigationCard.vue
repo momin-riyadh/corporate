@@ -90,7 +90,7 @@
     import {Component, Vue, Prop} from 'vue-property-decorator';
 
     @Component({
-        name: 'Navigation',
+        name: 'NavigationCard.vue',
         components: {},
     })
     export default class Navigation extends Vue {

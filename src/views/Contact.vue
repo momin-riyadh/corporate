@@ -14,9 +14,9 @@
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import Navigation from '@/components/Navigation.vue';
-    import Footer from '@/components/Footer.vue';
-    import Copyright from '@/components/Copyright.vue';
+    import Navigation from '@/components/NavigationCard.vue';
+    import Footer from '@/components/FooterCard.vue';
+    import Copyright from '@/components/CopyrightCard.vue';
     import CommonBanner from '@/components/CommonBanner.vue';
     import MapCard from "@/components/MapCard.vue";
     import FormCard from "@/components/FormCard.vue";

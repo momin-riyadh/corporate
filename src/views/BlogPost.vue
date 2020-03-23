@@ -68,10 +68,10 @@
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import Navigation from '@/components/Navigation.vue';
+    import Navigation from '@/components/NavigationCard.vue';
     import CommonBanner from '@/components/CommonBanner.vue';
-    import Footer from '@/components/Footer.vue';
-    import Copyright from '@/components/Copyright.vue';
+    import Footer from '@/components/FooterCard.vue';
+    import Copyright from '@/components/CopyrightCard.vue';
 
     @Component({
         name: 'BlogPost',

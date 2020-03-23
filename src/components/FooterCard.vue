@@ -63,7 +63,7 @@
     import {Component, Vue} from 'vue-property-decorator';
 
     @Component({
-        name: 'Footer',
+        name: 'FooterCard.vue',
         components: {},
     })
 
