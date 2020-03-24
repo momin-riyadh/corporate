@@ -75,7 +75,7 @@ export default new Router({
             // route level code-splitting
             // this generates a separate chunk (about.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
-            component: () => import(/* webpackChunkName: "about" */ './views/about/About.vue'),
+            component: () => import(/* webpackChunkName: "about" */ './components/about/About.vue'),
         },
         {
             path: '/corporate-governance',
@@ -83,18 +83,18 @@ export default new Router({
             // route level code-splitting
             // this generates a separate chunk (about.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
-            component: () => import(/* webpackChunkName: "about" */ './views/CorporateGovernances.vue'),
+            component: () => import(/* webpackChunkName: "about" */ './components/CorporateGovernances.vue'),
         },
 
         {
             path: '/about-details',
-            component: () => import('./views/about/AboutLayout.vue'),
+            component: () => import('./components/about/AboutLayout.vue'),
             children: [
-                {path: '/', component: () => import('./views/about/HistoryPage.vue')},
-                {path: '/philosophy', component: () => import('./views/about/PhilosophyPage.vue')},
-                {path: '/management', component: () => import('./views/about/ManagementPage.vue')},
-                {path: '/management-profile', component: () => import('./views/about/ManagementProfile.vue')},
-                {path: '/achievement', component: () => import('./views/about/AchievementsPage.vue')},
+                {path: '/', component: () => import('./components/about/HistoryPage.vue')},
+                {path: '/philosophy', component: () => import('./components/about/PhilosophyPage.vue')},
+                {path: '/management', component: () => import('./components/about/ManagementPage.vue')},
+                {path: '/management-profile', component: () => import('./components/about/ManagementProfile.vue')},
+                {path: '/achievement', component: () => import('./components/about/AchievementsPage.vue')},
             ],
         },
 
