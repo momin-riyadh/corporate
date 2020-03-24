@@ -37,10 +37,10 @@ growth and prosperity has been no bed of roses."/>
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import Navigation from '../../components/NavigationCard.vue';
-    import CommonBanner from '../../components/CommonBanner.vue';
-    import Footer from '../../components/FooterCard.vue';
-    import Copyright from '../../components/CopyrightCard.vue';
+    import Navigation from '../NavigationCard.vue';
+    import CommonBanner from '../CommonBanner.vue';
+    import Footer from '../FooterCard.vue';
+    import Copyright from '../CopyrightCard.vue';
 
     @Component({
         name: 'AboutLayout',

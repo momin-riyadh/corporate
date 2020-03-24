@@ -85,8 +85,8 @@
       </div>
     </div>
 
-    <Footer/>
-    <Copyright/>
+    <FooterCard/>
+    <CopyrightCard/>
   </div>
 </template>
 
