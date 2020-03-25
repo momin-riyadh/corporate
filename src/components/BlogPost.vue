@@ -5,9 +5,7 @@
                   banner-subtitle="Employee welfare entails everything from services, facilities and benefits that are provided or done by an employer
  for the advantage or comfort of an employee. It is undertaken in order to"/>
 
-   <SinglePost/>
-
-
+    <SinglePost/>
     <Footer/>
     <Copyright/>
   </div>

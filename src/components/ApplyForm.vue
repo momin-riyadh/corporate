@@ -20,8 +20,8 @@
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import Navigation from '../components/NavigationCard.vue';
-    import CommonBanner from '../components/CommonBanner.vue';
+    import Navigation from './NavigationCard.vue';
+    import CommonBanner from './CommonBanner.vue';
     import Footer from '@/components/FooterCard.vue';
     import Copyright from '@/components/CopyrightCard.vue';
     import ApplyCard from "@/components/ApplyCard.vue";
