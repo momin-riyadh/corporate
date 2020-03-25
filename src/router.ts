@@ -42,12 +42,12 @@ export default new Router({
         {
             path: '/apply',
             name: 'apply',
-            component: () => import(/* webpackChunkName: "about" */ './views/ApplyForm.vue'),
+            component: () => import(/* webpackChunkName: "about" */ './components/ApplyForm.vue'),
         },
         {
             path: '/business-details',
             name: 'business-details',
-            component: () => import(/* webpackChunkName: "about" */ './views/BusinessDetails.vue'),
+            component: () => import(/* webpackChunkName: "about" */ './components/BusinessDetails.vue'),
         },
         {
             path: '/annual-report',
@@ -62,12 +62,12 @@ export default new Router({
         {
             path: '/news',
             name: 'newsmedia',
-            component: () => import(/* webpackChunkName: "about" */ './views/NewsMedia.vue'),
+            component: () => import(/* webpackChunkName: "about" */ './components/NewsMedia.vue'),
         },
         {
             path: '/post',
             name: 'blogpost',
-            component: () => import(/* webpackChunkName: "about" */ './views/BlogPost.vue'),
+            component: () => import(/* webpackChunkName: "about" */ './components/BlogPost.vue'),
         },
         {
             path: '/about',
