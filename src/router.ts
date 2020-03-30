@@ -125,5 +125,12 @@ export default new Router({
             name: 'compliance',
             component: () => import('./components/responsibility/Compliance.vue'),
         },
+
+        // This router only for test purpose
+        {
+            path: '/tests',
+            name: 'NewsDetailPage',
+            component: () => import('./views/NewsDetailPage.vue'),
+        },
     ],
 });

@@ -1,16 +1,16 @@
 <template>
+  <div>
 
+  </div>
 </template>
 
 <script lang="ts">
-  import {Component, Vue} from 'vue-property-decorator';
+    import {Component, Prop, Vue} from 'vue-property-decorator';
 
-  @Component({
-      name:'BasicPage',
-      components:{
-
-      }
-  })
+    @Component({
+        name: 'BasicPage',
+        components: {}
+    })
 
     export default class BasicPage extends Vue {
 
