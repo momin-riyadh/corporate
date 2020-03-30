@@ -59,11 +59,11 @@
     import {Component, Vue} from 'vue-property-decorator';
 
     @Component({
-        name: 'SinglePost',
+        name: 'SinglePostCard.vue',
         components: {}
     })
 
-    export default class SinglePost extends Vue {
+    export default class SinglePostCard extends Vue {
 
     }
 </script>

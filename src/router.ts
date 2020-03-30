@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
+import Home from './views/HomePage.vue';
 
 Vue.use(Router);
 
@@ -12,7 +12,7 @@ export default new Router({
         {
             path: '/',
             name: 'home',
-            component: () => import(/* webpackChunkName: "about" */ './views/Home.vue'),
+            component: () => import(/* webpackChunkName: "about" */ './views/HomePage.vue'),
         },
         {
             path: '/contact',
@@ -124,6 +124,13 @@ export default new Router({
             path: '/compliance',
             name: 'compliance',
             component: () => import('./components/responsibility/Compliance.vue'),
+        },
+
+        // This router only for test purpose
+        {
+            path: '/tests',
+            name: 'NewsDetailPage',
+            component: () => import('./views/NewsDetailPage.vue'),
         },
     ],
 });

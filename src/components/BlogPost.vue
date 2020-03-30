@@ -17,7 +17,7 @@
     import CommonBanner from '@/components/CommonBanner.vue';
     import Footer from '@/components/FooterCard.vue';
     import Copyright from '@/components/CopyrightCard.vue';
-    import SinglePost from "@/components/SinglePost.vue";
+    import SinglePost from '@/components/SinglePostCard.vue';
 
     @Component({
         name: 'BlogPost',
