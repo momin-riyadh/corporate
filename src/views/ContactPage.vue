@@ -6,7 +6,7 @@
  for the advantage or comfort of an employee. It is undertaken in order to"/>
 
     <MapCard/>
-    <FormCard/>
+    <ContactFormCard/>
     <Footer/>
     <Copyright/>
   </div>
@@ -19,12 +19,12 @@
     import Copyright from '@/components/CopyrightCard.vue';
     import CommonBanner from '@/components/CommonBanner.vue';
     import MapCard from "@/components/MapCard.vue";
-    import FormCard from "@/components/FormCard.vue";
+    import ContactFormCard from "@/components/ContactFormCard.vue";
 
 
     @Component({
-        name: 'Contact',
-        components: {FormCard, CommonBanner, MapCard, Copyright, Footer, Navigation},
+        name: 'ContactPage.vue',
+        components: {ContactFormCard, CommonBanner, MapCard, Copyright, Footer, Navigation},
     })
     export default class Contact extends Vue {
 
