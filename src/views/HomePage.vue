@@ -24,7 +24,7 @@
     import NewssliderCard from '@/components/NewssliderCard.vue';
 
     @Component({
-        name: 'Home',
+        name: 'HomePage.vue',
         components: {
             NewssliderCard,
             ComplianceCard,
@@ -37,7 +37,7 @@
             NavigationCard,
         },
     })
-    export default class Home extends Vue {
+    export default class HomePage extends Vue {
 
     }
 </script>
