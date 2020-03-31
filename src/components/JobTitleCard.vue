@@ -22,9 +22,9 @@
 
   .job-category-title {
     margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     @media all and (min-width: 601px) {
-      margin-bottom: 7rem;
+      margin-bottom: 3rem;
     }
   }
 
