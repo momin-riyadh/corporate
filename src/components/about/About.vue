@@ -9,7 +9,6 @@ growth and prosperity has been no bed of roses."/>
     <div class="sq-about-main">
       <div class="container-fluid px-5-percent">
 
-
         <div class="s-about-col-areas">
           <div class="s-about-col image-col">
             <div class="s-about-col-content">
@@ -43,9 +42,6 @@ growth and prosperity has been no bed of roses."/>
 
             </div>
           </div>
-        </div>
-
-        <div class="s-about-col-areas">
           <div class="s-about-col text-col">
             <div class="s-about-col-content text-col-content r-arrow">
               <h2>Achievements</h2>
@@ -78,7 +74,6 @@ growth and prosperity has been no bed of roses."/>
             </div>
           </div>
         </div>
-
 
       </div>
     </div>
@@ -125,7 +120,6 @@ growth and prosperity has been no bed of roses."/>
 
   .s-about-col {
     width: calc(100%);
-    float: left;
     position: relative;
     padding-bottom: calc(100%);
 
@@ -166,8 +160,8 @@ growth and prosperity has been no bed of roses."/>
 
   .s-about-col-content i {
     position: absolute;
-    left: 45px;
-    bottom: 45px;
+    left: 2rem;
+    bottom: 2rem;
     font-size: 20px;
     line-height: 20px;
     color: #646464;
@@ -179,7 +173,7 @@ growth and prosperity has been no bed of roses."/>
   .text-col {
 
     .text-col-content {
-      padding: 30% 45px 45px 45px;
+      padding: 25% 2rem 2rem 2rem;
       height: 100%;
       text-align: left;
       vertical-align: middle;
