@@ -1,8 +1,5 @@
 <template>
   <div ref="jsjobarea" class="job-category-area overflow-auto">
-
-
-
     <div class="job-category mb-3 mb-sm-4">
       <ul>
         <li v-for="{title, vacancy, index} in category">
