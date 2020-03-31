@@ -27,7 +27,7 @@ export default new Router({
         {
             path: '/career',
             name: 'career',
-            component: () => import(/* webpackChunkName: "about" */ './views/Career.vue'),
+            component: () => import(/* webpackChunkName: "about" */ './views/JobIndexPage.vue'),
         },
         {
             path: '/career-details',
