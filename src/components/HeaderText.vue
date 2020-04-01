@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import { TitleTextCTABlock } from "../store/cms.types";
+import { TitleTextCTABlock } from "@/store/cms.types";
 
 @Component({
   name: "HeaderText"
