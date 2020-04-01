@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
-import { YoutubeVideoBlock } from "../store/cms.types";
+import { YoutubeVideoBlock } from "@/store/cms.types";
 
 @Component({
   name: "VideoCard",
@@ -110,134 +110,11 @@ export default class VideoCard extends Vue {
   }
 }
 
-.header-overlay {
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  z-index: 1;
-  opacity: 0.4;
-}
-
-.header-content {
-  z-index: 2;
-}
-
-.header-content h1 {
-  font-size: 36px;
-  margin-bottom: 0;
-  font-family: $font-helvetica-bold;
-  @media (min-width: 1905px) {
-    font-size: 50px;
-  }
-}
-
-.header-content p {
-  font-size: 0.9rem;
-  display: block;
-  padding-bottom: 1rem;
-  font-family: $font-roboto;
-  @media (min-width: 1905px) {
-    font-size: 1.1rem;
-    padding-bottom: 2rem;
-  }
-}
-
-.video-btn {
-  transition: all 0.3s ease-in-out;
-  border: 1px solid $brand-color;
-  color: #fff;
-  font-family: $font-roboto;
-  font-weight: lighter;
-  border-radius: 2px;
-  font-size: 1.2rem;
-  padding: 0.6rem 1rem;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover {
-    background: $brand-color;
-  }
-}
-
-.section {
-  padding: 20px 0;
-}
-
-.section-b {
-  background: #333;
-  color: #fff;
-}
-
 @media (max-width: 960px) {
   .containers {
     padding-right: 3rem;
     padding-left: 3rem;
   }
 }
-.v-header {
-  .hero__arrow-btn__icon {
-    height: 2rem;
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
-    width: 2rem;
-  }
-}
 
-.v-header {
-  .hero__arrow-btn__pulse {
-    background-color: #fff;
-    border-radius: 50%;
-    height: 0.3rem;
-    left: 50%;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 0.3rem;
-  }
-}
-
-.v-header .hero__arrow-btn {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  border-radius: 50%;
-  bottom: 1rem;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 4rem;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  left: 50%;
-  opacity: 0;
-  position: absolute;
-  -webkit-transition: background-color 0.3s ease-out;
-  transition: background-color 0.3s ease-out;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 4rem;
-  z-index: 4;
-  &:focus {
-    outline: none;
-  }
-  &:hover {
-    background-color: hsla(0, 0%, 100%, 0.2);
-    outline: none;
-  }
-
-  .hero__arrow-btn__icon {
-    height: 1.5rem;
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
-    width: 1.5rem;
-  }
-}
 </style>
