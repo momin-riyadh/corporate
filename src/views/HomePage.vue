@@ -2,6 +2,7 @@
   <div class="sq-home-area">
     <NavigationCard type="customstyle"/>
 
+    <!--    Video Card-->
     <div class="home-page-animation-area overflow-hidden">
       <div class="home-page-animation">
         <header class="v-header containers">
@@ -20,12 +21,12 @@
     <section>
       <div class="container-fluid px-5-percent">
         <div class="sq-h-content-area">
-            <component
-                    v-for="comp in pageData.body"
-                    :key="comp.id"
-                    :is="comp.type"
-                    :comp-data="comp.value">
-            </component>
+          <component
+                  v-for="comp in pageData.body"
+                  :key="comp.id"
+                  :is="comp.type"
+                  :comp-data="comp.value">
+          </component>
         </div>
       </div>
     </section>
