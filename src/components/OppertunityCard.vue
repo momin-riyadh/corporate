@@ -1,32 +1,24 @@
 <template>
-  <section>
-    <div class="container-fluid px-5-percent">
-      <div class="sq-h-content-area">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="sq-h-content">
-              <h1 class="sq-h-content-title mb-4"> <span>Identifying Opportunities <br/>
-              Creating Values</span></h1>
-              <p>Gaining an understanding of local markets is as important as monitoring the greater economy. We retain
-                our core belief that residential property is more than just an investment, so we learn about the impact
-                on
-                local areas before investing.</p>
-            </div>
-            <div class="sq-logo-bg">
-              <img src="../assets/images/sq-logobg.svg" alt="square">
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <img src="../assets/images/h-top.jpg" alt="" class="img-fluid float-right">
-          </div>
-        </div>
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <div class="sq-h-content">
+        <h1 class="sq-h-content-title mb-4"> <span>{{compData.title}}</span></h1>
+        <p>{{compData.text}}</p>
+      </div>
+      <div class="sq-logo-bg">
+        <img src="../assets/images/sq-logobg.svg" alt="square">
       </div>
     </div>
-  </section>
+    <div class="col-lg-6">
+        <img :src="HOST + compData.image.original.src" alt="" class="img-fluid float-right">
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from 'vue-property-decorator';
+    import {Component, Vue, Prop} from 'vue-property-decorator'
+    import {TitleTextOneSideImage} from "@/store/cms.types";
+    import {HOST} from "@/global";
 
     @Component({
         name: 'OppertunityCard',
@@ -34,17 +26,12 @@
     })
 
     export default class OppertunityCard extends Vue {
-
+        @Prop() compData!: TitleTextOneSideImage;
+        HOST: string = HOST;
     }
 </script>
 
 <style scoped lang="scss">
-  .sq-h-content-area {
-    position: relative;
-    overflow: hidden;
-    margin: calc(3% + 5vh) 0;
-  }
-
   .sq-h-content {
     p {
       margin-left: 0;
