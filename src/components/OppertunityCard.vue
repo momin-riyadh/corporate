@@ -17,8 +17,8 @@
 
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator'
-    import {TitleTextOneSideImage} from "@/store/cms.types";
-    import {HOST} from "@/global";
+    import {TitleTextOneSideImage} from '@/store/cms.types';
+    import {HOST} from '@/global';
 
     @Component({
         name: 'OppertunityCard',
