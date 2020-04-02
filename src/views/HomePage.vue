@@ -15,11 +15,8 @@
         </header>
       </div>
     </div>
-    <!--    <OppertunityCard />-->
-
 
     <!--    Opportunity Card-->
-
     <section>
       <div class="container-fluid px-5-percent">
         <div class="sq-h-content-area">
