@@ -2,7 +2,7 @@
   <div class="row align-items-center">
     <div class="col-lg-6">
       <div class="sq-h-content">
-        <h1 class="sq-h-content-title mb-4"> <span>{{compData.title}}</span></h1>
+        <h1 class="sq-h-content-title mb-4"><span>{{compData.title}}</span></h1>
         <p>{{compData.text}}</p>
       </div>
       <div class="sq-logo-bg">
@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="col-lg-6">
-        <img :src="HOST + compData.image.original.src" alt="" class="img-fluid float-right">
+      <img :src="HOST + compData.image.original.src" alt="" class="img-fluid float-right">
     </div>
   </div>
 </template>
