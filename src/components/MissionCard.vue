@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="sq-mission-img col-12 p-0">
-          <img src="../assets/images/mission-ref.jpg" alt="" class="img-fluid">
+          <img :src="HOST + compData.image.original.src" alt="" class="img-fluid">
         </div>
       </div>
     </div>

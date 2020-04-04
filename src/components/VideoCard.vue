@@ -14,6 +14,7 @@
 <script lang="ts">
     import {Component, Vue, Prop} from "vue-property-decorator";
     import {YoutubeVideoBlock} from "@/store/cms.types";
+    import {HOST} from '@/global'
 
     @Component({
         name: "VideoCard",
@@ -21,6 +22,7 @@
     })
     export default class VideoCard extends Vue {
         @Prop() compData!: YoutubeVideoBlock;
+        HOST: string = HOST;
     }
 </script>
 
