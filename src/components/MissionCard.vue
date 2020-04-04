@@ -45,6 +45,7 @@
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
     import {TitleSubtitleStreamBlock} from '@/store/cms.types';
+    import {HOST} from '@/global';
 
     @Component({
         name: 'MissionCard',
@@ -52,6 +53,7 @@
     })
     export default class MissionCard extends Vue {
         @Prop() compData!: TitleSubtitleStreamBlock;
+        HOST: string = HOST;
     }
 </script>
 
