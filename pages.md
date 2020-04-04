@@ -1,0 +1,41 @@
+1. HomePage
+   - header
+     + youtube_video_block
+     + title_text_cta
+   - body
+     + title_text_one_side_image
+     + title_subtitle_stream_block
+     + single_image
+     + title_subtitle_text_overlay_image
+     + title_subtitle_newslist
+2. BasicPage
+   - body
+     + single_image
+     + about_tab_block
+     + report_tab_block
+     + general_tab_block
+     + brand_logo_list
+     + title_subtitle_richtext_cta
+     + title_text_banner_image
+     + richtext_image
+3. NewsIndexPage
+   - body
+     + news_block
+4. NewsDetailPage
+5. ContactPage
+   - body
+     + contact_form
+     + world_map
+     + address_list
+6. JobIndexPage
+   - body
+     + title_text
+     + job_category_list
+     + feature_job_list
+     + multiple_row_image
+7. JobCategory
+   - body
+     + job_list
+8. JobDetailsPage
+9.  CollectionPage
+10. RedirectionPage
