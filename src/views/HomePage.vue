@@ -59,7 +59,7 @@
         components: {
             NewssliderCard,
             title_subtitle_text_overlay_image: ComplianceCard,
-            MissionCard,
+            title_subtitle_stream_block:MissionCard,
             title_text_one_side_image: OppertunityCard,
             youtube_video_block: VideoCard,
             title_text_cta: HeaderText,

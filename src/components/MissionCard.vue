@@ -1,9 +1,9 @@
 <template>
-  <div class="container-fluid px-5-percent mb-5">
+
     <div class="sq-mission-area">
       <div class="sq-mission-title">
-        <h1>Started its journey</h1>
-        <p>in 1988 and in 1994</p>
+        <h1>{{compData.title}}</h1>
+        <p>{{compData.subtitle}}</p>
       </div>
 
       <div class="row">
@@ -43,18 +43,19 @@
 
 
     </div>
-  </div>
+
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from 'vue-property-decorator';
+    import {Component, Vue, Prop} from 'vue-property-decorator';
+    import {TitleSubtitleStreamBlock} from '@/store/cms.types';
 
     @Component({
         name: 'MissionCard',
         components: {}
     })
     export default class MissionCard extends Vue {
-
+        @Prop() compData!: TitleSubtitleStreamBlock;
     }
 </script>
 
