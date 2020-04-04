@@ -33,7 +33,7 @@
     <!--    End-->
 
     <MissionCard/>
-    <ComplianceCard/>
+<!--    <ComplianceCard/>-->
     <NewssliderCard/>
     <FooterCard/>
     <CopyrightCard/>
@@ -58,7 +58,7 @@
         name: "HomePage",
         components: {
             NewssliderCard,
-            ComplianceCard,
+            title_subtitle_text_overlay_image: ComplianceCard,
             MissionCard,
             title_text_one_side_image: OppertunityCard,
             youtube_video_block: VideoCard,

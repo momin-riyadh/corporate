@@ -1,29 +1,26 @@
 <template>
-  <div class="container-fluid px-5-percent overflow-hidden">
     <div class="sq-home-compliance-area">
-      <img src="../assets/images/compliance.jpg" alt="" class="img-fluid">
+      <img :src="HOST + compData.image.original.src" alt="" class="img-fluid">
       <div class="compliance-text">
-        <h1 class="mb-2 mb-md-3">Compliance</h1>
-        <h4 class="mb-3 mb-md-4">It's a team work.</h4>
-        <p>
-          Gaining an understanding of local markets is as important as monitoring the greater economy. We retain our
-          core belief that residential property is more than just aestment, so we learn about the impact on local
-          areas before investing.
-        </p>
+        <h1 class="mb-2 mb-md-3">{{ compData.title}}</h1>
+        <h4 class="mb-3 mb-md-4">{{compData.subtitle}}</h4>
+        <p>{{compData.text}}</p>
       </div>
     </div>
-  </div>
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from 'vue-property-decorator';
+    import {Component, Vue, Prop} from 'vue-property-decorator';
+    import {TitleSubtitleTextOverlayImage} from '@/store/cms.types';
+    import {HOST} from '@/global';
 
     @Component({
         name: 'ComplianceCard',
         components: {}
     })
     export default class ComplianceCard extends Vue {
-
+        @Prop() compData!: TitleSubtitleTextOverlayImage;
+        HOST: string = HOST;
     }
 </script>
 
@@ -59,6 +56,7 @@
 
     h1 {
       line-height: 1;
+      text-transform: capitalize;
       font-family: $font-helvetica-bold;
       font-weight: bold;
       font-size: calc(24px + (45 - 24) * ((100vw - 300px) / (1600 - 300)));
