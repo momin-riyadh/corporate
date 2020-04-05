@@ -1,5 +1,6 @@
 <template>
   <div class="sq-mission-area">
+
     <div class="sq-mission-title">
       <h1>{{compData.title}}</h1>
       <p>{{compData.subtitle}}</p>
@@ -8,40 +9,20 @@
     <div class="row">
       <div class="col text-center">
         <div class="row text-left pt-4">
-          <div class="col-12 col-lg-4 mb-4 sq-mission-text pr-0 pr-md-5">
-            <h3>Our Mission</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-              the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
-              language ocean. A small river named Duden
-              flows by their place far far away.
-            </p>
-          </div>
-          <div class="col-12 col-lg-4 sq-mission-text pl-3 pl-lg-5">
-            <h3>Our Vision</h3>
-            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, far far away, behind the
-              word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at
-              the coast.
-            </p>
-          </div>
-
-          <div class="col-12 col-lg-4 sq-mission-text pl-3 pl-lg-5">
-            <h3>Our Values</h3>
-            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, far far away, behind the
-              word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at
-              the coast.
-            </p>
+          <div v-for="(cards, idx) in compData.contents" :key="'c' + idx" :class="{'col-12': true, 'col-lg-4': true, 'mb-4': idx === 0, 'sq-mission-text': true, 'pr-0': idx === 0, 'pr-md-5': idx === 0, 'pl-3': idx > 0, 'pl-lg-5': idx }">
+            <div v-for="(mtitle, idx) in cards.value" :key="'c' + idx" >
+              <h3>{{mtitle.title}}</h3>
+              <p>{{mtitle.text}}</p>
+            </div>
           </div>
         </div>
-        <div class="sq-mission-img col-12 p-0">
-          <img :src="HOST + compData.image.original.src" alt="" class="img-fluid">
-        </div>
+<!--        <div v-for="(fimg, idx) in compData.contents"  :key="'img' + idx" class="sq-mission-img col-12 p-0">-->
+<!--          <img :src="HOST + fimg.value.image.original.src" alt="" class="img-fluid">-->
+<!--        </div>-->
       </div>
     </div>
   </div>
 </template>
-
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
     import {TitleSubtitleStreamBlock} from '@/store/cms.types';
@@ -56,7 +37,6 @@
         HOST: string = HOST;
     }
 </script>
-
 <style scoped lang="scss">
   .sq-mission-area {
     background: #F4F4F4;
@@ -111,7 +91,6 @@
       font-family: $font-roboto;
       color: $paragraph-color;
       line-height: 1.8;
-
     }
   }
 
@@ -125,5 +104,4 @@
       -o-object-position: center;
     }
   }
-
 </style>

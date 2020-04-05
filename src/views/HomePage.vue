@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <!--    Opportunity Card-->
+    <!--Homepage All Components-->
     <section>
       <div class="container-fluid px-5-percent">
         <div class="sq-h-content-area">
@@ -32,7 +32,7 @@
     </section>
     <!--    End-->
 
-    <!--    <MissionCard/>-->
+        <!-- <MissionCard/> -->
     <!--    <ComplianceCard/>-->
     <NewssliderCard/>
     <FooterCard/>
