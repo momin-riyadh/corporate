@@ -7,11 +7,11 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import { Getter } from "vuex-class";
-import { PAGE_DATA } from "@/store/getters.names";
-import { PageData } from "@/store/store.types";
-import HomePage from "./HomePage.vue";
+import { Component, Vue } from 'vue-property-decorator';
+import { Getter } from 'vuex-class';
+import { PAGE_DATA } from '@/store/getters.names';
+import { PageData } from '@/store/store.types';
+import HomePage from './HomePage.vue';
 
 @Component({
   name: "Page",
