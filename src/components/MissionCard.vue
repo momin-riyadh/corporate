@@ -1,42 +1,29 @@
 <template>
   <div class="sq-mission-area">
+
     <div class="sq-mission-title">
       <h1>{{compData.title}}</h1>
       <p>{{compData.subtitle}}</p>
     </div>
+
     <div class="row">
       <div class="col text-center">
         <component
                 v-for="comp in compData.contents"
-                :key="comp.id"
-                :is="comp.type"
+                :key="comp.id"  :is="comp.type"
                 :comp-data="comp.value">
+
+          <div v-for="(mtitle, idx) in comp.value"  :key="'c' + idx" :class="{'col-12': true, 'col-lg-4': true, 'mb-4': id == 0, 'sq-mission-text': true, 'pr-0': idx == 0, 'pr-md-5': idx == 0, 'pl-3': idx > 0, 'pl-lg-5': idx }">
+            <h3>{{mtitle.title}}</h3>
+            <p>{{mtitle.text}}</p>
+          </div>
+
         </component>
 
-        <div class="row text-left pt-4">
-          <div v-for="(section, idx) in compData.contents"  :key="'c' + idx" :class="{'col-12': true, 'col-lg-4': true, 'mb-4': idx == 0, 'sq-mission-text': true, 'pr-0': idx == 0, 'pr-md-5': idx == 0, 'pl-3': idx > 0, 'pl-lg-5': idx }">
+        <div class="col-12 p-0">
 
-          </div>
-          <!-- <div class="col-12 col-lg-4 sq-mission-text pl-3 pl-lg-5">
-            <h3>Our Vision</h3>
-            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, far far away, behind the
-              word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at
-              the coast.
-            </p>
-          </div>
-          <div class="col-12 col-lg-4 sq-mission-text pl-3 pl-lg-5">
-            <h3>Our Values</h3>
-            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, far far away, behind the
-              word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at
-              the coast.
-            </p>
-          </div> -->
         </div>
-        <div v-for="(fimg, idx) in compData.contents"  :key="'img' + idx" class="sq-mission-img col-12 p-0">
-          <img :src="HOST + fimg.value.image.original.src" alt="" class="img-fluid">
-        </div>
+
       </div>
 
     </div>
@@ -45,10 +32,12 @@
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
     import {TitleSubtitleStreamBlock} from '@/store/cms.types';
+    import SingleImageCard from '@/components/SingleImageCard.vue';
+    // import TitleTextColumnCard from '@/components/TitleTextColumnCard.vue';
     import {HOST} from '@/global';
     @Component({
         name: 'MissionCard',
-        components: {}
+        components: {SingleImageCard}
     })
     export default class MissionCard extends Vue {
         @Prop() compData!: TitleSubtitleStreamBlock;
