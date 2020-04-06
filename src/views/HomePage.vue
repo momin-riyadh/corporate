@@ -66,7 +66,7 @@
             FooterCard,
             CopyrightCard,
             NavigationCard
-        }
+        },
     })
     export default class HomePage extends Vue {
         @Prop() pageData!: HomePageData;
