@@ -22,7 +22,7 @@
             <li>
               <el-dropdown>
                 <span>
-                   <router-link to="/corporate-responsibility">responsibility</router-link>
+                   <a href="">responsibility</a>
                 </span>
                 <el-dropdown-menu slot="dropdown">
                   <el-dropdown-item>
