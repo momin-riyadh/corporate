@@ -1,24 +1,15 @@
 <template>
   <div class="row text-left pt-4">
     <div v-for="(section, idx) in compData.contents"  :key="'c' + idx" :class="{'col-12': true, 'col-lg-4': true, 'mb-4': idx == 0, 'sq-mission-text': true, 'pr-0': idx == 0, 'pr-md-5': idx == 0, 'pl-3': idx > 0, 'pl-lg-5': idx }">
-
-</div>
-    <div class="col-12 col-lg-4 sq-mission-text pl-3 pl-lg-5">
       <h3>{{compData.title}}</h3>
-      <p>{{compData.text}}
-      </p>
-    </div>
-    <div class="col-12 col-lg-4 sq-mission-text pl-3 pl-lg-5">
-      <h3>{{compData.title}}</h3>
-      <p>{{compData.text}}
-      </p>
-    </div>
+      <p>{{compData.text}}</p>
+      </div>
   </div>
 </template>
 
 <script lang="ts">
     import {Component, Prop, Vue} from 'vue-property-decorator';
-    // import {TitleTextColumnChild} from '@/store/cms.types';
+    import {TitleTextColumnChild} from '@/store/cms.types';
 
     @Component({
         name: 'TitleTextColumnCard',
@@ -26,7 +17,7 @@
     })
 
     export default class TitleTextColumnCard extends Vue {
-        // @Prop() compData !: TitleTextColumnChild;
+        @Prop() compData !: TitleTextColumnChild;
     }
 </script>
 

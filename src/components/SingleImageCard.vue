@@ -1,5 +1,5 @@
 <template>
-  <div class="sq-mission-img">
+  <div class="sq-mission-img col-12 p-0">
     <img :src="HOST + compData.value.image.original.src" alt="square_group" class="img-fluid">
   </div>
 </template>

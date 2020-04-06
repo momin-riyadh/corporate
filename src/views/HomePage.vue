@@ -52,7 +52,6 @@
     import NewssliderCard from "@/components/NewssliderCard.vue";
     import {HomePageData} from "@/store/cms.types";
     import HeaderText from "../components/HeaderText.vue";
-    import SingleImageCard from "@/components/SingleImageCard.vue";
 
     @Component({
         name: "HomePage",
@@ -62,7 +61,6 @@
             title_text_one_side_image: OppertunityCard,
             youtube_video_block: VideoCard,
             title_text_cta: HeaderText,
-            single_image: SingleImageCard,
             NewssliderCard,
             CommonBanner,
             FooterCard,

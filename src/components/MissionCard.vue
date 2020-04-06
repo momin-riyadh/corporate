@@ -1,43 +1,38 @@
 <template>
   <div class="sq-mission-area">
 
+
     <div class="sq-mission-title">
       <h1>{{compData.title}}</h1>
       <p>{{compData.subtitle}}</p>
     </div>
+
 
     <div class="row">
       <div class="col text-center">
         <component
                 v-for="comp in compData.contents"
                 :key="comp.id"  :is="comp.type"
-                :comp-data="comp.value">
-
-          <div v-for="(mtitle, idx) in comp.value"  :key="'c' + idx" :class="{'col-12': true, 'col-lg-4': true, 'mb-4': id == 0, 'sq-mission-text': true, 'pr-0': idx == 0, 'pr-md-5': idx == 0, 'pl-3': idx > 0, 'pl-lg-5': idx }">
-            <h3>{{mtitle.title}}</h3>
-            <p>{{mtitle.text}}</p>
-          </div>
-
+                :comp-data="comp.image">
         </component>
-
-        <div class="col-12 p-0">
-
-        </div>
-
       </div>
-
     </div>
+
+
   </div>
 </template>
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
     import {TitleSubtitleStreamBlock} from '@/store/cms.types';
     import SingleImageCard from '@/components/SingleImageCard.vue';
-    // import TitleTextColumnCard from '@/components/TitleTextColumnCard.vue';
+    import TitleTextColumnCard from '@/components/TitleTextColumnCard.vue';
     import {HOST} from '@/global';
+
     @Component({
         name: 'MissionCard',
-        components: {SingleImageCard}
+        components: {
+          single_image:SingleImageCard,
+          title_text_column:TitleTextColumnCard},
     })
     export default class MissionCard extends Vue {
         @Prop() compData!: TitleSubtitleStreamBlock;
