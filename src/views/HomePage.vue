@@ -40,18 +40,18 @@
 </template>
 
 <script lang="ts">
-    import {Component, Vue, Prop} from "vue-property-decorator";
-    import NavigationCard from "@/components/NavigationCard.vue";
-    import FooterCard from "@/components/FooterCard.vue";
-    import CopyrightCard from "@/components/CopyrightCard.vue";
-    import CommonBanner from "@/components/CommonBanner.vue";
-    import VideoCard from "@/components/VideoCard.vue";
-    import OppertunityCard from "@/components/OppertunityCard.vue";
-    import MissionCard from "@/components/MissionCard.vue";
-    import ComplianceCard from "@/components/ComplianceCard.vue";
-    import NewssliderCard from "@/components/NewssliderCard.vue";
-    import {HomePageData} from "@/store/cms.types";
-    import HeaderText from "../components/HeaderText.vue";
+    import {Component, Vue, Prop} from 'vue-property-decorator';
+    import NavigationCard from '@/components/NavigationCard.vue';
+    import FooterCard from '@/components/FooterCard.vue';
+    import CopyrightCard from '@/components/CopyrightCard.vue';
+    import CommonBanner from '@/components/CommonBanner.vue';
+    import VideoCard from '@/components/VideoCard.vue';
+    import OppertunityCard from '@/components/OppertunityCard.vue';
+    import MissionCard from '@/components/MissionCard.vue';
+    import ComplianceCard from '@/components/ComplianceCard.vue';
+    import NewssliderCard from '@/components/NewssliderCard.vue';
+    import {HomePageData} from '@/store/cms.types';
+    import HeaderText from '../components/HeaderText.vue';
 
     @Component({
         name: "HomePage",
