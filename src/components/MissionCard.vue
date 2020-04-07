@@ -12,8 +12,8 @@
       <div class="col text-center">
         <component
                 v-for="comp in compData.contents"
-                :key="comp.id"  :is="comp.type"
-                :comp-data="comp.image">
+                :key="comp.id" :is="comp.type"
+                :comp-data="comp.value">
         </component>
       </div>
     </div>
@@ -31,8 +31,9 @@
     @Component({
         name: 'MissionCard',
         components: {
-          single_image:SingleImageCard,
-          title_text_column:TitleTextColumnCard},
+            single_image: SingleImageCard,
+            title_text_column: TitleTextColumnCard
+        },
     })
     export default class MissionCard extends Vue {
         @Prop() compData!: TitleSubtitleStreamBlock;
@@ -48,6 +49,7 @@
       padding: 95px;
     }
   }
+
   .sq-mission-title {
     h1 {
       line-height: 1;
@@ -56,6 +58,7 @@
       font-size: calc(24px + (45 - 24) * ((100vw - 300px) / (1600 - 300)));
       display: inline-block;
       position: relative;
+
       &::before {
         content: "";
         position: absolute;
@@ -72,24 +75,28 @@
         }
       }
     }
+
     p {
       font-family: $font-helvetica-bold;
       font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
       color: #777777;
     }
   }
+
   .sq-mission-text {
     h3 {
       font-family: $font-roboto;
       font-weight: bold;
       color: $header-color;
     }
+
     p {
       font-family: $font-roboto;
       color: $paragraph-color;
       line-height: 1.8;
     }
   }
+
   .sq-mission-img {
     img {
       height: 55vh;
