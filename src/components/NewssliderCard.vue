@@ -5,10 +5,9 @@
       <div class="col-md-5 mx-auto">
         <div class="sq-h-news-header text-center">
           <h1>
-            Latest News and Events
+           {{compData.title}}
           </h1>
-          <p>We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence
-            and honesty. Maybe it’s our family orientation, but we think the most satisfying</p>
+          <p>{{compData.subtitle}}</p>
         </div>
       </div>
 
@@ -16,6 +15,7 @@
         <div id="swiper-button-prev" class="swiper-button-prev" slot="button-prev"></div>
         <div id="swiper-button-next" class="swiper-button-next" slot="button-next"></div>
       </div>
+
     </div>
 
     <div class="sq-h-slider-area mt-5 overflow-hidden">
@@ -24,16 +24,19 @@
         <!-- slides -->
         <swiper-slide>
           <div class="news-thumb-area">
+
             <div class="news-thumb-image">
               <img src="../assets/images/sl-one.jpg" alt="square">
               <a href="" class="sq-h-news-link">
                 <i class="el-icon-plus"></i>
               </a>
             </div>
+
             <div class="news-thumb-caption">
               <small class="news-thumb-date"> July 19, 2018 </small>
               <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
             </div>
+
           </div>
 
         </swiper-slide>
@@ -143,8 +146,11 @@
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from 'vue-property-decorator';
+    import {Component, Vue, Prop} from 'vue-property-decorator';
+
     import {swiper, swiperSlide} from 'vue-awesome-swiper';
+    import {TitleSubtitleNewslistBlock} from "@/store/cms.types";
+    import{HOST} from '@/global';
 
     @Component({
         name: 'NewssliderCard',
@@ -154,6 +160,8 @@
         }
     })
     export default class NewssliderCard extends Vue {
+        @Prop() compData!: TitleSubtitleNewslistBlock;
+        HOST: string = HOST;
 
         public swiperOption: any = {
             slidesPerView: '4',
