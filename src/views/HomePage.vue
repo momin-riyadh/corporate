@@ -61,7 +61,7 @@
             title_text_one_side_image: OppertunityCard,
             youtube_video_block: VideoCard,
             title_text_cta: HeaderText,
-            NewssliderCard,
+            title_subtitle_newslist:NewssliderCard,
             CommonBanner,
             FooterCard,
             CopyrightCard,
