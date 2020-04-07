@@ -22,5 +22,17 @@
 </script>
 
 <style scoped lang="scss">
+  .sq-mission-text {
+    h3 {
+      font-family: $font-roboto;
+      font-weight: bold;
+      color: $header-color;
+    }
 
+    p {
+      font-family: $font-roboto;
+      color: $paragraph-color;
+      line-height: 1.8;
+    }
+  }
 </style>

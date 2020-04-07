@@ -20,5 +20,14 @@
 </script>
 
 <style scoped lang="scss">
-
+  .sq-mission-img {
+    img {
+      height: 55vh;
+      width: 100%;
+      object-fit: cover;
+      -o-object-fit: cover;
+      object-position: center;
+      -o-object-position: center;
+    }
+  }
 </style>

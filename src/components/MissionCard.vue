@@ -32,7 +32,7 @@
         name: 'MissionCard',
         components: {
             single_image: SingleImageCard,
-            title_text_column: TitleTextColumnCard
+            title_text_column: TitleTextColumnCard,
         },
     })
     export default class MissionCard extends Vue {
@@ -83,28 +83,4 @@
     }
   }
 
-  .sq-mission-text {
-    h3 {
-      font-family: $font-roboto;
-      font-weight: bold;
-      color: $header-color;
-    }
-
-    p {
-      font-family: $font-roboto;
-      color: $paragraph-color;
-      line-height: 1.8;
-    }
-  }
-
-  .sq-mission-img {
-    img {
-      height: 55vh;
-      width: 100%;
-      object-fit: cover;
-      -o-object-fit: cover;
-      object-position: center;
-      -o-object-position: center;
-    }
-  }
 </style>
