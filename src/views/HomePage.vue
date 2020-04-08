@@ -17,16 +17,14 @@
 
     <!--Homepage All Components-->
     <section>
-<!--      <div class="container-fluid px-5-percent">-->
-        <div class="sq-h-content-area">
-          <component
-                  v-for="comp in pageData.body"
-                  :key="comp.id"
-                  :is="comp.type"
-                  :comp-data="comp.value">
-          </component>
-        </div>
-<!--      </div>-->
+      <div class="sq-h-content-area">
+        <component
+                v-for="comp in pageData.body"
+                :key="comp.id"
+                :is="comp.type"
+                :comp-data="comp.value">
+        </component>
+      </div>
     </section>
     <!--    End-->
 
@@ -60,7 +58,7 @@
             title_text_one_side_image: OppertunityCard,
             youtube_video_block: VideoCard,
             title_text_cta: HeaderText,
-            title_subtitle_newslist:NewssliderCard,
+            title_subtitle_newslist: NewssliderCard,
             CommonBanner,
             FooterCard,
             CopyrightCard,
