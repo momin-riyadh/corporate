@@ -1,8 +1,6 @@
 <template>
   <div class="sq-home-area">
     <NavigationCard type="customstyle"/>
-
-    <!--    Video Card-->
     <div class="home-page-animation-area overflow-hidden">
       <div class="home-page-animation">
         <header class="v-header containers">
@@ -19,7 +17,7 @@
 
     <!--Homepage All Components-->
     <section>
-      <div class="container-fluid px-5-percent">
+<!--      <div class="container-fluid px-5-percent">-->
         <div class="sq-h-content-area">
           <component
                   v-for="comp in pageData.body"
@@ -28,9 +26,10 @@
                   :comp-data="comp.value">
           </component>
         </div>
-      </div>
+<!--      </div>-->
     </section>
     <!--    End-->
+
 
     <!-- <MissionCard/> -->
     <NewssliderCard/>
@@ -193,14 +192,6 @@
     }
   }
 
-  /*.section {*/
-  /*  padding: 20px 0;*/
-  /*}*/
-
-  /*.section-b {*/
-  /*  background: #333;*/
-  /*  color: #fff;*/
-  /*}*/
 
   @media (max-width: 960px) {
     .containers {

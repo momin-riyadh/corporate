@@ -1,4 +1,5 @@
 <template>
+  <div class="container-fluid px-5-percent">
   <div class="row align-items-center">
     <div class="col-lg-6">
       <div class="sq-h-content">
@@ -12,6 +13,7 @@
     <div class="col-lg-6">
       <img :src="HOST + compData.image.original.src" alt="" class="img-fluid float-right">
     </div>
+  </div>
   </div>
 </template>
 

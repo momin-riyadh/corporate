@@ -1,24 +1,22 @@
 <template>
+  <div class="container-fluid px-5-percent">
   <div class="sq-mission-area">
-
-
-    <div class="sq-mission-title">
-      <h1>{{compData.title}}</h1>
-      <p>{{compData.subtitle}}</p>
-    </div>
-
-
-    <div class="row">
-      <div class="col text-center">
-        <component
-                v-for="comp in compData.contents"
-                :key="comp.id" :is="comp.type"
-                :comp-data="comp.value">
-        </component>
+      <div class="sq-mission-title">
+        <h1>{{compData.title}}</h1>
+        <p>{{compData.subtitle}}</p>
       </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <component
+                  v-for="comp in compData.contents"
+                  :key="comp.id" :is="comp.type"
+                  :comp-data="comp.value">
+          </component>
+        </div>
+      </div>
+
     </div>
-
-
   </div>
 </template>
 <script lang="ts">

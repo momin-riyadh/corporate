@@ -1,8 +1,8 @@
 <template>
   <component
-    :is="pageType"
-    :page-data="pageData"
-    :key="`page-${pageData.id}`"
+          :is="pageType"
+          :page-data="pageData"
+          :key="`page-${pageData.id}`"
   ></component>
 </template>
 

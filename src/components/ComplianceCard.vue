@@ -1,4 +1,5 @@
 <template>
+  <div class="container-fluid px-5-percent">
     <div class="sq-home-compliance-area">
       <img :src="HOST + compData.image.original.src" alt="" class="img-fluid">
       <div class="compliance-text">
@@ -6,6 +7,7 @@
         <h4 class="mb-3 mb-md-4">{{compData.subtitle}}</h4>
         <p>{{compData.text}}</p>
       </div>
+    </div>
     </div>
 </template>
 
