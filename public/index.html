@@ -63,7 +63,7 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDygkmXq3osGHB8bnodmKUL6mDsYIo8SaY"></script>
 
 <script>
-    lemonReady = function (fn) {
+    sqReady = function (fn) {
         if ('function' !== typeof fn) { // Sanity check
             return;
         }
@@ -73,7 +73,7 @@
         document.addEventListener('DOMContentLoaded', fn, false);
     };
 
-    lemonReady(function () {
+    sqReady(function () {
         setTimeout(function () {
             document.body.classList.add('loaded');
         }, 3000);
