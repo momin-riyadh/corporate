@@ -1,79 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="57x57" href="<%= BASE_URL %>favicon/android-icon-36x36.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="<%= BASE_URL %>favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="<%= BASE_URL %>favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="<%= BASE_URL %>favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="<%= BASE_URL %>favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="<%= BASE_URL %>favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="<%= BASE_URL %>favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="<%= BASE_URL %>favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="<%= BASE_URL %>favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="<%= BASE_URL %>favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="<%= BASE_URL %>favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<%= BASE_URL %>favicon/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="<%= BASE_URL %>favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="<%= BASE_URL %>favicon/android-icon-36x36.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="<%= BASE_URL %>favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="<%= BASE_URL %>favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="<%= BASE_URL %>favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="<%= BASE_URL %>favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="<%= BASE_URL %>favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="<%= BASE_URL %>favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="<%= BASE_URL %>favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="<%= BASE_URL %>favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="<%= BASE_URL %>favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="<%= BASE_URL %>favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<%= BASE_URL %>favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="<%= BASE_URL %>favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-    <title>Square Group</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but square-frontend doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
+  <title>Square Group</title>
+</head>
+<body>
+<noscript>
+  <strong>We're sorry but square-frontend doesn't work properly without JavaScript enabled. Please enable it to
+    continue.</strong>
+</noscript>
 
-    <div id="loader-wrapper">
-      <div id="loader">
-        <div class="sq">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="sq">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="sq">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-      </div>
-
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
-
+<!--=============================
+          Square Loader
+    =============================-->
+<div id="loader-wrapper">
+  <div id="loader">
+    <div class="sq">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <div class="sq">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="sq">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
 
-    <script type="text/javascript"
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDygkmXq3osGHB8bnodmKUL6mDsYIo8SaY"></script>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
 
-    <script>
-        lemonReady = function( fn ) {
-            if ( 'function' !== typeof fn ) { // Sanity check
-                return;
-            }
-            if ( document.readyState === 'complete'  ) {
-                return fn();
-            }
-            document.addEventListener( 'DOMContentLoaded', fn, false );
-        };
+</div>
+<!--    End-->
+<div id="app"></div>
+<!-- built files will be auto injected -->
 
-        lemonReady(function () {
-            setTimeout(function(){
-                document.body.classList.add('loaded');
-            }, 3000);
-        })
-    </script>
-  </body>
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDygkmXq3osGHB8bnodmKUL6mDsYIo8SaY"></script>
+
+<script>
+    lemonReady = function (fn) {
+        if ('function' !== typeof fn) { // Sanity check
+            return;
+        }
+        if (document.readyState === 'complete') {
+            return fn();
+        }
+        document.addEventListener('DOMContentLoaded', fn, false);
+    };
+
+    lemonReady(function () {
+        setTimeout(function () {
+            document.body.classList.add('loaded');
+        }, 3000);
+    })
+</script>
+</body>
 </html>
