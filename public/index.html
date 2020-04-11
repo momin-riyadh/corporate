@@ -27,11 +27,53 @@
     <noscript>
       <strong>We're sorry but square-frontend doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+
+    <div id="loader-wrapper">
+      <div id="loader">
+        <div class="sq">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="sq">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="sq">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </div>
+
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+
+    </div>
     <div id="app"></div>
     <!-- built files will be auto injected -->
 
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDygkmXq3osGHB8bnodmKUL6mDsYIo8SaY"></script>
 
+    <script>
+        lemonReady = function( fn ) {
+            if ( 'function' !== typeof fn ) { // Sanity check
+                return;
+            }
+            if ( document.readyState === 'complete'  ) {
+                return fn();
+            }
+            document.addEventListener( 'DOMContentLoaded', fn, false );
+        };
+
+        lemonReady(function () {
+            setTimeout(function(){
+                document.body.classList.add('loaded');
+            }, 3000);
+        })
+    </script>
   </body>
 </html>
