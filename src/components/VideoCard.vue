@@ -1,12 +1,17 @@
 <template>
   <div class="fullscreen-video-wrap">
-    <video
-            src="../assets/images/video/finalbg.mp4"
-            autoplay="autoplay"
-            loop="loop"
-            muted
-            playsinline
-    ></video>
+
+    <iframe src="https://www.youtube.com/embed/IY9hnAw-ZOc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=IY9hnAw-ZOc" frameborder="0" allowfullscreen></iframe>
+
+<!--    <video-->
+<!--            src="../assets/images/video/finalbg.mp4"-->
+<!--            autoplay="autoplay"-->
+<!--            loop="loop"-->
+<!--            muted-->
+<!--            playsinline-->
+<!--    ></video>-->
+
+<!--    <iframe src="https://www.youtube.com/embed/IY9hnAw-ZOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
     <div class="header-overlay"></div>
   </div>
 </template>
@@ -94,12 +99,26 @@
     position: absolute;
     top: 0;
     left: 0;
+    background: #000;
+    bottom: 0;
+    right: 0;
+    z-index: -99;
     width: 100%;
     height: 100vh;
     overflow: hidden;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
   }
 
-  .fullscreen-video-wrap video {
+  .fullscreen-video-wrap iframe {
     min-height: 100%;
     min-width: 100%;
     @media (min-aspect-ratio: 16/9) {

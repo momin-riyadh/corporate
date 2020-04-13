@@ -4,9 +4,7 @@
     <div class="row position-relative">
       <div class="col-md-5 mx-auto">
         <div class="sq-h-news-header text-center">
-          <h1>
-           {{compData.title}}
-          </h1>
+          <h1>{{compData.title}}</h1>
           <p>{{compData.subtitle}}</p>
         </div>
       </div>
@@ -15,127 +13,25 @@
         <div id="swiper-button-prev" class="swiper-button-prev" slot="button-prev"></div>
         <div id="swiper-button-next" class="swiper-button-next" slot="button-next"></div>
       </div>
-
     </div>
 
     <div class="sq-h-slider-area mt-5 overflow-hidden">
-
       <swiper :options="swiperOption" :loadtheme="false">
         <!-- slides -->
-        <swiper-slide>
+        <swiper-slide v-for="(slider, idx) in compData.contents" :key="'slide' + idx">
           <div class="news-thumb-area">
-
             <div class="news-thumb-image">
-              <img src="../assets/images/sl-one.jpg" alt="square">
-              <a href="" class="sq-h-news-link">
+              <img v-if="slider.banner!=null" :src="HOST + slider.banner.src" :alt="slider.title"/>
+              <router-link :to="slider.link" class="sq-h-news-link">
                 <i class="el-icon-plus"></i>
-              </a>
-            </div>
-
-            <div class="news-thumb-caption">
-              <small class="news-thumb-date"> July 19, 2018 </small>
-              <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
+              </router-link>
             </div>
 
-          </div>
-
-        </swiper-slide>
-        <swiper-slide>
-          <div class="news-thumb-area">
-            <div class="news-thumb-image">
-              <img src="../assets/images/sl-two.jpg" alt="square">
-              <a href="" class="sq-h-news-link">
-                <i class="el-icon-plus"></i>
-              </a>
-            </div>
             <div class="news-thumb-caption">
-              <small class="news-thumb-date"> July 19, 2018 </small>
-              <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="news-thumb-area">
-            <div class="news-thumb-image">
-              <img src="../assets/images/sl-three.jpg" alt="square">
-              <a href="" class="sq-h-news-link">
-                <i class="el-icon-plus"></i>
-              </a>
-            </div>
-            <div class="news-thumb-caption">
-              <small class="news-thumb-date"> July 19, 2018 </small>
-              <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="news-thumb-area">
-            <div class="news-thumb-image">
-              <img src="../assets/images/sl-one.jpg" alt="square">
-              <a href="" class="sq-h-news-link">
-                <i class="el-icon-plus"></i>
-              </a>
-            </div>
-            <div class="news-thumb-caption">
-              <small class="news-thumb-date"> July 19, 2018 </small>
-              <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="news-thumb-area">
-            <div class="news-thumb-image">
-              <img src="../assets/images/sl-one.jpg" alt="square">
-              <a href="" class="sq-h-news-link">
-                <i class="el-icon-plus"></i>
-              </a>
-            </div>
-            <div class="news-thumb-caption">
-              <small class="news-thumb-date"> July 19, 2018 </small>
-              <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
-            </div>
-          </div>
-
-        </swiper-slide>
-        <swiper-slide>
-          <div class="news-thumb-area">
-            <div class="news-thumb-image">
-              <img src="../assets/images/sl-two.jpg" alt="square">
-              <a href="" class="sq-h-news-link">
-                <i class="el-icon-plus"></i>
-              </a>
-            </div>
-            <div class="news-thumb-caption">
-              <small class="news-thumb-date"> July 19, 2018 </small>
-              <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="news-thumb-area">
-            <div class="news-thumb-image">
-              <img src="../assets/images/sl-three.jpg" alt="square">
-              <a href="" class="sq-h-news-link">
-                <i class="el-icon-plus"></i>
-              </a>
-            </div>
-            <div class="news-thumb-caption">
-              <small class="news-thumb-date"> July 19, 2018 </small>
-              <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="news-thumb-area">
-            <div class="news-thumb-image">
-              <img src="../assets/images/sl-one.jpg" alt="square">
-              <a href="" class="sq-h-news-link">
-                <i class="el-icon-plus"></i>
-              </a>
-            </div>
-            <div class="news-thumb-caption">
-              <small class="news-thumb-date"> July 19, 2018 </small>
-              <h4>We strive to go above and beyond for our clients foster go We strive to go</h4>
+              <small
+                      class="news-thumb-date"
+              >{{new Date(slider.created_at) | moment("MMM dd, YYYY")}}</small>
+              <h4>{{slider.title}}</h4>
             </div>
           </div>
         </swiper-slide>
@@ -146,17 +42,16 @@
 </template>
 
 <script lang="ts">
-    import {Component, Vue, Prop} from 'vue-property-decorator';
-
-    import {swiper, swiperSlide} from 'vue-awesome-swiper';
+    import {Component, Vue, Prop} from "vue-property-decorator";
+    import {swiper, swiperSlide} from "vue-awesome-swiper";
     import {TitleSubtitleNewslistBlock} from "@/store/cms.types";
-    import{HOST} from '@/global';
+    import {HOST} from "@/global";
 
     @Component({
-        name: 'NewssliderCard',
+        name: "NewssliderCard",
         components: {
             swiper,
-            swiperSlide,
+            swiperSlide
         }
     })
     export default class NewssliderCard extends Vue {
@@ -164,39 +59,38 @@
         HOST: string = HOST;
 
         public swiperOption: any = {
-            slidesPerView: '4',
+            slidesPerView: "4",
             spaceBetween: 30,
             mousewheel: false,
             pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+                el: ".swiper-pagination",
+                clickable: true
             },
             fadeEffect: {
-                crossFade: true,
+                crossFade: true
             },
             navigation: {
-                nextEl: '#swiper-button-next',
-                prevEl: '#swiper-button-prev',
+                nextEl: "#swiper-button-next",
+                prevEl: "#swiper-button-prev"
             },
             breakpoints: {
                 1905: {
                     slidesPerView: 4,
-                    spaceBetween: 40,
+                    spaceBetween: 40
                 },
                 1439: {
                     slidesPerView: 3,
-                    spaceBetween: 40,
+                    spaceBetween: 40
                 },
                 1265: {
                     slidesPerView: 2,
-                    spaceBetween: 40,
+                    spaceBetween: 40
                 },
                 601: {
                     slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-
-            },
+                    spaceBetween: 20
+                }
+            }
         };
     }
 </script>
@@ -233,18 +127,17 @@
     p {
       font-family: $font-roboto;
       font-size: calc(15px + (15 - 13) * ((100vw - 300px) / (1600 - 300)));
-      color: #6D6D6D;
+      color: #6d6d6d;
     }
   }
 
   .sq-h-news-area {
     overflow: hidden;
     margin: 60px 0;
-    @media(min-width: 1905px) {
+    @media (min-width: 1905px) {
       margin: 120px 0;
     }
   }
-
 
   /*Swiper*/
   .news-slider-nav {
@@ -252,7 +145,7 @@
     transform: translateX(50%);
     bottom: 0;
     display: inline-block;
-    @media(min-width: 601px) {
+    @media (min-width: 601px) {
       right: 5%;
       transform: translateX(0);
       bottom: 2.5rem;
@@ -270,7 +163,7 @@
 
   .news-thumb-area {
     overflow: hidden;
-    background: #F9F8F8;
+    background: #f9f8f8;
   }
 
   .news-thumb-image {
@@ -301,7 +194,7 @@
 
     small {
       font-family: $font-roboto;
-      font-size: .9rem;
+      font-size: 0.9rem;
       color: #696969;
     }
   }

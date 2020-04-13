@@ -3,3 +3,4 @@ declare module 'google-maps*';
 declare module 'vue-awesome-swiper*';
 declare module 'gsap*';
 declare module 'scrollmagic*';
+declare module 'vue-moment*';
