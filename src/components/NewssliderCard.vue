@@ -28,9 +28,9 @@
             </div>
 
             <div class="news-thumb-caption">
-              <small
-                      class="news-thumb-date"
-              >{{new Date(slider.created_at) | moment("MMM dd, YYYY")}}</small>
+              <small class="news-thumb-date">
+                {{new Date(slider.created_at) | moment("MMM dd, YYYY")}}
+              </small>
               <h4>{{slider.title}}</h4>
             </div>
           </div>
