@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid px-5-percent">
+  <div class="overflow-hidden container-fluid px-5-percent">
     <div class="sq-home-compliance-area">
       <img :src="HOST + compData.image.original.src" alt="" class="img-fluid">
       <div class="compliance-text">
