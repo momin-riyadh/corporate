@@ -45,7 +45,6 @@
     import NavigationCard from '@/components/NavigationCard.vue';
     import FooterCard from '@/components/FooterCard.vue';
     import CopyrightCard from '@/components/CopyrightCard.vue';
-    import CommonBanner from '@/components/CommonBanner.vue';
     import VideoCard from '@/components/VideoCard.vue';
     import OppertunityCard from '@/components/OppertunityCard.vue';
     import MissionCard from '@/components/MissionCard.vue';
@@ -55,7 +54,7 @@
     import HeaderText from '../components/HeaderText.vue';
 
     @Component({
-        name: "HomePage",
+        name: 'HomePage',
         components: {
             title_subtitle_text_overlay_image: ComplianceCard,
             title_subtitle_stream_block: MissionCard,
@@ -63,7 +62,6 @@
             youtube_video_block: VideoCard,
             title_text_cta: HeaderText,
             title_subtitle_newslist: NewssliderCard,
-            CommonBanner,
             FooterCard,
             CopyrightCard,
             NavigationCard
