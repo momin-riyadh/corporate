@@ -1,6 +1,10 @@
 <template>
   <div class="sq-home-area">
     <NavigationCard type="customstyle"/>
+
+    <!--====================================
+              Homepage Header Components
+        ====================================-->
     <div class="home-page-animation-area overflow-hidden">
       <div class="home-page-animation">
         <header class="v-header containers">
@@ -14,8 +18,11 @@
         </header>
       </div>
     </div>
+    <!--    End-->
 
-    <!--Homepage All Components-->
+    <!--======================================
+                Homepage Body Components
+        ======================================-->
     <section>
       <div class="sq-h-content-area">
         <component
