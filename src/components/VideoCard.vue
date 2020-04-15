@@ -1,17 +1,10 @@
 <template>
   <div class="fullscreen-video-wrap">
+    <iframe height="100%" width="100%"
+            src="https://www.youtube.com/embed/IY9hnAw-ZOc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=IY9hnAw-ZOc"
+            frameborder="0" allowfullscreen>
 
-    <iframe src="https://www.youtube.com/embed/IY9hnAw-ZOc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=IY9hnAw-ZOc" frameborder="0" allowfullscreen></iframe>
-
-<!--    <video-->
-<!--            src="../assets/images/video/finalbg.mp4"-->
-<!--            autoplay="autoplay"-->
-<!--            loop="loop"-->
-<!--            muted-->
-<!--            playsinline-->
-<!--    ></video>-->
-
-<!--    <iframe src="https://www.youtube.com/embed/IY9hnAw-ZOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+    </iframe>
     <div class="header-overlay"></div>
   </div>
 </template>
@@ -32,54 +25,6 @@
 </script>
 
 <style scoped lang="scss">
-  .home-page-animation {
-    position: relative;
-    height: calc(100vh);
-
-    &::before {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(
-                      to bottom,
-                      rgba(0, 0, 0, 0.3) 100%,
-                      rgba(0, 0, 0, 0.3) 0%
-      );
-      z-index: 2;
-    }
-
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      object-position: center center;
-      position: relative;
-    }
-  }
-
-  .home-page-animation-caption {
-    z-index: 3;
-    position: absolute;
-    left: 5%;
-    bottom: 15%;
-
-    h1 {
-      font-family: $font-helvetica-bold;
-      color: $white-color;
-      font-size: calc(24px + (55 - 24) * ((100vw - 300px) / (1600 - 300)));
-    }
-
-    p {
-      color: $white-color;
-      font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1600 - 300)));
-    }
-  }
-
   .v-header {
     height: 100vh;
     display: flex;
@@ -106,16 +51,25 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    @media (min-aspect-ratio: 16/9) {
+      height: 300%;
+      top: -100%;
+    }
+    @media (max-aspect-ratio: 16/9) {
+      width: 300%;
+      left: -100%;
+    }
 
-      iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-      }
-
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+    }
   }
 
   .fullscreen-video-wrap iframe {
