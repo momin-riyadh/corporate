@@ -1,7 +1,7 @@
 <template>
   <div class="fullscreen-video-wrap">
     <iframe height="100%" width="100%"
-            :src="`https://www.youtube.com/embed/${compData.video_id}?controls=0&showinfo=0&rel=0&autoplay=1&loop=1`"
+            :src="`https://www.youtube.com/embed/${compData.video_id}?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1`"
             frameborder="0" allowfullscreen>
 
     </iframe>
