@@ -17,7 +17,9 @@
 
     <div class="sq-h-slider-area mt-5 overflow-hidden">
       <swiper :options="swiperOption" :loadtheme="false">
-        <!-- slides -->
+        <!--=============================
+              Single Slider Components
+            =============================-->
         <swiper-slide v-for="(slider, idx) in compData.contents" :key="'slide' + idx">
           <div class="news-thumb-area">
             <div class="news-thumb-image">
@@ -42,10 +44,10 @@
 </template>
 
 <script lang="ts">
-    import {Component, Vue, Prop} from "vue-property-decorator";
-    import {swiper, swiperSlide} from "vue-awesome-swiper";
-    import {TitleSubtitleNewslistBlock} from "@/store/cms.types";
-    import {HOST} from "@/global";
+    import {Component, Vue, Prop} from 'vue-property-decorator';
+    import {swiper, swiperSlide} from 'vue-awesome-swiper';
+    import {TitleSubtitleNewslistBlock} from '@/store/cms.types';
+    import {HOST} from '@/global';
 
     @Component({
         name: "NewssliderCard",

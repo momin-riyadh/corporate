@@ -28,9 +28,6 @@
     </section>
     <!--    End-->
 
-
-    <!-- <MissionCard/> -->
-    <NewssliderCard/>
     <FooterCard/>
     <CopyrightCard/>
   </div>
