@@ -37,7 +37,7 @@
 
 <script lang="ts">
     import {Component, Prop, Vue} from 'vue-property-decorator';
-    import {BasicPageData, TitleTextBannerImage} from '@/store/cms.types';
+    import {BasicPageData} from '@/store/cms.types';
     import {HOST} from '@/global';
 
     @Component({
@@ -49,7 +49,6 @@
 
     export default class BasicPage extends Vue {
         @Prop() pageData!: BasicPageData;
-        @Prop() compData!: TitleTextBannerImage;
         HOST: string = HOST;
     }
 </script>
