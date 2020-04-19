@@ -38,10 +38,6 @@
     export default class BottomBanner extends Vue {
         @Prop() compData!: TitleTextBannerImage;
         HOST: string = HOST;
-
-        // @Prop() public BottomTitle!: string;
-        // @Prop() public BottomText!: string;
-        // @Prop() public BottomImage!: string;
     }
 </script>
 

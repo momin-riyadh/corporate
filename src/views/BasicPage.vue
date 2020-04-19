@@ -4,6 +4,8 @@
                 TODO:Components Will Be Move
         ========================================-->
     <NavigationCard/>
+    <!--    End-->
+
 
     <!--=============================
                 Common Banner
@@ -36,7 +38,7 @@
     <!--    End-->
 
 
-    <CommonParagraph/>
+    <!--    <CommonParagraph/>-->
 
     <!--============================================
             TODO: Components Will Be Move/Update
@@ -60,12 +62,12 @@
     @Component({
         name: 'BasicPage',
         components: {
-            CommonParagraph,
             NavigationCard,
             CopyrightCard,
             FooterCard,
             title_text_banner_image: BottomBanner,
-        }
+            title_subtitle_richtext_cta: CommonParagraph,
+        },
     })
 
     export default class BasicPage extends Vue {

@@ -5,20 +5,21 @@
         <div class="col-xl-6 py-4 pt-lg-0 float-left c-pl">
 
           <div class="article-header mb-2 mb-md-5">
-            <h1 class="common-title"><span>{{ParagraphTitle}}</span></h1>
-            <p class="common-sub-title">{{ParagraphSubtitle}}</p>
+            <h1 class="common-title"><span>{{compData.title}}</span></h1>
+            <p class="common-sub-title">{{compData.subtitle}}</p>
           </div>
 
           <div class="res-article-content">
-            <p v-for="paragraphcontent in ParagraphContents">
-              {{ paragraphcontent }}
+            <p>
+
+              {{ compData.text }}
             </p>
 
           </div>
 
         </div>
         <div class="col-12 m-auto m-lg-0 col-xl-6 csr-r-image float-right">
-          <img alt="image" class="img-fluid" :src="ParagraphImage">
+          <img alt="image" class="img-fluid" :src="HOST + compData.image.original.src">
         </div>
       </div>
     </div>
@@ -27,16 +28,16 @@
 
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
+    import {TitleSubtitleRichtextCTA} from '@/store/cms.types';
+    import {HOST} from '@/global';
 
     @Component({
         name: 'CommonParagraph',
         components: {},
     })
     export default class CommonParagraph extends Vue {
-        @Prop() public ParagraphTitle!: string;
-        @Prop() public ParagraphSubtitle!: string;
-        @Prop() public ParagraphContents!: any;
-        @Prop() public ParagraphImage!: string;
+        @Prop() compData!: TitleSubtitleRichtextCTA;
+        HOST: string = HOST;
     }
 </script>
 
@@ -46,7 +47,7 @@
     min-height: 600px;
     overflow: hidden;
     margin: 3rem 0;
-    @media(min-width: 961px){
+    @media(min-width: 961px) {
       margin: 8rem 0;
     }
   }
@@ -115,7 +116,7 @@
   }
 
   .c-pl {
-    padding-left:3%;
+    padding-left: 3%;
     @media(min-width: 1265px) {
       padding-left: 115px;
     }
