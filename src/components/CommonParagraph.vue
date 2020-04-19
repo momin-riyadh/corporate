@@ -10,11 +10,7 @@
           </div>
 
           <div class="res-article-content">
-            <p>
-
               {{ compData.text }}
-            </p>
-
           </div>
 
         </div>
