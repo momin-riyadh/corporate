@@ -1,5 +1,9 @@
 <template>
   <div v-show="pageData" :key="pageData.id" class="basic-page">
+    <!--========================================
+                TODO:Components Will Be Move
+        ========================================-->
+    <NavigationCard/>
 
     <!--=============================
                 Common Banner
@@ -32,18 +36,33 @@
     <!--    End-->
 
 
+    <CommonParagraph/>
+
+    <!--============================================
+            TODO: Components Will Be Move/Update
+        ============================================-->
+    <FooterCard/>
+    <CopyrightCard/>
   </div>
 </template>
 
 <script lang="ts">
     import {Component, Prop, Vue} from 'vue-property-decorator';
+    import NavigationCard from '@/components/NavigationCard.vue'
+    import FooterCard from '@/components/FooterCard.vue';
+    import CopyrightCard from '@/components/CopyrightCard.vue';
     import {BasicPageData} from '@/store/cms.types';
     import {HOST} from '@/global';
+    import CommonParagraph from '@/components/CommonParagraph.vue';
+
 
     @Component({
         name: 'BasicPage',
         components: {
-
+            CommonParagraph,
+            NavigationCard,
+            CopyrightCard,
+            FooterCard
         }
     })
 
