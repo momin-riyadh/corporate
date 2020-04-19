@@ -54,6 +54,7 @@
     import {BasicPageData} from '@/store/cms.types';
     import {HOST} from '@/global';
     import CommonParagraph from '@/components/CommonParagraph.vue';
+    import BottomBanner from '@/components/BottomBanner.vue';
 
 
     @Component({
@@ -62,7 +63,8 @@
             CommonParagraph,
             NavigationCard,
             CopyrightCard,
-            FooterCard
+            FooterCard,
+            title_text_banner_image: BottomBanner,
         }
     })
 

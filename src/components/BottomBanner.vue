@@ -2,10 +2,10 @@
   <div class="bottom-banner-area">
     <div class="container-fluid px-5-percent">
       <div class="bottom-banner">
-        <img class="img-fluid" :src="BottomImage" alt="">
+        <img class="img-fluid" :src="HOST + compData.image.original.src" alt="">
         <div class="col-6 mx-auto bottom-banner-text text-center">
           <h1>
-            {{BottomTitle}}
+            {{compData.title}}
           </h1>
         </div>
 
@@ -13,7 +13,7 @@
         <div class="row justify-content-center">
           <div class="col-xl-10 col-sm-10">
             <div class="bottom-paragraph-text text-center">
-              <p>{{BottomText}}</p>
+              <p>{{compData.text}}</p>
             </div>
           </div>
         </div>
@@ -27,6 +27,8 @@
 
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
+    import {TitleTextBannerImage} from '@/store/cms.types';
+    import {HOST} from '@/global';
 
     @Component({
         name: 'BottomBanner',
@@ -34,9 +36,12 @@
     })
 
     export default class BottomBanner extends Vue {
-        @Prop() public BottomTitle!: string;
-        @Prop() public BottomText!: string;
-        @Prop() public BottomImage!: string;
+        @Prop() compData!: TitleTextBannerImage;
+        HOST: string = HOST;
+
+        // @Prop() public BottomTitle!: string;
+        // @Prop() public BottomText!: string;
+        // @Prop() public BottomImage!: string;
     }
 </script>
 
@@ -49,6 +54,7 @@
     display: block;
     position: relative;
     height: 100%;
+
     img {
       position: relative;
       height: 400px;
