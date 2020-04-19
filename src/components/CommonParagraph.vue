@@ -10,7 +10,7 @@
           </div>
 
           <div class="res-article-content">
-              {{ compData.text }}
+            <p v-html="compData.text"></p>
           </div>
 
         </div>
