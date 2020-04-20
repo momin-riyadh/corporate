@@ -76,6 +76,10 @@
         list-style: disc;
         font-family: $font-roboto;
         font-size: 20px;
+        text-decoration: none;
+        color: #5F5F5F;
+        font-weight: 500;
+        display: inline-block;
 
         &:not(:last-child) {
           margin-bottom: 2rem;
