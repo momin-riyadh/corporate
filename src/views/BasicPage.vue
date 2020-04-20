@@ -57,6 +57,8 @@
     import {HOST} from '@/global';
     import CommonParagraph from '@/components/CommonParagraph.vue';
     import BottomBanner from '@/components/BottomBanner.vue';
+    import FinancialReport from '@/components/FinancialReport.vue';
+    import MilestonesCard from "@/components/MilestonesCard.vue";
 
 
     @Component({
@@ -67,6 +69,8 @@
             FooterCard,
             title_text_banner_image: BottomBanner,
             title_subtitle_richtext_cta: CommonParagraph,
+            report_tab_block:FinancialReport,
+            richtext_image:MilestonesCard,
         },
     })
 
