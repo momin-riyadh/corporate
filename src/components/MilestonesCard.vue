@@ -4,17 +4,7 @@
     <div class="sq-milestones-area my-5">
 
       <div class="sq-milestones">
-        <div class="sq-milestone-list">
-          <ul>
-            <li v-html="compData.text"></li>
-          </ul>
-
-<!--          <ul>-->
-<!--&lt;!&ndash;            <li v-for="(list, idx) in compData" :key="'l' + idx">&ndash;&gt;-->
-<!--&lt;!&ndash;              {{list.text}}&ndash;&gt;-->
-<!--&lt;!&ndash;            </li>&ndash;&gt;-->
-<!--          </ul>-->
-        </div>
+        <div class="sq-milestone-list" v-html="compData.text"></div>
         <div class="sq-milestone-image">
           <img class="img-fluid" :src="HOST + compData.image.original.src" alt="square">
         </div>
