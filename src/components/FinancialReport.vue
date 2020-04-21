@@ -16,16 +16,21 @@
               </ul>
             </div>
 
-            <div class="report-data">
+            <div class="financial-report-file">
+
               <div v-for="(item, index) in compData.tab" v-show="current === index" :key="'img' + index"
                    class="finance-report-tab-data">
                 <div v-for="(imgitem, idx) in item.value.content" v-show="current_image_number === idx"
                      :key="'image' + idx">
+
                   <div v-for="(imglist, indx) in imgitem.value" :key="'img' + indx">
-                    <img :src="HOST + imglist.image.original.src" alt="">
+
+                      <img :src="HOST + imglist.image.original.src" alt="">
+
                   </div>
                 </div>
               </div>
+
             </div>
 
           </div>
