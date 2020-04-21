@@ -8,7 +8,7 @@
           <div class="financial-report-year">
 
             <div class="finance-report-tab">
-              <ul class="tablists">
+              <ul>
                 <li v-for="(item, index) in compData.tab" :key="'m' + index" :class="{active: current===index}"
                     @click="itemClick(index)">
                   {{item.value.label}}
@@ -123,6 +123,40 @@
     }
   }
 
+  /*Report Tab*/
+.finance-report-tab{
+  margin-bottom: 3rem;
+  display: block;
+  width: 100%;
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  li{
+    transition: all 0.3s ease-in-out;
+    float: left;
+    display: inline-block;
+    cursor:pointer;
+    padding: 1rem 1.6rem;
+    color:#212529;
+    background: #efefef;
+    font-family: $font-roboto;
+    font-weight: 500;
+    border-bottom: 4px solid transparent;
+  }
+
+  li.active{
+    border-bottom: 4px solid $brand-color;
+    color: $brand-color;
+  }
+
+}
+
+
 
   .financial-areas {
     display: flex;
@@ -133,7 +167,6 @@
 
   .sq-financial-report {
     /*flex: 1 1 auto;*/
-
     img {
     }
   }
