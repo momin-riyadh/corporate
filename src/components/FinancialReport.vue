@@ -10,9 +10,9 @@
             <!--            Tab-->
             <div class="finance-report-tab">
               <ul>
-                <li v-for="(item, index) in compData.tab" :key="'m' + index" :class="{active: current===index}"
+                <li v-for="(item, index) in compData" :key="'m' + index" :class="{active: current===index}"
                     @click="itemClick(index)">
-                  {{item.value.label}}
+                  {{item.label}}
                 </li>
               </ul>
             </div>
@@ -20,23 +20,30 @@
 
 
             <!--Data-->
-            <div class="financial-report-file">
+            <div v-for="(item, index) in compData" v-show="current===index" :key="'img' + index" class="row">
+              <div v-for="(imgitem, idx) in item.content" :key="'image' + idx">
 
-              <div v-for="(item, index) in compData.tab" v-show="current === index" :key="'img' + index"
-                   class="finance-report-tab-dat">
+                <img class="img-fluid" :src="HOST + imgitem.image.original.src" alt="">
 
-                <div v-for="(imgitem, idx) in item.value.content" v-show="current_image_number === idx"
-                     :key="'image' + idx">
+                <h4>{{ imgitem.image.title }}</h4>
 
-                  <div v-for="(imglist, indx) in imgitem.value" :key="'img' + indx" class="sq-financial-report">
-
-                    <img class="img-fluid" :src="HOST + imglist.image.original.src" alt="">
-
-                  </div>
-                </div>
               </div>
-
             </div>
+
+
+            <!--              <div v-for="(item, index) in compData.tab" v-show="current === index" :key="'imgs' + index" class="row">-->
+
+            <!--                <div v-for="(imgitem, idx) in item.value.content" v-show="current_image_number === idx"-->
+            <!--                     :key="'image' + idx" class="financial-areas align-items-center">-->
+
+            <!--                  <div v-for="(imglist, indx) in imgitem.value" :key="'imge' + indx" class="sq-financial-report">-->
+
+            <!--                    <img class="img-fluid" :src="HOST + imglist.image.original.src" alt="">-->
+
+            <!--                  </div>-->
+            <!--                </div>-->
+            <!--              </div>-->
+
             <!--Data End-->
 
           </div>
@@ -115,24 +122,7 @@
 
 <style scoped lang="scss">
   .financial-report-year {
-    display: inline-block;
     margin: 0 0 50px 0;
-
-    a {
-      transition: all 0.3s ease-in-out;
-      text-decoration: none;
-      display: inline-block;
-      color: #313131;
-      font-size: 1.2rem;
-      font-family: $font-helvetica-bold;
-      padding: .8rem 2rem;
-      border-bottom: 3px solid transparent;
-
-      &:hover {
-        border-bottom: 3px solid $brand-color;
-        background: darken(#efefef, 10%);
-      }
-    }
   }
 
   /*Report Tab*/
@@ -140,6 +130,7 @@
     margin-bottom: 3rem;
     display: block;
     width: 100%;
+    overflow: hidden;
 
     ul {
       margin: 0;
@@ -154,7 +145,7 @@
       float: left;
       display: inline-block;
       cursor: pointer;
-      padding: 1rem 1.6rem;
+      padding: 0.8rem 1.5rem;
       color: #212529;
       background: #efefef;
       font-family: $font-roboto;
