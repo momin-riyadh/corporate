@@ -7,6 +7,7 @@
         <div class="text-center text-sm-left">
           <div class="financial-report-year">
 
+            <!--            Tab-->
             <div class="finance-report-tab">
               <ul>
                 <li v-for="(item, index) in compData.tab" :key="'m' + index" :class="{active: current===index}"
@@ -15,23 +16,28 @@
                 </li>
               </ul>
             </div>
+            <!-- Tab End -->
 
+
+            <!--Data-->
             <div class="financial-report-file">
 
               <div v-for="(item, index) in compData.tab" v-show="current === index" :key="'img' + index"
-                   class="finance-report-tab-data">
+                   class="finance-report-tab-dat">
+
                 <div v-for="(imgitem, idx) in item.value.content" v-show="current_image_number === idx"
                      :key="'image' + idx">
 
-                  <div v-for="(imglist, indx) in imgitem.value" :key="'img' + indx">
+                  <div v-for="(imglist, indx) in imgitem.value" :key="'img' + indx" class="sq-financial-report">
 
-                      <img :src="HOST + imglist.image.original.src" alt="">
+                    <img class="img-fluid" :src="HOST + imglist.image.original.src" alt="">
 
                   </div>
                 </div>
               </div>
 
             </div>
+            <!--Data End-->
 
           </div>
         </div>
@@ -61,6 +67,7 @@
         HOST: string = HOST;
         current = 0;
         current_image_number = 0;
+
         // current_img = 0;
 
 
@@ -129,38 +136,38 @@
   }
 
   /*Report Tab*/
-.finance-report-tab{
-  margin-bottom: 3rem;
-  display: block;
-  width: 100%;
-  ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border-radius: 5px;
+  .finance-report-tab {
+    margin-bottom: 3rem;
+    display: block;
     width: 100%;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    li {
+      transition: all 0.3s ease-in-out;
+      float: left;
+      display: inline-block;
+      cursor: pointer;
+      padding: 1rem 1.6rem;
+      color: #212529;
+      background: #efefef;
+      font-family: $font-roboto;
+      font-weight: 500;
+      border-bottom: 4px solid transparent;
+    }
+
+    li.active {
+      border-bottom: 4px solid $brand-color;
+      color: $brand-color;
+    }
+
   }
-
-  li{
-    transition: all 0.3s ease-in-out;
-    float: left;
-    display: inline-block;
-    cursor:pointer;
-    padding: 1rem 1.6rem;
-    color:#212529;
-    background: #efefef;
-    font-family: $font-roboto;
-    font-weight: 500;
-    border-bottom: 4px solid transparent;
-  }
-
-  li.active{
-    border-bottom: 4px solid $brand-color;
-    color: $brand-color;
-  }
-
-}
-
 
 
   .financial-areas {
