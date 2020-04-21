@@ -7,43 +7,27 @@
         <div class="text-center text-sm-left">
           <div class="financial-report-year">
 
-            <el-tabs @tab-click="handleClick">
-              <el-tab-pane label="2019">
-                <div class="row">
+            <div class="finance-report-tab">
+              <ul class="tablists">
+                <li v-for="(item, index) in compData.tab" :key="'m' + index" :class="{active: current===index}"
+                    @click="itemClick(index)">
+                  {{item.value.label}}
+                </li>
+              </ul>
+            </div>
 
-                  <div class="financial-areas align-items-center">
-
-                    <div class="sq-financial-report" v-for="report in reports">
-                      <img class="img-fluid" :src="report.imageurl" alt="square group">
-                      <div class="sq-f-report-caption text-center mt-3">
-                        <h4> {{report.title}}</h4>
-                      </div>
-                    </div>
-
+            <div class="report-data">
+              <div v-for="(item, index) in compData.tab" v-show="current === index" :key="'img' + index"
+                   class="finance-report-tab-data">
+                <div v-for="(imgitem, idx) in item.value.content" v-show="current_image_number === idx"
+                     :key="'image' + idx">
+                  <div v-for="(imglist, indx) in imgitem.value" :key="'img' + indx">
+                    <img :src="HOST + imglist.image.original.src" alt="">
                   </div>
                 </div>
-              </el-tab-pane>
+              </div>
+            </div>
 
-              <el-tab-pane label="2018">
-
-                <div class="row">
-                  <div class="financial-areas align-items-center">
-
-                    <div class="sq-financial-report">
-                      <!--                      <img class="img-fluid" src="../assets/images/nopreview.jpg" alt="square group">-->
-                      <h1 class="display-2">No preview available!</h1>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </el-tab-pane>
-
-              <el-tab-pane label="2017">
-                <h1 class="display-2">No preview available!</h1>
-              </el-tab-pane>
-            </el-tabs>
           </div>
         </div>
 
@@ -70,6 +54,10 @@
     export default class FinancialReport extends Vue {
         @Prop() compData!: ReportTabBlock;
         HOST: string = HOST;
+        current = 0;
+        current_image_number = 0;
+        // current_img = 0;
+
 
         financeScroll() {
             const timelines = new TimelineMax({});
@@ -102,40 +90,14 @@
             this.financeScroll()
         }
 
-        public data() {
-            return {
-                activeName: 'first',
-            };
+        itemClick(index: any) {
+            if ((this as any).current == index) {
+                (this as any).current = 0
+            } else {
+                (this as any).current = index
+            }
         }
 
-        public handleClick(tab: any, event: any) {
-            // console.log(tab, event);
-        }
-
-
-        public reports: any = [
-            {
-                title: 'Earning Presentations',
-                imageurl: require('../assets/images/ep@2x.jpg'),
-            },
-            {
-                title: 'Analyst presentation',
-                imageurl: require('../assets/images/ap@2x.jpg'),
-            },
-            {
-                title: 'Slavery Act statement',
-                imageurl: require('../assets/images/sa@2x.jpg'),
-            },
-            {
-                title: 'Slavery Act statement',
-                imageurl: require('../assets/images/sas@2x.jpg'),
-            },
-            {
-                title: 'Slavery Act statement',
-                imageurl: require('../assets/images/sa@2x.jpg'),
-            },
-
-        ];
     }
 </script>
 
