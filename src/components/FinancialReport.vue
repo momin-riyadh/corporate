@@ -7,7 +7,7 @@
         <div class="text-center text-sm-left">
           <div class="financial-report-year">
 
-            <!--            Tab-->
+            <!--Tab-->
             <div class="finance-report-tab">
               <ul>
                 <li v-for="(item, index) in compData" :key="'m' + index" :class="{active: current===index}"
