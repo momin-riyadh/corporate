@@ -20,16 +20,23 @@
 
 
             <!--Data-->
-            <div v-for="(item, index) in compData" v-show="current===index" :key="'img' + index" class="row">
-              <div v-for="(imgitem, idx) in item.content" :key="'image' + idx">
+            <div class="row">
+              <div v-for="(item, index) in compData" v-show="current===index" :key="'g' + index"
+                   class="financial-areas align-items-center">
+                <div v-for="(imgitem, idx) in item.content" :key="'i' + idx" class="sq-financial-report">
 
-                <img class="img-fluid" :src="HOST + imgitem.image.original.src" alt="">
+                  <a href="" target="_blank">
+                    <img class="img-fluid" :src="HOST + imgitem.image.original.src" alt="">
 
-                <h4>{{ imgitem.image.title }}</h4>
+                    <div class="sq-f-report-caption text-center mt-3">
+                      <h4>{{ imgitem.image.title }}</h4>
+                    </div>
+                  </a>
 
+                </div>
               </div>
             </div>
-
+            <!--End-->
 
             <!--              <div v-for="(item, index) in compData.tab" v-show="current === index" :key="'imgs' + index" class="row">-->
 
@@ -170,7 +177,12 @@
 
   .sq-financial-report {
     /*flex: 1 1 auto;*/
-    img {
+    a {
+      text-decoration: none;
+      color: inherit;
+      img {
+        border: 1rem solid #efefef;
+      }
     }
   }
 
@@ -178,6 +190,7 @@
     h4 {
       font-family: $font-roboto;
       text-transform: capitalize;
+      font-size: 1.1rem;
     }
   }
 
