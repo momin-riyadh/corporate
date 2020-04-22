@@ -152,7 +152,7 @@
       float: left;
       display: inline-block;
       cursor: pointer;
-      padding: 0.8rem 1.5rem;
+      padding: 0.9rem 1.3rem;
       color: #212529;
       background: #efefef;
       font-family: $font-roboto;
