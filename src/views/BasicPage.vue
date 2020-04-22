@@ -56,7 +56,7 @@
     import CommonParagraph from '@/components/CommonParagraph.vue';
     import BottomBanner from '@/components/BottomBanner.vue';
     import FinancialReport from '@/components/FinancialReport.vue';
-    import MilestonesCard from "@/components/MilestonesCard.vue";
+    import MilestonesCard from '@/components/MilestonesCard.vue';
     import {BasicPageData} from '@/store/cms.types';
     import {HOST} from '@/global';
 
