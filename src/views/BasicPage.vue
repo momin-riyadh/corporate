@@ -69,8 +69,8 @@
             FooterCard,
             title_text_banner_image: BottomBanner,
             title_subtitle_richtext_cta: CommonParagraph,
-            report_tab_block:FinancialReport,
-            richtext_image:MilestonesCard,
+            report_tab_block: FinancialReport,
+            richtext_image: MilestonesCard,
         },
     })
 
