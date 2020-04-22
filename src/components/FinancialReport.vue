@@ -36,20 +36,6 @@
                 </div>
               </div>
             </div>
-            <!--End-->
-
-            <!--              <div v-for="(item, index) in compData.tab" v-show="current === index" :key="'imgs' + index" class="row">-->
-
-            <!--                <div v-for="(imgitem, idx) in item.value.content" v-show="current_image_number === idx"-->
-            <!--                     :key="'image' + idx" class="financial-areas align-items-center">-->
-
-            <!--                  <div v-for="(imglist, indx) in imgitem.value" :key="'imge' + indx" class="sq-financial-report">-->
-
-            <!--                    <img class="img-fluid" :src="HOST + imglist.image.original.src" alt="">-->
-
-            <!--                  </div>-->
-            <!--                </div>-->
-            <!--              </div>-->
 
             <!--Data End-->
 
@@ -180,6 +166,7 @@
     a {
       text-decoration: none;
       color: inherit;
+
       img {
         border: 0.9rem solid #efefef;
       }
