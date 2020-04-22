@@ -1,11 +1,5 @@
 <template>
   <div class="sq-business-area">
-    <!--    Importing Components-->
-    <Navigation/>
-    <CommonBanner v-bind:ImageUrl="require('../assets/images/business@2x.jpg')" BannerTitle="Our Business"
-                  BannerSubtitle="We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence and honesty. Maybe it's our family orientation"/>
-    <!--  End  Importing Components-->
-
     <div class="container-fluid px-5-percent my-5">
       <div class="sq-business">
         <div class="row">
@@ -130,34 +124,25 @@
         </div>
       </div>
     </div>
-
-    <!--Importing Components-->
-    <Footer/>
-    <Copyright/>
-    <!--  End Importing Components-->
-
   </div>
 </template>
 
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
-    import Navigation from '@/components/NavigationCard.vue';
-    import CommonBanner from '@/components/CommonBanner.vue';
-    import Footer from '@/components/FooterCard.vue';
-    import Copyright from '@/components/CopyrightCard.vue';
+    import {BrandLogoList} from '@/store/cms.types';
+    import {HOST} from '@/global';
+
 
     @Component({
-        name: 'Business',
-        components: {
-            Copyright,
-            Footer,
-            CommonBanner,
-            Navigation,
-        },
+        name: 'BusinessCard.vue',
+        components: {},
 
     })
-    export default class Business extends Vue {
 
+
+    export default class Business extends Vue {
+        @Prop() compData!: BrandLogoList;
+        HOST: string = HOST;
     }
 </script>
 
@@ -222,6 +207,7 @@
     width: 100%;
     height: 100%;
     transition: background-color 0.5s ease;
+
     &:hover {
       background-color: rgba(0, 0, 0, 0.8);
     }

@@ -59,6 +59,7 @@
     import MilestonesCard from '@/components/MilestonesCard.vue';
     import {BasicPageData} from '@/store/cms.types';
     import {HOST} from '@/global';
+    import BusinessCard from '@/components/BusinessCard.vue';
 
 
     @Component({
@@ -71,6 +72,7 @@
             title_subtitle_richtext_cta: CommonParagraph,
             report_tab_block: FinancialReport,
             richtext_image: MilestonesCard,
+            brand_logo_list:BusinessCard,
         },
     })
 
