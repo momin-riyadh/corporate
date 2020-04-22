@@ -181,7 +181,7 @@
       text-decoration: none;
       color: inherit;
       img {
-        border: 1rem solid #efefef;
+        border: 0.9rem solid #efefef;
       }
     }
   }
