@@ -4,14 +4,14 @@
       <div class="sq-business">
         <div class="row">
           <div class="sq-business-industries">
-            <div class="sq-business-logo-area">
+            <div class="sq-business-logo-area" v-for="(brand, index) in compData.brands" :key="'b' + index">
               <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/business/sq-pharma.png" alt="square">
+                <img class="img-fluid" :src="HOST + brand.image.original.src" alt="square">
 
                 <div class="sq-business-caption">
 
-                  <h2>Square Pharmaceuticals Ltd</h2>
-                  <p>So you can imagine your fears with less distraction.</p>
+                  <h2>{{brand.title}}</h2>
+                  <p>{{brand.text}}</p>
 
                 </div>
               </div>
@@ -140,7 +140,7 @@
     })
 
 
-    export default class Business extends Vue {
+    export default class BusinessCard extends Vue {
         @Prop() compData!: BrandLogoList;
         HOST: string = HOST;
     }
