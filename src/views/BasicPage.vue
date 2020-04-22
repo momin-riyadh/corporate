@@ -53,12 +53,12 @@
     import NavigationCard from '@/components/NavigationCard.vue'
     import FooterCard from '@/components/FooterCard.vue';
     import CopyrightCard from '@/components/CopyrightCard.vue';
-    import {BasicPageData} from '@/store/cms.types';
-    import {HOST} from '@/global';
     import CommonParagraph from '@/components/CommonParagraph.vue';
     import BottomBanner from '@/components/BottomBanner.vue';
     import FinancialReport from '@/components/FinancialReport.vue';
     import MilestonesCard from "@/components/MilestonesCard.vue";
+    import {BasicPageData} from '@/store/cms.types';
+    import {HOST} from '@/global';
 
 
     @Component({
