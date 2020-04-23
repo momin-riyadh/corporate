@@ -42,13 +42,20 @@
     import NavigationCard from '@/components/NavigationCard.vue';
     import FooterCard from '@/components/FooterCard.vue';
     import CopyrightCard from '@/components/CopyrightCard.vue';
+    import SinglenewsCard from '@/components/SinglenewsCard.vue';
     import {NewsIndexPageData} from '@/store/cms.types';
     import {HOST} from '@/global';
 
 
+
     @Component({
         name: 'NewsIndexPage',
-        components: {CopyrightCard, FooterCard, NavigationCard,},
+        components: {
+            CopyrightCard,
+            FooterCard,
+            NavigationCard,
+            news_block: SinglenewsCard,
+        },
     })
 
     export default class NewsIndexPage extends Vue {

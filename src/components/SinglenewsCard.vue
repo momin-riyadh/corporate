@@ -3,12 +3,12 @@
   <div class="container-fluid px-5-percent">
     <div class="row">
       <div class="sq-news-media-main align-items-center">
-        <div class="news-media-thumbnail" v-for="article in articles">
-          <img class="img-fluid" :src="article.imageurl" alt="square group">
+        <div class="news-media-thumbnail" v-for="(article, idx) in compData.contents" :key="'n' + idx">
+          <img class="img-fluid" :src="HOST + article.banner.src" alt="square group">
           <div class="news-media-caption my-4">
             <h5>{{article.title}}</h5>
-            <p>{{article.text}}</p>
-            <router-link to="/post">read more</router-link>
+            <p>{{article.short_description}}</p>
+            <router-link :to="article.link">read more</router-link>
           </div>
         </div>
       </div>
@@ -25,7 +25,9 @@
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from 'vue-property-decorator';
+    import {Component, Vue, Prop} from 'vue-property-decorator';
+    import {NewslistBlock} from '@/store/cms.types';
+    import {HOST} from '@/global';
 
 
     @Component({
@@ -35,57 +37,8 @@
 
 
     export default class SinglenewsCard extends Vue {
-        public articles: any = [
-            {
-                title: 'We strive to go above and beyond for our clients, foster',
-                text: 'We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence and honesty. Maybe it\'s our family orientation',
-                imageurl: require('../assets/images/news-one@2x.jpg'),
-            },
-            {
-                title: 'We strive to go above and beyond for our clients, foster',
-                text: 'We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence and honesty. Maybe it\'s our family orientation',
-                imageurl: require('../assets/images/news-two@2x.jpg'),
-            },
-            {
-                title: 'We strive to go above and beyond for our clients, foster',
-                text: 'We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence and honesty. Maybe it\'s our family orientation',
-                imageurl: require('../assets/images/news-three@2x.jpg'),
-            },
-            {
-                title: 'We strive to go above and beyond for our clients, foster',
-                text: 'We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence and honesty. Maybe it\'s our family orientation',
-                imageurl: require('../assets/images/news-four@2x.jpg'),
-            },
-            {
-                title: 'We strive to go above and beyond for our clients, foster',
-                text: 'We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence and honesty. Maybe it\'s our family orientation',
-                imageurl: require('../assets/images/news-five@2x.jpg'),
-            },
-            {
-                title: 'We strive to go above and beyond for our clients, foster',
-                text: 'We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence and honesty. Maybe it\'s our family orientation',
-                imageurl: require('../assets/images/news-six@2x.jpg'),
-            }, {
-                title: 'We strive to go above and beyond for our clients, foster',
-                text: 'We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence and honesty. Maybe it\'s our family orientation',
-                imageurl: require('../assets/images/news-three@2x.jpg'),
-            },
-            {
-                title: 'We strive to go above and beyond for our clients, foster',
-                text: 'We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence and honesty. Maybe it\'s our family orientation',
-                imageurl: require('../assets/images/news-four@2x.jpg'),
-            },
-            {
-                title: 'We strive to go above and beyond for our clients, foster',
-                text: 'We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence and honesty. Maybe it\'s our family orientation',
-                imageurl: require('../assets/images/news-five@2x.jpg'),
-            },
-            {
-                title: 'We strive to go above and beyond for our clients, foster',
-                text: 'We strive to go above and beyond for our clients, fostering a relationship built on trust, confidence and honesty. Maybe it\'s our family orientation',
-                imageurl: require('../assets/images/news-six@2x.jpg'),
-            },
-        ];
+        @Prop() compData!: NewslistBlock;
+        HOST: string = HOST;
     }
 
 </script>
@@ -143,11 +96,13 @@
       font-weight: normal;
       border: 2px solid $brand-color;
       color: #222222;
+
       &:hover,
       &:focus {
         color: #fff;
         outline: 0;
       }
+
       &:hover {
         box-shadow: 0 0 40px 40px $brand-color inset;
       }
