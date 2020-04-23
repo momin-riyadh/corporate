@@ -1,7 +1,7 @@
-import Vue from "vue";
-import Vuex, { StoreOptions } from "vuex";
-import { RootState } from "./store.types";
-import pageData from "./modules/pageData";
+import Vue from 'vue';
+import Vuex, { StoreOptions } from 'vuex';
+import { RootState } from './store.types';
+import pageData from './modules/pageData';
 
 Vue.use(Vuex);
 

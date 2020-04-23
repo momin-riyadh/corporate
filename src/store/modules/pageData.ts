@@ -1,11 +1,11 @@
-import { PageDataState, RootState, PageData } from "../store.types";
-import { GetterTree, ActionTree, MutationTree, Module } from "vuex";
-import { PAGE_DATA } from "../getters.names";
-import { FETCH_PAGE_DATA } from "../actions.names";
-import { Route } from "vue-router";
-import { API_URL } from "@/global";
-import axios from "axios";
-import { SET_PAGE_DATA, SET_PAGE_DATA_ERROR } from "../mutations.names";
+import { PageDataState, RootState, PageData } from '../store.types';
+import { GetterTree, ActionTree, MutationTree, Module } from 'vuex';
+import { PAGE_DATA } from '../getters.names';
+import { FETCH_PAGE_DATA } from '../actions.names';
+import { Route } from 'vue-router';
+import { API_URL } from '@/global';
+import axios from 'axios';
+import { SET_PAGE_DATA, SET_PAGE_DATA_ERROR } from '../mutations.names';
 
 const state: PageDataState = {
   page: null,
