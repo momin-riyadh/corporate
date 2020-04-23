@@ -1,9 +1,38 @@
 <template>
-  <div class="career-area">
+  <div v-show="pageData" :key="pageData.id" class="career-area">
     <Navigation/>
-    <CommonBanner v-bind:image-url="require('../assets/images/career@2x.jpg')"
-                  banner-title="Find the right job" banner-subtitle="Employee welfare entails everything from services, facilities and benefits that are provided or done by an employer
- for the advantage or comfort of an employee. It is undertaken in order to"/>
+
+    <!--=============================
+           Common Banner
+   =============================-->
+    <div class="common-banner-area">
+      <div class="container-fluid p-0">
+        <div class="common-banner js-bannerimage">
+          <img class="img-fluid" :src="HOST + pageData.banner_image.url" alt="square">
+
+          <div class="banner-content">
+            <h1 class="jstitle"> {{ pageData.title }}</h1>
+            <p class="jssubtitle"> {{ pageData.text }}</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--    End-->
+
+
+    <!--====================================
+           JobIndexPage Components Loop
+        ====================================-->
+    <component
+            v-for="comp in pageData.body"
+            :key="comp.id"
+            :is="comp.type"
+            :comp-data="comp.value">
+    </component>
+    <!--    End-->
+
+
 
 
     <div class="container-fluid px-5-percent">
@@ -63,7 +92,6 @@
         </div>
 
 
-
       </div>
 
 
@@ -91,19 +119,24 @@
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from 'vue-property-decorator';
+    import {Component, Vue, Prop} from 'vue-property-decorator';
     import Navigation from '@/components/NavigationCard.vue';
-    import CommonBanner from '@/components/CommonBanner.vue';
-    import Footer from '@/components/FooterCard.vue';
-    import Copyright from '@/components/CopyrightCard.vue';
+    import FooterCard from '@/components/FooterCard.vue';
+    import CopyrightCard from '@/components/CopyrightCard.vue';
+    import {JobIndexPageData} from '@/store/cms.types';
+    import {HOST} from '@/global'
     // import { gsap } from 'gsap';
 
     @Component({
-        name: 'Career',
-        components: {Copyright, Footer, CommonBanner, Navigation},
+        name: 'JobIndexPage.vue',
+        components: {CopyrightCard, FooterCard, Navigation},
     })
 
     export default class Career extends Vue {
+        @Prop() pageData!: JobIndexPageData
+        HOST: string = HOST;
+
+
         // public mounted() {
         //     const {jsjobarea} = this.$refs;
         //     gsap.to(jsjobarea, {duration: 2, scrollTo: {y: 400}, ease:"power2"});
@@ -277,7 +310,7 @@
   .job-category-title {
     margin-bottom: 1rem;
     margin-top: 2rem;
-    @media all and (min-width: 601px){
+    @media all and (min-width: 601px) {
       margin-bottom: 7rem;
     }
   }
@@ -381,7 +414,7 @@
   .featured-job-area {
     margin-top: 1rem;
     overflow: hidden;
-    @media(min-width: 601px){
+    @media(min-width: 601px) {
       margin-top: 8rem;
       overflow: hidden;
     }
@@ -429,7 +462,7 @@
     position: relative;
     cursor: pointer;
     padding: .5rem;
-    @media (min-width: 601px){
+    @media (min-width: 601px) {
       transition: all 0.3s ease-in-out;
       display: flex;
       flex-direction: row;
@@ -446,7 +479,7 @@
         object-fit: cover;
         -o-object-fit: cover;
         margin-bottom: .8rem;
-        @media all and (min-width:601px) {
+        @media all and (min-width: 601px) {
           width: 220px;
           height: auto;
           object-fit: cover;

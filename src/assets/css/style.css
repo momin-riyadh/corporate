@@ -81,4 +81,78 @@
   text-align: left !important;
 }
 
+/**
+  *Common Banner Style
+  *Used in general for all pages
+  *Responsible for Top/Header Banner
+  */
+.common-banner-area {
+  height: 50vh;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+@media (min-width: 961px) {
+  .common-banner-area {
+    margin-bottom: 5rem;
+  }
+}
+
+.common-banner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+.common-banner::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.5) 0%);
+}
+.common-banner img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  -o-object-fit: cover;
+  object-position: center center;
+}
+
+.banner-content {
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  padding: 0 1rem;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.banner-content h1 {
+  font-size: calc(24px + (45 - 24) * ((100vw - 300px) / (1600 - 300)));
+  text-transform: capitalize;
+  font-family: "Helvetica-Bold", sans-serif;
+}
+.banner-content p {
+  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-family: "Roboto", sans-serif;
+}
+@media (min-width: 992px) {
+  .banner-content {
+    max-width: 1024px;
+  }
+}
+
+/*End Common Banner Style*/
+
 /*# sourceMappingURL=style.css.map */

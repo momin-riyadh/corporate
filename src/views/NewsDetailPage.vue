@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavigationCard/>
-    <SinglePost/>
+    <SinglePostCard/>
     <FooterCard/>
     <CopyrightCard/>
   </div>

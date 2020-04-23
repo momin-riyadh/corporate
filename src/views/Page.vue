@@ -13,12 +13,17 @@
     import {PageData} from '@/store/store.types';
     import HomePage from './HomePage.vue';
     import BasicPage from '@/views/BasicPage.vue';
+    import NewsIndexPage from '@/views/NewsIndexPage.vue';
+    import JobIndexPage from '@/views/JobIndexPage.vue';
 
     @Component({
         name: "Page",
         components: {
             HomePage: HomePage,
-            BasicPage: BasicPage
+            BasicPage: BasicPage,
+            NewsIndexPage,
+            JobIndexPage,
+
         },
     })
     export default class Page extends Vue {

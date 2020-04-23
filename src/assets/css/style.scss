@@ -73,6 +73,7 @@ $paragraph-size: calc(16px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
   width: 30% !important;
   overflow: hidden;
 }
+
 .swiper-pagination-bullet-active {
   transition: all 0.3s ease;
   opacity: 1 !important;
@@ -83,8 +84,9 @@ $paragraph-size: calc(16px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
   margin-right: 50px !important;
   overflow: hidden;
   color: green;
-  &::before{
-    color:greenyellow;
+
+  &::before {
+    color: greenyellow;
     position: absolute;
     width: 50px;
     margin: 0 10px;
@@ -96,6 +98,7 @@ $paragraph-size: calc(16px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
   }
 
 }
+
 .swiper-pagination-bullet {
   width: 100px !important;
   height: auto !important;
@@ -105,4 +108,80 @@ $paragraph-size: calc(16px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
   opacity: 1 !important;
   text-align: left !important;
 }
+
+
+/**
+  *Common Banner Style
+  *Used in general for all pages
+  *Responsible for Top/Header Banner
+  */
+.common-banner-area {
+  height: 50vh;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  @media(min-width: 961px) {
+    margin-bottom: 5rem;
+  }
+}
+
+.common-banner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+
+  &::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.5) 0%);
+  }
+
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center center;
+  }
+}
+
+.banner-content {
+  color: $white-color;
+  text-align: center;
+  width: 100%;
+  padding: 0 1rem;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  h1 {
+    font-size: calc(24px + (45 - 24) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: capitalize;
+    font-family: $font-helvetica-bold;
+  }
+
+  p {
+    font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: $font-roboto;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 1024px;
+  }
+}
+
+/*End Common Banner Style*/
 
