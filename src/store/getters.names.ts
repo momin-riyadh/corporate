@@ -1,1 +1,1 @@
-export const PAGE_DATA: string = "pageData";
+export const PAGE_DATA: string = 'pageData';
