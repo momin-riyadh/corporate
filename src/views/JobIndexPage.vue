@@ -71,20 +71,7 @@
     <!--      </div>-->
     <!--    </div>-->
 
-    <!--    &lt;!&ndash;    Bottom Image Grid&ndash;&gt;-->
 
-    <!--    <div class="container-fluid px-5-percent">-->
-    <!--      <div class="bottom-image-grid my-5">-->
-    <!--        <div class="first-row">-->
-    <!--          <img src="../assets/images/grid-one@2x.jpg" alt="square-group" class="img-fluid">-->
-    <!--          <img src="../assets/images/grid-two@2x.jpg" alt="square-group" class="img-fluid">-->
-    <!--        </div>-->
-    <!--        <div class="second-row">-->
-    <!--          <img src="../assets/images/grid-three@2x.jpg" alt="square-group" class="img-fluid">-->
-    <!--          <img src="../assets/images/grid-four@2x.jpg" alt="square-group" class="img-fluid">-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </div>-->
 
     <FooterCard/>
     <CopyrightCard/>
@@ -94,10 +81,11 @@
 <script lang="ts">
     import {Component, Vue, Prop} from 'vue-property-decorator';
     import Navigation from '@/components/NavigationCard.vue';
-    import FooterCard from '@/components/FooterCard.vue';
-    import CopyrightCard from '@/components/CopyrightCard.vue';
     import JobCategory from '@/components/JobCategory.vue';
     import TitleTextBlock from '@/components/TitleTextCard.vue';
+    import ImageGrid from '@/components/ImageGrid.vue';
+    import FooterCard from '@/components/FooterCard.vue';
+    import CopyrightCard from '@/components/CopyrightCard.vue';
     import {JobIndexPageData} from '@/store/cms.types';
     import {HOST} from '@/global'
     // import { gsap } from 'gsap';
@@ -107,6 +95,7 @@
         components: {
             job_category_list: JobCategory,
             title_text: TitleTextBlock,
+            multiple_row_image:ImageGrid,
             CopyrightCard,
             FooterCard,
             Navigation
@@ -377,54 +366,5 @@
   }
 
 
-  .bottom-image-grid {
 
-    .first-row {
-      display: flex;
-      height: 40vh;
-      width: 100%;
-
-      img:first-child {
-        flex-grow: 1;
-        object-fit: cover;
-        width: 50%;
-        @media(min-width: 961px) {
-          width: 70%;
-        }
-      }
-
-      img:last-child {
-        flex-shrink: 0;
-        object-fit: cover;
-        width: 50%;
-        @media(min-width: 961px) {
-          width: 30%;
-        }
-      }
-    }
-
-    .second-row {
-      display: flex;
-      height: 40vh;
-      width: 100%;
-
-      img:first-child {
-        flex-shrink: 0;
-        object-fit: cover;
-        width: 50%;
-        @media(min-width: 961px) {
-          width: 30%;
-        }
-      }
-
-      img:last-child {
-        flex-grow: 1;
-        object-fit: cover;
-        width: 50%;
-        @media(min-width: 961px) {
-          width: 70%;
-        }
-      }
-    }
-  }
 </style>

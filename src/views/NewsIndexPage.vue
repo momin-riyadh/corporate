@@ -47,7 +47,6 @@
     import {HOST} from '@/global';
 
 
-
     @Component({
         name: 'NewsIndexPage',
         components: {
@@ -57,6 +56,7 @@
             news_block: SinglenewsCard,
         },
     })
+
 
     export default class NewsIndexPage extends Vue {
         @Prop() pageData!: NewsIndexPageData;
