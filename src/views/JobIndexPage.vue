@@ -33,85 +33,58 @@
     <!--    End-->
 
 
+    <!--    <div class="container-fluid px-5-percent">-->
+    <!--      <div class="featured-job-area">-->
+    <!--        <div class="job-category-title text-center">-->
+    <!--          <h1 class="common-title"><span>Featured Job</span></h1>-->
+    <!--          <p class="common-sub-title">We strive to go beyond for our clients a relationship built on trust, confidence-->
+    <!--            and honesty.</p>-->
+    <!--        </div>-->
 
 
-    <div class="container-fluid px-5-percent">
-      <div ref="jsjobarea" class="job-category-area overflow-auto">
+    <!--        <div class="featured-job">-->
+    <!--          <ul class="align-items-center">-->
+    <!--            <li v-for="featured  in featureds">-->
 
-        <div class="job-category-title text-center">
-          <h1 class="common-title"><span>Browse Category</span></h1>
-          <p class="common-sub-title">We strive to go beyond for our clients a relationship built on trust, confidence
-            and honesty.</p>
-        </div>
+    <!--              <div class="s-featured-job">-->
 
-        <div class="job-category mb-3 mb-sm-4">
-          <ul>
-            <li v-for="{title, vacancy, index} in category">
-              <router-link to="/career-list">
-                {{ title }}
-                <span> ({{vacancy}})</span>
-              </router-link>
-            </li>
-          </ul>
-        </div>
+    <!--                <div class="s-f-job-img">-->
+    <!--                  <img :src="featured.imageurl" alt="square group">-->
+    <!--                </div>-->
 
-      </div>
+    <!--                <div class="s-featured-job-brief">-->
+    <!--                  <h5>{{ featured.title }} </h5>-->
+    <!--                  <ul>-->
+    <!--                    <router-link tag="li" to="/career-details" v-for="sublist in featured.sublists"-->
+    <!--                                 v-bind:sublist="sublist"> {{ sublist.text }}-->
+    <!--                    </router-link>-->
+    <!--                  </ul>-->
+    <!--                </div>-->
 
+    <!--              </div>-->
 
-      <div class="featured-job-area">
-        <div class="job-category-title text-center">
-          <h1 class="common-title"><span>Featured Job</span></h1>
-          <p class="common-sub-title">We strive to go beyond for our clients a relationship built on trust, confidence
-            and honesty.</p>
-        </div>
+    <!--            </li>-->
+    <!--          </ul>-->
+    <!--        </div>-->
 
 
-        <div class="featured-job">
-          <ul class="align-items-center">
-            <li v-for="featured  in featureds">
+    <!--      </div>-->
+    <!--    </div>-->
 
-              <div class="s-featured-job">
+    <!--    &lt;!&ndash;    Bottom Image Grid&ndash;&gt;-->
 
-                <div class="s-f-job-img">
-                  <img :src="featured.imageurl" alt="square group">
-                </div>
-
-                <div class="s-featured-job-brief">
-                  <h5>{{ featured.title }} </h5>
-                  <ul>
-                    <router-link tag="li" to="/career-details" v-for="sublist in featured.sublists"
-                                 v-bind:sublist="sublist"> {{ sublist.text }}
-                    </router-link>
-                  </ul>
-                </div>
-
-              </div>
-
-            </li>
-          </ul>
-        </div>
-
-
-      </div>
-
-
-    </div>
-
-
-    <!--    Bottom Image Grid-->
-
-    <div class="container-fluid px-5-percent">
-      <div class="bottom-image-grid my-5">
-        <div class="first-row">
-          <img src="../assets/images/grid-one@2x.jpg" alt="square-group" class="img-fluid">
-          <img src="../assets/images/grid-two@2x.jpg" alt="square-group" class="img-fluid">
-        </div>
-        <div class="second-row">
-          <img src="../assets/images/grid-three@2x.jpg" alt="square-group" class="img-fluid">
-          <img src="../assets/images/grid-four@2x.jpg" alt="square-group" class="img-fluid">
-        </div>
-      </div>
-    </div>
+    <!--    <div class="container-fluid px-5-percent">-->
+    <!--      <div class="bottom-image-grid my-5">-->
+    <!--        <div class="first-row">-->
+    <!--          <img src="../assets/images/grid-one@2x.jpg" alt="square-group" class="img-fluid">-->
+    <!--          <img src="../assets/images/grid-two@2x.jpg" alt="square-group" class="img-fluid">-->
+    <!--        </div>-->
+    <!--        <div class="second-row">-->
+    <!--          <img src="../assets/images/grid-three@2x.jpg" alt="square-group" class="img-fluid">-->
+    <!--          <img src="../assets/images/grid-four@2x.jpg" alt="square-group" class="img-fluid">-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
 
     <FooterCard/>
     <CopyrightCard/>
@@ -123,13 +96,21 @@
     import Navigation from '@/components/NavigationCard.vue';
     import FooterCard from '@/components/FooterCard.vue';
     import CopyrightCard from '@/components/CopyrightCard.vue';
+    import JobCategory from '@/components/JobCategory.vue';
+    import TitleTextBlock from '@/components/TitleTextBlock.vue';
     import {JobIndexPageData} from '@/store/cms.types';
     import {HOST} from '@/global'
     // import { gsap } from 'gsap';
 
     @Component({
         name: 'JobIndexPage.vue',
-        components: {CopyrightCard, FooterCard, Navigation},
+        components: {
+            job_category_list: JobCategory,
+            title_text: TitleTextBlock,
+            CopyrightCard,
+            FooterCard,
+            Navigation
+        },
     })
 
     export default class Career extends Vue {
@@ -350,66 +331,7 @@
     transform: translateX(-50%);
   }
 
-  .job-category {
-    ul {
-      list-style: none;
-      column-count: 1;
-      column-gap: 6rem;
-      margin: 0;
-      padding: 0;
-      display: block;
-      @media(min-width: 961px) {
-        column-count: 2;
-      }
-      @media(min-width: 1265px) {
-        column-count: 3;
-      }
-      @media(min-width: 1905px) {
-        column-count: 4;
-      }
 
-      li {
-        margin: 0;
-        -webkit-column-break-inside: avoid;
-        page-break-inside: avoid;
-        break-inside: avoid;
-
-        a {
-          transition: all 0.3s ease-in-out;
-          display: block;
-          width: 100%;
-          padding: 1.5em 0;
-          text-decoration: none;
-          font-family: $font-roboto;
-          color: #222222;
-          font-size: calc(17px + (17 - 15) * ((100vw - 300px) / (1600 - 300)));
-          z-index: 1;
-          position: relative;
-          border-bottom: 1px solid #D8D8D8;
-
-          &::before {
-            content: '';
-            z-index: -1;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            border: 0;
-            background-color: #efefef;
-            transform-origin: center top;
-            transform: scaleY(0);
-            transition: transform 0.25s ease-in-out;
-          }
-
-          &:hover::before {
-            transform-origin: center bottom;
-            transform: scaleY(1);
-          }
-        }
-      }
-    }
-  }
 
   .featured-job-area {
     margin-top: 1rem;
