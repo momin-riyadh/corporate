@@ -97,7 +97,7 @@
     import FooterCard from '@/components/FooterCard.vue';
     import CopyrightCard from '@/components/CopyrightCard.vue';
     import JobCategory from '@/components/JobCategory.vue';
-    import TitleTextBlock from '@/components/TitleTextBlock.vue';
+    import TitleTextBlock from '@/components/TitleTextCard.vue';
     import {JobIndexPageData} from '@/store/cms.types';
     import {HOST} from '@/global'
     // import { gsap } from 'gsap';

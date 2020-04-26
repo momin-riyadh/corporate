@@ -5,8 +5,7 @@
       <div class="job-category mb-3 mb-sm-4">
         <ul>
           <li v-for="(category, index) in compData.categories" :key="'c' + index">
-            <router-link :to="category.link">
-              {{ category.title }}
+            <router-link :to="category.link"> {{ category.title }}
               <span> ({{category.count}})</span>
             </router-link>
           </li>
