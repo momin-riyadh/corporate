@@ -38,6 +38,7 @@
       img:first-child {
         flex-grow: 1;
         object-fit: cover;
+        -o-object-fit: cover;
         width: 50%;
         @media(min-width: 961px) {
           width: 70%;
@@ -61,6 +62,7 @@
 
       img:first-child {
         flex-shrink: 0;
+        -o-object-fit: cover;
         object-fit: cover;
         width: 50%;
         @media(min-width: 961px) {
