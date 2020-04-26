@@ -1,4 +1,5 @@
 <template>
+
   <!--  Single News/Media Component-->
   <div class="container-fluid px-5-percent">
     <div class="row">
