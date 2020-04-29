@@ -59,6 +59,7 @@
     import {BasicPageData} from '@/store/cms.types';
     import {HOST} from '@/global';
     import BusinessCard from '@/components/BusinessCard.vue';
+    import AboutTab from '@/components/AboutTab.vue';
 
 
     @Component({
@@ -69,6 +70,7 @@
             FooterCard,
             title_text_banner_image: BottomBanner,
             title_subtitle_richtext_cta: CommonParagraph,
+            about_tab_block:AboutTab,
             report_tab_block: FinancialReport,
             richtext_image: MilestonesCard,
             brand_logo_list:BusinessCard,
