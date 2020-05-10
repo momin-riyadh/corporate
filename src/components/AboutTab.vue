@@ -26,7 +26,7 @@
 
         <!-- About Page Data-->
         <div class="sq-a-page-content">
-          <router-view/>
+<!--          <router-view/>-->
         </div>
         <!-- End About Page Data-->
       </div>
@@ -50,19 +50,19 @@
         @Prop() compData!: AboutTabBlock;
         HOST: string = HOST;
 
-        current = 0;
-        current_image_number = 0;
-
-        // current_img = 0;
-
-
-        itemClick(index: any) {
-            if ((this as any).current == index) {
-                (this as any).current = 0
-            } else {
-                (this as any).current = index
-            }
-        }
+        // current = 0;
+        // current_image_number = 0;
+        //
+        // // current_img = 0;
+        //
+        //
+        // itemClick(index: any) {
+        //     if ((this as any).current == index) {
+        //         (this as any).current = 0
+        //     } else {
+        //         (this as any).current = index
+        //     }
+        // }
 
     }
 </script>
