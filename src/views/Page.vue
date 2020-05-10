@@ -21,8 +21,8 @@
         components: {
             HomePage: HomePage,
             BasicPage: BasicPage,
-            NewsIndexPage,
-            JobIndexPage,
+            NewsIndexPage:NewsIndexPage,
+            JobIndexPage:JobIndexPage,
 
         },
     })
