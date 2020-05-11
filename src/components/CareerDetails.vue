@@ -118,7 +118,7 @@
       <div class="job-apply text-center my-5 py-5">
         <p>Please do not apply without any work experience related to the customers.</p>
         <div class="sq-apply-btn-area">
-          <router-link to="/apply" class="mr-2">apply now</router-link>
+          <router-link to="/apply" class="mr-md-2 mb-3">apply now</router-link>
           <router-link to="">apply with bd jobs</router-link>
         </div>
       </div>
@@ -307,6 +307,17 @@
       text-transform: uppercase;
       color: $white-color;
       display: inline-block;
+      width: 260px;
+      @media (min-width: 601px) {
+        background: $brand-color;
+        text-decoration: none;
+        font-family: $font-roboto;
+        padding: 1rem 3rem;
+        text-transform: uppercase;
+        color: $white-color;
+        display: inline-block;
+        width: auto;
+      }
     }
   }
 
