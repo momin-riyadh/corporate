@@ -217,6 +217,17 @@ export interface TitleTextBannerImage {
   readonly image: number | null;
 }
 
+// A new block has been register from ameer Mubarok
+
+type SliderImageBlock = number;
+
+export interface TitleSubtitleSliderImage {
+  readonly title: string | null;
+  readonly subtitle: string | null;
+  readonly text: string | null;
+  readonly slider: SliderImageBlock | null;
+}
+
 export interface RichTextImageBlock {
   readonly image: number | null;
   readonly align?: string;
@@ -240,6 +251,7 @@ export interface BasicPageData {
     | SingleImage
     | TitleSubtitleRichtextCTA
     | TitleTextBannerImage
+    | TitleSubtitleSliderImage
   > | null;
 }
 
