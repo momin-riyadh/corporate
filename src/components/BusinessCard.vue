@@ -11,11 +11,10 @@
                 <img class="img-fluid" :src="HOST + brand.image.original.src" alt="square">
 
                   <div class="sq-business-caption">
-
                     <h2>{{brand.title}}</h2>
                     <p>{{brand.text}}</p>
-
                 </div>
+
               </div>
             </a>
             <!--End Business Portion-->
