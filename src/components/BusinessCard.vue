@@ -4,6 +4,7 @@
       <div class="sq-business">
         <div class="row">
           <div class="sq-business-industries">
+
             <div class="sq-business-logo-area" v-for="(brand, index) in compData.brands" :key="'b' + index">
               <div class="sq-business-logo">
                 <img class="img-fluid" :src="HOST + brand.image.original.src" alt="square">
@@ -17,109 +18,6 @@
               </div>
             </div>
 
-            <div class="sq-business-logo-area">
-              <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/business/sq-pharma-ad.png" alt="square">
-                <div class="sq-business-caption">
-
-                  <h2>Square Pharmaceuticals Ltd (Agrovet Division)</h2>
-                  <p>So you can imagine your fears with less distraction.</p>
-
-                </div>
-              </div>
-
-            </div>
-
-            <div class="sq-business-logo-area">
-              <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/business/sq-pharma-cd.png" alt="square">
-                <div class="sq-business-caption">
-
-                  <h2>Square Pharmaceuticals Ltd (Crop Division)</h2>
-                  <p>So you can imagine your fears with less distraction.</p>
-
-                </div>
-              </div>
-
-            </div>
-            <div class="sq-business-logo-area">
-              <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/business/sq-hospital.png" alt="square">
-                <div class="sq-business-caption">
-
-                  <h2>Square Hospitals Ltd (Crop Division)</h2>
-                  <p>So you can imagine your fears with less distraction.</p>
-
-                </div>
-              </div>
-
-            </div>
-            <div class="sq-business-logo-area">
-              <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/business/sq-hn.png" alt="square">
-              </div>
-            </div>
-
-            <div class="sq-business-logo-area">
-              <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/business/sq-textile.png" alt="square">
-              </div>
-
-            </div>
-            <div class="sq-business-logo-area">
-              <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/business/sq-knit.png" alt="square">
-              </div>
-
-            </div>
-            <div class="sq-business-logo-area">
-              <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/business/sa-tea.png" alt="square">
-              </div>
-
-            </div>
-            <div class="sq-business-logo-area">
-              <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/business/sq-texcom.png" alt="square">
-              </div>
-
-            </div>
-            <div class="sq-business-logo-area">
-              <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/business/sq-yarns.png" alt="square">
-              </div>
-
-            </div>
-            <div class="sq-business-logo-area">
-              <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/business/sq-fashions.png" alt="square">
-              </div>
-
-            </div>
-            <div class="sq-business-logo-area">
-              <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/business/sq-toiletries.png" alt="square">
-              </div>
-
-            </div>
-            <div class="sq-business-logo-area">
-              <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/business/sq-food.png" alt="square">
-              </div>
-
-            </div>
-            <div class="sq-business-logo-area">
-              <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/business/sq-informatix.png" alt="square">
-              </div>
-
-            </div>
-            <div class="sq-business-logo-area">
-              <div class="sq-business-logo">
-                <img class="img-fluid" src="../assets/images/business/sq-maasranga.png" alt="square">
-              </div>
-
-            </div>
           </div>
         </div>
       </div>
