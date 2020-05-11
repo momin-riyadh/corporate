@@ -6,18 +6,18 @@
           <div class="sq-business-industries">
 
             <!--Business Portion Start-->
-            <div class="sq-business-logo-area" v-for="(brand, index) in compData.brands" :key="'b' + index">
+            <a class="sq-business-logo-area" v-for="(brand, index) in compData.brands" :key="'b' + index">
               <div class="sq-business-logo">
                 <img class="img-fluid" :src="HOST + brand.image.original.src" alt="square">
 
-                <div class="sq-business-caption">
+                  <div class="sq-business-caption">
 
-                  <h2>{{brand.title}}</h2>
-                  <p>{{brand.text}}</p>
+                    <h2>{{brand.title}}</h2>
+                    <p>{{brand.text}}</p>
 
                 </div>
               </div>
-            </div>
+            </a>
             <!--End Business Portion-->
 
           </div>
@@ -143,16 +143,16 @@
       transform: translate3d(30%, 0%, 0);
       -webkit-transition-delay: 0.3s;
       transition-delay: 0.3s;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
 
     p {
       font-family: $font-roboto;
-      font-weight: 200;
       -webkit-transform: translate3d(0%, 30%, 0);
       transform: translate3d(0%, 30%, 0);
       -webkit-transition-delay: 0s;
       transition-delay: 0s;
+      font-size: 1rem;
     }
   }
 
