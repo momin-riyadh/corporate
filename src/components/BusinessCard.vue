@@ -5,6 +5,7 @@
         <div class="row">
           <div class="sq-business-industries">
 
+            <!--Business Portion Start-->
             <div class="sq-business-logo-area" v-for="(brand, index) in compData.brands" :key="'b' + index">
               <div class="sq-business-logo">
                 <img class="img-fluid" :src="HOST + brand.image.original.src" alt="square">
@@ -17,6 +18,7 @@
                 </div>
               </div>
             </div>
+            <!--End Business Portion-->
 
           </div>
         </div>
