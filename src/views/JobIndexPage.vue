@@ -33,13 +33,6 @@
     <!--    End-->
 
 
-<!--        <div class="container-fluid px-5-percent">-->
-<!--          <div class="featured-job-area">-->
-<!--            <div class="job-category-title text-center">-->
-<!--              <h1 class="common-title"><span>Featured Job</span></h1>-->
-<!--              <p class="common-sub-title">We strive to go beyond for our clients a relationship built on trust, confidence-->
-<!--                and honesty.</p>-->
-<!--            </div>-->
 
 
 <!--            <div class="featured-job">-->
@@ -83,6 +76,7 @@
     import Navigation from '@/components/NavigationCard.vue';
     import JobCategoryList from '@/components/JobCategoryList.vue';
     import TitleTextBlock from '@/components/TitleTextCard.vue';
+    import FeaturedJobCard from '@/components/FeaturedJobCard.vue';
     import ImageGrid from '@/components/ImageGrid.vue';
     import FooterCard from '@/components/FooterCard.vue';
     import CopyrightCard from '@/components/CopyrightCard.vue';
@@ -96,6 +90,7 @@
             job_category_list: JobCategoryList,
             title_text: TitleTextBlock,
             multiple_row_image:ImageGrid,
+            feature_job_list:FeaturedJobCard,
             CopyrightCard,
             FooterCard,
             Navigation
