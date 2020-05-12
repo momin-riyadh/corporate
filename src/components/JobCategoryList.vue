@@ -28,7 +28,7 @@
         components: {},
     })
 
-    export default class JobCategory extends Vue {
+    export default class JobCategoryList extends Vue {
         @Prop() compData!: JobCategoryListBlock;
         HOST: string = HOST;
     }
