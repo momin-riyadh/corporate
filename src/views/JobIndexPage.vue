@@ -33,43 +33,43 @@
     <!--    End-->
 
 
-        <div class="container-fluid px-5-percent">
-          <div class="featured-job-area">
-            <div class="job-category-title text-center">
-              <h1 class="common-title"><span>Featured Job</span></h1>
-              <p class="common-sub-title">We strive to go beyond for our clients a relationship built on trust, confidence
-                and honesty.</p>
-            </div>
+<!--        <div class="container-fluid px-5-percent">-->
+<!--          <div class="featured-job-area">-->
+<!--            <div class="job-category-title text-center">-->
+<!--              <h1 class="common-title"><span>Featured Job</span></h1>-->
+<!--              <p class="common-sub-title">We strive to go beyond for our clients a relationship built on trust, confidence-->
+<!--                and honesty.</p>-->
+<!--            </div>-->
 
 
-            <div class="featured-job">
-              <ul class="align-items-center">
-                <li v-for="featured  in featureds">
+<!--            <div class="featured-job">-->
+<!--              <ul class="align-items-center">-->
+<!--                <li v-for="featured  in featureds">-->
 
-                  <div class="s-featured-job">
+<!--                  <div class="s-featured-job">-->
 
-                    <div class="s-f-job-img">
-                      <img :src="featured.imageurl" alt="square group">
-                    </div>
+<!--                    <div class="s-f-job-img">-->
+<!--                      <img :src="featured.imageurl" alt="square group">-->
+<!--                    </div>-->
 
-                    <div class="s-featured-job-brief">
-                      <h5>{{ featured.title }} </h5>
-                      <ul>
-                        <router-link tag="li" to="/career-details" v-for="sublist in featured.sublists"
-                                     v-bind:sublist="sublist"> {{ sublist.text }}
-                        </router-link>
-                      </ul>
-                    </div>
+<!--                    <div class="s-featured-job-brief">-->
+<!--                      <h5>{{ featured.title }} </h5>-->
+<!--                      <ul>-->
+<!--                        <router-link tag="li" to="/career-details" v-for="sublist in featured.sublists"-->
+<!--                                     v-bind:sublist="sublist"> {{ sublist.text }}-->
+<!--                        </router-link>-->
+<!--                      </ul>-->
+<!--                    </div>-->
 
-                  </div>
+<!--                  </div>-->
 
-                </li>
-              </ul>
-            </div>
+<!--                </li>-->
+<!--              </ul>-->
+<!--            </div>-->
 
 
-          </div>
-        </div>
+<!--          </div>-->
+<!--        </div>-->
 
 
 
