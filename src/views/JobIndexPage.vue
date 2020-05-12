@@ -2,9 +2,9 @@
   <div v-show="pageData" :key="pageData.id" class="career-area">
     <Navigation/>
 
-    <!--=============================
-           Common Banner
-   =============================-->
+    <!--=================================
+                 Common Banner
+        =================================-->
     <div class="common-banner-area">
       <div class="container-fluid p-0">
         <div class="common-banner js-bannerimage">
