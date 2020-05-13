@@ -73,6 +73,10 @@
           position: relative;
           border-bottom: 1px solid #D8D8D8;
 
+          &:hover{
+            padding-left: 10px;
+          }
+
           &::before {
             content: '';
             z-index: -1;

@@ -144,6 +144,7 @@
   }
 
   .main-navigation {
+    display: none;
     ul {
       margin: 0;
       padding: 0;
@@ -178,8 +179,8 @@
       }
     }
 
-    @media(max-width: 991px) {
-      display: none;
+    @media(min-width: 991px) {
+      display: block;
     }
 
   }
