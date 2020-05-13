@@ -150,6 +150,7 @@
 
           &:hover{
             padding-left: 10px;
+            color:$brand-color
           }
 
 
