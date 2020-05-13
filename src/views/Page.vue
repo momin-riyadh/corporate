@@ -15,14 +15,16 @@
     import BasicPage from '@/views/BasicPage.vue';
     import NewsIndexPage from '@/views/NewsIndexPage.vue';
     import JobIndexPage from '@/views/JobIndexPage.vue';
+    import ContactPage from "@/views/ContactPage.vue";
 
     @Component({
         name: "Page",
         components: {
             HomePage: HomePage,
             BasicPage: BasicPage,
-            NewsIndexPage:NewsIndexPage,
-            JobIndexPage:JobIndexPage,
+            NewsIndexPage: NewsIndexPage,
+            JobIndexPage: JobIndexPage,
+            ContactPage: ContactPage,
 
         },
     })
