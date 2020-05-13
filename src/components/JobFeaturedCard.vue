@@ -140,7 +140,7 @@
           margin: 0 15px 30px;
         }
         @media (min-width: 2400px) {
-          width: calc(20% - 30px);
+          width: calc(25% - 30px);
           margin: 0 15px 30px;
         }
 
@@ -157,7 +157,7 @@
     align-items: flex-start;
     position: relative;
     cursor: pointer;
-    padding: .5rem;
+    padding: 3rem  2rem;
     @media (min-width: 601px) {
       transition: all 0.3s ease-in-out;
       display: flex;
@@ -165,7 +165,7 @@
       align-items: center;
       position: relative;
       cursor: pointer;
-      padding: 1rem;
+      padding: 3rem 2rem;
     }
 
     .s-f-job-img {
@@ -186,7 +186,7 @@
 
     &:hover {
       background: #fcfcfc;
-      padding: 1rem;
+      padding: 3rem 2rem;
       border-radius: 4px;
       box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
 
