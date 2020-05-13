@@ -240,7 +240,7 @@
     align-items: flex-start;
     position: relative;
     cursor: pointer;
-    padding: .5rem;
+    padding: 3rem 2rem;
     @media (min-width: 601px) {
       transition: all 0.3s ease-in-out;
       display: flex;
@@ -248,7 +248,7 @@
       align-items: center;
       position: relative;
       cursor: pointer;
-      padding: 1rem;
+      padding: 3rem 2rem;
     }
 
     .s-f-job-img {
