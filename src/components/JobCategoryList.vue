@@ -75,6 +75,7 @@
 
           &:hover{
             padding-left: 10px;
+            color: $brand-color;
           }
 
           &::before {
@@ -87,13 +88,13 @@
             right: 0;
             border: 0;
             background-color: #efefef;
-            transform-origin: center top;
+            transform-origin: center center;
             transform: scaleY(0);
             transition: transform 0.25s ease-in-out;
           }
 
           &:hover::before {
-            transform-origin: center bottom;
+            transform-origin: center center;
             transform: scaleY(1);
           }
         }
